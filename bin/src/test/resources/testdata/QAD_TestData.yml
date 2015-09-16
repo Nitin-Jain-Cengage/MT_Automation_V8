@@ -1,0 +1,12 @@
+ProjectName: HMMv12
+base_url: http://qad.ng.cengage.com/static/nb/login.html
+
+users:
+  admin:
+    username: automationadmin@qait.com
+    password: A111111
+
+email:
+    send: yes
+    recepients:
+     recepient1: prashantshukla@qainfotech.com
