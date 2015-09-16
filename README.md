@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 HMMv12 selenium-automation
 ===================
 
@@ -38,3 +39,7 @@ The Test Execution Results will be stored in the following directory once the te
 	
 ##### Galen Layout reports
     ./target/galen-reports/report.html
+=======
+# MT_Automation_V8
+MT Automation using V8 frame work
+>>>>>>> 210cbcc0df3d76263faf8d5d780082fad8618853
