@@ -1,8 +1,7 @@
-package com.qait.mindtap.tests;
+package com.qait.mindtap.tests.NG_30104;
 
 import org.testng.annotations.*;
 import org.testng.ITestResult;
-
 import com.qait.mindtap.automation.TestSessionInitiator;
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
 
@@ -10,7 +9,7 @@ import static com.qait.mindtap.automation.utils.YamlReader.getData;
  *
  * @author Prashant Shukla <prashantshukla@qainfotech.com>
  */
-public class Admin_Create_Master_and_Edit_Provision_Apps_Test {
+public class NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab {
 
     TestSessionInitiator test;
 
@@ -20,7 +19,7 @@ public class Admin_Create_Master_and_Edit_Provision_Apps_Test {
     @BeforeClass
     @Parameters("browser")
     public void start_test_session(@Optional String browser) {
-        test = new TestSessionInitiator("Admin_Create_Master_and_Edit_Provision_Apps_Test", browser);
+        test = new TestSessionInitiator("NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab", browser);
         test.launchApplication(getData("base_url"));
     }
 
@@ -31,16 +30,22 @@ public class Admin_Create_Master_and_Edit_Provision_Apps_Test {
         test.adminpage.verifyuserIsOnAdminPage();
     }
 
-    @Test
-    public void Step_02_Admin_Creates_MasterNextBook_in_Course_Mode() {
-        test.adminpage.managemasters.createMasterNeXtBookInCourseMode();
-        test.adminpage.openManageMasters();
-        test.adminpage.managemasters.verifyMasterNeXtBookIsCreated();
+    @Test(dependsOnMethods = {"Step_01_Admin_Logs_in_to_the_Application"})
+    public void Step_02_Admin_Search_Course_using_ISBN() {
+       test.adminpage.verify_User_LoggedIn_As_Admin("Admin Dashboard");
+       test.adminpage.search_Course_Using_ISBN(getData("course1.courseKey"));
+      }
+    
+    @Test(dependsOnMethods = {"Step_02_Admin_Search_Course_using_ISBN"})
+    public void Step_03_Admin_Verify_Course_Andesite_mode_checked() {
+        test.adminpage.open_Course_In_Edit_Mode(getData("course1.courseName"));        
+        test.adminpage.course_Andesite_Mode_Is_Checked("Edit Working Copy");
+   	
     }
-
-    //@Test
-    void Step_03_Admin_Logs_Out() {
-        test.adminpage.logout();
+    
+    @Test(dependsOnMethods = {"Step_03_Admin_Verify_Course_Andesite_mode_checked"})
+    void Step_04_Admin_Logs_Out() {
+        test.loginpage.logout();
     }
 
     @AfterClass(alwaysRun = true)

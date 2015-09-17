@@ -4,6 +4,10 @@ import static com.qait.mindtap.automation.utils.ConfigPropertyReader.getProperty
 import static com.qait.mindtap.automation.utils.YamlReader.getYamlValue;
 //import static com.qait.mindtap.automation.utils.YamlReader.setYamlFilePath;
 
+
+
+
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -16,9 +20,8 @@ import com.qait.mindtap.automation.pojo.TopicNamePojo;
 import com.qait.mindtap.automation.utils.ReportMsg;
 import com.qait.mindtap.automation.utils.TakeScreenshot;
 import com.qait.mindtap.automation.utils.YamlReader;
-
-import com.qait.mindtap.keywords.LoginPageActions;
-import com.qait.mindtap.keywords.admin.AdminPageActions;
+import com.qait.mindtap.keywords.NG_30104.NG_30181_AdminPageActions;
+import com.qait.mindtap.keywords.NG_30104.NG_30181_LoginPageActions;
 
 public class TestSessionInitiator {
 
@@ -38,8 +41,8 @@ public class TestSessionInitiator {
     /**
      * Initiating the page objects
      */
-    public LoginPageActions loginpage;
-    public AdminPageActions adminpage;
+    public NG_30181_LoginPageActions loginpage;
+    public NG_30181_AdminPageActions adminpage;
 
     public TakeScreenshot takescreenshot;
     public TopicNamePojo topicNameValue;
@@ -52,8 +55,8 @@ public class TestSessionInitiator {
     }
 
     private void _initPage() {
-        loginpage = new LoginPageActions(driver);
-        adminpage = new AdminPageActions(driver);
+        loginpage = new NG_30181_LoginPageActions(driver);
+        adminpage = new NG_30181_AdminPageActions(driver);
         topicNameValue = new TopicNamePojo();
     }
 
@@ -122,7 +125,7 @@ public class TestSessionInitiator {
     public void closeBrowserSession() {
         ReportMsg.info("The Test: " + this.testname.toUpperCase() + " COMPLETED!" + "\n");
         try {
-            driver.quit();
+            driver.close();
         } catch (Exception b) {
             b.getMessage();
         }

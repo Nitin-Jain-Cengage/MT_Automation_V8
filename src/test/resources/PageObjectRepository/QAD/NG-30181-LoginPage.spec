@@ -3,10 +3,10 @@ Page Title: MindTap Login
 #Object Definitions
 ====================================================================================
 
-inp_username    css #_username_id
-inp_password    css #_password_id
-
-btn_signin      css input.goButton
+inp_username    							css 									#_username_id
+inp_password    							css 									#_password_id
+btn_signin     								css 									input.goButton
+icon_logout									css										#logout_link
 ====================================================================================
 
 @all, browsers

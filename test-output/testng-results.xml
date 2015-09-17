@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[[INFO]: The test Browser is FIREFOX !!!]]>
+    </line>
+    <line>
+      <![CDATA[[INFO]:  The application url is :- http://qad.ng.cengage.com/static/nb/login.html]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'MindTap Login'.]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT PASS]: Verified User is on Login Page]]>
+    </line>
+    <line>
+      <![CDATA[[INFO]: log into the application using credentials 'automationadmin@qait.com / A111111']]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT FAIL]: As actual Page Title for 'NG-30181-AdminPage' does not contain expected Page Title : 'MindTap Admin Dashboard'.]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT PASS]: Verified User is on Admin Page]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT FAIL]:  element 'mindtap_toolbar' is not displayed.]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT PASS]: element mindtap_toolbar is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT PASS]: element admin_dashboard with text Admin Dashboard is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT PASS]: element courseName with text Stewart_Precalculus: Mathematics for Calculus_7e_MTQ is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT PASS]: element Edit_Working_copy with text Edit Working Copy is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT FAIL]:  element 'checkbox_Andesite_mode' is not displayed.]]>
+    </line>
+    <line>
+      <![CDATA[[ASSERT PASS]: element checkbox_Andesite_mode is displayed.]]>
+    </line>
+    <line>
+      <![CDATA[[INFO]: The Test: NG_30181_TC01_ADMIN_LOGIN_AND_SEARCH_THE_ISBN_UNDER_MASTER_TAB COMPLETED!
+]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25247" started-at="2015-09-17T10:32:17Z" finished-at="2015-09-17T10:32:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25247" started-at="2015-09-17T10:32:17Z" finished-at="2015-09-17T10:32:42Z">
+      <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab">
+        <test-method status="PASS" signature="start_test_session(java.lang.String)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="start_test_session" is-config="true" duration-ms="7072" started-at="2015-09-17T16:02:17Z" finished-at="2015-09-17T16:02:24Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO]: The test Browser is FIREFOX !!!]]>
+            </line>
+            <line>
+              <![CDATA[[INFO]:  The application url is :- http://qad.ng.cengage.com/static/nb/login.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- start_test_session -->
+        <test-method status="PASS" signature="Step_01_Admin_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="Step_01_Admin_Logs_in_to_the_Application" duration-ms="13082" started-at="2015-09-17T16:02:24Z" finished-at="2015-09-17T16:02:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'MindTap Login'.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: Verified User is on Login Page]]>
+            </line>
+            <line>
+              <![CDATA[[INFO]: log into the application using credentials 'automationadmin@qait.com / A111111']]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT FAIL]: As actual Page Title for 'NG-30181-AdminPage' does not contain expected Page Title : 'MindTap Admin Dashboard'.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: Verified User is on Admin Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Step_01_Admin_Logs_in_to_the_Application -->
+        <test-method status="PASS" signature="Step_02_Admin_Search_Course_using_ISBN()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="Step_02_Admin_Search_Course_using_ISBN" duration-ms="181" started-at="2015-09-17T16:02:37Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_01_Admin_Logs_in_to_the_Application" finished-at="2015-09-17T16:02:37Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[ASSERT FAIL]:  element 'mindtap_toolbar' is not displayed.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: element mindtap_toolbar is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: element admin_dashboard with text Admin Dashboard is displayed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Step_02_Admin_Search_Course_using_ISBN -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-09-17T16:02:37Z" finished-at="2015-09-17T16:02:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Step_01_Admin_Logs_in_to_the_Application status=SUCCESS method=NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_01_Admin_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079] output=[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'MindTap Login'.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonFailure -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="takeScreenshotonFailure" is-config="true" duration-ms="10" started-at="2015-09-17T16:02:37Z" finished-at="2015-09-17T16:02:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Step_02_Admin_Search_Course_using_ISBN status=SUCCESS method=NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_02_Admin_Search_Course_using_ISBN()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079] output=[ASSERT FAIL]:  element 'mindtap_toolbar' is not displayed.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonFailure -->
+        <test-method status="PASS" signature="Step_03_Admin_Verify_Course_Andesite_mode_checked()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="Step_03_Admin_Verify_Course_Andesite_mode_checked" duration-ms="3592" started-at="2015-09-17T16:02:37Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_02_Admin_Search_Course_using_ISBN" finished-at="2015-09-17T16:02:41Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[ASSERT PASS]: element courseName with text Stewart_Precalculus: Mathematics for Calculus_7e_MTQ is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: element Edit_Working_copy with text Edit Working Copy is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT FAIL]:  element 'checkbox_Andesite_mode' is not displayed.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: element checkbox_Andesite_mode is displayed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Step_03_Admin_Verify_Course_Andesite_mode_checked -->
+        <test-method status="PASS" signature="Step_04_Admin_Logs_Out()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="Step_04_Admin_Logs_Out" duration-ms="1300" started-at="2015-09-17T16:02:41Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_03_Admin_Verify_Course_Andesite_mode_checked" finished-at="2015-09-17T16:02:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_04_Admin_Logs_Out -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-09-17T16:02:41Z" finished-at="2015-09-17T16:02:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Step_03_Admin_Verify_Course_Andesite_mode_checked status=SUCCESS method=NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_03_Admin_Verify_Course_Andesite_mode_checked()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079] output=[ASSERT PASS]: element courseName with text Stewart_Precalculus: Mathematics for Calculus_7e_MTQ is displayed.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonFailure -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-09-17T16:02:42Z" finished-at="2015-09-17T16:02:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Step_04_Admin_Logs_Out status=SUCCESS method=NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_04_Admin_Logs_Out()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonFailure -->
+        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab@1209079]" name="stop_test_session" is-config="true" duration-ms="10" started-at="2015-09-17T16:02:42Z" finished-at="2015-09-17T16:02:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO]: The Test: NG_30181_TC01_ADMIN_LOGIN_AND_SEARCH_THE_ISBN_UNDER_MASTER_TAB COMPLETED!
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- stop_test_session -->
+      </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

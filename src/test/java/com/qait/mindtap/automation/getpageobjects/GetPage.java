@@ -16,16 +16,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.webbitserver.handler.exceptions.PrintStackTraceExceptionHandler;
 
 import com.qait.mindtap.automation.utils.LayoutValidation;
 import com.qait.mindtap.automation.utils.ReportMsg;
+
 import java.io.File;
+
+import com.qait.mindtap.automation.utils.SeleniumWait;
 
 public class GetPage extends BaseUi {
 
     protected WebDriver webdriver;
     String pageName;
     LayoutValidation layouttest;
+    SeleniumWait sel_wait;
 
     public GetPage(WebDriver driver, String pageName) {
         super(driver, pageName);
@@ -191,7 +197,26 @@ public class GetPage extends BaseUi {
         locator[2] = StringUtils.replace(locator[2], "%", replacement2);
         return getBy(locator[1].trim(), locator[2].trim());
     }
+    
+    public void  clickOnElementUsingActionBuilder(WebElement element){
+        Actions builder = new Actions(driver);
+        Actions MenuItems = builder.moveToElement(element);
+        this.waitTOSync();
+       MenuItems.click().build().perform();
+       this.waitTOSync();
+    }
 
+    public void waitTOSync()
+    {
+    	try{
+     Thread.sleep(2000);
+    	}
+    	catch(Exception e)
+    	{e.printStackTrace();
+    	
+    	}
+    }
+    
     private By getBy(String locatorType, String locatorValue) {
         switch (Locators.valueOf(locatorType)) {
             case id:

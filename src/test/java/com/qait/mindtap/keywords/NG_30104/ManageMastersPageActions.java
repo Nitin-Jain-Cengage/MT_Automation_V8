@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.qait.mindtap.keywords.admin;
+package com.qait.mindtap.keywords.NG_30104;
 
 import com.qait.mindtap.automation.getpageobjects.GetPage;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package com.qait.mindtap.keywords;
+package com.qait.mindtap.keywords.NG_30104;
 
 import com.qait.mindtap.automation.getpageobjects.GetPage;
 import com.qait.mindtap.automation.utils.ReportMsg;
@@ -6,16 +6,16 @@ import com.qait.mindtap.automation.utils.ReportMsg;
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
+
 
 /**
  *
  * @author prashantshukla
  */
-public class LoginPageActions extends GetPage {
+public class NG_30181_LoginPageActions extends GetPage {
 
-	public LoginPageActions(WebDriver driver) {
-		super(driver, "LoginPage");
+	public NG_30181_LoginPageActions(WebDriver driver) {
+		super(driver, "NG-30181-LoginPage");
 	}
 
 	public void verify_User_Is_On_Login_Page() {
@@ -39,6 +39,10 @@ public class LoginPageActions extends GetPage {
 		ReportMsg.info("log into the application using credentials '" + username + " / " + password + "'");
 	}
 
+	public void logout(){
+		element("icon_logout").click();
+	}
+	
 	public void verify_Login_Error_Message_Is_Displayed(String errormsgtxt) {
 		verifyElementTextContains("txt_errormsg", errormsgtxt);
 	}

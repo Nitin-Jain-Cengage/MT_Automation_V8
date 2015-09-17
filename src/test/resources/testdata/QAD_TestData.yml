@@ -5,8 +5,12 @@ users:
   admin:
     username: automationadmin@qait.com
     password: A111111
+course1:
+  courseKey: 9781305876651
+  courseName: "Stewart_Precalculus: Mathematics for Calculus_7e_MTQ"   
+
 
 email:
-    send: yes
+    send: no
     recepients:
-     recepient1: prashantshukla@qainfotech.com
+     recepient1: ayushgaur@qainfotech.net
