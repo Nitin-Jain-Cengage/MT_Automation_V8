@@ -8,8 +8,6 @@ package com.qait.mindtap.keywords.NG_30104;
 import com.qait.mindtap.automation.getpageobjects.GetPage;
 import com.qait.mindtap.automation.utils.ReportMsg;
 import com.qait.mindtap.automation.utils.SeleniumWait;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**

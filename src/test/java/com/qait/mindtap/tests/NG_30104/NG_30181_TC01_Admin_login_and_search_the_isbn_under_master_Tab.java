@@ -26,7 +26,7 @@ public class NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab {
     @Test
     public void Step_01_Admin_Logs_in_to_the_Application() {
         test.loginpage.verify_User_Is_On_Login_Page();
-        test.loginpage.login_to_the_application_as(getData(("users.admin.username")), getData(("users.admin.password")));
+        test.loginpage.login_to_the_application_as_admin(getData(("users.admin.username")), getData(("users.admin.password")));
         test.adminpage.verifyuserIsOnAdminPage();
     }
 

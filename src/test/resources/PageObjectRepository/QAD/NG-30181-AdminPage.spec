@@ -1,4 +1,4 @@
-Page Title: MindTap Admin Dashboard
+Page Title: NG-30181-AdminPage
 
 #Object Definitions
 ====================================================================================

@@ -18,6 +18,10 @@ public class ReportMsg {
     protected static final String pass = "[ASSERT PASS]: ";
     protected static final String scripterror = "[SCRIPTING ERROR]: ";
 
+    public static String failForAssert(String message) {
+        return reportMsgForAssert(fail, message, true);
+    }
+    
     public static String fail(String message) {
         return reportMsg(fail, message);
     }
@@ -39,7 +43,12 @@ public class ReportMsg {
     }
 
     private static String reportMsg(String prefix, String message) {
-        Reporter.log(prefix + message, true);
+    	Reporter.log(prefix + message, true);
         return prefix + message;
     }
+    
+    private static String reportMsgForAssert(String prefix, String message, boolean flag) {
+        return prefix + message;
+    }
+    
 }

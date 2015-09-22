@@ -17,6 +17,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.webbitserver.handler.exceptions.PrintStackTraceExceptionHandler;
 
 import com.qait.mindtap.automation.utils.LayoutValidation;
@@ -141,11 +142,25 @@ public class GetPage extends BaseUi {
         }
         return result;
     }
+    
+    protected boolean checkIfElementIsNotThere(String elementToken, String replacement){
+		boolean flag = false;
+		try{
+			if(webdriver.findElement(getLocator(elementToken, replacement)).isDisplayed()){
+				flag = false;
+			}else{
+				flag = true;
+			}
+		}catch(NoSuchElementException ex){
+			flag =  true;
+		}
+		return flag;
+	}
 
     protected void verifyElementText(String elementName, String expectedText) {
         wait.waitForElementToBeVisible(element(elementName));
         assertEquals(element(elementName).getText().trim(), expectedText,
-                ReportMsg.fail("Text of the page element '"
+                ReportMsg.failForAssert("Text of the page element '"
                         + elementName + "' is not as expected: "));
         ReportMsg.pass("element " + elementName
                 + " is visible and Text is " + expectedText);
@@ -154,7 +169,7 @@ public class GetPage extends BaseUi {
     protected void verifyElementTextContains(String elementName,
             String expectedText) {
         wait.waitForElementToBeVisible(element(elementName));
-        assertThat(ReportMsg.fail("Text of the page element '"
+        assertThat(ReportMsg.failForAssert("Text of the page element '"
                 + elementName + "' is not as expected: "), element(elementName)
                 .getText().trim(), containsString(expectedText));
         ReportMsg.pass("element " + elementName
@@ -164,16 +179,17 @@ public class GetPage extends BaseUi {
     protected boolean isElementDisplayed(String elementName) {
         wait.waitForElementToBeVisible(element(elementName));
         boolean result = element(elementName).isDisplayed();
-        assertTrue(result, ReportMsg.fail(" element '" + elementName
-                + "' is not displayed."));
+        
+        assertTrue(result, ReportMsg.failForAssert(" element '" + elementName
+               + "' is not displayed."));
         ReportMsg.pass("element " + elementName + " is displayed.");
         return result;
     }
-
-    protected boolean isElementEnabled(String elementName, boolean expected) {
+    
+       protected boolean isElementEnabled(String elementName, boolean expected) {
         wait.waitForElementToBeVisible(element(elementName));
         boolean result = expected && element(elementName).isEnabled();
-        assertTrue(result, ReportMsg.fail(" element '" + elementName
+        assertTrue(result, ReportMsg.failForAssert(" element '" + elementName
                 + "' is  ENABLED :- " + !expected));
         ReportMsg.pass("element " + elementName + " is enabled :- "
                 + expected);

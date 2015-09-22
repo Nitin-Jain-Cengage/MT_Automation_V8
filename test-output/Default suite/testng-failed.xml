@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab">
+      <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course">
         <methods>
-          <include name="Step_04_Admin_Logs_Out"/>
-          <include name="Step_02_Admin_Search_Course_using_ISBN"/>
-          <include name="stop_test_session"/>
-          <include name="Step_03_Admin_Verify_Course_Andesite_mode_checked"/>
+          <include name="Step_01_Instructor_Logs_in_to_the_Application"/>
           <include name="takeScreenshotonFailure"/>
           <include name="start_test_session"/>
-          <include name="Step_01_Admin_Logs_in_to_the_Application"/>
+          <include name="Step_03_Instructor_Delete_Course"/>
+          <include name="Step_02_Instructor_Manage_Course"/>
+          <include name="Step_04_Instructor_SignOut"/>
+          <include name="stop_test_session"/>
         </methods>
-      </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab -->
+      </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

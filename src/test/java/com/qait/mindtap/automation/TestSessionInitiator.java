@@ -8,6 +8,12 @@ import static com.qait.mindtap.automation.utils.YamlReader.getYamlValue;
 
 
 
+
+
+
+
+
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -21,7 +27,13 @@ import com.qait.mindtap.automation.utils.ReportMsg;
 import com.qait.mindtap.automation.utils.TakeScreenshot;
 import com.qait.mindtap.automation.utils.YamlReader;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_AdminPageActions;
+import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesCourseConfirmation;
+import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesCourseOptionPageActions;
+import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesEditCoursePageActions;
+import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorDeletesCourse;
+import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorPageActions;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_LoginPageActions;
+import com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course;
 
 public class TestSessionInitiator {
 
@@ -43,12 +55,17 @@ public class TestSessionInitiator {
      */
     public NG_30181_LoginPageActions loginpage;
     public NG_30181_AdminPageActions adminpage;
-
+    public NG_30181_InstructorPageActions instructor;
+    public NG_30181_InstructorCreatesCourseConfirmation courseConfirmation;
+    public NG_30181_InstructorCreatesCourseOptionPageActions courseOptions;
+    public NG_30181_InstructorCreatesEditCoursePageActions courseCreateEdit;
+    public NG_30181_InstructorDeletesCourse courseDelete;
     public TakeScreenshot takescreenshot;
     public TopicNamePojo topicNameValue;
     private final String testname;
 
     public Random randomGenerator;
+	
 
     public WebDriver getDriver() {
         return this.driver;
@@ -57,7 +74,12 @@ public class TestSessionInitiator {
     private void _initPage() {
         loginpage = new NG_30181_LoginPageActions(driver);
         adminpage = new NG_30181_AdminPageActions(driver);
+        instructor = new NG_30181_InstructorPageActions(driver);
         topicNameValue = new TopicNamePojo();
+        courseConfirmation = new NG_30181_InstructorCreatesCourseConfirmation(driver);
+        courseOptions = new NG_30181_InstructorCreatesCourseOptionPageActions(driver);
+        courseCreateEdit = new NG_30181_InstructorCreatesEditCoursePageActions(driver);
+        courseDelete = new NG_30181_InstructorDeletesCourse(driver);
     }
 
     /**
@@ -125,7 +147,7 @@ public class TestSessionInitiator {
     public void closeBrowserSession() {
         ReportMsg.info("The Test: " + this.testname.toUpperCase() + " COMPLETED!" + "\n");
         try {
-            driver.close();
+        	driver.close();
         } catch (Exception b) {
             b.getMessage();
         }
