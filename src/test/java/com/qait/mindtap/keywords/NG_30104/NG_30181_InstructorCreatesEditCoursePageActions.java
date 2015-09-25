@@ -1,10 +1,8 @@
 package com.qait.mindtap.keywords.NG_30104;
 
-import com.qait.mindtap.automation.getpageobjects.GetPage;
-import com.qait.mindtap.automation.utils.ReportMsg;
-import com.qait.mindtap.automation.utils.SeleniumWait;
-
 import org.openqa.selenium.WebDriver;
+
+import com.qait.mindtap.automation.getpageobjects.GetPage;
 
 public class NG_30181_InstructorCreatesEditCoursePageActions extends GetPage {
 	public NG_30181_InstructorCreatesEditCoursePageActions(WebDriver driver) {
@@ -23,10 +21,14 @@ public class NG_30181_InstructorCreatesEditCoursePageActions extends GetPage {
 		element("inputCourseName").clear();
 		element("inputCourseName").sendKeys(courseName);
 		element("inputBeginDate").clear();
-		element("inputBeginDate").sendKeys(date.getDateInSpecificFormat("MM/dd/yyyy"));
+		element("inputBeginDate").sendKeys(date.getDesiredDateInSpecificFormat("MM/dd/yyyy", -1));
 		element("inputEndDate").clear();
 		element("inputEndDate").sendKeys(date.getDesiredYearDateFromCurrentYearInSpecificFormat("MM/dd/yyyy" , 1));
 		element("btnCreateCourse").click();	
+	}
+
+	public void clean_Data_File() {
+        data.clearProperty();		
 	}
 
 	

@@ -1,9 +1,16 @@
 package com.qait.mindtap.tests.NG_30104;
 
-import org.testng.annotations.*;
-import org.testng.ITestResult;
-import com.qait.mindtap.automation.TestSessionInitiator;
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
+
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.qait.mindtap.automation.TestSessionInitiator;
 
 
 public class NG_30181_TC04_Instructor_Deletes_Course {

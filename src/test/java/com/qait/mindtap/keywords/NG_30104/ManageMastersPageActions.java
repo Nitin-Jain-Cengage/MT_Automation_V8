@@ -5,8 +5,9 @@
  */
 package com.qait.mindtap.keywords.NG_30104;
 
-import com.qait.mindtap.automation.getpageobjects.GetPage;
 import org.openqa.selenium.WebDriver;
+
+import com.qait.mindtap.automation.getpageobjects.GetPage;
 
 /**
  *

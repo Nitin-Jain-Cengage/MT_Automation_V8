@@ -22,11 +22,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.Reporter;
 
+import com.qait.mindtap.automation.utils.ConfigPropertyReader;
 import com.qait.mindtap.automation.utils.DateUtil;
-import com.qait.mindtap.automation.utils.SeleniumWait;
+import com.qait.mindtap.automation.utils.PropFileHandler;
 import com.qait.mindtap.automation.utils.ReportMsg;
+import com.qait.mindtap.automation.utils.SeleniumWait;
+import com.qait.mindtap.automation.utils.YamlReader;
+import com.qait.mindtap.automation.utils.mindtapUtilityMethods;
 
 /**
  *
@@ -38,6 +41,11 @@ public class BaseUi {
 	protected SeleniumWait wait;
 	private final String pageName;
 	protected DateUtil date;
+	protected PropFileHandler data;
+	protected mindtapUtilityMethods mt;
+	protected ConfigPropertyReader configReader;
+	protected ReportMsg Reporter;
+	protected YamlReader yml;
 
 	protected BaseUi(WebDriver driver, String pageName) {
 		PageFactory.initElements(driver, this);
@@ -46,6 +54,11 @@ public class BaseUi {
 		this.wait = new SeleniumWait(driver, Integer.parseInt(getProperty(
 				"Config.properties", "timeout")));
 		this.date = new DateUtil();
+		this.data = new PropFileHandler();
+		this.mt = new mindtapUtilityMethods(driver);
+		this.configReader = new ConfigPropertyReader();
+		this.Reporter = new ReportMsg();
+		this.yml = new YamlReader();
 	}
 
 	protected String getPageTitle() {
@@ -55,6 +68,11 @@ public class BaseUi {
 	protected String getCurrentURL() {
 		return driver.getCurrentUrl();
 	}
+	
+	protected void getURL(String Url) {
+		 driver.get(Url);
+	}
+
 
 	protected void verifyPageTitleExact() {
 		String pageTitle = getPageTitleFromFile(pageName);
@@ -191,13 +209,26 @@ public class BaseUi {
 	}
 
 	protected Object executeJavascriptWithReturn(String script) {
-		return ((JavascriptExecutor) driver).executeScript(script);
+		return ((JavascriptExecutor) driver).executeScript("return "+script);
 	}
 
 	protected void executeJavascript(String script, WebElement e) {
 		((JavascriptExecutor) driver).executeScript(script, e);
 	}
 
+	protected void fireOnClickJsEvent(String elementRef, String index){
+		 ((JavascriptExecutor) driver).executeScript("" 
+	            + "var elem = document.getElementsByClassName('${elementRef}')[${index}];"
+	                + "if( document.createEvent ) { "
+	                + "   var evObj = document.createEvent('MouseEvents');" 
+	            + "    evObj.initEvent( 'click', true, false );" 
+	            + "   elem.dispatchEvent(evObj);" 
+	            + "} else if( document.createEventObject ) {"
+	                + "    elem.fireEvent('onclick');"
+	                + "}" 
+	            + "" );
+	    } 
+	
 	protected void hover(WebElement element) {
 		Actions hoverOver = new Actions(driver);
 		hoverOver.moveToElement(element).build().perform();
@@ -248,6 +279,12 @@ public class BaseUi {
 		Select sel = new Select(el);
 		sel.selectByVisibleText(text);
 	}
+	
+	protected void selectProvidedText(WebElement el, String text) {
+		wait.waitForElementToBeVisible(el);
+		Select sel = new Select(el);
+		sel.selectByVisibleText(text);
+	}
 
 	protected void scrollDown(WebElement element) {
 		((JavascriptExecutor) driver).executeScript(
@@ -283,4 +320,11 @@ public class BaseUi {
 	public String pageTitle() {
 		return driver.getTitle();
 	}
+	
+	protected String[] parseUrl(WebElement element) {
+			wait.waitForPageToLoadCompletely();
+			wait.waitForElementToBeVisible(element);
+			return element.getText().split("/");
+	}
+	
 }

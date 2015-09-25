@@ -1,8 +1,15 @@
 package com.qait.mindtap.tests.NG_30104;
-import org.testng.annotations.*;
-import org.testng.ITestResult;
-import com.qait.mindtap.automation.TestSessionInitiator;
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
+
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.qait.mindtap.automation.TestSessionInitiator;
 
 
 public class NG_30181_TC03_Instructor_Creates_Course {
@@ -17,6 +24,7 @@ public class NG_30181_TC03_Instructor_Creates_Course {
     public void start_test_session(@Optional String browser) {
         test = new TestSessionInitiator("NG_30181_TC03_Instructor_Creates_Course", browser);
         test.launchApplication(getData("sso_url"));
+        test.courseCreateEdit.clean_Data_File();
     }
 
     @Test
@@ -41,6 +49,7 @@ public class NG_30181_TC03_Instructor_Creates_Course {
     @Test(dependsOnMethods = {"Step_03_Instructor_Enters_Course_Details"})
     public void Step_03_Confirm_Course_Details() {
        test.courseConfirmation.verify_User_Is_On_Course_Confirmation_Page();
+       test.courseConfirmation.get_Created_Course_Key();
     }
     
     @Test(dependsOnMethods = {"Step_03_Confirm_Course_Details"})
@@ -56,6 +65,5 @@ public class NG_30181_TC03_Instructor_Creates_Course {
     @AfterMethod
     public void takeScreenshotonFailure(ITestResult result) {
         test.takescreenshot.takeScreenShotOnException(result);
-
     }
 }

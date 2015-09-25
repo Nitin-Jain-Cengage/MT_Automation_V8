@@ -1,11 +1,11 @@
 package com.qait.mindtap.keywords.NG_30104;
 
-import com.qait.mindtap.automation.getpageobjects.GetPage;
-import com.qait.mindtap.automation.utils.ReportMsg;
-
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
 
 import org.openqa.selenium.WebDriver;
+
+import com.qait.mindtap.automation.getpageobjects.GetPage;
+import com.qait.mindtap.automation.utils.ReportMsg;
 
 
 /**

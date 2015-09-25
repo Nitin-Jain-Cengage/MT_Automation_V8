@@ -4,14 +4,14 @@
  */
 package com.qait.mindtap.automation.utils;
 
-import com.qait.mindtap.automation.getpageobjects.ObjectFileReader;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.Reader;
 import java.util.Map;
 
 import org.yaml.snakeyaml.Yaml;
+
+import com.qait.mindtap.automation.getpageobjects.ObjectFileReader;
 
 @SuppressWarnings("unchecked")
 public class YamlReader {

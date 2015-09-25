@@ -1,9 +1,7 @@
 package com.qait.mindtap.keywords.NG_30104;
-import com.qait.mindtap.automation.getpageobjects.GetPage;
-import com.qait.mindtap.automation.utils.ReportMsg;
-import com.qait.mindtap.automation.utils.SeleniumWait;
-
 import org.openqa.selenium.WebDriver;
+
+import com.qait.mindtap.automation.getpageobjects.GetPage;
 
 public class NG_30181_InstructorPageActions extends GetPage {
 	
@@ -44,5 +42,13 @@ public class NG_30181_InstructorPageActions extends GetPage {
 		element("courseOperation" , option).click();
 		
 	}
+
+	public void instructor_Open_Course(String courseKey) {
+		isElementDisplayed("courseLink", courseKey);
+		mt.launchCourse(configReader.getProperty("./Config.properties" , "tier") , element("courseLink").getAttribute("href"));
+
+	}
+
+	
 }
 

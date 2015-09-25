@@ -1,9 +1,8 @@
 package com.qait.mindtap.keywords.NG_30104;
 
-import com.qait.mindtap.automation.getpageobjects.GetPage;
-import com.qait.mindtap.automation.utils.ReportMsg;
-import com.qait.mindtap.automation.utils.SeleniumWait;
 import org.openqa.selenium.WebDriver;
+
+import com.qait.mindtap.automation.getpageobjects.GetPage;
 
 
 public class NG_30181_InstructorCreatesCourseOptionPageActions extends GetPage {

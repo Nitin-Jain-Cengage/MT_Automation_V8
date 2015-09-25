@@ -8,6 +8,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,14 +18,9 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-import org.webbitserver.handler.exceptions.PrintStackTraceExceptionHandler;
 
 import com.qait.mindtap.automation.utils.LayoutValidation;
 import com.qait.mindtap.automation.utils.ReportMsg;
-
-import java.io.File;
-
 import com.qait.mindtap.automation.utils.SeleniumWait;
 
 public class GetPage extends BaseUi {
@@ -200,12 +196,23 @@ public class GetPage extends BaseUi {
         return getLocator(elementToken, "");
     }
 
+    protected String getJsLocator(String elementToken) {
+        return getJsLocator(elementToken, "");
+    }
+    
     protected By getLocator(String elementToken, String replacement) {
         String[] locator = getELementFromFile(this.pageName, elementToken);
         locator[2] = locator[2].replaceAll("\\$\\{.+\\}", replacement);
         return getBy(locator[1].trim(), locator[2].trim());
     }
 
+    protected String getJsLocator(String elementToken, String replacement) {
+        String[] locator = getELementFromFile(this.pageName, elementToken);
+        locator[2] = locator[2].replaceAll("\\$\\{.+\\}", replacement);
+        return locator[2].trim();
+    }
+
+    
     protected By getLocator(String elementToken, String replacement1,
             String replacement2) {
         String[] locator = getELementFromFile(this.pageName, elementToken);
@@ -231,6 +238,11 @@ public class GetPage extends BaseUi {
     	{e.printStackTrace();
     	
     	}
+    }
+    
+    protected String elementByJscript(String element){
+    	return getJsLocator(element);
+    	    	 
     }
     
     private By getBy(String locatorType, String locatorValue) {

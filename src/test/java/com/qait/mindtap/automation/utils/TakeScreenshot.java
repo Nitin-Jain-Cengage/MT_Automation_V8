@@ -5,6 +5,8 @@
  */
 package com.qait.mindtap.automation.utils;
 
+import static com.qait.mindtap.automation.utils.ConfigPropertyReader.getProperty;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -17,8 +19,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-
-import static com.qait.mindtap.automation.utils.ConfigPropertyReader.getProperty;
 
 /**
  *

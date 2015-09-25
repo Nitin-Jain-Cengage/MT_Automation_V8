@@ -1,13 +1,14 @@
 package com.qait.mindtap.automation.getpageobjects;
 
 import static com.qait.mindtap.automation.utils.ConfigPropertyReader.getProperty;
-import com.qait.mindtap.automation.utils.ReportMsg;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import com.qait.mindtap.automation.utils.ReportMsg;
 
 /**
  * This class reads the PageObjectRepository text files. Uses buffer reader.

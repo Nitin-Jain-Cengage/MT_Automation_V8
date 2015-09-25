@@ -384,6 +384,14 @@ public class DateUtil {
 		return arr;
 	}
 
+	public String getDesiredDateInSpecificFormat(String specificFormat, int i){
+		cal = Calendar.getInstance();
+		cal.add(Calendar.DATE, i);
+		DateFormat dateFormat = new SimpleDateFormat(specificFormat);
+		return dateFormat.format(cal.getTime());
+	
+	}
+	
 	public String getDesiredYearDateFromCurrentYearInSpecificFormat(String specificFormat, int i) {
 		cal = Calendar.getInstance();
 		cal.add(Calendar.YEAR, i);

@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course">
+      <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course">
         <methods>
-          <include name="Step_01_Instructor_Logs_in_to_the_Application"/>
-          <include name="takeScreenshotonFailure"/>
+          <include name="Step_01_Student_Logs_in_to_the_Application"/>
           <include name="start_test_session"/>
-          <include name="Step_03_Instructor_Delete_Course"/>
-          <include name="Step_02_Instructor_Manage_Course"/>
-          <include name="Step_04_Instructor_SignOut"/>
-          <include name="stop_test_session"/>
+          <include name="Step_03_Student_Launch_Course"/>
         </methods>
-      </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course -->
+      </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

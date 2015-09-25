@@ -3,7 +3,7 @@ Page Title: Instructor SSO - Create Course Confirmation
 
 #Object Definitions
 ====================================================================================
-
+instructorCourseUrl						xpath							(//p[@ class='distributionOptions']/a)[1]
 
 ====================================================================================
 @all, browsers

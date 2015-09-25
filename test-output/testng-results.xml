@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
     <line>
       <![CDATA[[INFO]: The test Browser is FIREFOX !!!]]>
@@ -11,31 +11,30 @@
       <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]>
     </line>
     <line>
-      <![CDATA[[INFO]: log into the application using credentials 'kajal.inst@qaittest.com / A111111']]>
+      <![CDATA[[INFO]: log into the application using credentials 'autouser2@qai.com / A111111']]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-InstructorPage contains: 'Instructor SSO - Instructor Resource Center'.]]>
+      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-SsoDashboard contains: 'CengageBrain - My Home'.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.]]>
+      <![CDATA[[ASSERT PASS]: element inputCourseKey is displayed.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: element courseOperation with text Manage Course is displayed.]]>
+      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-ConfirmCourseInformation contains: 'CengageBrain - Confirm Course Information'.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: Course is already deleted]]>
+      <![CDATA[[ASSERT PASS]: element btnContinue is displayed.]]>
     </line>
     <line>
-      <![CDATA[[INFO]: The Test: NG_30181_TC04_INSTRUCTOR_DELETES_COURSE COMPLETED!
-]]>
+      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-CoursePaymentPage contains: 'CengageBrain - Course Payment'.]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="72748" started-at="2015-09-22T10:14:29Z" finished-at="2015-09-22T10:15:42Z">
+  <suite name="Default suite" duration-ms="61382" started-at="2015-09-24T06:06:27Z" finished-at="2015-09-24T06:07:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="72748" started-at="2015-09-22T10:14:29Z" finished-at="2015-09-22T10:15:42Z">
-      <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course">
-        <test-method status="PASS" signature="start_test_session(java.lang.String)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="start_test_session" is-config="true" duration-ms="6436" started-at="2015-09-22T15:44:29Z" finished-at="2015-09-22T15:44:35Z">
+    <test name="Default test" duration-ms="61382" started-at="2015-09-24T06:06:27Z" finished-at="2015-09-24T06:07:28Z">
+      <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course">
+        <test-method status="PASS" signature="start_test_session(java.lang.String)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course@19f7dcf]" name="start_test_session" is-config="true" duration-ms="6672" started-at="2015-09-24T11:36:27Z" finished-at="2015-09-24T11:36:34Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -50,93 +49,40 @@
             </line>
           </reporter-output>
         </test-method> <!-- start_test_session -->
-        <test-method status="PASS" signature="Step_01_Instructor_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="Step_01_Instructor_Logs_in_to_the_Application" duration-ms="30431" started-at="2015-09-22T15:44:35Z" finished-at="2015-09-22T15:45:06Z">
+        <test-method status="PASS" signature="Step_01_Student_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course@19f7dcf]" name="Step_01_Student_Logs_in_to_the_Application" duration-ms="39286" started-at="2015-09-24T11:36:34Z" finished-at="2015-09-24T11:37:13Z">
           <reporter-output>
             <line>
               <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]>
             </line>
             <line>
-              <![CDATA[[INFO]: log into the application using credentials 'kajal.inst@qaittest.com / A111111']]>
+              <![CDATA[[INFO]: log into the application using credentials 'autouser2@qai.com / A111111']]>
             </line>
             <line>
-              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-InstructorPage contains: 'Instructor SSO - Instructor Resource Center'.]]>
+              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-SsoDashboard contains: 'CengageBrain - My Home'.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Step_01_Instructor_Logs_in_to_the_Application -->
-        <test-method status="PASS" signature="Step_02_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="Step_02_Instructor_Manage_Course" duration-ms="1970" started-at="2015-09-22T15:45:06Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course.Step_01_Instructor_Logs_in_to_the_Application" finished-at="2015-09-22T15:45:08Z">
+        </test-method> <!-- Step_01_Student_Logs_in_to_the_Application -->
+        <test-method status="PASS" signature="Step_02_Student_Registers_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course@19f7dcf]" name="Step_02_Student_Registers_Course" duration-ms="2647" started-at="2015-09-24T11:37:13Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course.Step_01_Student_Logs_in_to_the_Application" finished-at="2015-09-24T11:37:16Z">
           <reporter-output>
             <line>
-              <![CDATA[[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.]]>
+              <![CDATA[[ASSERT PASS]: element inputCourseKey is displayed.]]>
             </line>
             <line>
-              <![CDATA[[ASSERT PASS]: element courseOperation with text Manage Course is displayed.]]>
+              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-ConfirmCourseInformation contains: 'CengageBrain - Confirm Course Information'.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: element btnContinue is displayed.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Step_02_Instructor_Manage_Course -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-09-22T15:45:06Z" finished-at="2015-09-22T15:45:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_01_Instructor_Logs_in_to_the_Application status=SUCCESS method=NG_30181_TC04_Instructor_Deletes_Course.Step_01_Instructor_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079] output=[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="takeScreenshotonFailure" is-config="true" duration-ms="10" started-at="2015-09-22T15:45:08Z" finished-at="2015-09-22T15:45:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_02_Instructor_Manage_Course status=SUCCESS method=NG_30181_TC04_Instructor_Deletes_Course.Step_02_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079] output=[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_03_Instructor_Delete_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="Step_03_Instructor_Delete_Course" duration-ms="30436" started-at="2015-09-22T15:45:08Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course.Step_02_Instructor_Manage_Course" finished-at="2015-09-22T15:45:38Z">
+        </test-method> <!-- Step_02_Student_Registers_Course -->
+        <test-method status="PASS" signature="Step_03_Student_Launch_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course@19f7dcf]" name="Step_03_Student_Launch_Course" duration-ms="12763" started-at="2015-09-24T11:37:16Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course.Step_01_Student_Logs_in_to_the_Application" finished-at="2015-09-24T11:37:28Z">
           <reporter-output>
             <line>
-              <![CDATA[[ASSERT PASS]: Course is already deleted]]>
+              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-CoursePaymentPage contains: 'CengageBrain - Course Payment'.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Step_03_Instructor_Delete_Course -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="takeScreenshotonFailure" is-config="true" duration-ms="10" started-at="2015-09-22T15:45:38Z" finished-at="2015-09-22T15:45:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_03_Instructor_Delete_Course status=SUCCESS method=NG_30181_TC04_Instructor_Deletes_Course.Step_03_Instructor_Delete_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079] output=[ASSERT PASS]: Course is already deleted]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_04_Instructor_SignOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="Step_04_Instructor_SignOut" duration-ms="3445" started-at="2015-09-22T15:45:38Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course.Step_03_Instructor_Delete_Course" finished-at="2015-09-22T15:45:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Step_04_Instructor_SignOut -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-09-22T15:45:42Z" finished-at="2015-09-22T15:45:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_04_Instructor_SignOut status=SUCCESS method=NG_30181_TC04_Instructor_Deletes_Course.Step_04_Instructor_SignOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course@1209079]" name="stop_test_session" is-config="true" duration-ms="10" started-at="2015-09-22T15:45:42Z" finished-at="2015-09-22T15:45:42Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[INFO]: The Test: NG_30181_TC04_INSTRUCTOR_DELETES_COURSE COMPLETED!
-]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- stop_test_session -->
-      </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Deletes_Course -->
+        </test-method> <!-- Step_03_Student_Launch_Course -->
+      </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC06_Student_Launch_the_Course -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
