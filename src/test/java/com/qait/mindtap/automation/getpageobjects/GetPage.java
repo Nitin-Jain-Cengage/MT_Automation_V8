@@ -8,6 +8,8 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
+import org.testng.Assert;
+
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
@@ -25,10 +27,29 @@ import com.qait.mindtap.automation.utils.SeleniumWait;
 
 public class GetPage extends BaseUi {
 
+	protected final int AJAX_WAIT = 30;
     protected WebDriver webdriver;
     String pageName;
     LayoutValidation layouttest;
     SeleniumWait sel_wait;
+
+    protected void waitForSpinnerToDisappear(){
+        int i = 0;
+        wait.resetImplicitTimeout(2);
+        try{
+            List <WebElement> spinnerGifs = driver.findElements(By.xpath("//img[contains(@src, '/nb/ui/images/savingAnimation_')]"));
+            if (spinnerGifs.size()>0){
+                for (WebElement spinnerGif : spinnerGifs){
+                    while (spinnerGif.isDisplayed() && i <= AJAX_WAIT){
+                        wait.hardWait(2);
+                        i++;
+                    }
+                }
+            }
+        }
+        catch(Exception e){}
+        wait.resetImplicitTimeout(AJAX_WAIT);        
+    }
 
     public GetPage(WebDriver driver, String pageName) {
         super(driver, pageName);
@@ -60,6 +81,11 @@ public class GetPage extends BaseUi {
                 "browser")));
     }
 
+    public WebElement accessor(String element){
+   	 return	element("element");
+   	}
+    
+    
     // TODO: put this in right place, create dedicated class for frame and
     // window handlers
     protected void switchToNestedFrames(String frameNames) {
@@ -88,6 +114,19 @@ public class GetPage extends BaseUi {
         return elem;
     }
 
+    protected WebElement element(String elementToken, String replacement1,String replacement2) {
+        WebElement elem = null;
+        try {
+            elem = wait.waitForElementToBeVisible(webdriver
+                    .findElement(getLocator(elementToken, replacement1, replacement2)));
+        } catch (NoSuchElementException excp) {
+            ReportMsg.fail("Element " + elementToken + " not found on the " + this.pageName + " !!!");
+        } catch (NullPointerException npe) {
+            ReportMsg.scripterror(npe.getLocalizedMessage());
+        }
+        return elem;
+    }
+    
     protected WebElement childOfElement(WebElement el, String elementToken, String replacement) {
         WebElement elem = null;
         try {
@@ -153,6 +192,21 @@ public class GetPage extends BaseUi {
 		return flag;
 	}
 
+    protected boolean checkIfElementIsNotThere(String elementToken, String replacement1,String replacement2){
+		boolean flag = false;
+		try{
+			if(webdriver.findElement(getLocator(elementToken, replacement1,replacement2)).isDisplayed()){
+				flag = false;
+			}else{
+				flag = true;
+			}
+		}catch(NoSuchElementException ex){
+			flag =  true;
+		}
+		return flag;
+	}
+
+    
     protected void verifyElementText(String elementName, String expectedText) {
         wait.waitForElementToBeVisible(element(elementName));
         assertEquals(element(elementName).getText().trim(), expectedText,

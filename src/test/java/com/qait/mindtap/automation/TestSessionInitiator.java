@@ -6,6 +6,10 @@ import static com.qait.mindtap.automation.utils.YamlReader.getYamlValue;
 
 
 
+
+
+
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -19,17 +23,21 @@ import com.qait.mindtap.automation.utils.ReportMsg;
 import com.qait.mindtap.automation.utils.TakeScreenshot;
 import com.qait.mindtap.automation.utils.YamlReader;
 import com.qait.mindtap.keywords.NG_30104.AdminPerformActionPage;
+import com.qait.mindtap.keywords.NG_30104.HeaderActions;
+import com.qait.mindtap.keywords.NG_30104.LearningActivity;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_AdminPageActions;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_ConfirmCourseInformationActions;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_CoursePaymentActionPage;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesCourseConfirmation;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesCourseOptionPageActions;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesEditCoursePageActions;
-import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorDeletesCourse;
+import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorEditCourse;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorPageActions;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_LoginPageActions;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_StudentLaunchCourseAction;
+import com.qait.mindtap.keywords.NG_30104.Organization;
 import com.qait.mindtap.keywords.NG_30104.UserPage;
+import com.qait.mindtap.keywords.NG_30104.WeekWidgetActions;
 
 public class TestSessionInitiator {
 
@@ -55,12 +63,17 @@ public class TestSessionInitiator {
     public NG_30181_InstructorCreatesCourseConfirmation courseConfirmation;
     public NG_30181_InstructorCreatesCourseOptionPageActions courseOptions;
     public NG_30181_InstructorCreatesEditCoursePageActions courseCreateEdit;
-    public NG_30181_InstructorDeletesCourse courseDelete;
+    public NG_30181_InstructorEditCourse courseEdit;
     public NG_30181_StudentLaunchCourseAction sso;
     public NG_30181_CoursePaymentActionPage coursePayment;
     public NG_30181_ConfirmCourseInformationActions confirmCourseInfo;
     public UserPage userpage;
     public AdminPerformActionPage adminDashboard;
+    public Organization org;
+    public LearningActivity la;
+    public HeaderActions header;
+    public WeekWidgetActions weekwidget;
+    
     public TakeScreenshot takescreenshot;
     public TopicNamePojo topicNameValue;
     private final String testname;
@@ -80,12 +93,16 @@ public class TestSessionInitiator {
         courseConfirmation = new NG_30181_InstructorCreatesCourseConfirmation(driver);
         courseOptions = new NG_30181_InstructorCreatesCourseOptionPageActions(driver);
         courseCreateEdit = new NG_30181_InstructorCreatesEditCoursePageActions(driver);
-        courseDelete = new NG_30181_InstructorDeletesCourse(driver);
+        courseEdit = new NG_30181_InstructorEditCourse(driver);
         sso = new NG_30181_StudentLaunchCourseAction(driver);
         confirmCourseInfo = new NG_30181_ConfirmCourseInformationActions(driver);
         coursePayment = new NG_30181_CoursePaymentActionPage(driver);
         adminDashboard = new AdminPerformActionPage(driver);
         userpage = new UserPage(driver);
+        org = new Organization(driver);
+        la = new LearningActivity(driver);
+        header = new HeaderActions(driver);
+        weekwidget = new WeekWidgetActions(driver);
     }
 
     /**

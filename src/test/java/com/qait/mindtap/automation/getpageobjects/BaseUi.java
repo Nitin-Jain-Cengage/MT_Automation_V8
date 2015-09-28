@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
@@ -69,11 +70,6 @@ public class BaseUi {
 		return driver.getCurrentUrl();
 	}
 	
-	protected void getURL(String Url) {
-		 driver.get(Url);
-	}
-
-
 	protected void verifyPageTitleExact() {
 		String pageTitle = getPageTitleFromFile(pageName);
 		verifyPageTitleExact(pageTitle);
@@ -156,6 +152,8 @@ public class BaseUi {
 			int index) {
 		return elementlist.get(index);
 	}
+	
+	
 
 	protected WebElement getElementByExactText(List<WebElement> elementlist,
 			String elementtext) {
@@ -313,10 +311,10 @@ public class BaseUi {
 		}
 	}
 
-	public void launchSpecificUrl(String url) {
-		driver.get(url);
+	protected void getURL(String Url) {
+		 driver.get(Url);
 	}
-
+		
 	public String pageTitle() {
 		return driver.getTitle();
 	}
@@ -327,4 +325,5 @@ public class BaseUi {
 			return element.getText().split("/");
 	}
 	
+		
 }

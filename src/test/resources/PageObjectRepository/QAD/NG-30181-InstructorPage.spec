@@ -10,7 +10,7 @@ icon_search							css								.searchbutton
 checkbox_course						css								.radiocell>input
 btn_add								xpath 							//*[contains(text(),'Add Selected to Instructor Resource Center')]
 courseOperation						xpath    						//a[contains(text(),'${Course Option}')]
-
+courseLink							xpath							////a[contains(@href , ${'courseKey'})]
 ====================================================================================
 @all, browsers
 --------------------------------

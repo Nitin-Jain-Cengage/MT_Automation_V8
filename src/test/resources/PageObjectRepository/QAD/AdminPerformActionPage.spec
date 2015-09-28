@@ -77,6 +77,11 @@ neXtBookSearchInputBoxActivated_txtField			  xpath  						//input[@id'searchFiel
     
    workingCopyButton				 xpath 						//*[contains(@alt,'Masters With Working Copies')])
 
-     
+  masterBookList   css		.listContainer
+  modeValue			xpath		//div[@class='filterToggle admin_filter']/a/img[contains(@alt,'${mode}')]
+  admin_models_master xpath		//li[contains(@class, 'item  master admin_models_master')]
+  options	xpath		//img[@alt='${option}']
+  thumbtitle		xpath			//div[@class='lpn_thumbTitle']
+  
 ====================================================================================
     

@@ -31,6 +31,14 @@ public class NG_30181_InstructorCreatesEditCoursePageActions extends GetPage {
         data.clearProperty();		
 	}
 
+	public void addInstrutorTA(String TA_mailID) {
+       element("btnAddInstructorTA").click();
+       element("inputEmailId").sendKeys(TA_mailID);
+       element("btnAdd").click();
+       element("btnSaveChanges").click();
+		
+	}
+
 	
 	
 }

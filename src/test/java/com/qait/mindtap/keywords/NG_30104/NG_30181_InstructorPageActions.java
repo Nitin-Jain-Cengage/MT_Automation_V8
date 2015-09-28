@@ -43,9 +43,9 @@ public class NG_30181_InstructorPageActions extends GetPage {
 		
 	}
 
-	public void instructor_Open_Course(String courseKey) {
-		isElementDisplayed("courseLink", courseKey);
-		mt.launchCourse(configReader.getProperty("./Config.properties" , "tier") , element("courseLink").getAttribute("href"));
+	public void instructor_Open_Course() {
+		isElementDisplayed("courseLink", yml.getData("courseKey"));
+		mt.launchCourse(configReader.getProperty("./Config.properties" , "tier") , element("courseLink",yml.getData("courseKey")).getAttribute("href"));
 
 	}
 

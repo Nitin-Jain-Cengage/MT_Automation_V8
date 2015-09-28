@@ -7,6 +7,10 @@ inputCourseName							css  								.courseName
 inputBeginDate							css    								#beginDate
 inputEndDate							css									#endDate
 btnCreateCourse							xpath								//a[contains(text(),'Create Course')]
+btnAddInstructorTA						css									.linkAddInstructor
+inputEmailId							css									#instructorEmail
+btnAdd									css									#AddButton
+btnSaveChanges							xpath								//a[contains(text(),'Save Changes')]
 
 
 
