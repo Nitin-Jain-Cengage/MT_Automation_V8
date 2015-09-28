@@ -79,8 +79,8 @@ public class AdminPerformActionPage extends GetPage{
 
 	public void openOrg() {
 		getURL(OrgURL);
-		waitForElementDisplayed(orgs_link)
-		assert orgs_link.getAttribute("class").contains("active")
+		isElementDisplayed("orgs_link");
+		element("orgs_link").getAttribute("class").contains("active");
 		
 				
 	}

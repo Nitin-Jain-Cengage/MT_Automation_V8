@@ -2,6 +2,7 @@ package com.cengage.ng.test.integrationtests.smoketestsuite;
 
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
 
+import org.testng.Reporter;
 import org.testng.annotations.*;
 
 import com.qait.mindtap.automation.TestSessionInitiator;
@@ -52,21 +53,21 @@ public class TestAdminPerformsAction {
     void adminCreatesUser(){
         test.adminDashboard.openOrg();
         test.org.navigateToOrganisationAndCreateUserName(dsl.testdata.users.editUser.organisationName, dsl.testdata.users.editUser.ssoUser, dsl.testdata.users.editUser.role));
-        Reporter.log "Completed Find org and create user with role:- " + dsl.testdata.users.editUser.role,true
+        Reporter.log("Completed Find org and create user with role:- " + dsl.testdata.users.editUser.role,true);
     }  
     
     @Test(dependsOnMethods = "adminCreatesUser")
     void adminChangesRoleForCreatedUser(){
         test.adminDashboard.openOrgDashBoard();
         orgDsl.searchUserOnManageOrganisationsPageAndEdit(dsl.testdata.users.editUser.organisationName,dsl.testdata.users.editUser.ssoUserName,dsl.testdata.users.editUser.changeRole);
-        Reporter.log "Completed Admin Changes Role For Created User",true
+        Reporter.log("Completed Admin Changes Role For Created User",true);
     }  
     
     @Test(dependsOnMethods = "adminChangesRoleForCreatedUser")
     void adminDeletesCreatedUser(){
         test.adminDashboard.openOrgDashBoard();
         Assert.assertTrue(orgDsl.searchUserOnManageOrganisationsPageAndDelete(dsl.testdata.users.editUser.organisationName,dsl.testdata.users.editUser.ssoUserName));
-        Reporter.log "Completed Admin Deletes Created User",true
+        Reporter.log(Completed Admin Deletes Created User",true);
     }  
      
     @Test(dependsOnMethods = "adminDeletesCreatedUser")
@@ -75,7 +76,7 @@ public class TestAdminPerformsAction {
         Assert.assertTrue(test.adminDashboard.launchMasterNextBook(dsl.testdata.neXtBooks.neXtBook1.name,dsl.testdata.neXtBooks.neXtBook1.mode2));
         Assert.assertTrue(test.adminDashboard.verifyLearningUnitsPresentInMasterNeXtBook(classTitle), "Learning Units Not Displayed");
         Assert.assertTrue(lpnDsl.createLearningUnit(lu.newUnit,lu.newUnit));
-        Reporter.log ("Completed Admin Creates Learning Unit",true)
+        Reporter.log("Completed Admin Creates Learning Unit",true);
     }   
         
     @Test(dependsOnMethods = "adminCreatesLearningUnit")
@@ -85,7 +86,7 @@ public class TestAdminPerformsAction {
         Assert.assertTrue(test.adminDashboard.verifyLearningUnitsPresentInMasterNeXtBook(classTitle), "Learning Units Not Displayed");
         searchDsl.verifySearchApp();
         searchDsl.performSearchOperationUsingSubmit(lu.name);
-        Reporter.log "Completed verify Search Operation",true
+        Reporter.log("Completed verify Search Operation",true);
     }
 
     //@Test(dependsOnMethods="verifySearchOperation")
@@ -94,7 +95,7 @@ public class TestAdminPerformsAction {
         orgDsl.navigateToSnapshot(lu2.learningActivities.learningActivity2.organisationName,dsl.testdata.neXtBooks.neXtBook2.CourseName,
             lu2.learningActivities.learningActivity2.snapshotName,dsl.testdata.neXtBooks.neXtBook2.CourseKey);
         Assert.assertTrue(lamsDsl.validateAdminCannotViewActivityFromTheAppDock());
-        Reporter.log "Completed Navigate to Snapshot and Open Lams From Dock App",true
+        Reporter.log("Completed Navigate to Snapshot and Open Lams From Dock App",true);
     }
     
     @Test(dependsOnMethods = "verifySearchOperation")

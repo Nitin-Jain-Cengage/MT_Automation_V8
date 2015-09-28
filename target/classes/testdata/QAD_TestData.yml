@@ -1,0 +1,28 @@
+ProjectName: HMMv12
+base_url: http://qad.ng.cengage.com/static/nb/login.html
+sso_url: http://s-login.cengage.com/
+
+users:
+  admin:
+    username: automationadmin@qait.com
+    password: A111111
+  instructor:
+    username: kajal.inst@qaittest.com
+    password: A111111
+  student:
+    ssousername: autouser2@qai.com
+    studentname: auto user2
+    ssopassword: A111111
+
+course1:
+  ISBN: 9781305876651
+  courseName: "Stewart_Precalculus: Mathematics for Calculus_7e_MTQ"   
+
+coretext:
+  ISBN: 9781133314677
+  NAME: Mayank Test Book-Automated
+
+email:
+    send: no
+    recepients:
+     recepient1: ayushgaur@qainfotech.net
