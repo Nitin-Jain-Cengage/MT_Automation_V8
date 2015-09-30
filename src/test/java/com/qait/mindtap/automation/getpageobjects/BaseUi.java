@@ -325,5 +325,9 @@ public class BaseUi {
 			return element.getText().split("/");
 	}
 	
+	 protected void refreshPage(){
+	        driver.navigate().refresh();
+	    } 
+	
 		
 }

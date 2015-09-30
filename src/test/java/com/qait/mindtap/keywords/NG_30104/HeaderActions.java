@@ -12,20 +12,26 @@ public class HeaderActions extends GetPage{
 		
 	}
 
-	public void MindTapIconOnTopleft(String user) {
-	 isElementDisplayed("mindtapLogo");
-	 Assert.assertTrue(element(""),Reporter.failForAssert("Mindtap icon is not displayed "));
-	}
+	public void MindTapIconOnTopleft() {
+	 refreshPage();
+	 wait.waitForPageToLoadCompletely();
+	 Assert.assertTrue(isElementDisplayed("headerBody") , "Page not loaded");
+	 Assert.assertTrue( isElementDisplayed("mindtapLogo"),Reporter.failForAssert("Mindtap icon is not displayed "));
+ }
 
 	
-	public void helloUserFirstNameOnRight(String data) {
+	public void helloUserFirstNameOnRight(String user) {
 		String[] leftCorner = element("helloUser").getText().split(" ");
-		if(leftCorner[0].equalsIgnoreCase("Hello")){
+		if(leftCorner[0].equalsIgnoreCase("Hello,")){
 			Assert.assertTrue(leftCorner[1].equalsIgnoreCase(user),Reporter.failForAssert("User is not valid"));
 			Reporter.pass("Hello User is shown ");
-				
 		}
 		
+	}
+
+	public void MindTapIconClick() {
+		isElementEnabled("mindtapLogo",true);
+		element("mindtapLogo").click();		
 	}
 
 	

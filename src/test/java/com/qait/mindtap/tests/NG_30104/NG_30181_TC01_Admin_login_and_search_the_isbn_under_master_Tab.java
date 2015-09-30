@@ -40,7 +40,7 @@ public class NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab {
     @Test(dependsOnMethods = {"Step_01_Admin_Logs_in_to_the_Application"})
     public void Step_02_Admin_Search_Course_using_ISBN() {
        test.adminpage.verify_User_LoggedIn_As_Admin("Admin Dashboard");
-       test.adminpage.search_Course_Using_ISBN(getData("course1.courseKey"));
+       test.adminpage.search_Course_Using_ISBN(getData("course1.ISBN"));
       }
     
     @Test(dependsOnMethods = {"Step_02_Admin_Search_Course_using_ISBN"})

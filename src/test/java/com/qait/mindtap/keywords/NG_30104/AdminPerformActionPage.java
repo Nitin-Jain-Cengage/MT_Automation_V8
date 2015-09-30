@@ -4,18 +4,23 @@ import java.util.List;
 
 
 
+
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import com.qait.mindtap.automation.getpageobjects.GetPage;
+import com.qait.mindtap.automation.utils.TakeScreenshot;
 
 public class AdminPerformActionPage extends GetPage{
 
     String OrgURL = configReader.getProperty("environment") + "/static/nb/ui/admin/orgs/orgs.html" ;
     String MasterURL = configReader.getProperty("environment") + "/static/nb/ui/admin/masters/masters.html";
-
+    int AJAX_WAIT = 30;
+    TakeScreenshot takescreenshot;
 	
 	
 	public AdminPerformActionPage(WebDriver driver) {
@@ -178,25 +183,15 @@ public class AdminPerformActionPage extends GetPage{
 		
 	}
 
-	public void verifyLearningUnitsPresentInMasterNeXtBook(String data) {
+	public void verifyLearningUnitsPresentInMasterNeXtBook(String classTitle) {
 				 boolean flag = false;        
-			        flag = verifyLearningUnitsPresent();       
-			        if(flag == true){
-			            return true;
-			        }
-			        else{
-			            refreshPage()
+			     Assert.assertTrue( verifyLearningUnitsPresent(),Reporter.failForAssert("Learning Units are not present in master nextbook"));       
+			     refreshPage();
 			            //To avoid stale element exception
-			            waitForElementDisplayed(driver.findElement(By.xpath("//a[@class = 'nb_logoBox']")))
-			            flag = verifyLearningUnitsPresent()
-			            if(flag == true){
-			                return true
-			            }else{
-			                takeScreenShotMethod(classTitle)
-			                return false
-			            }
-			        }
-	}
+			     isElementDisplayed("logoBox");
+			     Assert.assertTrue(verifyLearningUnitsPresent(),Reporter.failForAssert("Learning Units are not present in master nextbook"));
+			     takescreenshot.takeScreenshot();
+		     	}
 
 	private boolean verifyLearningUnitsPresent() {
 		 try{
@@ -205,10 +200,11 @@ public class AdminPerformActionPage extends GetPage{
 	           element("thumbtitle");
 	           Assert.assertTrue(isElementDisplayed("thumbtitle"),"Stale Element on Learning Units In MasterNextBook");
 	            wait.resetImplicitTimeout(AJAX_WAIT);
+	            return true;
 	        } 
-	        catch(all){
-	            resetImplicitTimeout(AJAX_WAIT)
-	            return false
+	        catch(NoSuchElementException e){
+	            wait.resetImplicitTimeout(AJAX_WAIT);
+	            return false;
 	        }	
 	}
 

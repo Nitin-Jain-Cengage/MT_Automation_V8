@@ -32,8 +32,11 @@ public class NG_30181_InstructorCreatesEditCoursePageActions extends GetPage {
 	}
 
 	public void addInstrutorTA(String TA_mailID) {
-       element("btnAddInstructorTA").click();
+       isElementDisplayed("btnAddInstructorTA");
+	   element("btnAddInstructorTA").click();
+	   isElementDisplayed("inputEmailId");
        element("inputEmailId").sendKeys(TA_mailID);
+       isElementDisplayed("btnAdd");
        element("btnAdd").click();
        element("btnSaveChanges").click();
 		

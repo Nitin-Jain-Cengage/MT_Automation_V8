@@ -16,16 +16,37 @@ public class NG_30181_InstructorEditCourse extends GetPage {
 		 verifyPageTitleContains();
 	}
 
-	public void courseOperations(String courseName, String operation) {
+	public void courseDelete(String courseName) {
 		
-		if(checkIfElementIsNotThere("operationCourse", courseName))	{
+		if(checkIfElementIsNotThere("courseLink", courseName))	{
 			ReportMsg.pass("Course is already deleted"); 
 		}
 		
 		else{
-			element("deleteCourse", courseName,operation).click();
+			element("deleteCourse", courseName).click();
 			handleAlert();
-			course_oprations(courseName,operation);
-			}
-		 }
+			courseDelete(courseName);
+			
+		}
+ }
+	
+public void courseEdit(String courseName) {
+		
+		if(checkIfElementIsNotThere("courseLink", courseName))	{
+			ReportMsg.pass("Course is already deleted"); 
+		}
+		
+		else{
+			element("editCourse", courseName).click();
+					
+		}
+ }
+
+	
+	public void instructor_Open_Course() {
+		isElementDisplayed("courseLink", data.readProperty("courseName"));
+		mt.launchCourse(configReader.getProperty("./Config.properties" , "tier") , element("courseLink",data.readProperty("courseName")).getAttribute("href"));
+
+	}
+
 }

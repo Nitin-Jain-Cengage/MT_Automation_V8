@@ -3,6 +3,8 @@ package com.qait.mindtap.tests.NG_30104;
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
 
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -39,47 +41,64 @@ public class NG_30181_TC05_Student_Launch_the_Course {
        test.confirmCourseInfo.student_Click_Continue_Button();
       }
      
-    @Test(dependsOnMethods = {"Step_01_Student_Logs_in_to_the_Application"})
+    @Test(dependsOnMethods = {"Step_02_Student_Registers_Course"})
     public void Step_03_Student_Launch_Course() {
         test.sso.student_Open_Course();
         test.coursePayment.verify_User_Is_On_CoursePayment_Page();
         test.coursePayment.take_Me_To_Course();
 
       }
-    
-    @Test(dependsOnMethods = {"Step_02_Instructor_Launch_Course_From_SSO"})
-    public void Step_03_verify_Spalsh_Page_Dispalys_Automatically() {
-       
-       
+           
+    @Test(dependsOnMethods = {"Step_03_Student_Launch_Course"})
+    public void Step_04_verify_Spalsh_Page_Dispalys_Automatically() {
+      test.la.verifyCourseName(getData("coretext.NAME"));	       
+      test.la.clickEnterOnSplashPage();
+ 
     }
     
-    @Test(dependsOnMethods = {"Step_03_verify_Spalsh_Page_Dispalys_Automatically"})
-    public void Step_04_verify_Clicking_Enter_TakesTO_MTQ_Rolling_Week_View() {
-       
+                 
+    @Test(dependsOnMethods = {"Step_04_verify_Spalsh_Page_Dispalys_Automatically"})
+    public void Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date () {
+    	test.weekwidget.verifyCurrentWeekIcon();
+    	test.weekwidget.verifyWeeks();
+    	test.weekwidget.verifyMonthDate();
+
+    }
+    
+    @Test(dependsOnMethods = {"Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date"})
+    public void Step_06_Verify_Expand_Collapse_Functionality() {
+    	test.weekwidget.functionalityExpandCollapse();
     }
 
-    @Test(dependsOnMethods = {"Step_04_verify_Clicking_Enter_TakesTO_MTQ_Rolling_Week_View"})
-    public void Step_05_Verify_Rolling_Week_UI () {
-    	
+    @Test(dependsOnMethods = {"Step_06_Verify_Expand_Collapse_Functionality"})
+    public void Step_07_verify_Splash_Page() {
+        test.header.MindTapIconClick();
+    	test.la.verifyBookCover(getData("coretext.NAME"));
+        test.header.MindTapIconClick();
+
     }
-    
-    @Test(dependsOnMethods = {"Step_05_Verify_Rolling_Week_UI"})
-    public void Step_06_Verify_Weeks_Displays_Along_Month_and_Date () {
+
+    @Test(dependsOnMethods = {"Step_07_verify_Splash_Page"})
+    public void Step_08_Verify_Rolling_Week_UI () {
+    	test.header.MindTapIconOnTopleft();
+    	test.header.helloUserFirstNameOnRight(getData("users.student.studentname"));
+    	test.weekwidget.couresNameInBlueHeader();
+    	test.weekwidget.verifyRWV_TV_andJUMP_TO_WEEK_Buttons();
     	
     }
 
     
-    //@Test(dependsOnMethods = {"Step_03_Confirm_Course_Details"})
+    @Test(dependsOnMethods = {"Step_08_Verify_Rolling_Week_UI"})
     void Step_07_Instructor_SignOut() {
         test.loginpage.signout();
     }
 
-    //@AfterClass(alwaysRun = true)
+    @AfterClass(alwaysRun = true)
     public void stop_test_session() {
         test.closeTestSession();
     }
 
-    //@AfterMethod
+    @AfterMethod
     public void takeScreenshotonFailure(ITestResult result) {
         test.takescreenshot.takeScreenShotOnException(result);
     }

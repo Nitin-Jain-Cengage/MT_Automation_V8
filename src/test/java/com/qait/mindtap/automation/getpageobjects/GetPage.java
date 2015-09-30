@@ -178,6 +178,21 @@ public class GetPage extends BaseUi {
         return result;
     }
     
+    protected boolean checkIfElementIsNotThere(String elementToken){
+		boolean flag = false;
+		try{wait.hardWait(2);
+			if(webdriver.findElement(getLocator(elementToken)).isDisplayed()){
+				flag = false;
+			}else{
+				flag = true;
+			}
+		}catch(NoSuchElementException ex){
+			flag =  true;
+		}
+		return flag;
+	}
+
+    
     protected boolean checkIfElementIsNotThere(String elementToken, String replacement){
 		boolean flag = false;
 		try{
@@ -270,8 +285,8 @@ public class GetPage extends BaseUi {
     protected By getLocator(String elementToken, String replacement1,
             String replacement2) {
         String[] locator = getELementFromFile(this.pageName, elementToken);
-        locator[2] = StringUtils.replace(locator[2], "$", replacement1);
-        locator[2] = StringUtils.replace(locator[2], "%", replacement2);
+        locator[2] = locator[2].replaceAll("\\$\\{.+\\}", replacement1);
+        locator[2] = locator[2].replaceAll("\\%\\{.+\\}", replacement2);
         return getBy(locator[1].trim(), locator[2].trim());
     }
     

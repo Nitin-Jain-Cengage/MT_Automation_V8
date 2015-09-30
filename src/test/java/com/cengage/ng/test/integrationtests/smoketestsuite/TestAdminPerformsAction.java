@@ -68,7 +68,7 @@ public class TestAdminPerformsAction {
         test.userpage.searchUserandClickDelete(getData("users.editUser.organisationName"),getData("users.editUser.ssoUserName"));
     }  
                                                                                
-    @Test(dependsOnMethods = "adminDeletesCreatedUser")
+   /* @Test(dependsOnMethods = "adminDeletesCreatedUser")
     void  adminCreatesLearningUnit(){
         test.adminDashboard.openMaster();
         test.adminDashboard.searchBookOnMastersPage(getData("neXtBooks.neXtBook1.name"));
@@ -104,5 +104,5 @@ public class TestAdminPerformsAction {
         dsl.verifyLogOut();
         Reporter.log ("Completed admin Logout",true)
     }
-   
+   */
 }

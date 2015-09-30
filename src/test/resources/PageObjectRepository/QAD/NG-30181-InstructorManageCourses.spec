@@ -4,6 +4,7 @@ Page Title: Manage Courses
 #Object Definitions
 ================================================================================================================================
 
-operationCourse					xpath					//*[contains(text(),'${course name}')]/../..//a[@title='%{Operation Course']
-
+deleteCourse					xpath					//*[contains(text(),'${course name}')]/../..//a[@title='Delete Course']
+editCourse						xpath					//*[contains(text(),'${course name}')]/../..//a[@title='Edit Course']
+courseLink						xpath					//a[contains(text(),'${courseName}')]
 =================================================================================================================================

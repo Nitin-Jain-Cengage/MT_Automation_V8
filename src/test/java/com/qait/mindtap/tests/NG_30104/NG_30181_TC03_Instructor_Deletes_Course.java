@@ -42,7 +42,7 @@ public class NG_30181_TC03_Instructor_Deletes_Course {
      
     @Test(dependsOnMethods = {"Step_02_Instructor_Manage_Course"})
     public void Step_03_Instructor_Delete_Course() {
-       test.courseEdit.courseOperations(getData("coretext.NAME"),"Delete Course");
+       test.courseEdit.courseDelete(getData("coretext.NAME"));
     }
            
     @Test(dependsOnMethods = {"Step_03_Instructor_Delete_Course"})

@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="HMMv12 Parallel Test Demo" parallel="tests"
+<suite verbose="0" name="HMMv12 Parallel Test Demo" parallel="false"
        thread-count="3">
 
-    <test name="HMMv12 Admin Login and Layout test on firefox" preserve-order="true"
+    <test name="Admin Login and search the isbn under master tab" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="firefox" />
         <classes>
-            <class name="com.qait.hbp.demo.tests.Admin_Login_Layout_Test"></class>
+            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab"></class>
         </classes>
     </test>
-    <test name="HMMv12 Admin Login and Layout test on chrome" preserve-order="true"
-              enabled="true">
-        <parameter name="browser" value="chrome" />
+    <test name="Instructor Creates Courses" preserve-order="true"
+          enabled="true">
+        <parameter name="browser" value="firefox" />
         <classes>
-            <class name="com.qait.hbp.demo.tests.Admin_Login_Layout_Test"></class>
+            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course"></class>
         </classes>
     </test>
-</suite>
+    <test name="Instructor Launch the course" preserve-order="true"
+          enabled="true">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course.java"></class>
+        </classes>
+    </test>
+    <test name="Student launches the course" preserve-order="true"
+          enabled="true">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course.java"></class>
+        </classes>
+    </test>
+    <test name="TA Launches the course" preserve-order="true"
+          enabled="true">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.java"></class>
+        </classes>
+    </test>
+ </suite>

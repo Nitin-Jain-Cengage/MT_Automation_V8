@@ -43,8 +43,7 @@ public class mindtapUtilityMethods {
 	 
 	 public void launchCourse(String environment , String url) {
 	         
-	        System.out.println(url);
-	        System.out.println("Navigated to URL:-"+url);
+
 	        if (environment.toLowerCase().endsWith("qad")) {
 	            url = url.replaceAll("qaf.", "qad-");
 	        }
@@ -61,7 +60,7 @@ public class mindtapUtilityMethods {
 	        if (environment.toLowerCase().endsWith("mtprod")) {
 	            url = url.replaceAll("cloud-qap-ng", "mtprod");
 	        }
-	        System.out.println(url);
+	        System.out.println("[Navigated to url]: "+url);
 	        driver.navigate().to(url);
 	        
 	        

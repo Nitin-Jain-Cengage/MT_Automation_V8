@@ -12,11 +12,8 @@ public class LearningActivity extends GetPage{
 	}
 
 	public void verifyBookCover(String title) {
-		    element("book_link").click();
-	        wait.hardWait(2);
-	        isElementDisplayed("splashContainer");
-	        String text = element("splashContainer").getText();
-	        Assert.assertTrue(text.contains(title),	Reporter.failForAssert("Failed to Verify Book Cover Test"));
+		    isElementDisplayed("courseName");
+	        Assert.assertTrue(element("courseName").getText().equalsIgnoreCase(title),	Reporter.failForAssert("Failed to Verify Book Cover Test"));
 	        Reporter.pass ("Completed Verify Book Cover Test");
 
 	}
@@ -87,5 +84,14 @@ public class LearningActivity extends GetPage{
 		element("close_btn").click();
         wait.hardWait(2);
 	}
+
+	public void verifyCourseName(String courseName) {
+		isElementDisplayed("courseName");
+		if(!element("courseName").getText().equalsIgnoreCase(courseName)){
+			Reporter.fail("Splash Page is not displayed");
+		}
+	    Reporter.pass("Splash Page is displayed");
+	}
+	
 
 }

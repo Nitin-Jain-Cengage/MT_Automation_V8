@@ -82,6 +82,6 @@ neXtBookSearchInputBoxActivated_txtField			  xpath  						//input[@id'searchFiel
   admin_models_master xpath		//li[contains(@class, 'item  master admin_models_master')]
   options	xpath		//img[@alt='${option}']
   thumbtitle		xpath			//div[@class='lpn_thumbTitle']
-  
+  logoBox			xpath			//a[@class = 'nb_logoBox']
 ====================================================================================
     
