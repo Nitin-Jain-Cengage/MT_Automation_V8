@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 126.607 sec - in com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course

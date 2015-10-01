@@ -1,4 +1,60 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 79.366 sec - in TestSuite
+Tests run: 38, Failures: 4, Errors: 0, Skipped: 21, Time elapsed: 645.532 sec <<< FAILURE! - in TestSuite
+Step_06_Confirm_Course_Details(com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course)  Time elapsed: 61.294 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.qait.mindtap.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.mindtap.automation.getpageobjects.BaseUi.parseUrl(BaseUi.java:324)
+	at com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesCourseConfirmation.get_Created_Course_Key(NG_30181_InstructorCreatesCourseConfirmation.java:23)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course.Step_06_Confirm_Course_Details(NG_30181_TC02_Instructor_Creates_Course.java:63)
+
+Step_03_Instructor_Enrols_TA_IN_Course(com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course)  Time elapsed: 31.097 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.qait.mindtap.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:245)
+	at com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesEditCoursePageActions.addInstrutorTA(NG_30181_InstructorCreatesEditCoursePageActions.java:35)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course.Step_03_Instructor_Enrols_TA_IN_Course(NG_30181_TC04_Instructor_Launch_the_Course.java:47)
+
+Step_02_Student_Registers_Course(com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course)  Time elapsed: 64.592 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (34e112c8-2bca-4ccc-8618-21500dd01eef)] -> css selector: .small_green_button]
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'LNDA0021', ip: '10.161.237.22', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=38.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=34e112c8-2bca-4ccc-8618-21500dd01eef, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 34e112c8-2bca-4ccc-8618-21500dd01eef
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qait.mindtap.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.element(GetPage.java:107)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.element(GetPage.java:101)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:245)
+	at com.qait.mindtap.keywords.NG_30104.NG_30181_ConfirmCourseInformationActions.student_Click_Continue_Button(NG_30181_ConfirmCourseInformationActions.java:21)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course.Step_02_Student_Registers_Course(NG_30181_TC05_Student_Launch_the_Course.java:41)
+
+Step_02_Student_Registers_Course(com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course)  Time elapsed: 64.479 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (7e07b3ce-6728-4b37-a754-2764091ac2d9)] -> css selector: .small_green_button]
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'LNDA0021', ip: '10.161.237.22', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=38.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=7e07b3ce-6728-4b37-a754-2764091ac2d9, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7e07b3ce-6728-4b37-a754-2764091ac2d9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qait.mindtap.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.element(GetPage.java:107)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.element(GetPage.java:101)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:245)
+	at com.qait.mindtap.keywords.NG_30104.NG_30181_ConfirmCourseInformationActions.student_Click_Continue_Button(NG_30181_ConfirmCourseInformationActions.java:21)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_02_Student_Registers_Course(NG_30181_TC06_TA_Launch_the_Course.java:41)
+

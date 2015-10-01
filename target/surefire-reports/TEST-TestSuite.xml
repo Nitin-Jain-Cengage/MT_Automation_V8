@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="69.49" tests="4" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="436.958" tests="38" errors="0" skipped="21" failures="4">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\bin"/>
@@ -47,7 +47,7 @@
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_51"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_51\jre\classes"/>
@@ -62,8 +62,151 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="Step_01_Admin_Logs_in_to_the_Application" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab" time="34.943"/>
-  <testcase name="Step_02_Admin_Search_Course_using_ISBN" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab" time="0.17"/>
-  <testcase name="Step_03_Admin_Verify_Course_Andesite_mode_checked" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab" time="33.067"/>
-  <testcase name="Step_04_Admin_Logs_Out" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab" time="1.31"/>
+  <testcase name="Step_01_Admin_Logs_in_to_the_Application" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab" time="41.506"/>
+  <testcase name="Step_02_Admin_Search_Course_using_ISBN" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab" time="5.002"/>
+  <testcase name="Step_03_Admin_Verify_Course_Andesite_mode_checked" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab" time="58.545"/>
+  <testcase name="Step_04_Admin_Logs_Out" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab" time="2.907"/>
+  <testcase name="Step_01_Instructor_Logs_in_to_the_Application" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="14.675"/>
+  <testcase name="Step_02_Instructor_Search_Course_using_ISBN" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="7.284"/>
+  <testcase name="Step_03_Instructor_check_Course_Checkbox" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="10.808"/>
+  <testcase name="Step_04_Instructor_Creates_Course" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="7.503"/>
+  <testcase name="Step_05_Instructor_Enters_Course_Details" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="12.555"/>
+  <testcase name="Step_06_Confirm_Course_Details" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="61.294">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.qait.mindtap.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.mindtap.automation.getpageobjects.BaseUi.parseUrl(BaseUi.java:324)
+	at com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesCourseConfirmation.get_Created_Course_Key(NG_30181_InstructorCreatesCourseConfirmation.java:23)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course.Step_06_Confirm_Course_Details(NG_30181_TC02_Instructor_Creates_Course.java:63)
+</failure>
+    <system-out><![CDATA[[ASSERT FAIL]: As actual Page Title for 'NG-30181-InstructorCreatesCourseConfirmation' does not contain expected Page Title : 'Instructor SSO - Create Course Confirmation'.
+[ASSERT FAIL]: Element instructorCourseUrl not found on the NG-30181-InstructorCreatesCourseConfirmation !!!
+]]></system-out>
+  </testcase>
+  <testcase name="Step_07_Instructor_SignOut" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_01_Instructor_Logs_in_to_the_Application" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course" time="14.776"/>
+  <testcase name="Step_02_Instructor_Manages_Course_From_SSO" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course" time="6.285"/>
+  <testcase name="Step_03_Instructor_Enrols_TA_IN_Course" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course" time="31.097">
+    <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.qait.mindtap.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:245)
+	at com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorCreatesEditCoursePageActions.addInstrutorTA(NG_30181_InstructorCreatesEditCoursePageActions.java:35)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course.Step_03_Instructor_Enrols_TA_IN_Course(NG_30181_TC04_Instructor_Launch_the_Course.java:47)
+</failure>
+    <system-out><![CDATA[[ASSERT FAIL]: Element btnAddInstructorTA not found on the NG-30181-InstructorCreatesEditCourse !!!
+]]></system-out>
+  </testcase>
+  <testcase name="Step_04_verify_Spalsh_Page_Dispalys_Automatically" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_06_Verify_Expand_Collapse_Functionality" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_07_verify_Splash_Page" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_08_Verify_Rolling_Week_UI" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_07_Instructor_SignOut" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_01_Student_Logs_in_to_the_Application" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course" time="21.271"/>
+  <testcase name="Step_02_Student_Registers_Course" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course" time="64.592">
+    <failure message="Timed out after 30 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (34e112c8-2bca-4ccc-8618-21500dd01eef)] -&gt; css selector: .small_green_button]&#10;Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;&#10;System info: host: &apos;LNDA0021&apos;, ip: &apos;10.161.237.22&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=38.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=34e112c8-2bca-4ccc-8618-21500dd01eef, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 34e112c8-2bca-4ccc-8618-21500dd01eef" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (34e112c8-2bca-4ccc-8618-21500dd01eef)] -> css selector: .small_green_button]
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'LNDA0021', ip: '10.161.237.22', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=38.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=34e112c8-2bca-4ccc-8618-21500dd01eef, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 34e112c8-2bca-4ccc-8618-21500dd01eef
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qait.mindtap.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.element(GetPage.java:107)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.element(GetPage.java:101)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:245)
+	at com.qait.mindtap.keywords.NG_30104.NG_30181_ConfirmCourseInformationActions.student_Click_Continue_Button(NG_30181_ConfirmCourseInformationActions.java:21)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course.Step_02_Student_Registers_Course(NG_30181_TC05_Student_Launch_the_Course.java:41)
+</failure>
+    <system-out><![CDATA[[ASSERT PASS]: element inputCourseKey is displayed.
+[ASSERT FAIL]: As actual Page Title for 'NG-30181-ConfirmCourseInformation' does not contain expected Page Title : 'CengageBrain - Confirm Course Information'.
+]]></system-out>
+  </testcase>
+  <testcase name="Step_03_Student_Launch_Course" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_04_verify_Spalsh_Page_Dispalys_Automatically" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_06_Verify_Expand_Collapse_Functionality" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_07_verify_Splash_Page" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_08_Verify_Rolling_Week_UI" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_07_Instructor_SignOut" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_01_Student_Logs_in_to_the_Application" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course" time="12.379"/>
+  <testcase name="Step_02_Student_Registers_Course" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course" time="64.479">
+    <failure message="Timed out after 30 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (7e07b3ce-6728-4b37-a754-2764091ac2d9)] -&gt; css selector: .small_green_button]&#10;Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;&#10;System info: host: &apos;LNDA0021&apos;, ip: &apos;10.161.237.22&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=38.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=7e07b3ce-6728-4b37-a754-2764091ac2d9, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#10;Session ID: 7e07b3ce-6728-4b37-a754-2764091ac2d9" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of [[RemoteWebDriver: firefox on WINDOWS (7e07b3ce-6728-4b37-a754-2764091ac2d9)] -> css selector: .small_green_button]
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'LNDA0021', ip: '10.161.237.22', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=38.0.5, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=7e07b3ce-6728-4b37-a754-2764091ac2d9, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7e07b3ce-6728-4b37-a754-2764091ac2d9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.qait.mindtap.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.element(GetPage.java:107)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.element(GetPage.java:101)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:245)
+	at com.qait.mindtap.keywords.NG_30104.NG_30181_ConfirmCourseInformationActions.student_Click_Continue_Button(NG_30181_ConfirmCourseInformationActions.java:21)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_02_Student_Registers_Course(NG_30181_TC06_TA_Launch_the_Course.java:41)
+</failure>
+    <system-out><![CDATA[[ASSERT PASS]: element inputCourseKey is displayed.
+[ASSERT FAIL]: As actual Page Title for 'NG-30181-ConfirmCourseInformation' does not contain expected Page Title : 'CengageBrain - Confirm Course Information'.
+]]></system-out>
+  </testcase>
+  <testcase name="Step_03_Student_Launch_Course" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_04_verify_Spalsh_Page_Dispalys_Automatically" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_06_Verify_Expand_Collapse_Functionality" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_07_verify_Splash_Page" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_08_Verify_Rolling_Week_UI" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Step_07_Instructor_SignOut" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

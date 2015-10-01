@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="com.qait.mindtap.automation.report.ResultsIT" duration-ms="82" started-at="2015-10-01T08:18:05Z" finished-at="2015-10-01T08:18:05Z">
+  <suite name="com.qait.mindtap.automation.report.ResultsIT" duration-ms="80" started-at="2015-10-01T11:11:17Z" finished-at="2015-10-01T11:11:17Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="82" started-at="2015-10-01T08:18:05Z" finished-at="2015-10-01T08:18:05Z">
+    <test name="Command line test" duration-ms="80" started-at="2015-10-01T11:11:17Z" finished-at="2015-10-01T11:11:17Z">
       <class name="com.qait.mindtap.automation.report.ResultsIT">
-        <test-method status="PASS" signature="setupMailConfig()[pri:0, instance:com.qait.mindtap.automation.report.ResultsIT@1e46e8f]" name="setupMailConfig" is-config="true" duration-ms="12" started-at="2015-10-01T13:48:05Z" finished-at="2015-10-01T13:48:05Z">
+        <test-method status="PASS" signature="setupMailConfig()[pri:0, instance:com.qait.mindtap.automation.report.ResultsIT@1e46e8f]" name="setupMailConfig" is-config="true" duration-ms="10" started-at="2015-10-01T16:41:17Z" finished-at="2015-10-01T16:41:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMailConfig -->
-        <test-method status="FAIL" signature="sendResultsMail()[pri:0, instance:com.qait.mindtap.automation.report.ResultsIT@1e46e8f]" name="sendResultsMail" duration-ms="41" started-at="2015-10-01T13:48:05Z" finished-at="2015-10-01T13:48:05Z">
+        <test-method status="FAIL" signature="sendResultsMail()[pri:0, instance:com.qait.mindtap.automation.report.ResultsIT@1e46e8f]" name="sendResultsMail" duration-ms="60" started-at="2015-10-01T16:41:17Z" finished-at="2015-10-01T16:41:17Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException

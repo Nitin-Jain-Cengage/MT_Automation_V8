@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 73.654 sec - in com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab

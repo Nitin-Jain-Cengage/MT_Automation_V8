@@ -1,4 +1,4 @@
-Page Title: Cengage Learning - Login
+Page Title: MindTap Admin - Manage Masters
 
 #Object Definitions
 ====================================================================================
