@@ -86,7 +86,7 @@ public class NG_30181_TC04_Instructor_Launch_the_Course {
 	    	
 	    }
 
-	    @Test(dependsOnMethods = {"Step_03_Confirm_Course_Details"})
+	    @Test(dependsOnMethods = {"Step_08_Verify_Rolling_Week_UI"})
 	    void Step_07_Instructor_SignOut() {
 	        test.loginpage.signout();
 	    }
