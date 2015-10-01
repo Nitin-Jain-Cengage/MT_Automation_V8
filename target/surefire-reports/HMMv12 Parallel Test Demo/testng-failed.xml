@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" verbose="0" name="Failed suite [HMMv12 Parallel Test Demo]">
   <parameter name="browser" value="firefox"/>
-  <test name="Instructor Creates Courses(failed)">
+  <test name="Admin Login and search the isbn under master tab(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course">
@@ -22,14 +22,7 @@
       <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course">
         <methods>
           <include name="stop_test_session"/>
-          <include name="Step_02_Instructor_Search_Course_using_ISBN"/>
-          <include name="Step_01_Instructor_Logs_in_to_the_Application"/>
-          <include name="Step_07_Instructor_SignOut"/>
-          <include name="Step_04_Instructor_Creates_Course"/>
-          <include name="Step_05_Instructor_Enters_Course_Details"/>
-          <include name="Step_06_Confirm_Course_Details"/>
           <include name="start_test_session"/>
-          <include name="Step_03_Instructor_check_Course_Checkbox"/>
           <include name="takeScreenshotonFailure"/>
         </methods>
       </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course -->
@@ -42,13 +35,17 @@
       </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course -->
       <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab">
         <methods>
+          <include name="Step_04_Admin_Logs_Out"/>
+          <include name="Step_02_Admin_Search_Course_using_ISBN"/>
           <include name="stop_test_session"/>
+          <include name="Step_03_Admin_Verify_Course_Andesite_mode_checked"/>
           <include name="takeScreenshotonFailure"/>
           <include name="start_test_session"/>
+          <include name="Step_01_Admin_Logs_in_to_the_Application"/>
         </methods>
       </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab -->
     </classes>
-  </test> <!-- Instructor Creates Courses(failed) -->
+  </test> <!-- Admin Login and search the isbn under master tab(failed) -->
   <test name="Instructor Launch the course(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>

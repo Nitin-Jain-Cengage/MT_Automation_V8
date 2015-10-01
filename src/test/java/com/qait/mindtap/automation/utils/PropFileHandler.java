@@ -1,5 +1,6 @@
 package com.qait.mindtap.automation.utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -58,10 +59,10 @@ public class PropFileHandler {
         //OutputStream outPropFile = null;
 
         try {
-            InputStream inPropFile = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\Data.properties");
+            InputStream inPropFile = new FileInputStream(System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"testdata"+File.separator+"Data.properties");
             properties.load(inPropFile);
             inPropFile.close();
-            OutputStream outPropFile = new FileOutputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\Data.properties");
+            OutputStream outPropFile = new FileOutputStream(System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"testdata"+File.separator+"Data.properties");
 	            //System.getProperty("user.dir")+"\\AnswerKeys\\"+top+".properties"
 
             properties.setProperty(property, value);
@@ -73,10 +74,10 @@ public class PropFileHandler {
 
     public static void clearProperty() {
         try {
-            InputStream inPropFile = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\Data.properties");
+            InputStream inPropFile = new FileInputStream(System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"testdata"+File.separator+"Data.properties");
             properties.load(inPropFile);
             inPropFile.close();
-            OutputStream outPropFile = new FileOutputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\Data.properties");
+            OutputStream outPropFile = new FileOutputStream(System.getProperty("user.dir") +File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"testdata"+File.separator+"Data.properties");
             properties.clear();
             outPropFile.close();
         } catch (IOException e) {
