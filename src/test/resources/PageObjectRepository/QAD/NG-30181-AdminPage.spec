@@ -5,6 +5,9 @@ Page Title: Cengage Learning - Login
 						
 mindtap_toolbar				   				xpath							//div[@class='nb_logoBox admin']
 admin_dashboard								xpath							//h1[contains(text(),'${Admin Dashboard}')]
+courseCount									css								.endcount
+searchIcon									xpath							//img[contains(@src,'admin_search_icon')]
+nextPageArrow                                                xpath                                                    //div[@class='pagearrow pageright']
 input_search_ISBN           				xpath							//input[@id='searchField']
 courseName									xpath							//a[@ class="title" and contains(text(),'${courseBook}')]
 Btn_show_copy								css								a[title='Show Working Copy'] 

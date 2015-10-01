@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
-  <test name="Surefire test(failed)">
+<suite verbose="0" name="Failed suite [com.qait.mindtap.automation.report.ResultsIT]">
+  <test name="Command line test(failed)">
     <classes>
       <class name="com.qait.mindtap.automation.report.ResultsIT">
         <methods>
@@ -10,5 +10,5 @@
         </methods>
       </class> <!-- com.qait.mindtap.automation.report.ResultsIT -->
     </classes>
-  </test> <!-- Surefire test(failed) -->
-</suite> <!-- Failed suite [Surefire suite] -->
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.qait.mindtap.automation.report.ResultsIT] -->

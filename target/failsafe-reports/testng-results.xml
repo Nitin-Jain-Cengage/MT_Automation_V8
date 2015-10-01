@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="70" started-at="2015-09-30T10:03:21Z" finished-at="2015-09-30T10:03:21Z">
+  <suite name="com.qait.mindtap.automation.report.ResultsIT" duration-ms="82" started-at="2015-10-01T08:18:05Z" finished-at="2015-10-01T08:18:05Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="70" started-at="2015-09-30T10:03:21Z" finished-at="2015-09-30T10:03:21Z">
+    <test name="Command line test" duration-ms="82" started-at="2015-10-01T08:18:05Z" finished-at="2015-10-01T08:18:05Z">
       <class name="com.qait.mindtap.automation.report.ResultsIT">
-        <test-method status="PASS" signature="setupMailConfig()[pri:0, instance:com.qait.mindtap.automation.report.ResultsIT@1ebec15]" name="setupMailConfig" is-config="true" duration-ms="20" started-at="2015-09-30T15:33:21Z" finished-at="2015-09-30T15:33:21Z">
+        <test-method status="PASS" signature="setupMailConfig()[pri:0, instance:com.qait.mindtap.automation.report.ResultsIT@1e46e8f]" name="setupMailConfig" is-config="true" duration-ms="12" started-at="2015-10-01T13:48:05Z" finished-at="2015-10-01T13:48:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupMailConfig -->
-        <test-method status="FAIL" signature="sendResultsMail()[pri:0, instance:com.qait.mindtap.automation.report.ResultsIT@1ebec15]" name="sendResultsMail" duration-ms="40" started-at="2015-09-30T15:33:21Z" finished-at="2015-09-30T15:33:21Z">
+        <test-method status="FAIL" signature="sendResultsMail()[pri:0, instance:com.qait.mindtap.automation.report.ResultsIT@1e46e8f]" name="sendResultsMail" duration-ms="41" started-at="2015-10-01T13:48:05Z" finished-at="2015-10-01T13:48:05Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -38,13 +38,18 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
 	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:115)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:129)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:113)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:109)
 	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
@@ -52,6 +57,6 @@
           </reporter-output>
         </test-method> <!-- sendResultsMail -->
       </class> <!-- com.qait.mindtap.automation.report.ResultsIT -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.qait.mindtap.automation.report.ResultsIT -->
 </testng-results>
