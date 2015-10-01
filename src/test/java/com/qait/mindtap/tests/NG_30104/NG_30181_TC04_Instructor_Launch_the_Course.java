@@ -22,7 +22,7 @@ public class NG_30181_TC04_Instructor_Launch_the_Course {
 	    @BeforeClass
 	    @Parameters("browser")
 	    public void start_test_session(@Optional String browser) {
-	        test = new TestSessionInitiator("NG_30181_TC03_Instructor_Creates_Course", browser);
+	        test = new TestSessionInitiator("NG_30181_TC04_Instructor_Launch_the_Course", browser);
 	        test.launchApplication(getData("sso_url"));
 	        
 	    }

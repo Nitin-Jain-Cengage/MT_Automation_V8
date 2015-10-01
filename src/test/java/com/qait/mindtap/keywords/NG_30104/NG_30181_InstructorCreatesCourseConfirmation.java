@@ -9,7 +9,7 @@ import com.qait.mindtap.automation.utils.YamlReader;
 public class NG_30181_InstructorCreatesCourseConfirmation extends GetPage {
 	
 	public NG_30181_InstructorCreatesCourseConfirmation(WebDriver driver) {
-        super(driver, "NG-30181-InstructorCreatesCourseConfirmation");
+        super(driver, "Ng-30181-InstructorCreatesCourseConfirmation");
        
  
     }
