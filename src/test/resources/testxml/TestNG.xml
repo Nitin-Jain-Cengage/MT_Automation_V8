@@ -21,21 +21,21 @@
           enabled="true">
         <parameter name="browser" value="firefox" />
         <classes>
-            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course.java"></class>
+            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC04_Instructor_Launch_the_Course"></class>
         </classes>
     </test>
     <test name="Student launches the course" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="firefox" />
         <classes>
-            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course.java"></class>
+            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course"></class>
         </classes>
     </test>
     <test name="TA Launches the course" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="firefox" />
         <classes>
-            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.java"></class>
+            <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course"></class>
         </classes>
     </test>
  </suite>
