@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" verbose="0" name="Failed suite [com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course]">
-  <test name="Command line test 2a15b366-bb28-4cd9-be7a-e20e75b8651d(failed)">
+  <test name="Command line test 7cf9114f-d52b-41a0-bf9b-af3134d4e474(failed)">
     <classes>
       <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course">
         <methods>
@@ -19,5 +19,5 @@
         </methods>
       </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course -->
     </classes>
-  </test> <!-- Command line test 2a15b366-bb28-4cd9-be7a-e20e75b8651d(failed) -->
+  </test> <!-- Command line test 7cf9114f-d52b-41a0-bf9b-af3134d4e474(failed) -->
 </suite> <!-- Failed suite [com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course] -->

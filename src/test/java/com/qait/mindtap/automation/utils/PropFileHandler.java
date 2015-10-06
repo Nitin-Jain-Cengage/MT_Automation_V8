@@ -25,7 +25,7 @@ public class PropFileHandler {
     public static String readProperty(String property) {
         InputStream inPropFile = null;
         try {
-            inPropFile = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\Data.properties");
+            inPropFile = new FileInputStream(System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"testdata"+File.separator+"Data.properties");
             properties.load(inPropFile);
         } catch (IOException e) {
             System.out.println("There was Exception reading the Test data");

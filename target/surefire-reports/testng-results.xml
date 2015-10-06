@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="4" failed="1" total="8" passed="3">
+<testng-results skipped="5" failed="1" total="8" passed="2">
   <reporter-output>
     <line>
       <![CDATA[[INFO]: The test Browser is FIREFOX !!!]]>
@@ -26,19 +26,16 @@
       <![CDATA[[ASSERT PASS]: element courseLink with text Mayank Test Book-Automated is displayed.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT FAIL]: Element helloUser not found on the Header !!!]]>
-    </line>
-    <line>
       <![CDATA[[INFO]: The Test: NG_30181_TC04_INSTRUCTOR_DELETES_COURSE COMPLETED!
 ]]>
     </line>
   </reporter-output>
-  <suite name="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course" duration-ms="106212" started-at="2015-10-06T10:43:47Z" finished-at="2015-10-06T10:45:33Z">
+  <suite name="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course" duration-ms="105346" started-at="2015-10-06T11:15:16Z" finished-at="2015-10-06T11:17:02Z">
     <groups>
     </groups>
-    <test name="Command line test 2a15b366-bb28-4cd9-be7a-e20e75b8651d" duration-ms="106212" started-at="2015-10-06T10:43:47Z" finished-at="2015-10-06T10:45:33Z">
+    <test name="Command line test 7cf9114f-d52b-41a0-bf9b-af3134d4e474" duration-ms="105346" started-at="2015-10-06T11:15:16Z" finished-at="2015-10-06T11:17:02Z">
       <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course">
-        <test-method status="PASS" signature="start_test_session(java.lang.String)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="start_test_session" is-config="true" duration-ms="6410" started-at="2015-10-06T16:13:47Z" finished-at="2015-10-06T16:13:53Z">
+        <test-method status="PASS" signature="start_test_session(java.lang.String)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="start_test_session" is-config="true" duration-ms="6751" started-at="2015-10-06T16:45:16Z" finished-at="2015-10-06T16:45:23Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -53,7 +50,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- start_test_session -->
-        <test-method status="PASS" signature="Step_01_Instructor_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_01_Instructor_Logs_in_to_the_Application" duration-ms="25377" started-at="2015-10-06T16:13:53Z" finished-at="2015-10-06T16:14:18Z">
+        <test-method status="PASS" signature="Step_01_Instructor_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_01_Instructor_Logs_in_to_the_Application" duration-ms="14444" started-at="2015-10-06T16:45:23Z" finished-at="2015-10-06T16:45:38Z">
           <reporter-output>
             <line>
               <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]>
@@ -66,7 +63,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- Step_01_Instructor_Logs_in_to_the_Application -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-06T16:14:18Z" finished-at="2015-10-06T16:14:18Z">
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-06T16:45:38Z" finished-at="2015-10-06T16:45:38Z">
           <params>
             <param index="0">
               <value>
@@ -77,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_02_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_02_Instructor_Manage_Course" duration-ms="13224" started-at="2015-10-06T16:14:18Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_01_Instructor_Logs_in_to_the_Application" finished-at="2015-10-06T16:14:32Z">
+        <test-method status="PASS" signature="Step_02_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_02_Instructor_Manage_Course" duration-ms="27355" started-at="2015-10-06T16:45:38Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_01_Instructor_Logs_in_to_the_Application" finished-at="2015-10-06T16:46:05Z">
           <reporter-output>
             <line>
               <![CDATA[[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.]]>
@@ -90,38 +87,46 @@
             </line>
           </reporter-output>
         </test-method> <!-- Step_02_Instructor_Manage_Course -->
-        <test-method status="PASS" signature="Step_03_Instructor_Drops_Student()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_03_Instructor_Drops_Student" duration-ms="30948" started-at="2015-10-06T16:14:32Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_02_Instructor_Manage_Course" finished-at="2015-10-06T16:15:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Step_03_Instructor_Drops_Student -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-06T16:14:32Z" finished-at="2015-10-06T16:14:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_02_Instructor_Manage_Course status=SUCCESS method=NG_30181_TC03_Instructor_Deletes_Course.Step_02_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] output=[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="2" started-at="2015-10-06T16:15:03Z" finished-at="2015-10-06T16:15:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_03_Instructor_Drops_Student status=SUCCESS method=NG_30181_TC03_Instructor_Deletes_Course.Step_03_Instructor_Drops_Student()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="FAIL" signature="Step_04_user_LogOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_04_user_LogOut" duration-ms="30090" started-at="2015-10-06T16:15:03Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_03_Instructor_Drops_Student" finished-at="2015-10-06T16:15:33Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="Step_03_Instructor_Drops_Student()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_03_Instructor_Drops_Student" duration-ms="55776" started-at="2015-10-06T16:46:05Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_02_Instructor_Manage_Course" finished-at="2015-10-06T16:47:01Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'mindtaptest06', ip: '10.161.126.78', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+Command duration or timeout: 31.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'LNDA0021', ip: '10.161.236.230', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=39.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=9415196a-0ee7-4b99-97a7-740b617d965b, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9415196a-0ee7-4b99-97a7-740b617d965b]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.qait.mindtap.keywords.NG_30104.NG_30181_LoginPageActions.logOut(NG_30181_LoginPageActions.java:52)
-	at com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_04_user_LogOut(NG_30181_TC03_Instructor_Deletes_Course.java:52)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'mindtaptest06', ip: '10.161.126.78', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+Command duration or timeout: 31.37 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'LNDA0021', ip: '10.161.236.230', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, databaseEnabled=true, handlesAlerts=true, version=39.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=9415196a-0ee7-4b99-97a7-740b617d965b, locationContextEnabled=true, webStorageEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9415196a-0ee7-4b99-97a7-740b617d965b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:895)
+	at com.qait.mindtap.automation.getpageobjects.BaseUi.switchToFrame(BaseUi.java:190)
+	at com.qait.mindtap.keywords.NG_30104.PerformanceWidget.dropsStudent(PerformanceWidget.java:27)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_03_Instructor_Drops_Student(NG_30181_TC03_Instructor_Deletes_Course.java:47)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,95 +155,38 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.StaleElementReferenceException: Element not found in the cache - perhaps the page has changed since it was looked up
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'mindtaptest06', ip: '10.161.126.78', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'LNDA0021', ip: '10.161.236.230', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.cache.getElementAt(resource://fxdriver/modules/web-element-cache.js:8981)
+	at <anonymous class>.Utils.getElementAt(file:///C:/Users/qaadmin/AppData/Local/Temp/anonymous3281149858340217335webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:8574)
+	at <anonymous class>.FirefoxDriver.prototype.switchToFrame(file:///C:/Users/qaadmin/AppData/Local/Temp/anonymous3281149858340217335webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10356)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/qaadmin/AppData/Local/Temp/anonymous3281149858340217335webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/qaadmin/AppData/Local/Temp/anonymous3281149858340217335webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:603)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
-            <line>
-              <![CDATA[[ASSERT FAIL]: Element helloUser not found on the Header !!!]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- Step_04_user_LogOut -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="2" started-at="2015-10-06T16:15:33Z" finished-at="2015-10-06T16:15:33Z">
+        </test-method> <!-- Step_03_Instructor_Drops_Student -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-06T16:46:05Z" finished-at="2015-10-06T16:46:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_04_user_LogOut status=FAILURE method=NG_30181_TC03_Instructor_Deletes_Course.Step_04_user_LogOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] output=[ASSERT FAIL]: Element helloUser not found on the Header !!!]]]>
+                <![CDATA[[TestResult name=Step_02_Instructor_Manage_Course status=SUCCESS method=NG_30181_TC03_Instructor_Deletes_Course.Step_02_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] output=[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="SKIP" signature="Step_06_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_06_Instructor_Manage_Course" duration-ms="0" started-at="2015-10-06T16:15:33Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_05_Instructor_Logs_in_to_the_Application_Again" finished-at="2015-10-06T16:15:33Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method NG_30181_TC03_Instructor_Deletes_Course.Step_06_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method NG_30181_TC03_Instructor_Deletes_Course.Step_06_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:128)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Step_06_Instructor_Manage_Course -->
-        <test-method status="SKIP" signature="Step_05_Instructor_Logs_in_to_the_Application_Again()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_05_Instructor_Logs_in_to_the_Application_Again" duration-ms="0" started-at="2015-10-06T16:15:33Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_04_user_LogOut" finished-at="2015-10-06T16:15:33Z">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method NG_30181_TC03_Instructor_Deletes_Course.Step_05_Instructor_Logs_in_to_the_Application_Again()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method NG_30181_TC03_Instructor_Deletes_Course.Step_05_Instructor_Logs_in_to_the_Application_Again()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:128)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Step_05_Instructor_Logs_in_to_the_Application_Again -->
-        <test-method status="SKIP" signature="Step_07_Instructor_Delete_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_07_Instructor_Delete_Course" duration-ms="0" started-at="2015-10-06T16:15:33Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_06_Instructor_Manage_Course" finished-at="2015-10-06T16:15:33Z">
+        <test-method status="SKIP" signature="Step_07_Instructor_Delete_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_07_Instructor_Delete_Course" duration-ms="0" started-at="2015-10-06T16:47:01Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_06_Instructor_Manage_Course" finished-at="2015-10-06T16:47:01Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method NG_30181_TC03_Instructor_Deletes_Course.Step_07_Instructor_Delete_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods]]>
@@ -272,15 +220,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_07_Instructor_Delete_Course -->
-        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="stop_test_session" is-config="true" duration-ms="115" started-at="2015-10-06T16:15:33Z" finished-at="2015-10-06T16:15:33Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[INFO]: The Test: NG_30181_TC04_INSTRUCTOR_DELETES_COURSE COMPLETED!
+        <test-method status="SKIP" signature="Step_06_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_06_Instructor_Manage_Course" duration-ms="0" started-at="2015-10-06T16:47:01Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_05_Instructor_Logs_in_to_the_Application_Again" finished-at="2015-10-06T16:47:01Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method NG_30181_TC03_Instructor_Deletes_Course.Step_06_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method NG_30181_TC03_Instructor_Deletes_Course.Step_06_Instructor_Manage_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:128)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 ]]>
-            </line>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
           </reporter-output>
-        </test-method> <!-- stop_test_session -->
-        <test-method status="SKIP" signature="Step_07_Instructor_SignOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_07_Instructor_SignOut" duration-ms="0" started-at="2015-10-06T16:15:33Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_07_Instructor_Delete_Course" finished-at="2015-10-06T16:15:33Z">
+        </test-method> <!-- Step_06_Instructor_Manage_Course -->
+        <test-method status="SKIP" signature="Step_07_Instructor_SignOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_07_Instructor_SignOut" duration-ms="0" started-at="2015-10-06T16:47:01Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_07_Instructor_Delete_Course" finished-at="2015-10-06T16:47:01Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method NG_30181_TC03_Instructor_Deletes_Course.Step_07_Instructor_SignOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods]]>
@@ -314,7 +288,94 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step_07_Instructor_SignOut -->
+        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="stop_test_session" is-config="true" duration-ms="970" started-at="2015-10-06T16:47:01Z" finished-at="2015-10-06T16:47:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO]: The Test: NG_30181_TC04_INSTRUCTOR_DELETES_COURSE COMPLETED!
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- stop_test_session -->
+        <test-method status="SKIP" signature="Step_04_user_LogOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_04_user_LogOut" duration-ms="0" started-at="2015-10-06T16:47:01Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_03_Instructor_Drops_Student" finished-at="2015-10-06T16:47:01Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method NG_30181_TC03_Instructor_Deletes_Course.Step_04_user_LogOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method NG_30181_TC03_Instructor_Deletes_Course.Step_04_user_LogOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:128)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_04_user_LogOut -->
+        <test-method status="SKIP" signature="Step_05_Instructor_Logs_in_to_the_Application_Again()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="Step_05_Instructor_Logs_in_to_the_Application_Again" duration-ms="0" started-at="2015-10-06T16:47:01Z" depends-on-methods="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_04_user_LogOut" finished-at="2015-10-06T16:47:01Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method NG_30181_TC03_Instructor_Deletes_Course.Step_05_Instructor_Logs_in_to_the_Application_Again()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method NG_30181_TC03_Instructor_Deletes_Course.Step_05_Instructor_Logs_in_to_the_Application_Again()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:91)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:128)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step_05_Instructor_Logs_in_to_the_Application_Again -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-06T16:47:01Z" finished-at="2015-10-06T16:47:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Step_03_Instructor_Drops_Student status=FAILURE method=NG_30181_TC03_Instructor_Deletes_Course.Step_03_Instructor_Drops_Student()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course@1be98f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonFailure -->
       </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course -->
-    </test> <!-- Command line test 2a15b366-bb28-4cd9-be7a-e20e75b8651d -->
+    </test> <!-- Command line test 7cf9114f-d52b-41a0-bf9b-af3134d4e474 -->
   </suite> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course -->
 </testng-results>
