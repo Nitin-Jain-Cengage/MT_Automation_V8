@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 106.675 sec <<< FAILURE! - in com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course
+Step_04_user_LogOut(com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course)  Time elapsed: 30.103 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.qait.mindtap.keywords.NG_30104.NG_30181_LoginPageActions.logOut(NG_30181_LoginPageActions.java:52)
+	at com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course.Step_04_user_LogOut(NG_30181_TC03_Instructor_Deletes_Course.java:52)
+

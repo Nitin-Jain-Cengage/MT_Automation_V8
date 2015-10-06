@@ -82,7 +82,7 @@ public class GetPage extends BaseUi {
     }
 
     public WebElement accessor(String element){
-   	 return	element("element");
+        return	element(element);
    	}
     
     

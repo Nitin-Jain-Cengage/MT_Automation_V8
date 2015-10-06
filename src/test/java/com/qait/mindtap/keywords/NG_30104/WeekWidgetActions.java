@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.qait.mindtap.automation.getpageobjects.GetPage;
+import com.sun.jna.platform.win32.WinBase;
 
 public class WeekWidgetActions extends GetPage{
 
@@ -13,7 +14,7 @@ public class WeekWidgetActions extends GetPage{
 		super(driver,"weekwidget");	}
 
 	public void couresNameInBlueHeader() {
-		Assert.assertTrue(element("courseBookTitle").getCssValue("background-color").toString().equals("rgba(2, 159, 214, 1)"), Reporter.failForAssert("color of coursename is not blue"));
+            Assert.assertTrue(element("courseBookTitle").getCssValue("background-color").toString().equals("rgba(47, 156, 212, 1)"), Reporter.failForAssert("color of coursename is not blue"));
 	    Reporter.pass("color of course is blue");
 	    
 	}
@@ -29,7 +30,7 @@ public class WeekWidgetActions extends GetPage{
 		Reporter.pass("button RWV works fine");
 		functionalityExpandCollapse();
 		isElementDisplayed("btnjumpToWeek");
-	    element("btnjumpToWeek").click();
+	        element("btnjumpToWeek").click();
 		Reporter.pass("button JUMP TO WEEK works fine");
 
 	}
@@ -67,7 +68,14 @@ public class WeekWidgetActions extends GetPage{
 	}
 
 	public void verifyCurrentWeekIcon() {
-		isElementDisplayed("currentWeekIcon");
+                if(checkIfElementIsNotThere("currentWeekIcon")){
+                    refreshPage();
+                }
+                else
+                {
+                    refreshPage();
+                    isElementDisplayed("currentWeekIcon");
+                }
 		Reporter.pass("Current Week icon is displayed");
 	}
 

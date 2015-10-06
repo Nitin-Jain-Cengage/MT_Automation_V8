@@ -52,7 +52,7 @@ public class NG_30181_AdminPageActions extends GetPage{
 	public void course_Andesite_Mode_Is_Checked(String replacement){
 		this.isElementDisplayed("Edit_Working_copy",replacement);
 		this.isElementDisplayed("checkbox_Andesite_mode");
-	    element("btn_save_Edit_Working_copy").click();
+	        element("btn_save_Edit_Working_copy").click();
 
 	}
 	

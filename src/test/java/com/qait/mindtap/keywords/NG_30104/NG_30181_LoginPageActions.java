@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.qait.mindtap.automation.getpageobjects.GetPage;
 import com.qait.mindtap.automation.utils.ReportMsg;
+import org.openqa.selenium.WebElement;
 
 
 /**
@@ -47,6 +48,12 @@ public class NG_30181_LoginPageActions extends GetPage {
 		ReportMsg.info("log into the application using credentials '" + username + " / " + password + "'");
 	}
 
+        public void logOut(WebElement ele){
+            ele.click();
+            isElementDisplayed("user_Logout");
+            element("user_Logout").click();
+        }
+        
 	public void logout(){
 		element("icon_logout").click();
 	}

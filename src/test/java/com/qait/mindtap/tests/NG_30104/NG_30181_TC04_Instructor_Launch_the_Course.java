@@ -82,14 +82,13 @@ public class NG_30181_TC04_Instructor_Launch_the_Course {
 	    	test.header.MindTapIconOnTopleft();
 	    	test.header.helloUserFirstNameOnRight(getData("users.instructor.name"));
 	    	test.weekwidget.couresNameInBlueHeader();
-	    	test.weekwidget.verifyRWV_TV_andJUMP_TO_WEEK_Buttons();
 	    	
 	    }
 
 	    @Test(dependsOnMethods = {"Step_08_Verify_Rolling_Week_UI"})
-	    void Step_07_Instructor_SignOut() {
-	        test.loginpage.signout();
-	    }
+	     void Step_07_user_LogOut() {
+                test.loginpage.logOut(test.header.accessor("helloUser"));
+              }
 
 	    @AfterClass(alwaysRun = true)
 	    public void stop_test_session() {
