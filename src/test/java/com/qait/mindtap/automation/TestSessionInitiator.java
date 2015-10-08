@@ -36,7 +36,7 @@ import com.qait.mindtap.keywords.NG_30104.NG_30181_InstructorPageActions;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_LoginPageActions;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_StudentLaunchCourseAction;
 import com.qait.mindtap.keywords.NG_30104.Organization;
-import com.qait.mindtap.keywords.NG_30104.PerformanceWidget;
+import com.qait.mindtap.keywords.NG_30104.ProgressWidget;
 import com.qait.mindtap.keywords.NG_30104.UserPage;
 import com.qait.mindtap.keywords.NG_30104.WeekWidgetActions;
 
@@ -74,7 +74,8 @@ public class TestSessionInitiator {
     public LearningActivity la;
     public HeaderActions header;
     public WeekWidgetActions weekwidget;
-    public PerformanceWidget performance;
+    public ProgressWidget progress;
+    public LearningActivity lpn;
     
     public TakeScreenshot takescreenshot;
     public TopicNamePojo topicNameValue;
@@ -105,7 +106,8 @@ public class TestSessionInitiator {
         la = new LearningActivity(driver);
         header = new HeaderActions(driver);
         weekwidget = new WeekWidgetActions(driver);
-        performance = new PerformanceWidget(driver);
+        progress = new ProgressWidget(driver);
+        lpn = new LearningActivity(driver);
     }
 
     /**

@@ -214,6 +214,10 @@ public class BaseUi {
 		((JavascriptExecutor) driver).executeScript(script, e);
 	}
 
+        protected void fireOnClickJsEvent(String elementRef){
+              fireOnClickJsEvent (elementRef, "0");
+        }
+        
 	protected void fireOnClickJsEvent(String elementRef, String index){
 		 ((JavascriptExecutor) driver).executeScript("" 
 	            + "var elem = document.getElementsByClassName('${elementRef}')[${index}];"
@@ -329,5 +333,5 @@ public class BaseUi {
 	        driver.navigate().refresh();
 	    } 
 	
-		
+	
 }

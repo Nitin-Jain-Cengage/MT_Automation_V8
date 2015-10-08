@@ -1,18 +1,19 @@
 package com.qait.mindtap.automation.utils;
 
+import com.qait.mindtap.automation.getpageobjects.GetPage;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class mindtapUtilityMethods {
+public class mindtapUtilityMethods extends GetPage{
 
 	
 	WebDriver driver;
 	
 	 
 	 public mindtapUtilityMethods(WebDriver driver) {
-     this.driver=driver;
+               super(driver,"mindtapUtilityPage");
 	 }
 
 
@@ -42,8 +43,6 @@ public class mindtapUtilityMethods {
 	 
 	 
 	 public void launchCourse(String environment , String url) {
-	         
-
 	        if (environment.toLowerCase().endsWith("qad")) {
 	            url = url.replaceAll("qaf.", "qad-");
 	        }
@@ -62,11 +61,6 @@ public class mindtapUtilityMethods {
 	        }
 	        System.out.println("[Navigated to url]: "+url);
 	        driver.navigate().to(url);
-	        
-	        
 	    }
-
-	
-
-	
+    	
 }

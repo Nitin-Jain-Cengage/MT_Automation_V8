@@ -7,40 +7,32 @@ import com.qait.mindtap.automation.utils.ReportMsg;
 
 public class NG_30181_InstructorEditCourse extends GetPage {
 	public NG_30181_InstructorEditCourse(WebDriver driver) {
-        super(driver, "NG-30181-InstructorManageCourses");
-       
- 
-    }
+            super(driver, "NG-30181-InstructorManageCourses");
+        }
 	
 	public void verify_User_Is_On_Course_Confirmation_Page() {
-		 verifyPageTitleContains();
+             verifyPageTitleContains();
 	}
 
 	public void courseDelete(String courseName) {
-		
-		if(checkIfElementIsNotThere("courseLink", courseName))	{
-			ReportMsg.pass("Course is already deleted"); 
+            if(checkIfElementIsNotThere("courseLink", data.readProperty(courseName)))	{
+		ReportMsg.pass("Course is already deleted"); 
 		}
-		
-		else{
-			element("deleteCourse", courseName).click();
-			handleAlert();
-			courseDelete(courseName);
-			
-		}
- }
+            else{
+		element("deleteCourse", data.readProperty("courseName")).click();
+		handleAlert();
+		courseDelete(data.readProperty(courseName));
+                }
+        }
 	
-public void courseEdit(String courseName) {
-		
-		if(checkIfElementIsNotThere("courseLink", courseName))	{
-			ReportMsg.pass("Course is already deleted"); 
+        public void courseEdit() {
+            if(checkIfElementIsNotThere("courseLink", data.readProperty("courseName")))	{
+		ReportMsg.pass("Course is already deleted"); 
 		}
-		
-		else{
-			element("editCourse", courseName).click();
-					
+            else{
+		element("editCourse", data.readProperty("courseName")).click();
 		}
- }
+        }
 
 	
 	public void instructor_Open_Course() {
@@ -49,4 +41,5 @@ public void courseEdit(String courseName) {
 
 	}
 
-}
+}  
+

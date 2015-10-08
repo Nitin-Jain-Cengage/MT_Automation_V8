@@ -8,7 +8,7 @@ public class NG_30181_InstructorPageActions extends GetPage {
 
 	
 	public NG_30181_InstructorPageActions(WebDriver driver) {
-        super(driver, "NG-30181-InstructorPage");
+           super(driver, "NG-30181-InstructorPage");
        
  
     }

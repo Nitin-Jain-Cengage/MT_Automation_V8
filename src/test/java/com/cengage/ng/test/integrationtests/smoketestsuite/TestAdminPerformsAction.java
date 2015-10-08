@@ -12,6 +12,11 @@ public class TestAdminPerformsAction {
 
     String[] browserSizes = {"720x360"};
     String[] layoutTags = {"all"};
+    String lu2 = "neXtBooks.neXtBook2.learningPaths.learningPath1.learningUnits.learningUnit1";
+    String lu = "neXtBooks.neXtBook1.learningPaths.learningPath1.learningUnits.learningUnit1";
+    String nb = "neXtBooks.neXtBook1";
+    String la = "neXtBooks.learningActivities";
+        
 
     @BeforeClass
     @Parameters("browser")
@@ -68,14 +73,14 @@ public class TestAdminPerformsAction {
         test.userpage.searchUserandClickDelete(getData("users.editUser.organisationName"),getData("users.editUser.ssoUserName"));
     }  
                                                                                
-   /* @Test(dependsOnMethods = "adminDeletesCreatedUser")
+    @Test(dependsOnMethods = "adminDeletesCreatedUser")
     void  adminCreatesLearningUnit(){
         test.adminDashboard.openMaster();
         test.adminDashboard.searchBookOnMastersPage(getData("neXtBooks.neXtBook1.name"));
         test.adminDashboard.clickOnModeValueIcon(getData("neXtBooks.neXtBook1.mode2"));
         test.adminDashboard.verifyBookPresent(getData("neXtBooks.neXtBook1.name"));
         test.adminDashboard.verifyLearningUnitsPresentInMasterNeXtBook(getData("classTitle"));
-        lpnDsl.createLearningUnit(lu.newUnit,lu.newUnit));
+        test.lpn.createLearningUnit(getData(lu+".newUnit"),getData(lu+".newUnit"));
         Reporter.log ("Completed Admin Creates Learning Unit",true)
     }   
         

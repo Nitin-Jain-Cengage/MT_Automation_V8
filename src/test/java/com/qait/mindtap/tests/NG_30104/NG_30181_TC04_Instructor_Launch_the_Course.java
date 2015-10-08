@@ -38,7 +38,7 @@ public class NG_30181_TC04_Instructor_Launch_the_Course {
 	    public void Step_02_Instructor_Manages_Course_From_SSO() {
 	       test.instructor.verify_User_LoggedIn_As_Instructor("Instructor Resource Center");
 	       test.instructor.instructor_Course_Option("Manage Course");
-	       test.courseEdit.courseEdit(getData("coretext.NAME"));
+	       test.courseEdit.courseEdit();
 	      
 	      }
 	     
@@ -50,7 +50,7 @@ public class NG_30181_TC04_Instructor_Launch_the_Course {
 
 	    @Test(dependsOnMethods = {"Step_03_Instructor_Enrols_TA_IN_Course"})
 	    public void Step_04_verify_Spalsh_Page_Dispalys_Automatically() {
-              test.la.verifyCourseName(getData("coretext.NAME"));	       
+              test.la.verifyCourseName();	       
   	      test.la.clickEnterOnSplashPage();
   
 	    }
@@ -72,7 +72,7 @@ public class NG_30181_TC04_Instructor_Launch_the_Course {
 	    @Test(dependsOnMethods = {"Step_06_Verify_Expand_Collapse_Functionality"})
 	    public void Step_07_verify_Splash_Page() {
 	        test.header.MindTapIconClick();
-	    	test.la.verifyBookCover(getData("coretext.NAME"));
+	    	test.la.verifyBookCover();
 	        test.header.MindTapIconClick();
 
 	    }

@@ -15,9 +15,9 @@ import org.openqa.selenium.WebDriver;
 import com.qait.mindtap.automation.getpageobjects.GetPage;
 import org.openqa.selenium.WebElement;
 
-public class PerformanceWidget extends GetPage{
+public class ProgressWidget extends GetPage{
 
-	public PerformanceWidget(WebDriver driver) {
+	public ProgressWidget(WebDriver driver) {
 		super(driver, "PerformanceWidget");
 		
 	}

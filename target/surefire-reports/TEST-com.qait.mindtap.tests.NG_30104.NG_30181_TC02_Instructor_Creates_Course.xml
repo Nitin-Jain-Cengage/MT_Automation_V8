@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="68.889" tests="7" errors="0" skipped="0" failures="0">
+<testsuite name="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="66.013" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\bin"/>
@@ -48,7 +48,7 @@
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.version" value="1.8.0_51"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_51\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_51\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_51\jre\classes"/>
@@ -61,11 +61,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="Step_01_Instructor_Logs_in_to_the_Application" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="28.754"/>
-  <testcase name="Step_02_Instructor_Search_Course_using_ISBN" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="2.62"/>
-  <testcase name="Step_03_Instructor_check_Course_Checkbox" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="14.426"/>
-  <testcase name="Step_04_Instructor_Creates_Course" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="1.94"/>
-  <testcase name="Step_05_Instructor_Enters_Course_Details" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="18.199"/>
-  <testcase name="Step_06_Confirm_Course_Details" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="0.16"/>
-  <testcase name="Step_07_Instructor_SignOut" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="2.79"/>
+  <testcase name="Step_01_Instructor_Logs_in_to_the_Application" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="12.976"/>
+  <testcase name="Step_02_Instructor_Search_Course_using_ISBN" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="7.75"/>
+  <testcase name="Step_03_Instructor_check_Course_Checkbox" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="11.839"/>
+  <testcase name="Step_04_Instructor_Creates_Course" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="4.18"/>
+  <testcase name="Step_05_Instructor_Enters_Course_Details" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="23.878"/>
+  <testcase name="Step_06_Confirm_Course_Details" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="4.41"/>
+  <testcase name="Step_07_Instructor_SignOut" classname="com.qait.mindtap.tests.NG_30104.NG_30181_TC02_Instructor_Creates_Course" time="0.98"/>
 </testsuite>

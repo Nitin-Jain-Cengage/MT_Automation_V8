@@ -7,19 +7,15 @@ import static org.hamcrest.core.StringContains.containsString;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
-
-import org.testng.Assert;
-
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
-
-import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.StaleElementReferenceException;
 
 import com.qait.mindtap.automation.utils.LayoutValidation;
 import com.qait.mindtap.automation.utils.ReportMsg;
@@ -27,12 +23,45 @@ import com.qait.mindtap.automation.utils.SeleniumWait;
 
 public class GetPage extends BaseUi {
 
-	protected final int AJAX_WAIT = 30;
+    protected final int AJAX_WAIT = 30;
     protected WebDriver webdriver;
     String pageName;
     LayoutValidation layouttest;
     SeleniumWait sel_wait;
 
+      void selectChapter(String name){
+        int index=0;
+        List<WebElement> unitLinks = driver.findElements(By.xpath("//div[@class='list-area']/ul[contains(@class,'nb_stacklist slate list nb_nothumb clui_list')]/li[contains(@class,'item switchPath nb_unit nb_unit')]"));
+        for(WebElement link : unitLinks){
+            index++;
+            if(link.getText().contains(name)){
+                String i = Integer.toString(index);
+                fireOnClickJsEvent("nb_thumbTitle", i);
+            }                
+        }     
+    }
+
+    
+        
+     /**
+     * Perform click on more link.
+     */
+    public void performClickOnMoreLink(WebElement more_link){
+        try{
+            wait.hardWait(2);
+            wait.resetImplicitTimeout(10);
+            //To avoid stale element exception
+            wait.waitForElementToBeVisible(driver.findElement(By.cssSelector("img[alt='Expand Dock']")));  
+            wait.hardWait(2);
+            more_link.click();
+            wait.hardWait(2);
+        } catch(NullPointerException | NoSuchElementException | StaleElementReferenceException e){
+            e.printStackTrace();
+        }
+        wait.resetImplicitTimeout(AJAX_WAIT);
+    }
+
+    
     protected void waitForSpinnerToDisappear(){
         int i = 0;
         wait.resetImplicitTimeout(2);
@@ -290,7 +319,7 @@ public class GetPage extends BaseUi {
         return getBy(locator[1].trim(), locator[2].trim());
     }
     
-    public void  clickOnElementUsingActionBuilder(WebElement element){
+    protected void  clickOnElementUsingActionBuilder(WebElement element){
         Actions builder = new Actions(driver);
         Actions MenuItems = builder.moveToElement(element);
         this.waitTOSync();
@@ -332,4 +361,21 @@ public class GetPage extends BaseUi {
                 return By.id(locatorValue);
         }
     }
+    
+    protected void  waitForElementPresent(String ele){
+        for (int second = 0;; second++) {
+            if (second >= AJAX_WAIT){
+                Reporter.fail("element not present");
+            } else{
+                wait.resetImplicitTimeout(3);
+                try{
+                    element(ele);
+                    wait.resetImplicitTimeout(AJAX_WAIT);  
+                    Reporter.pass(ele+"is present");
+                }catch(Exception ee){
+                   wait.hardWait(2);
+                }
+            }
+        }
+    }	
 }

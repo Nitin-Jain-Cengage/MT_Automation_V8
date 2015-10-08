@@ -22,7 +22,7 @@ public class DateUtil {
 		DateFormat dformatter = new SimpleDateFormat("DD");
 		SimpleDateFormat dateParse = new SimpleDateFormat("DD");
 		Calendar cal = Calendar.getInstance();
-		String month = Integer.toString(cal.get(Calendar.MONTH+1));
+		String month = Integer.toString(cal.get(Calendar.MONTH)+1);
 		String date = Integer.toString(cal.get(Calendar.DATE));
 		try{
 			ranNum = dformatter.format(dateParse.parse(date))+formatter.format(monthParse.parse(month))+"_"+Integer.toString(cal.get(Calendar.HOUR_OF_DAY))+":"+Integer.toString(cal.get(Calendar.MINUTE))+":"+Integer.toString(cal.get(Calendar.SECOND));

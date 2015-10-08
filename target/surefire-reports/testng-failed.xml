@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="0" name="Failed suite [com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course]">
-  <test name="Command line test 7cf9114f-d52b-41a0-bf9b-af3134d4e474(failed)">
+<suite thread-count="1" verbose="0" name="Failed suite [com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course]">
+  <test name="Command line test 835dd183-b54c-4624-a668-b99b4c78b8a7(failed)">
     <classes>
-      <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course">
+      <class name="com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course">
         <methods>
-          <include name="Step_01_Instructor_Logs_in_to_the_Application"/>
-          <include name="Step_07_Instructor_SignOut"/>
-          <include name="Step_06_Instructor_Manage_Course"/>
-          <include name="Step_02_Instructor_Manage_Course"/>
-          <include name="Step_03_Instructor_Drops_Student"/>
-          <include name="takeScreenshotonFailure"/>
-          <include name="start_test_session"/>
-          <include name="Step_05_Instructor_Logs_in_to_the_Application_Again"/>
           <include name="stop_test_session"/>
-          <include name="Step_04_user_LogOut"/>
-          <include name="Step_07_Instructor_Delete_Course"/>
+          <include name="Step_06_Verify_Expand_Collapse_Functionality"/>
+          <include name="Step_02_Student_Registers_Course"/>
+          <include name="Step_08_Verify_Rolling_Week_UI"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="Step_01_Student_Logs_in_to_the_Application"/>
+          <include name="Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date"/>
+          <include name="start_test_session"/>
+          <include name="Step_04_verify_Spalsh_Page_Dispalys_Automatically"/>
+          <include name="Step_07_verify_Splash_Page"/>
+          <include name="Step_03_Student_Launch_Course"/>
+          <include name="Step_07_user_LogOut"/>
         </methods>
-      </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course -->
+      </class> <!-- com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course -->
     </classes>
-  </test> <!-- Command line test 7cf9114f-d52b-41a0-bf9b-af3134d4e474(failed) -->
-</suite> <!-- Failed suite [com.qait.mindtap.tests.NG_30104.NG_30181_TC03_Instructor_Deletes_Course] -->
+  </test> <!-- Command line test 835dd183-b54c-4624-a668-b99b4c78b8a7(failed) -->
+</suite> <!-- Failed suite [com.qait.mindtap.tests.NG_30104.NG_30181_TC05_Student_Launch_the_Course] -->

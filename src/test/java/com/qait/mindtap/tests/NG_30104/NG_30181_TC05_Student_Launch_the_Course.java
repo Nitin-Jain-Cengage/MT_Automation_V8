@@ -51,7 +51,7 @@ public class NG_30181_TC05_Student_Launch_the_Course {
            
     @Test(dependsOnMethods = {"Step_03_Student_Launch_Course"})
     public void Step_04_verify_Spalsh_Page_Dispalys_Automatically() {
-      test.la.verifyCourseName(getData("coretext.NAME"));	       
+      test.la.verifyCourseName();	       
       test.la.clickEnterOnSplashPage();
  
     }
@@ -73,7 +73,7 @@ public class NG_30181_TC05_Student_Launch_the_Course {
     @Test(dependsOnMethods = {"Step_06_Verify_Expand_Collapse_Functionality"})
     public void Step_07_verify_Splash_Page() {
         test.header.MindTapIconClick();
-    	test.la.verifyBookCover(getData("coretext.NAME"));
+    	test.la.verifyBookCover();
         test.header.MindTapIconClick();
 
     }
@@ -89,7 +89,7 @@ public class NG_30181_TC05_Student_Launch_the_Course {
     
     @Test(dependsOnMethods = {"Step_08_Verify_Rolling_Week_UI"})
     void Step_07_user_LogOut() {
-        test.loginpage.logOut(test.header.accessor("helloUser"));
+        test.loginpage.logOut(test.header.accessor("helloUser"));// for accessing locators of different actions class
     }
 
     @AfterClass(alwaysRun = true)

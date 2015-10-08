@@ -11,9 +11,9 @@ public class LearningActivity extends GetPage{
             super(driver, "LearningActivity");
 	}
 
-	public void verifyBookCover(String title) {
+	public void verifyBookCover() {
 		isElementDisplayed("courseNameAfterEnter");
-	        Assert.assertTrue(element("courseNameAfterEnter").getText().equalsIgnoreCase(title),	Reporter.failForAssert("Failed to Verify Book Cover Test"));
+	        Assert.assertTrue(element("courseNameAfterEnter").getText().equalsIgnoreCase(data.readProperty("courseName")),	Reporter.failForAssert("Failed to Verify Book Cover Test"));
 	        Reporter.pass ("Completed Verify Book Cover Test");
 
 	}
@@ -29,7 +29,7 @@ public class LearningActivity extends GetPage{
 	}
 
 	public void verifyAboutCengageLearning(String title) {
-		    element("cengageLearning_link").click();
+		element("cengageLearning_link").click();
 	        wait.hardWait(2);
 	        isElementDisplayed("title_header");
 	        String text = element("title_header").getText();
@@ -86,9 +86,9 @@ public class LearningActivity extends GetPage{
                 
 	}
 
-	public void verifyCourseName(String courseName) {
+	public void verifyCourseName() {
 		isElementDisplayed("courseName");
-		if(!element("courseName").getText().equalsIgnoreCase(courseName)){
+		if(!element("courseName").getText().equalsIgnoreCase(data.readProperty("courseName"))){
 			Reporter.fail("Splash Page is not displayed");
 		}
 	    Reporter.pass("Splash Page is displayed");

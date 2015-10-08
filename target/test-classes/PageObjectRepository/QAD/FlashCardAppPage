@@ -1,0 +1,53 @@
+ 
+===========================================================================================================
+selectChapterMenu-4              xpath        //ul[@id='select_chapter-menu']/li[4]
+selectChapterMenu-1              xpath        //ul[@id='select_chapter-menu']/li[1]
+selectChapter                    id           select_chapter
+dockFrame                        xpath        //iframe[contains@id, '_NB_Dock_IFrame']
+flashCardApp                     xpath        //div[contains@class,'FlashCard_app']
+flashCardApp_btn                 css          img[alt'Flashcards'] 
+settings_img                     css          img[alt'Settings'] 
+definitionOption                 id           showfirst_def 
+keyTermOption                    id           showfirst_term 
+hideCard                         xpath        //div[contains@style,'left: 0%;']//a[@class'removecard'] 
+restoreCard                      id           restore-link 
+restoreDeck                      id           trash-restore 
+flashCard                        xpath        //div[@class'viewer-card' and contains@style,'left: 0%;']//div[contains@class,'show-term-definition']
+nextcard_btn                     id           next-card
+shuffledeck                      id           shuffle-deck
+previouscard                     id           previous-card
+print                            id           print-cards 
+printClose                       xpath        //div[contains@class,'ui-dialog ui-widget' and contains@style,'block']//span[contains.,'Close'] 
+createCard                       id           create-card 
+createCardTerm                   id           create_term_id 
+createCardDef                    id           create_def_id 
+createCardSave                   id           card-form-save
+deleteCard                       id           card-form-delete
+CancelCard_btn                   id           card-form-cancel
+addedCardKey                     id           cardtermid 
+definition                       xpath        //div[contains@style,'left: 0%;']//span[contains@class,'definition'] 
+keyTerm                          xpath        //div[contains@style,'left: 0%;']//span[contains@class,'primaryTerm'] 
+print_dialogBox                  xpath        //div[@aria-describedby'printdivid']  
+createCard_dialogBox             xpath        //div[@id'createcarddivid'] 
+editCard_dialogBox               xpath        //div[contains @style,'block' and @id'createcarddivid'] 
+createCard_dialogBoxTitle        xpath        //div[contains@style,'block']//div[contains@class,'ui-dialog-titlebar']/span[contains@id,'ui-id-'] 
+keyTermTextBoxTitle              xpath        //label[@for'create_term_id']/strong 
+definitionBoxTitle               xpath        //label[@for'create_def_id']/strong 
+settingWindow                    xpath        //div[@class'settings'] 
+flashApp_btn                     id           app_view_flash_cards
+toggle_icon                      id           'nb_lpLauncher'
+chaptermenu_ddl                  xpath        //a[@id'select_chapter-button']/span[@class'ui-selectmenu-status']
+restoreCard_btn                  id           restoreDeckId
+chapter_link                     id           select_chapter-button
+keyterm                          xpath        //div[@class'viewer-card' and contains@style,'left: 0%']//div[@class'key-term']
+keydef                           xpath        //div[@class'viewer-card' and contains@style,'left: 0%']//div[@class'card-definition']
+chapter_ddl                      xpath        //ul[@id'select_chapter-menu']//li
+currentFlashCard_text            xpath        //div[contains@style,'left: 0%;']//span[@class'cardcount-count']
+radioButton                      xpath        //input[contains@type,'radio']
+flashCardsActivityContinue_btn   classname    addActivity
+uploadFromCSV                    id           upload-cards
+Browse_Btn                       id           csvFile
+uploadButton                     xpath   //div[contains@style,'block']//button/span[contains.,'Upload']
+    
+
+

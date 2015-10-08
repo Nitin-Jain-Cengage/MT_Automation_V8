@@ -36,7 +36,7 @@ public class UserPage extends GetPage{
 	 
 	 public void navigateToManageUsersTab(){
 		 wait.waitForElementToBeVisible(element("manageUsers_link"));
-	     element("manageUsers_link").click();
+	        element("manageUsers_link").click();
 	    }
 
 

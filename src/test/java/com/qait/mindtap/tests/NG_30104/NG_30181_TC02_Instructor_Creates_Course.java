@@ -60,7 +60,7 @@ public class NG_30181_TC02_Instructor_Creates_Course {
     @Test(dependsOnMethods = {"Step_05_Instructor_Enters_Course_Details"})
     public void Step_06_Confirm_Course_Details() {
        test.courseConfirmation.verify_User_Is_On_Course_Confirmation_Page();
-       test.courseConfirmation.get_Created_Course_Key();
+       test.courseConfirmation.get_Created_Course_Key(getData("course1.ISBN"));
     }
     
     @Test(dependsOnMethods = {"Step_06_Confirm_Course_Details"})

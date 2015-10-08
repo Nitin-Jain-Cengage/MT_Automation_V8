@@ -44,7 +44,7 @@ public class NG_30181_TC03_Instructor_Deletes_Course {
     
     @Test(dependsOnMethods = {"Step_02_Instructor_Manage_Course"})
     public void Step_03_Instructor_Drops_Student() {
-        test.performance.dropsStudent();
+        test.progress.dropsStudent();
     }    
      
     @Test(dependsOnMethods = {"Step_03_Instructor_Drops_Student"})
