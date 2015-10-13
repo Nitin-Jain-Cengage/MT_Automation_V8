@@ -85,4 +85,19 @@ public class WeekWidgetActions extends GetPage{
 		Reporter.pass("Week is Displayed along with count"+element("textWeek").getText());
 	}
 
+        public void verifyInstructorExpandsWeek(){
+                isElementDisplayed("expand_collapse");
+		element("expand_collapse").click();
+                element("expand_collapse").click();
+                isElementDisplayed("addToWeek");
+                Reporter.pass("Instructor is able to expand week");
+        }        
+        
+        public void instructorClickOnAddToWeek(){
+            element("addToWeek").click();
+         }
+        public void instructorSelectsDay(){
+          String day = date.getDayOfWeek();
+          element("dayToAdd",day);
+        }
 }

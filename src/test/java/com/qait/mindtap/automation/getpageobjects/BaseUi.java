@@ -54,9 +54,9 @@ public class BaseUi {
 		this.pageName = pageName;
 		this.wait = new SeleniumWait(driver, Integer.parseInt(getProperty(
 				"Config.properties", "timeout")));
+                this.mt = new mindtapUtilityMethods();
 		this.date = new DateUtil();
 		this.data = new PropFileHandler();
-		this.mt = new mindtapUtilityMethods(driver);
 		this.configReader = new ConfigPropertyReader();
 		this.Reporter = new ReportMsg();
 		this.yml = new YamlReader();
@@ -215,7 +215,7 @@ public class BaseUi {
 	}
 
         protected void fireOnClickJsEvent(String elementRef){
-              fireOnClickJsEvent (elementRef, "0");
+              fireOnClickJsEvent(elementRef, "0");
         }
         
 	protected void fireOnClickJsEvent(String elementRef, String index){

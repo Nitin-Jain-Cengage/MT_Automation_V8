@@ -5,6 +5,7 @@ import static com.qait.mindtap.automation.utils.YamlReader.getData;
 import org.testng.annotations.*;
 
 import com.qait.mindtap.automation.TestSessionInitiator;
+import org.testng.ITestResult;
 
 
 public class TestAdminPerformsAction {
@@ -21,30 +22,27 @@ public class TestAdminPerformsAction {
     @BeforeClass
     @Parameters("browser")
     public void start_test_session(@Optional String browser) {
-        test = new TestSessionInitiator("NG_30181_TC01_Admin_login_and_search_the_isbn_under_master_Tab", browser);
-        test.launchApplication(getData("stagingSsoUrl"));
+        test = new TestSessionInitiator("TestAdminPerformsAction", browser);
+        test.launchApplication(getData("environment")+getData("launchUrlPath"));
     }
     
     @Test
     public void Step_01_Admin_Logs_in_to_the_Application() {
-        test.loginpage.verify_User_Is_On_Login_Page();
         test.loginpage.login_to_the_application_as_admin(getData(("users.superadmin.username")), getData(("users.superadmin.password")));
         test.adminDashboard.verify_User_LoggedIn();
     }
     
-    @Test
+    @Test(dependsOnMethods = "Step_01_Admin_Logs_in_to_the_Application")
     public void Step_02_Admin_Logs_in_to_the_Application() {
     	test.adminDashboard.clickCreateMaster();
-        test.adminDashboard.enterMasterNameAndDescription(getData("neXtBooks.neXtBook1.name"), getData("neXtBooks.neXtBook1.learningPaths.learningPath1.Name"),getData(" neXtBooks.neXtBook1.description"));
-        test.adminDashboard.enterCoreTextISBN(getData("coreisbn"));
-        test.adminDashboard.enterCoreTextISBN(getData("ssoisbn"));
+        test.adminDashboard.enterMasterNameAndDescription(getData(nb+".name"), getData(nb+".learningPaths.learningPath1.name"),getData(nb+".description"));
+        test.adminDashboard.enterCoreTextISBN(getData(nb+".isbn"));
         test.adminDashboard.createMasterNeXtBookInCourseMode();
-        test.adminDashboard.createUnpublishedMaster(getData("name"));
-    	test.adminDashboard.openMaster();
+        test.adminDashboard.createUnpublishedMaster(getData(nb+".name"));
     }
     
-    @Test(dependsOnMethods = "adminCreatesMasterNeXtBookInCourseMode")
-    void adminRefreshMasterNeXtBook(){
+    @Test(dependsOnMethods = "Step_02_Admin_Logs_in_to_the_Application")
+    public void adminRefreshMasterNeXtBook(){
         test.adminDashboard.openMaster();
         test.adminDashboard.searchBookOnMastersPage(getData("neXtBooks.neXtBook1.name"));
         test.adminDashboard.clickOnModeValueIcon(getData("neXtBooks.neXtBook1.mode2"));
@@ -81,33 +79,34 @@ public class TestAdminPerformsAction {
         test.adminDashboard.verifyBookPresent(getData("neXtBooks.neXtBook1.name"));
         test.adminDashboard.verifyLearningUnitsPresentInMasterNeXtBook(getData("classTitle"));
         test.lpn.createLearningUnit(getData(lu+".newUnit"),getData(lu+".newUnit"));
-        Reporter.log ("Completed Admin Creates Learning Unit",true)
     }   
         
     @Test(dependsOnMethods = "adminCreatesLearningUnit")
-    void verifySearchOperation(){
-        test.adminDashboard.openNeXtBookAdminDashboard();
-        Assert.assertTrue(test.adminDashboard.launchMasterNextBook(dsl.testdata.neXtBooks.neXtBook1.master,dsl.testdata.neXtBooks.neXtBook1.mode2));        
-        Assert.assertTrue(test.adminDashboard.verifyLearningUnitsPresentInMasterNeXtBook(getData("classTitle"));
-        searchDsl.verifySearchApp();
-        searchDsl.performSearchOperationUsingSubmit(lu.name);
-        Reporter.log "Completed verify Search Operation",true
+     void verifySearchOperation(){
+        test.adminDashboard.openMaster(); 
+        test.adminDashboard.searchBookOnMastersPage(getData("neXtBooks.neXtBook1.master"));
+        test.adminDashboard.clickOnModeValueIcon(getData("neXtBooks.neXtBook1.mode2"));
+        test.adminDashboard.verifyBookPresent(getData("neXtBooks.neXtBook1.master"));
+        test.adminDashboard.verifyLearningUnitsPresentInMasterNeXtBook(getData("classTitle"));
+        test.search.verifySearchApp();
+        test.search.performSearchOperationUsingSubmit(lu+".name");
     }
 
-    //@Test(dependsOnMethods="verifySearchOperation")
-    void navigateToSnapshotAndOpenLamsFromDockApp(){
-        test.adminDashboard.openOrgDashBoard();
-        orgDsl.navigateToSnapshot(lu2.learningActivities.learningActivity2.organisationName,dsl.testdata.neXtBooks.neXtBook2.CourseName,
-            lu2.learningActivities.learningActivity2.snapshotName,dsl.testdata.neXtBooks.neXtBook2.CourseKey);
-        Assert.assertTrue(lamsDsl.validateAdminCannotViewActivityFromTheAppDock());
-        Reporter.log "Completed Navigate to Snapshot and Open Lams From Dock App",true
+     @Test(dependsOnMethods = "verifySearchOperation")
+    void adminLogout(){
+        test.dsl.clickOnAutomationAdminLink();
+        test.dsl.verifyLogOut();
+       
+    }
+     @AfterClass(alwaysRun = true)
+    void stopBrowser() {        
+        test.closeTestSession(); 
     }
     
-    @Test(dependsOnMethods = "verifySearchOperation")
-    void adminLogout(){
-        dsl.logOut();
-        dsl.verifyLogOut();
-        Reporter.log ("Completed admin Logout",true)
-    }
-   */
+    
+    @AfterMethod
+    public void captureScreenShotOnFailure(ITestResult result) {
+              test.takescreenshot.takeScreenShotOnException(result);
+
+     }
 }

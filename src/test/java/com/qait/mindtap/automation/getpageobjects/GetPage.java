@@ -378,4 +378,10 @@ public class GetPage extends BaseUi {
             }
         }
     }	
+    
+          public void clickOnHideApp(){  
+           switchToDefaultContent();
+            if(isElementDisplayed("hideFrame"))
+                element("hideFrame").click();
+    }
 }

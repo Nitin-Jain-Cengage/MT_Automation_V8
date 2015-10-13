@@ -6,18 +6,11 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class mindtapUtilityMethods extends GetPage{
+public class mindtapUtilityMethods {
 
-	
 	WebDriver driver;
-	
-	 
-	 public mindtapUtilityMethods(WebDriver driver) {
-               super(driver,"mindtapUtilityPage");
-	 }
 
-
-	public void clickOnCourseName(String CourseName, String env, List<WebElement> lnk_course) {
+   public void clickOnCourseName(String CourseName, String env, List<WebElement> lnk_course) {
 	    for (WebElement ele : lnk_course) {
 	            if (ele.getText().equalsIgnoreCase(CourseName)) {
 	                String attribute = ele.getAttribute("href");
@@ -63,4 +56,6 @@ public class mindtapUtilityMethods extends GetPage{
 	        driver.navigate().to(url);
 	    }
     	
+   
+
 }

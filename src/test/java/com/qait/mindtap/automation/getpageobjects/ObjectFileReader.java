@@ -147,6 +147,11 @@ public class ObjectFileReader {
             case qad:
                 tier = "QAD/";
                 break;
+            case STG:
+            case Stg:
+            case stg:
+                tier = "STG/";
+                break;
         }
     }
 }

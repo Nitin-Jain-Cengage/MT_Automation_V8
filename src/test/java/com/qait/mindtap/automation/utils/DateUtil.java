@@ -399,5 +399,27 @@ public class DateUtil {
 		return dateFormat.format(cal.getTime());
 	}
 
+    public String getDayOfWeek() {
+        Calendar cal = Calendar.getInstance();
+        String day = null;
+	switch(cal.get(Calendar.DAY_OF_WEEK)+1){
+            case 1: day = "Sun";
+                    break;
+            case 2: day = "Mon";
+                    break;
+            case 3: day = "Tue";
+                    break;
+            case 4: day = "Wed";
+                    break;
+            case 5: day = "Thu";
+                    break;
+            case 6: day = "Fri";
+                    break;
+            case 7: day = "Sat";
+                    break;   
+        }       
+   	return day;
+    }
+
 	
 }
