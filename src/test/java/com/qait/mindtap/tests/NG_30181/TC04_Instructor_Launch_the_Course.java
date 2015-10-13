@@ -1,4 +1,4 @@
-package com.qait.mindtap.tests.NG_30104;
+package com.qait.mindtap.tests.NG_30181;
 
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
 
@@ -50,8 +50,8 @@ public class TC04_Instructor_Launch_the_Course {
 
 	    @Test(dependsOnMethods = {"Step_03_Instructor_Enrols_TA_IN_Course"})
 	    public void Step_04_verify_Spalsh_Page_Dispalys_Automatically() {
-              test.la.verifyCourseName();	       
-  	      test.la.clickEnterOnSplashPage();
+            //  test.la.verifyCourseName();	       
+  	   //   test.la.clickEnterOnSplashPage();
   
 	    }
 

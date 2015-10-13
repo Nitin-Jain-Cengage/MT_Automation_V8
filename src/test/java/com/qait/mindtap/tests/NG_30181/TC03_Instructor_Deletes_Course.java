@@ -1,4 +1,4 @@
-package com.qait.mindtap.tests.NG_30104;
+package com.qait.mindtap.tests.NG_30181;
 
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
 

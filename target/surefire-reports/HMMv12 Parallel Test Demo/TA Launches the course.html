@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TA Launches the course</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/6</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 01 19:25:29 IST 2015</td>
+<td>Started on:</td><td>Tue Oct 13 12:03:48 IST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>125 seconds (125046 ms)</td>
+<tr><td>Total time:</td><td>34 seconds (34877 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,26 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_08_Verify_Rolling_Week_UI()'><b>Step_08_Verify_Rolling_Week_UI</b><br>Test class: com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course<br/>
-<a href="#Output-31404708" onClick='toggleBox("Output-31404708", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_03_Student_Launch_Course()'><b>Step_03_Student_Launch_Course</b><br>Test class: com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course<br/>
+<a href="#Output-28579648" onClick='toggleBox("Output-28579648", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-31404708" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-31404708">
-[ASSERT PASS]: element headerBody is displayed.<br/>
-[ASSERT PASS]: element mindtapLogo is displayed.<br/>
-[ASSERT PASS]: Hello User is shown <br/>
+<a href="#Output-28579648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-28579648">
+[ASSERT PASS]: PageTitle for NG-30181-CoursePaymentPage contains: 'CengageBrain - Course Payment'.<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: [ASSERT FAIL]: color of coursename is not blue expected [true] but found [false]
-	at com.qait.mindtap.keywords.NG_30104.WeekWidgetActions.couresNameInBlueHeader(WeekWidgetActions.java:16)
-	at com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_08_Verify_Rolling_Week_UI(NG_30181_TC06_TA_Launch_the_Course.java:85)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31404708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace31404708'><pre>java.lang.AssertionError: [ASSERT FAIL]: color of coursename is not blue expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.qait.mindtap.keywords.NG_30104.WeekWidgetActions.couresNameInBlueHeader(WeekWidgetActions.java:16)
-	at com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_08_Verify_Rolling_Week_UI(NG_30181_TC06_TA_Launch_the_Course.java:85)
+<td><div><pre>java.lang.NullPointerException
+	at com.qait.mindtap.automation.utils.mindtapUtilityMethods.launchCourse(mindtapUtilityMethods.java:56)
+	at com.qait.mindtap.keywords.NG_30181_CoursePaymentActionPageActions.take_Me_To_Course(NG_30181_CoursePaymentActionPageActions.java:20)
+	at com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_03_Student_Launch_Course(TC06_TA_Launch_the_Course.java:48)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28579648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace28579648'><pre>java.lang.NullPointerException
+	at com.qait.mindtap.automation.utils.mindtapUtilityMethods.launchCourse(mindtapUtilityMethods.java:56)
+	at com.qait.mindtap.keywords.NG_30181_CoursePaymentActionPageActions.take_Me_To_Course(NG_30181_CoursePaymentActionPageActions.java:20)
+	at com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_03_Student_Launch_Course(TC06_TA_Launch_the_Course.java:48)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -123,8 +120,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 </pre></div></td>
-<td>17</td>
-<td>com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da</td></tr>
+<td>5</td>
+<td>com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -134,104 +131,33 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_01_Student_Logs_in_to_the_Application()'><b>Step_01_Student_Logs_in_to_the_Application</b><br>Test class: com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course<br/>
-<a href="#Output-23822242" onClick='toggleBox("Output-23822242", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_01_Student_Logs_in_to_the_Application()'><b>Step_01_Student_Logs_in_to_the_Application</b><br>Test class: com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course<br/>
+<a href="#Output-20806753" onClick='toggleBox("Output-20806753", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-23822242" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-23822242">
+<a href="#Output-20806753" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20806753">
 [ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.<br/>
 [INFO]: log into the application using credentials 'student06aug_mtx_060815@swlearning.com / A111111'<br/>
 [ASSERT PASS]: PageTitle for NG-30181-SsoDashboard contains: 'CengageBrain - My Home'.<br/>
 </div>
 </td>
 <td></td>
-<td>39</td>
-<td>com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da</td></tr>
+<td>8</td>
+<td>com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464</td></tr>
 <tr>
-<td title='com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_02_Student_Registers_Course()'><b>Step_02_Student_Registers_Course</b><br>Test class: com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course<br/>
-<a href="#Output-8349581" onClick='toggleBox("Output-8349581", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_02_Student_Registers_Course()'><b>Step_02_Student_Registers_Course</b><br>Test class: com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course<br/>
+<a href="#Output-14540892" onClick='toggleBox("Output-14540892", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-8349581" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-8349581">
+<a href="#Output-14540892" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14540892">
 [ASSERT PASS]: element inputCourseKey is displayed.<br/>
 [ASSERT PASS]: PageTitle for NG-30181-ConfirmCourseInformation contains: 'CengageBrain - Confirm Course Information'.<br/>
 [ASSERT PASS]: element btnContinue is displayed.<br/>
 </div>
 </td>
 <td></td>
-<td>2</td>
-<td>com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da</td></tr>
-<tr>
-<td title='com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_03_Student_Launch_Course()'><b>Step_03_Student_Launch_Course</b><br>Test class: com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course<br/>
-<a href="#Output-14890713" onClick='toggleBox("Output-14890713", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-14890713" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-14890713">
-[ASSERT PASS]: PageTitle for NG-30181-CoursePaymentPage contains: 'CengageBrain - Course Payment'.<br/>
-</div>
-</td>
-<td></td>
-<td>10</td>
-<td>com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da</td></tr>
-<tr>
-<td title='com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_04_verify_Spalsh_Page_Dispalys_Automatically()'><b>Step_04_verify_Spalsh_Page_Dispalys_Automatically</b><br>Test class: com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course<br/>
-<a href="#Output-7003692" onClick='toggleBox("Output-7003692", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-7003692" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-7003692">
-[ASSERT PASS]: element courseName is displayed.<br/>
-[ASSERT PASS]: Splash Page is displayed<br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da</td></tr>
-<tr>
-<td title='com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date()'><b>Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date</b><br>Test class: com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course<br/>
-<a href="#Output-5688217" onClick='toggleBox("Output-5688217", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-5688217" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-5688217">
-[ASSERT PASS]: element currentWeekIcon is displayed.<br/>
-[ASSERT PASS]: Current Week icon is displayed<br/>
-[ASSERT PASS]: element textWeek is displayed.<br/>
-[ASSERT PASS]: Week is Displayed along with countWEEK 1<br/>
-[ASSERT PASS]: element monthDate is displayed.<br/>
-[ASSERT PASS]: Sep Month is displayed<br/>
-[ASSERT PASS]: along with date 30<br/>
-</div>
-</td>
-<td></td>
-<td>27</td>
-<td>com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da</td></tr>
-<tr>
-<td title='com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_06_Verify_Expand_Collapse_Functionality()'><b>Step_06_Verify_Expand_Collapse_Functionality</b><br>Test class: com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course<br/>
-<a href="#Output-6463362" onClick='toggleBox("Output-6463362", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-6463362" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-6463362">
-[ASSERT PASS]: element expand_collapse is displayed.<br/>
-[ASSERT PASS]: Expand/Collapse Functionality work properly<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da</td></tr>
-<tr>
-<td title='com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_07_verify_Splash_Page()'><b>Step_07_verify_Splash_Page</b><br>Test class: com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course<br/>
-<a href="#Output-25432982" onClick='toggleBox("Output-25432982", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-25432982" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-25432982">
-[ASSERT PASS]: element mindtapLogo is enabled :- true<br/>
-[ASSERT PASS]: element courseName is displayed.<br/>
-[ASSERT PASS]: Completed Verify Book Cover Test<br/>
-[ASSERT PASS]: element mindtapLogo is enabled :- true<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da</td></tr>
+<td>7</td>
+<td>com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -241,10 +167,150 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course.Step_07_Instructor_SignOut()'><b>Step_07_Instructor_SignOut</b><br>Test class: com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course</td>
-<td><div><pre>java.lang.Throwable: Method NG_30181_TC06_TA_Launch_the_Course.Step_07_Instructor_SignOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da] depends on not successfully finished methods
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12585400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace12585400'><pre>java.lang.Throwable: Method NG_30181_TC06_TA_Launch_the_Course.Step_07_Instructor_SignOut()[pri:0, instance:com.qait.mindtap.tests.NG_30104.NG_30181_TC06_TA_Launch_the_Course@109b8da] depends on not successfully finished methods
+<td title='com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_04_verify_Spalsh_Page_Dispalys_Automatically()'><b>Step_04_verify_Spalsh_Page_Dispalys_Automatically</b><br>Test class: com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course</td>
+<td><div><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_04_verify_Spalsh_Page_Dispalys_Automatically()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27312737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27312737'><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_04_verify_Spalsh_Page_Dispalys_Automatically()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date()'><b>Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date</b><br>Test class: com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course</td>
+<td><div><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6479268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6479268'><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_06_Verify_Expand_Collapse_Functionality()'><b>Step_06_Verify_Expand_Collapse_Functionality</b><br>Test class: com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course</td>
+<td><div><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_06_Verify_Expand_Collapse_Functionality()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace27123711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27123711'><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_06_Verify_Expand_Collapse_Functionality()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_07_user_LogOut()'><b>Step_07_user_LogOut</b><br>Test class: com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course</td>
+<td><div><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_07_user_LogOut()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace4428474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace4428474'><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_07_user_LogOut()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_07_verify_Splash_Page()'><b>Step_07_verify_Splash_Page</b><br>Test class: com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course</td>
+<td><div><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_07_verify_Splash_Page()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31495028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31495028'><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_07_verify_Splash_Page()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:217)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_08_Verify_Rolling_Week_UI()'><b>Step_08_Verify_Rolling_Week_UI</b><br>Test class: com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course</td>
+<td><div><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_08_Verify_Rolling_Week_UI()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace195363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace195363'><pre>java.lang.Throwable: Method TC06_TA_Launch_the_Course.Step_08_Verify_Rolling_Week_UI()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@1a03464] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1063)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)

@@ -21,10 +21,9 @@ import com.qait.mindtap.automation.TestSessionInitiator;
  * @author ayushgaur
  */
 public class TC01_Instructor_Adds_Offline_Activity {
-        	TestSessionInitiator test;
-
-	    String[] browserSizes = {"720x360"};
-	    String[] layoutTags = {"all"};
+        TestSessionInitiator test;
+        String[] browserSizes = {"720x360"};
+        String[] layoutTags = {"all"};
 
     @BeforeClass
     @Parameters("browser")
@@ -40,15 +39,16 @@ public class TC01_Instructor_Adds_Offline_Activity {
     }
 
     @Test(dependsOnMethods = {"Step_01_Admin_Logs_in_to_the_Application"})
-    public void Step_02_Admin_Search_Course_using_ISBN() {
+    public void Step_02_Admin_Search_Course() {
        test.adminpage.verify_User_LoggedIn_As_Admin("Admin Dashboard");
+       
        test.adminpage.search_Course_Using_ISBN(getData("course1.ISBN"));
       }
             
     @Test(dependsOnMethods = {"Step_02_Admin_Search_Course_using_ISBN"})
      public void step_03_test_session(@Optional String browser) {
-	        test = new TestSessionInitiator("TC04_Instructor_Launch_the_Course", browser);
-	        test.launchApplication(getData("sso_url"));
+	test = new TestSessionInitiator("TC04_Instructor_Launch_the_Course", browser);
+	test.launchApplication(getData("sso_url"));
 	        
 	    }
 

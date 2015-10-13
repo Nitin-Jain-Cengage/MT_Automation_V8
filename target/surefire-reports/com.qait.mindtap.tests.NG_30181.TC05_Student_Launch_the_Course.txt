@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.qait.mindtap.tests.NG_30181.TC05_Student_Launch_the_Course
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 167.41 sec - in com.qait.mindtap.tests.NG_30181.TC05_Student_Launch_the_Course
