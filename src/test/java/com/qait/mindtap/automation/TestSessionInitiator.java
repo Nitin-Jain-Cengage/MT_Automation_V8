@@ -39,7 +39,7 @@ import com.qait.mindtap.keywords.NG_30104.NG_30181_LoginPageActions;
 import com.qait.mindtap.keywords.NG_30104.NG_30181_StudentLaunchCourseActions;
 import com.qait.mindtap.keywords.NG_30104.OrganizationActions;
 import com.qait.mindtap.keywords.NG_30104.ProgressWidgetActions;
-import com.qait.mindtap.keywords.NG_30104.SearchAppPageActions;
+//import com.qait.mindtap.keywords.NG_30104.SearchAppPageActions;
 import com.qait.mindtap.keywords.NG_30104.UserPageActions;
 import com.qait.mindtap.keywords.NG_30104.WeekWidgetActions;
 
@@ -79,7 +79,7 @@ public class TestSessionInitiator {
     public WeekWidgetActions weekwidget;
     public ProgressWidgetActions progress;
     public LearningPathNavigatorPageActions lpn;
-    public SearchAppPageActions search;
+  //  public SearchAppPageActions search;
     public LoginPageActions dsl;
     
     public TakeScreenshot takescreenshot;
@@ -113,7 +113,7 @@ public class TestSessionInitiator {
         weekwidget = new WeekWidgetActions(driver);
         progress = new ProgressWidgetActions(driver);
         lpn = new LearningPathNavigatorPageActions(driver);
-        search = new SearchAppPageActions(driver);
+    //    search = new SearchAppPageActions(driver);
         org = new OrganizationActions(driver);
     }
 
