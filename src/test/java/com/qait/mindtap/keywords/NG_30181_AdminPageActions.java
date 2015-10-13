@@ -36,7 +36,8 @@ public class NG_30181_AdminPageActions extends GetPage{
     }
 	
     public void search_Course_Using_ISBN(String courseKey) {
-	element("input_search_ISBN").sendKeys(courseKey);
+	element("input_search_ISBN").clear();
+        element("input_search_ISBN").sendKeys(courseKey);
                                
     }
 

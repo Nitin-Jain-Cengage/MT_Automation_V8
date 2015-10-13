@@ -1,107 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
     <line>
       <![CDATA[[INFO]: The test Browser is CHROME !!!]]>
     </line>
     <line>
-      <![CDATA[[INFO]:  The application url is :- http://s-login.cengage.com/]]>
+      <![CDATA[[INFO]:  The application url is :- http://qad.ng.cengage.com/static/nb/login.html]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]>
+      <![CDATA[[INFO]: log into the application using credentials 'automationadmin@qait.com / A111111']]>
     </line>
     <line>
-      <![CDATA[[INFO]: log into the application using credentials 'student06aug_mtx_060815@swlearning.com / A111111']]>
+      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-AdminPage contains: 'MindTap Admin - Manage Masters'.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-SsoDashboard contains: 'CengageBrain - My Home'.]]>
+      <![CDATA[[ASSERT PASS]: Verified User is on Admin Page]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: element inputCourseKey is displayed.]]>
+      <![CDATA[[ASSERT PASS]: element mindtap_toolbar is displayed.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-ConfirmCourseInformation contains: 'CengageBrain - Confirm Course Information'.]]>
+      <![CDATA[[ASSERT PASS]: element admin_dashboard with text Admin Dashboard is displayed.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: element btnContinue is displayed.]]>
+      <![CDATA[[ASSERT PASS]: element Btn_show_copy is displayed.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-CoursePaymentPage contains: 'CengageBrain - Course Payment'.]]>
+      <![CDATA[[ASSERT PASS]: element icon_course_edit is displayed.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: element courseName is displayed.]]>
+      <![CDATA[[ASSERT PASS]: element Edit_Working_copy with text Edit Working Copy is displayed.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: Splash Page is displayed]]>
+      <![CDATA[[ASSERT PASS]: element checkbox_Andesite_mode is displayed.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: element enter is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element currentWeekIcon is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: Current Week icon is displayed]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element textWeek is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: Week is Displayed along with countWEEK 1]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element monthDate is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: Oct Month is displayed]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: along with date 12]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element expand_collapse is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: Expand/Collapse Functionality work properly]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element mindtapLogo is enabled :- true]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element courseNameAfterEnter is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: Completed Verify Book Cover Test]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element mindtapLogo is enabled :- true]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element headerBody is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element mindtapLogo is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: Hello User is shown ]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: color of course is blue]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element user_Logout is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[INFO]: The Test: TC06_TA_LAUNCH_THE_COURSE COMPLETED!
+      <![CDATA[[INFO]: The Test: TC01_ADMIN_LOGIN_AND_SEARCH_THE_ISBN_UNDER_MASTER_TAB COMPLETED!
 ]]>
     </line>
   </reporter-output>
-  <suite name="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course" duration-ms="129331" started-at="2015-10-13T08:46:23Z" finished-at="2015-10-13T08:48:32Z">
+  <suite name="com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab" duration-ms="71701" started-at="2015-10-13T10:29:50Z" finished-at="2015-10-13T10:31:02Z">
     <groups>
     </groups>
-    <test name="Command line test 41e06c49-ff6d-4230-9c4a-98e4e3eb8bbf" duration-ms="129331" started-at="2015-10-13T08:46:23Z" finished-at="2015-10-13T08:48:32Z">
-      <class name="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course">
-        <test-method status="PASS" signature="start_test_session(java.lang.String)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="start_test_session" is-config="true" duration-ms="13843" started-at="2015-10-13T14:16:23Z" finished-at="2015-10-13T14:16:37Z">
+    <test name="Command line test 2c9f8806-12dc-4420-88d2-c5635c36f263" duration-ms="71701" started-at="2015-10-13T10:29:50Z" finished-at="2015-10-13T10:31:02Z">
+      <class name="com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab">
+        <test-method status="PASS" signature="start_test_session(java.lang.String)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="start_test_session" is-config="true" duration-ms="7864" started-at="2015-10-13T15:59:50Z" finished-at="2015-10-13T15:59:58Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -112,238 +55,106 @@
               <![CDATA[[INFO]: The test Browser is CHROME !!!]]>
             </line>
             <line>
-              <![CDATA[[INFO]:  The application url is :- http://s-login.cengage.com/]]>
+              <![CDATA[[INFO]:  The application url is :- http://qad.ng.cengage.com/static/nb/login.html]]>
             </line>
           </reporter-output>
         </test-method> <!-- start_test_session -->
-        <test-method status="PASS" signature="Step_01_Student_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="Step_01_Student_Logs_in_to_the_Application" duration-ms="9435" started-at="2015-10-13T14:16:37Z" finished-at="2015-10-13T14:16:46Z">
+        <test-method status="PASS" signature="Step_01_Admin_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="Step_01_Admin_Logs_in_to_the_Application" duration-ms="5290" started-at="2015-10-13T15:59:58Z" finished-at="2015-10-13T16:00:03Z">
           <reporter-output>
             <line>
-              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]>
+              <![CDATA[[INFO]: log into the application using credentials 'automationadmin@qait.com / A111111']]>
             </line>
             <line>
-              <![CDATA[[INFO]: log into the application using credentials 'student06aug_mtx_060815@swlearning.com / A111111']]>
+              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-AdminPage contains: 'MindTap Admin - Manage Masters'.]]>
             </line>
             <line>
-              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-SsoDashboard contains: 'CengageBrain - My Home'.]]>
+              <![CDATA[[ASSERT PASS]: Verified User is on Admin Page]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Step_01_Student_Logs_in_to_the_Application -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T14:16:46Z" finished-at="2015-10-13T14:16:46Z">
+        </test-method> <!-- Step_01_Admin_Logs_in_to_the_Application -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T16:00:03Z" finished-at="2015-10-13T16:00:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_01_Student_Logs_in_to_the_Application status=SUCCESS method=TC06_TA_Launch_the_Course.Step_01_Student_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480] output=[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]]>
+                <![CDATA[[TestResult name=Step_01_Admin_Logs_in_to_the_Application status=SUCCESS method=TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_01_Admin_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5] output=[INFO]: log into the application using credentials 'automationadmin@qait.com / A111111']]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_02_Student_Registers_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="Step_02_Student_Registers_Course" duration-ms="7962" started-at="2015-10-13T14:16:46Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_01_Student_Logs_in_to_the_Application" finished-at="2015-10-13T14:16:54Z">
+        <test-method status="PASS" signature="Step_02_Admin_Search_Course_using_ISBN()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="Step_02_Admin_Search_Course_using_ISBN" duration-ms="5110" started-at="2015-10-13T16:00:03Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_01_Admin_Logs_in_to_the_Application" finished-at="2015-10-13T16:00:08Z">
           <reporter-output>
             <line>
-              <![CDATA[[ASSERT PASS]: element inputCourseKey is displayed.]]>
+              <![CDATA[[ASSERT PASS]: element mindtap_toolbar is displayed.]]>
             </line>
             <line>
-              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-ConfirmCourseInformation contains: 'CengageBrain - Confirm Course Information'.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: element btnContinue is displayed.]]>
+              <![CDATA[[ASSERT PASS]: element admin_dashboard with text Admin Dashboard is displayed.]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Step_02_Student_Registers_Course -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T14:16:54Z" finished-at="2015-10-13T14:16:54Z">
+        </test-method> <!-- Step_02_Admin_Search_Course_using_ISBN -->
+        <test-method status="PASS" signature="Step_03_Admin_Verify_Course_Andesite_mode_checked()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="Step_03_Admin_Verify_Course_Andesite_mode_checked" duration-ms="49784" started-at="2015-10-13T16:00:08Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_02_Admin_Search_Course_using_ISBN" finished-at="2015-10-13T16:00:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[[ASSERT PASS]: element Btn_show_copy is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: element icon_course_edit is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: element Edit_Working_copy with text Edit Working Copy is displayed.]]>
+            </line>
+            <line>
+              <![CDATA[[ASSERT PASS]: element checkbox_Andesite_mode is displayed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Step_03_Admin_Verify_Course_Andesite_mode_checked -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T16:00:08Z" finished-at="2015-10-13T16:00:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_02_Student_Registers_Course status=SUCCESS method=TC06_TA_Launch_the_Course.Step_02_Student_Registers_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480] output=[ASSERT PASS]: element inputCourseKey is displayed.]]]>
+                <![CDATA[[TestResult name=Step_02_Admin_Search_Course_using_ISBN status=SUCCESS method=TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_02_Admin_Search_Course_using_ISBN()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5] output=[ASSERT PASS]: element mindtap_toolbar is displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_03_Student_Launch_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="Step_03_Student_Launch_Course" duration-ms="12612" started-at="2015-10-13T14:16:54Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_02_Student_Registers_Course" finished-at="2015-10-13T14:17:07Z">
+        <test-method status="PASS" signature="Step_04_Admin_Logs_Out()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="Step_04_Admin_Logs_Out" duration-ms="1760" started-at="2015-10-13T16:00:58Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_03_Admin_Verify_Course_Andesite_mode_checked" finished-at="2015-10-13T16:01:00Z">
           <reporter-output>
-            <line>
-              <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-CoursePaymentPage contains: 'CengageBrain - Course Payment'.]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- Step_03_Student_Launch_Course -->
-        <test-method status="PASS" signature="Step_04_verify_Spalsh_Page_Dispalys_Automatically()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="Step_04_verify_Spalsh_Page_Dispalys_Automatically" duration-ms="6750" started-at="2015-10-13T14:17:07Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_03_Student_Launch_Course" finished-at="2015-10-13T14:17:14Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[ASSERT PASS]: element courseName is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Splash Page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: element enter is displayed.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Step_04_verify_Spalsh_Page_Dispalys_Automatically -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T14:17:07Z" finished-at="2015-10-13T14:17:07Z">
+        </test-method> <!-- Step_04_Admin_Logs_Out -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T16:00:58Z" finished-at="2015-10-13T16:00:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_03_Student_Launch_Course status=SUCCESS method=TC06_TA_Launch_the_Course.Step_03_Student_Launch_Course()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480] output=[ASSERT PASS]: PageTitle for NG-30181-CoursePaymentPage contains: 'CengageBrain - Course Payment'.]]]>
+                <![CDATA[[TestResult name=Step_03_Admin_Verify_Course_Andesite_mode_checked status=SUCCESS method=TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_03_Admin_Verify_Course_Andesite_mode_checked()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5] output=[ASSERT PASS]: element Btn_show_copy is displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date" duration-ms="54954" started-at="2015-10-13T14:17:14Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_04_verify_Spalsh_Page_Dispalys_Automatically" finished-at="2015-10-13T14:18:09Z">
+        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="stop_test_session" is-config="true" duration-ms="1873" started-at="2015-10-13T16:01:00Z" finished-at="2015-10-13T16:01:02Z">
           <reporter-output>
             <line>
-              <![CDATA[[ASSERT PASS]: element currentWeekIcon is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Current Week icon is displayed]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: element textWeek is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Week is Displayed along with countWEEK 1]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: element monthDate is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Oct Month is displayed]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: along with date 12]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T14:17:14Z" finished-at="2015-10-13T14:17:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_04_verify_Spalsh_Page_Dispalys_Automatically status=SUCCESS method=TC06_TA_Launch_the_Course.Step_04_verify_Spalsh_Page_Dispalys_Automatically()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480] output=[ASSERT PASS]: element courseName is displayed.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T14:18:09Z" finished-at="2015-10-13T14:18:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date status=SUCCESS method=TC06_TA_Launch_the_Course.Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480] output=[ASSERT PASS]: element currentWeekIcon is displayed.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_06_Verify_Expand_Collapse_Functionality()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="Step_06_Verify_Expand_Collapse_Functionality" duration-ms="5130" started-at="2015-10-13T14:18:09Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_05_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date" finished-at="2015-10-13T14:18:14Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[ASSERT PASS]: element expand_collapse is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Expand/Collapse Functionality work properly]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Step_06_Verify_Expand_Collapse_Functionality -->
-        <test-method status="PASS" signature="Step_07_verify_Splash_Page()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="Step_07_verify_Splash_Page" duration-ms="7332" started-at="2015-10-13T14:18:14Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_06_Verify_Expand_Collapse_Functionality" finished-at="2015-10-13T14:18:21Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[ASSERT PASS]: element mindtapLogo is enabled :- true]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: element courseNameAfterEnter is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Completed Verify Book Cover Test]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: element mindtapLogo is enabled :- true]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Step_07_verify_Splash_Page -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T14:18:14Z" finished-at="2015-10-13T14:18:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_06_Verify_Expand_Collapse_Functionality status=SUCCESS method=TC06_TA_Launch_the_Course.Step_06_Verify_Expand_Collapse_Functionality()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480] output=[ASSERT PASS]: element expand_collapse is displayed.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T14:18:21Z" finished-at="2015-10-13T14:18:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_07_verify_Splash_Page status=SUCCESS method=TC06_TA_Launch_the_Course.Step_07_verify_Splash_Page()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480] output=[ASSERT PASS]: element mindtapLogo is enabled :- true]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_08_Verify_Rolling_Week_UI()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="Step_08_Verify_Rolling_Week_UI" duration-ms="5444" started-at="2015-10-13T14:18:21Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_07_verify_Splash_Page" finished-at="2015-10-13T14:18:27Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[ASSERT PASS]: element headerBody is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: element mindtapLogo is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Hello User is shown ]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: color of course is blue]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Step_08_Verify_Rolling_Week_UI -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T14:18:27Z" finished-at="2015-10-13T14:18:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_08_Verify_Rolling_Week_UI status=SUCCESS method=TC06_TA_Launch_the_Course.Step_08_Verify_Rolling_Week_UI()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480] output=[ASSERT PASS]: element headerBody is displayed.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_07_user_LogOut()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="Step_07_user_LogOut" duration-ms="3950" started-at="2015-10-13T14:18:27Z" depends-on-methods="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course.Step_08_Verify_Rolling_Week_UI" finished-at="2015-10-13T14:18:31Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[ASSERT PASS]: element user_Logout is displayed.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Step_07_user_LogOut -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T14:18:31Z" finished-at="2015-10-13T14:18:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Step_07_user_LogOut status=SUCCESS method=TC06_TA_Launch_the_Course.Step_07_user_LogOut()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480] output=[ASSERT PASS]: element user_Logout is displayed.]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course@17f6480]" name="stop_test_session" is-config="true" duration-ms="1860" started-at="2015-10-13T14:18:31Z" finished-at="2015-10-13T14:18:32Z">
-          <reporter-output>
-            <line>
-              <![CDATA[[INFO]: The Test: TC06_TA_LAUNCH_THE_COURSE COMPLETED!
+              <![CDATA[[INFO]: The Test: TC01_ADMIN_LOGIN_AND_SEARCH_THE_ISBN_UNDER_MASTER_TAB COMPLETED!
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- stop_test_session -->
-      </class> <!-- com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course -->
-    </test> <!-- Command line test 41e06c49-ff6d-4230-9c4a-98e4e3eb8bbf -->
-  </suite> <!-- com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course -->
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-10-13T16:01:00Z" finished-at="2015-10-13T16:01:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Step_04_Admin_Logs_Out status=SUCCESS method=TC01_Admin_login_and_search_the_isbn_under_master_Tab.Step_04_Admin_Logs_Out()[pri:0, instance:com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab@1be98f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshotonFailure -->
+      </class> <!-- com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab -->
+    </test> <!-- Command line test 2c9f8806-12dc-4420-88d2-c5635c36f263 -->
+  </suite> <!-- com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab -->
 </testng-results>
