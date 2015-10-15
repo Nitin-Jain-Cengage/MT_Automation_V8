@@ -12,4 +12,11 @@ textWeek						xpath								//span[contains(text(),'current week')]/../h4
 chapters						xpath								//div [contains(@class,"chapter-name")]
 Today							xpath								//span[contains(text(),'Today')]
 dayToAdd                                                xpath                                                           //header[contains(text(),'${Tue}')]
+offline_assignmentDescription                           xpath                                                           (//div[contains(text(),'${description}')])[1]
+offline_assignmentTitle                                 xpath                                                           (//span[contains(text(),'ayush')])[1]
+offlineAssignment                                       xpath                                                            //div[contains(@class,'day-bar')]
+offline_assignmentScore                                 xpath                                                            (//span[@id='totalDisplay'])[1]
+
+
+
 ====================================================================================

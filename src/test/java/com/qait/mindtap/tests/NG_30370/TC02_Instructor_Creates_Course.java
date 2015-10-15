@@ -1,4 +1,5 @@
-package com.qait.mindtap.tests.NG_30181;
+package com.qait.mindtap.tests.NG_30370;
+import com.qait.mindtap.tests.NG_30181.*;
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
 
 import org.testng.ITestResult;

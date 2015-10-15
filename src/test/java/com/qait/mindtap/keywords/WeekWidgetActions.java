@@ -1,12 +1,12 @@
 package com.qait.mindtap.keywords;
 
-import java.awt.Color;
+
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.qait.mindtap.automation.getpageobjects.GetPage;
-import com.sun.jna.platform.win32.WinBase;
+
 
 public class WeekWidgetActions extends GetPage{
 
@@ -96,4 +96,44 @@ public class WeekWidgetActions extends GetPage{
           String day = date.getDayOfWeek();
           element("dayToAdd",day);
         }
+
+    public void instructorSelectsOfflineActivity() {
+        isElementDisplayed("offlineActivity");
+        element("offlineActivity").click();   
+    }
+
+    public void verifyAssignment() {
+        Assert.assertTrue(isElementDisplayed("offlineAssignment"),Reporter.failForAssert("Assignment is not added or displayed"));
+        Reporter.pass("Assignment is not added or displayed");
+    }
+
+    public void verifyScore() {
+        Assert.assertTrue(isElementDisplayed("offline_assignmentScore"),Reporter.failForAssert("Assignment Score is not added or displayed"));
+        Reporter.pass("Assignment is not added or displayed");
+        if(element("offline_assignmentScore").getText().contains(data.readProperty("offline_assignmentScore"))){
+            Reporter.pass("Correct Score is displayed");
+        }
+            Reporter.fail("Correct Score is displayed");
+
+    }
+
+    public void verifyTitle() {
+        Assert.assertTrue(isElementDisplayed("offline_assignmentTitle"),Reporter.failForAssert("Assignment is not added or displayed"));
+        Reporter.pass("Assignment is not added or displayed");
+         if(element("offline_assignmentTitle").getText().contains(data.readProperty("offline_assignmentTitle"))){
+            Reporter.pass("Correct Title is displayed");
+        }
+            Reporter.fail("Correct Title is displayed");
+
+    }
+
+    public void verifyDescription() {
+        Assert.assertTrue(isElementDisplayed("offline_assignmentDescription"),Reporter.failForAssert("Assignment is not added or displayed"));
+        Reporter.pass("Assignment is not added or displayed");
+         if(element("offline_assignmentDescription").getText().contains(data.readProperty("offline_assignmentDescription"))){
+            Reporter.pass("Correct Description is displayed");
+        }
+            Reporter.fail("Correct Description is displayed");
+
+    }
 }

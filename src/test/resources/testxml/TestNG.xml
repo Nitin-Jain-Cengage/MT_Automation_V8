@@ -5,21 +5,21 @@
 
     <test name="Admin Login and search the isbn under master tab" preserve-order="true"
           enabled="true">
-        <parameter name="browser" value="chrome" />
+        <parameter name="browser" value="chrome"/>
         <classes>
             <class name="com.qait.mindtap.tests.NG_30181.TC01_Admin_login_and_search_the_isbn_under_master_Tab"></class>
         </classes>
     </test>
     <test name="Instructor Creates Courses" preserve-order="true"
           enabled="true">
-        <parameter name="browser" value="chrome" />
+        <parameter name="browser"  value="chrome"/>
         <classes>
             <class name="com.qait.mindtap.tests.NG_30181.TC02_Instructor_Creates_Course"></class>
         </classes>
     </test>
     <test name="Instructor Launch the course" preserve-order="true"
           enabled="true">
-        <parameter name="browser" value="chrome" />
+        <parameter name="browser"  value="chrome"/>
         <classes>
             <class name="com.qait.mindtap.tests.NG_30181.TC04_Instructor_Launch_the_Course"></class>
         </classes>
@@ -33,7 +33,7 @@
     </test>
     <test name="TA Launches the course" preserve-order="true"
           enabled="true">
-        <parameter name="browser" value="chrome" />
+        <parameter name="browser"  value="chrome"/>
         <classes>
             <class name="com.qait.mindtap.tests.NG_30181.TC06_TA_Launch_the_Course"></class>
         </classes>

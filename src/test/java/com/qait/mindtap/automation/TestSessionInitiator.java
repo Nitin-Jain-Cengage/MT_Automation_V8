@@ -41,7 +41,7 @@ import com.qait.mindtap.keywords.OrganizationActions;
 import com.qait.mindtap.keywords.ProgressWidgetActions;
 import com.qait.mindtap.keywords.UserPageActions;
 import com.qait.mindtap.keywords.WeekWidgetActions;
-
+import com.qait.mindtap.keywords.OfflineActivityAction;
 public class TestSessionInitiator {
 
     protected WebDriver driver;
@@ -80,6 +80,7 @@ public class TestSessionInitiator {
     public LearningPathNavigatorPageActions lpn;
   //  public SearchAppPageActions search;
     public LoginPageActions dsl;
+    public OfflineActivityAction offline_activity;
     
     public TakeScreenshot takescreenshot;
     public TopicNamePojo topicNameValue;
@@ -114,6 +115,7 @@ public class TestSessionInitiator {
         lpn = new LearningPathNavigatorPageActions(driver);
     //    search = new SearchAppPageActions(driver);
         org = new OrganizationActions(driver);
+        offline_activity = new OfflineActivityAction(driver);
     }
 
     /**

@@ -17,6 +17,18 @@ icon_course_edit							xpath								//*[@title = "Edit"]/img
 Edit_Working_copy							xpath							//h2[contains(text(),'${Edit pop title}')]
 checkbox_Andesite_mode    					xpath							//input[@checked="checked" and @id="isAndesite"]
 btn_save_Edit_Working_copy   				xpath							//a [@class="adminButton save"]
+orgaizationTab          xpath           //*[@id='orgs_link']
+inputOrganizationSearch         css               .adminSearch>input
+courseOrganization              css                 .orgtitle
+organizationsLink               css                 .orgback
+courseProvisioned               xpath              //a[contains(@class,'coursetitle searchHighlightable title')]
+courseCollege                   xpath               //a[contains(text(),'${organization}')]
+provisionAppsIcon               css                 .delitem>img[alt="Provision Apps"]
+appRegistryHeading              xpath               //h3[contains(text(),'App Registry')]
+cengageNoMT_Activity            xpath               //div[contains(text(),'Cengage.non-mt-activity')]
+add_Activity                    xpath               //div[contains(text(),'Cengage.non-mt-activity')]/../../a/img[@alt='Provision']
+
+
 
 ====================================================================================
 @all, browsers
