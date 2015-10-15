@@ -322,12 +322,12 @@ public class GetPage extends BaseUi {
     protected void  clickOnElementUsingActionBuilder(WebElement element){
         Actions builder = new Actions(driver);
         Actions MenuItems = builder.moveToElement(element);
-        this.waitTOSync();
+       waitTOSync();
        MenuItems.click().build().perform();
-       this.waitTOSync();
+       waitTOSync();
     }
 
-    public void waitTOSync()
+    protected void waitTOSync()
     {
     	try{
      Thread.sleep(2000);

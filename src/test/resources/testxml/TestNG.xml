@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="HMMv12 Parallel Test Demo" parallel="false"
+<suite-file>
+<suite verbose="0" name="NG-30181" parallel="false"
        thread-count="3">
 
     <test name="Admin Login and search the isbn under master tab" preserve-order="true"
@@ -39,3 +40,36 @@
         </classes>
     </test>
  </suite>
+ <suite verbose="0" name="NG-30370" parallel="false"
+       thread-count="3">
+    <test name="Instructor creates course" preserve-order="true"
+          enabled="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30370.TC01_Instructor_Creates_Course"></class>
+        </classes>
+    </test>
+    <test name="Instructor add offline exam acitivity" preserve-order="true"
+          enabled="true">
+        <parameter name="browser"  value="chrome"/>
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity"></class>
+        </classes>
+    </test>
+    <test name="Instructor creates course" preserve-order="true"
+          enabled="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30370.TC01_Instructor_Creates_Course"></class>
+        </classes>
+    </test>
+    <test name="Instructor cancel offline exam activity" preserve-order="true"
+          enabled="true">
+        <parameter name="browser"  value="chrome"/>
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity"></class>
+        </classes>
+    </test>
+ </suite>
+</suite-file>
+  

@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import com.qait.mindtap.automation.getpageobjects.GetPage;
 import com.qait.mindtap.automation.utils.ReportMsg;
 import com.qait.mindtap.automation.utils.SeleniumWait;
+import java.util.List;
+import org.openqa.selenium.WebElement;
 
 /**
  *
@@ -34,7 +36,8 @@ public class NG_30181_AdminPageActions extends GetPage{
     }
 	
     public void search_Course_Using_ISBN(String courseKey) {
-	element("input_search_ISBN").sendKeys(courseKey);
+        element("input_search_ISBN").click();
+        element("input_search_ISBN").sendKeys(courseKey);
                                
     }
 
@@ -66,23 +69,62 @@ public class NG_30181_AdminPageActions extends GetPage{
     
     public void clickOnProvisionApps(){
         hover(element("courseCollege",yml.getYamlValue("course1.courseName")));
-        isElementDisplayed("provisionAppsIcon");
+        //clickOnCourseProvisionAppIcon(yml.getYamlValue("course1.courseName"));
         element("provisionAppsIcon").click();
     }
     
     public void selectCengageNoMT_Activity() {
+        wait.waitForElementToBeVisible(element("appRegistryHeading"));
+        isElementDisplayed(("appRegistryHeading"));
+        addRegistry("Cengage.non-mt-activity");
         
-        while(!isElementDisplayed("appRegistryHeading")){
-            wait.waitForElementToBeVisible(element("appRegistryHeading"));
-        }
-        isElementDisplayed("appRegistryHeading");
-        isElementDisplayed("cengageNoMT_Activity");
-        scrollDown(element("cengageNoMT_Activity"));
-        isElementDisplayed("add_Activity");
-        element("add_Activity").click();
     }
 
     public void openOrganizationPage() {
         isElementDisplayed("orgaizationTab");
-        element("orgaizationTab").click();}
+        element("orgaizationTab").click();
+    }
+    
+    public void addRegistry(String appRegistryOption){
+        List<WebElement> appsProvisionList = elements("ProvisionList");
+        int limit = 0 ;     
+        for(WebElement appProvision:appsProvisionList){
+            String str = appProvision.getText();
+            if(str.contains(appRegistryOption)){                
+                String classname = appProvision.getAttribute("class").toString();            
+                executeJavascript("document.getElementsByClassName("+classname+")[0].getElementsByTagName('a')[0].style.display = 'block';");
+                waitTOSync();
+                String limitValue = new Integer(limit).toString();
+                fireOnClickJsEvent("delitem ui-button clui-edit",limitValue); 
+                waitTOSync();
+                break;
+            }
+            else{
+                limit++;
+            }
+        }        
+    }
+    
+    void clickOnCourseProvisionAppIcon(String snapshotName){
+        isElementDisplayed("snapshotList");
+        List<WebElement> snapshotList = elements("snapshotList");
+        int i = 0;
+        for(WebElement ele:snapshotList){
+            if(ele.getText().contains(snapshotName)) {
+                String bookClassName = ele.getAttribute("class").toString();
+                wait.resetImplicitTimeout(5);
+                for (int optionCount = 0; optionCount <= 4; optionCount++){
+                    if ( optionCount != 2){
+                        executeJavascript("document.getElementsByClassName('${bookClassName}')[0].getElementsByTagName('a')['${optionCount}'].style.display = 'none';");
+                    }    else{
+                        executeJavascript("document.getElementsByClassName('${bookClassName+}')[0].getElementsByTagName('a')['${optionCount}'].style.display = 'block';");
+                    }
+                }
+               // clickOnElementUsingActionBuilder(element("provisionAppsIcon"));
+                break;
+            }
+            i++;
+        }
+    }
+    
 }

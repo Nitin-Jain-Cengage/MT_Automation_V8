@@ -93,8 +93,8 @@ public class WeekWidgetActions extends GetPage{
             element("addToWeek").click();
          }
         public void instructorSelectsDay(){
-          String day = date.getDayOfWeek();
-          element("dayToAdd",day);
+          String day = date.getDayCurentDay();
+          element("dayToAdd",day).click();
         }
 
     public void instructorSelectsOfflineActivity() {
@@ -104,16 +104,18 @@ public class WeekWidgetActions extends GetPage{
 
     public void verifyAssignment() {
         Assert.assertTrue(isElementDisplayed("offlineAssignment"),Reporter.failForAssert("Assignment is not added or displayed"));
-        Reporter.pass("Assignment is not added or displayed");
+        Reporter.pass("Assignment is displayed");
     }
 
     public void verifyScore() {
         Assert.assertTrue(isElementDisplayed("offline_assignmentScore"),Reporter.failForAssert("Assignment Score is not added or displayed"));
-        Reporter.pass("Assignment is not added or displayed");
+        Reporter.pass("Assignment Score is displayed");
         if(element("offline_assignmentScore").getText().contains(data.readProperty("offline_assignmentScore"))){
-            Reporter.pass("Correct Score is displayed");
+            Reporter.pass("Correct Score is displayed"+element("offline_assignmentScore").getText());
         }
+        else{
             Reporter.fail("Correct Score is displayed");
+        }
 
     }
 
@@ -123,17 +125,63 @@ public class WeekWidgetActions extends GetPage{
          if(element("offline_assignmentTitle").getText().contains(data.readProperty("offline_assignmentTitle"))){
             Reporter.pass("Correct Title is displayed");
         }
-            Reporter.fail("Correct Title is displayed");
+         else{
+             Reporter.fail("Correct Title is displayed");
+         }
 
     }
 
     public void verifyDescription() {
         Assert.assertTrue(isElementDisplayed("offline_assignmentDescription"),Reporter.failForAssert("Assignment is not added or displayed"));
-        Reporter.pass("Assignment is not added or displayed");
-         if(element("offline_assignmentDescription").getText().contains(data.readProperty("offline_assignmentDescription"))){
+        Reporter.pass("Assignment is displayed");
+        System.out.println(element("offline_assignmentDescription").getText()+"and "+data.readProperty("offline_assignmentDescription")) ;
+        if(element("offline_assignmentDescription").getText().contains(data.readProperty("offline_assignmentDescription"))){
             Reporter.pass("Correct Description is displayed");
         }
+         else{
+             Reporter.fail("Correct Description is not displayed");
+         }
+
+    }
+    public void verifyAssignmentNotAdded() {
+        Assert.assertFalse(isElementDisplayed("offlineAssignment"),Reporter.failForAssert("Assignment is not added or displayed"));
+        Reporter.fail("Assignment is displayed");
+    }
+
+    public void verifyScoreNotShown() {
+        Assert.assertFalse(isElementDisplayed("offline_assignmentScore"),Reporter.failForAssert("Assignment Score is displayed"));
+        Reporter.pass("Assignment Score is not added or displayed");
+        if(element("offline_assignmentScore").getText().contains(data.readProperty("offline_assignmentScore"))){
+            Reporter.fail("Correct Score is displayed");
+        }
+        else{
+            Reporter.pass("Correct Score is displayed");
+        }
+
+    }
+
+    public void verifyTitleNotShown() {
+        Assert.assertFalse(isElementDisplayed("offline_assignmentTitle"),Reporter.failForAssert("Assignment is displayed"));
+        Reporter.pass("Assignment is not added or displayed");
+         if(element("offline_assignmentTitle").getText().contains(data.readProperty("offline_assignmentTitle"))){
+            Reporter.fail("Correct Title is displayed");
+        }
+         else{
+             Reporter.pass("Correct Title is not displayed");
+         }
+
+    }
+
+    public void verifyDescriptionNotShown() {
+        Assert.assertFalse(isElementDisplayed("offline_assignmentDescription"),Reporter.failForAssert("Assignment is displayed"));
+        Reporter.pass("Assignment is not displayed");
+        System.out.println(element("offline_assignmentDescription").getText()+"and "+data.readProperty("offline_assignmentDescription")) ;
+        if(element("offline_assignmentDescription").getText().contains(data.readProperty("offline_assignmentDescription"))){
             Reporter.fail("Correct Description is displayed");
+        }
+         else{
+             Reporter.pass("Correct Description is not displayed");
+         }
 
     }
 }

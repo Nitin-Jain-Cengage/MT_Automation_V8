@@ -22,6 +22,7 @@ public class OfflineActivityAction extends GetPage{
         isElementDisplayed("offline_assignmentScore");
         String score = "50";
         data.writeProperty("offline_assignmentScore", score);
+        element("offline_assignmentScore").clear();
         element("offline_assignmentScore").sendKeys(score);
     }
 
@@ -29,6 +30,7 @@ public class OfflineActivityAction extends GetPage{
         isElementDisplayed("offline_assignmentTitle");
         String title = "Assignment_Offline_1";
         data.writeProperty("offline_assignmentTitle", title);
+        element("offline_assignmentTitle").click();
         element("offline_assignmentTitle").sendKeys(title);
       }
 
@@ -36,10 +38,12 @@ public class OfflineActivityAction extends GetPage{
         isElementDisplayed("offline_assignmentDescription");
         String description = "It is an offline assignment";
         data.writeProperty("offline_assignmentDescription", description);
+        element("offline_assignmentDescription").click();
         element("offline_assignmentDescription").sendKeys(description);
       }
 
     public void instructorClickOnAdd() {
+        isElementDisplayed(("addOfflineAssignment_Btn"));
         element("addOfflineAssignment_Btn").click();
     }
     

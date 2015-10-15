@@ -399,10 +399,9 @@ public class DateUtil {
 		return dateFormat.format(cal.getTime());
 	}
 
-    public String getDayOfWeek() {
-        Calendar cal = Calendar.getInstance();
-        String day = null;
-	switch(cal.get(Calendar.DAY_OF_WEEK)+1){
+    public String getDayOfWeek(int dayCount) {
+        String day=null;
+        switch(dayCount){
             case 1: day = "Sun";
                     break;
             case 2: day = "Mon";
@@ -421,5 +420,14 @@ public class DateUtil {
    	return day;
     }
 
-	
+   public String getCurentDay(){
+       Calendar cal = Calendar.getInstance();
+       return getDayOfWeek(cal.get(Calendar.DAY_OF_WEEK));
+   }
+   
+    public String getDayCurentDay(){
+       Calendar cal = Calendar.getInstance();
+       return getDayOfWeek(cal.get(Calendar.DAY_OF_WEEK)+1);
+
+   }
 }
