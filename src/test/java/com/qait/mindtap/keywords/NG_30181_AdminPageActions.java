@@ -115,9 +115,9 @@ public class NG_30181_AdminPageActions extends GetPage{
                 wait.resetImplicitTimeout(5);
                 for (int optionCount = 0; optionCount <= 4; optionCount++){
                     if ( optionCount != 2){
-                        executeJavascript("document.getElementsByClassName('${bookClassName}')[0].getElementsByTagName('a')['${optionCount}'].style.display = 'none';");
+                        executeJavascript("document.getElementsByClassName("+bookClassName+")[0].getElementsByTagName('a')["+optionCount+"].style.display = 'none';");
                     }    else{
-                        executeJavascript("document.getElementsByClassName('${bookClassName+}')[0].getElementsByTagName('a')['${optionCount}'].style.display = 'block';");
+                        executeJavascript("document.getElementsByClassName("+bookClassName+")[0].getElementsByTagName('a')["+optionCount+"].style.display = 'block';");
                     }
                 }
                // clickOnElementUsingActionBuilder(element("provisionAppsIcon"));

@@ -59,7 +59,7 @@ public class TC02_Instructor_Adds_Offline_Activity {
         test.launchApplication(getData("base_url"));
    }        
            
-    @Test//(dependsOnMethods = {"Step_04_start_instructor_test_session"})
+    @Test(dependsOnMethods = {"Step_04_start_instructor_test_session"})
     public void Step_05_Admin_Logs_in_to_the_Application() {
         test.loginpage.login_to_the_application_as_admin(getData(("users.admin.username")), getData(("users.admin.password")));
         test.adminpage.verifyuserIsOnAdminPage();
