@@ -119,7 +119,10 @@ public class ObjectFileReader {
 
     //TODO move this to tiers enum
     private static void setTier() {
-        switch (Tiers.valueOf(getProperty("Config.properties", "tier"))) {
+        tier=System.getProperty("tier");
+        if(tier==null){
+        tier=getProperty("Config.properties", "tier");}
+        switch (Tiers.valueOf(tier)) {
             case production:
             case PROD:
             case PRODUCTION:

@@ -21,9 +21,8 @@ public class TC01_Instructor_Creates_Course {
     String[] layoutTags = {"all"};
 
     @BeforeClass
-    @Parameters("browser")
-    public void start_test_session(@Optional String browser) {
-        test = new TestSessionInitiator("TC02_Instructor_Creates_Course", browser);
+     public void start_test_session() {
+        test = new TestSessionInitiator("TC02_Instructor_Creates_Course");
         test.launchApplication(getData("sso_url"));
         test.courseCreateEdit.clean_Data_File();
     }

@@ -21,9 +21,8 @@ public class TC06_TA_Launch_the_Course {
     String[] layoutTags = {"all"};
 
     @BeforeClass
-    @Parameters("browser")
-    public void start_test_session(@Optional String browser) {
-        test = new TestSessionInitiator("TC06_TA_Launch_the_Course", browser);
+    public void start_test_session() {
+        test = new TestSessionInitiator("TC06_TA_Launch_the_Course");
         test.launchApplication(getData("sso_url"));
     }
 

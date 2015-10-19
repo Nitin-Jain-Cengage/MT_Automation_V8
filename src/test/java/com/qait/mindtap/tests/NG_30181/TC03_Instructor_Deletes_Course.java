@@ -21,9 +21,8 @@ public class TC03_Instructor_Deletes_Course {
     String[] layoutTags = {"all"};
 
     @BeforeClass
-    @Parameters("browser")
-    public void start_test_session(@Optional String browser) {
-        test = new TestSessionInitiator("TC03_Instructor_Deletes_Course", browser);
+    public void start_test_session() {
+        test = new TestSessionInitiator("TC03_Instructor_Deletes_Course");
         test.launchApplication(getData("sso_url"));
     }
 
@@ -38,7 +37,7 @@ public class TC03_Instructor_Deletes_Course {
     public void Step_02_Instructor_Manage_Course() {
        test.instructor.verify_User_LoggedIn_As_Instructor("Instructor Resource Center");
        test.instructor.instructor_Course_Option("Manage Course");
-       test.courseEdit.instructor_Open_Course();
+       test.courseEdit.instructor_Select_PreviousCourses();
   
     }
     

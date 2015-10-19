@@ -163,6 +163,7 @@ public class TestSessionInitiator {
         for (String string : configKeys) {
             config.put(string, getProperty("./Config.properties", string));
         }
+        
         return config;
     }
 
@@ -192,4 +193,5 @@ public class TestSessionInitiator {
     public void closeTestSession() {
         closeBrowserSession();
     }
+
 }

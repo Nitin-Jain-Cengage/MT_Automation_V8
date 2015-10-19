@@ -24,9 +24,9 @@ public class TC01_Admin_login_and_search_the_isbn_under_master_Tab {
     String[] layoutTags = {"all"};
 
     @BeforeClass
-    @Parameters("browser")
-    public void start_test_session(@Optional String browser) {
-        test = new TestSessionInitiator("TC01_Admin_login_and_search_the_isbn_under_master_Tab", browser);
+
+    public void start_test_session() {
+        test = new TestSessionInitiator("TC01_Admin_login_and_search_the_isbn_under_master_Tab");
         test.launchApplication(getData("base_url"));
     }
 
@@ -38,17 +38,17 @@ public class TC01_Admin_login_and_search_the_isbn_under_master_Tab {
 
     @Test(dependsOnMethods = {"Step_01_Admin_Logs_in_to_the_Application"})
     public void Step_02_Admin_Search_Course_using_ISBN() {
-       test.adminpage.verify_User_LoggedIn_As_Admin("Admin Dashboard");
-       test.adminpage.search_Course_Using_ISBN(getData("course1.ISBN"));
-      }
-    
+        test.adminpage.verify_User_LoggedIn_As_Admin("Admin Dashboard");
+        test.adminpage.search_Course_Using_ISBN(getData("course1.ISBN"));
+    }
+
     @Test(dependsOnMethods = {"Step_02_Admin_Search_Course_using_ISBN"})
     public void Step_03_Admin_Verify_Course_Andesite_mode_checked() {
-        test.adminpage.open_Course_In_Edit_Mode(getData("course1.courseName"));        
+        test.adminpage.open_Course_In_Edit_Mode(getData("course1.courseName"));
         test.adminpage.course_Andesite_Mode_Is_Checked("Edit Working Copy");
-   	
+
     }
-    
+
     @Test(dependsOnMethods = {"Step_03_Admin_Verify_Course_Andesite_mode_checked"})
     void Step_04_Admin_Logs_Out() {
         test.loginpage.logout();

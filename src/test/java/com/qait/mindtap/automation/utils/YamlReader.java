@@ -20,7 +20,9 @@ public class YamlReader {
     public static String yamlFilePath = System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"testdata"+File.separator+"XXX_TestData.yml";
 
     public static String setYamlFilePath() {
-        yamlFilePath = yamlFilePath.replaceAll("XXX", ObjectFileReader.getTier().replace("/", ""));
+        yamlFilePath = yamlFilePath.replaceAll("XXX",System.getProperty("tier").replace("/", ""));
+        if(yamlFilePath.contains("XXX")){
+        yamlFilePath = yamlFilePath.replaceAll("XXX", ObjectFileReader.getTier().replace("/", ""));}
         return yamlFilePath;
     }
 

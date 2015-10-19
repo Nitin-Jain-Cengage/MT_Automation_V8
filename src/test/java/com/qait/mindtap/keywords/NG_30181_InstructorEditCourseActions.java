@@ -41,5 +41,12 @@ public class NG_30181_InstructorEditCourseActions extends GetPage {
 
 	}
 
+        public void instructor_Select_PreviousCourses() {
+		isElementDisplayed("courseLink", yml.getData("coretext.NAME"));
+		launchCourse(configReader.getProperty("./Config.properties" , "tier") , element("courseLink",yml.getData("coretext.NAME")).getAttribute("href"));
+
+	}
+        
+        
 }  
 

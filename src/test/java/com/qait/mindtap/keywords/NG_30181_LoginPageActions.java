@@ -67,5 +67,9 @@ public class NG_30181_LoginPageActions extends GetPage {
 		
 	}
 
+    public void openUrl(String data) {
+           getURL(data);
+    }
+
 	
 }

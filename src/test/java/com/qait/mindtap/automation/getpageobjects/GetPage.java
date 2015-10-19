@@ -174,8 +174,8 @@ public class GetPage extends BaseUi {
     }
 
     protected List<WebElement> elements(String elementToken, String replacement) {
-        return wait.waitForElementsToBeVisible(webdriver
-                .findElements(getLocator(elementToken, replacement)));
+       // return wait.waitForElementsToBeVisible(webdriver.findElements(getLocator(elementToken, replacement)));
+        return webdriver.findElements(getLocator(elementToken, replacement));
     }
 
     protected List<WebElement> elementsFromElement(WebElement el, String elementToken, String replacement) {
