@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="0" name="Failed suite [NG-30370]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Instructor adds course(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+        <methods>
+          <include name="start_test_session"/>
+          <include name="Step_04_start_admin_test_session"/>
+          <include name="Step_01_Instructor_Logs_in_to_the_Application"/>
+          <include name="Step_11_Instructor_Enters_Detail_In_OfflineActivity"/>
+          <include name="Step_03_verify_Spalsh_Page_Dispalys_Automatically"/>
+          <include name="Step_02_Instructor_Manages_Course_From_SSO"/>
+          <include name="Step_12_Verify_Rolling_Week_UI"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="Step_06_Admin_Search_Course"/>
+          <include name="step_07_Instructor_Logs_Again"/>
+          <include name="Step_05_Admin_Logs_in_to_the_Application"/>
+          <include name="Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity"/>
+          <include name="Step_08_Instructor_Logs_in_to_the_Application"/>
+          <include name="Step_13_Verify_Activity_Gets_Added"/>
+          <include name="Step_09_Instructor_Manages_Course_From_SSO"/>
+          <include name="stop_test_session"/>
+        </methods>
+      </class> <!-- com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+      <class name="com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity">
+        <methods>
+          <include name="takeScreenshotonFailure"/>
+          <include name="start_test_session"/>
+          <include name="stop_test_session"/>
+        </methods>
+      </class> <!-- com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity -->
+      <class name="com.qait.mindtap.tests.NG_30370.TC01_Instructor_Creates_Course">
+        <methods>
+          <include name="stop_test_session"/>
+          <include name="stop_test_session"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="start_test_session"/>
+          <include name="start_test_session"/>
+        </methods>
+      </class> <!-- com.qait.mindtap.tests.NG_30370.TC01_Instructor_Creates_Course -->
+    </classes>
+  </test> <!-- Instructor adds course(failed) -->
+  <test name="Instructor cancels course(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+        <methods>
+          <include name="start_test_session"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="stop_test_session"/>
+        </methods>
+      </class> <!-- com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+      <class name="com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity">
+        <methods>
+          <include name="Step_04_start_admin_test_session"/>
+          <include name="start_test_session"/>
+          <include name="Step_01_Instructor_Logs_in_to_the_Application"/>
+          <include name="Step_11_Instructor_Enters_Detail_In_OfflineActivity"/>
+          <include name="Step_03_verify_Spalsh_Page_Dispalys_Automatically"/>
+          <include name="Step_02_Instructor_Manages_Course_From_SSO"/>
+          <include name="Step_12_Verify_Rolling_Week_UI"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="Step_06_Admin_Search_Course"/>
+          <include name="step_07_Instructor_Logs_Again"/>
+          <include name="Step_05_Admin_Logs_in_to_the_Application"/>
+          <include name="Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity"/>
+          <include name="Step_08_Instructor_Logs_in_to_the_Application"/>
+          <include name="Step_09_Instructor_Manages_Course_From_SSO"/>
+          <include name="stop_test_session"/>
+          <include name="Step_13_Verify_Activity_Not_Gets_Added"/>
+        </methods>
+      </class> <!-- com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity -->
+      <class name="com.qait.mindtap.tests.NG_30370.TC01_Instructor_Creates_Course">
+        <methods>
+          <include name="stop_test_session"/>
+          <include name="stop_test_session"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="start_test_session"/>
+          <include name="start_test_session"/>
+        </methods>
+      </class> <!-- com.qait.mindtap.tests.NG_30370.TC01_Instructor_Creates_Course -->
+    </classes>
+  </test> <!-- Instructor cancels course(failed) -->
+</suite> <!-- Failed suite [NG-30370] -->

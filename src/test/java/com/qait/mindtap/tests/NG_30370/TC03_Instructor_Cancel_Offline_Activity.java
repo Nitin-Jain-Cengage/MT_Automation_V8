@@ -63,7 +63,7 @@ public class TC03_Instructor_Cancel_Offline_Activity {
         test.la.verifyCourseName();
         test.la.clickEnterOnSplashPage();
         test.weekwidget.verifyCurrentWeekIcon();
-        test.loginpage.signout();
+        test.loginpage.logOut(test.header.accessor("helloUser"));
     }
 
     @Test(dependsOnMethods = {"Step_03_verify_Spalsh_Page_Dispalys_Automatically"})
@@ -88,7 +88,7 @@ public class TC03_Instructor_Cancel_Offline_Activity {
     }
 
     @Test(dependsOnMethods = {"Step_06_Admin_Search_Course"})
-    public void step_07_Instructor_Logs_Again(@Optional String browser) {
+    public void step_07_Instructor_Logs_Again() {
         test.launchApplication(getData("sso_url"));
     }
 

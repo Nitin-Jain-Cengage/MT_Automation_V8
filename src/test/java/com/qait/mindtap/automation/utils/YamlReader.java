@@ -17,11 +17,10 @@ import java.io.File;
 @SuppressWarnings("unchecked")
 public class YamlReader {
 
-    public static String yamlFilePath = System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"testdata"+File.separator+"XXX_TestData.yml";
+    public static String yamlFilePath = System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"testdata"+File.separator+System.getProperty("tier")+"_TestData.yml";
 
     public static String setYamlFilePath() {
-        yamlFilePath = yamlFilePath.replaceAll("XXX",System.getProperty("tier").replace("/", ""));
-        if(yamlFilePath.contains("XXX")){
+         if(yamlFilePath.isEmpty()){
         yamlFilePath = yamlFilePath.replaceAll("XXX", ObjectFileReader.getTier().replace("/", ""));}
         return yamlFilePath;
     }

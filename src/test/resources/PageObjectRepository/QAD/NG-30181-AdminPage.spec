@@ -2,7 +2,7 @@ Page Title: MindTap Admin - Manage Masters
 
 #Object Definitions
 ====================================================================================
-						
+courseClass                                                             css                                                 .listText						
 mindtap_toolbar				   				xpath							//div[@class='nb_logoBox admin']
 admin_dashboard								xpath							//h1[contains(text(),'${Admin Dashboard}')]
 courseCount									css								.endcount
@@ -14,7 +14,7 @@ Btn_show_copy								css								a[title='Show Working Copy']
 cousrse_list_controls						xpath							(//div[@ class="listControls"])[2]
 courseCopy                                                      xpath                                   //div[contains(@class , 'working_copy')]
 icon_course_edit							xpath								//*[@title = "Edit"]/img
-Edit_Working_copy							xpath							//h2[contains(text(),'${Edit pop title}')]
+Edit_Working_copy							xpath							//h2[contains(text(),'${Edit Master}')]
 checkbox_Andesite_mode    					xpath							//input[@checked="checked" and @id="isAndesite"]
 btn_save_Edit_Working_copy   				xpath							//a [@class="adminButton save"]
 orgaizationTab          xpath           //*[@id='orgs_link']

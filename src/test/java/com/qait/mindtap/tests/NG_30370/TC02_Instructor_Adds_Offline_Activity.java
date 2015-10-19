@@ -55,7 +55,7 @@ public class TC02_Instructor_Adds_Offline_Activity {
         test.la.verifyCourseName();
         test.la.clickEnterOnSplashPage();
         test.weekwidget.verifyCurrentWeekIcon();
-        test.loginpage.signout();
+        test.loginpage.logOut(test.header.accessor("helloUser"));
     }
 
     @Test(dependsOnMethods = {"Step_03_verify_Spalsh_Page_Dispalys_Automatically"})

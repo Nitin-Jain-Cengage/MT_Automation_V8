@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.qait.mindtap.automation.getpageobjects.GetPage;
+import java.util.List;
+import org.openqa.selenium.WebElement;
 
 
 public class WeekWidgetActions extends GetPage{
@@ -183,5 +185,15 @@ public class WeekWidgetActions extends GetPage{
              Reporter.pass("Correct Description is not displayed");
          }
 
+    }
+
+    public void instructorSelectsTopic(String InstructorTopic) {
+    List<WebElement> Topics = elements("");
+    for(WebElement topic:Topics){
+        String topicname=topic.getText();
+        if(topicname.contains(InstructorTopic)){
+            topic.click();
+           }
+         }
     }
 }

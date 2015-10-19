@@ -144,7 +144,7 @@
                     <skip>false</skip>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFile>./src/test/resources/testxml/TestNGworkFlow.xml</suiteXmlFile>
+                        <suiteXmlFile>./src/test/resources/testxml/${testNGxml}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -168,7 +168,7 @@
                                     <run>${server}</run>
                                     <machine>${vm.IP}</machine>
                                      <suiteXmlFiles>
-                                     <suiteXmlFile>./src/test/resources/testxml${TestNGxml}</suiteXmlFile>
+                                     <suiteXmlFile>./src/test/resources/testxml/${testNGxml}</suiteXmlFile>
                                      </suiteXmlFiles>
                             </systemPropertyVariables>
                             <encoding>UTF-8</encoding>

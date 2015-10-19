@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 40, Failures: 2, Errors: 0, Skipped: 17, Time elapsed: 465.394 sec <<< FAILURE! - in TestSuite
+Step_06_Admin_Search_Course(com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity)  Time elapsed: 33.547 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at com.qait.mindtap.automation.utils.SeleniumWait.waitForElementToBeVisible(SeleniumWait.java:53)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:196)
+	at com.qait.mindtap.keywords.NG_30181_AdminPageActions.search_Course_Using_CourseKey(NG_30181_AdminPageActions.java:62)
+	at com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity.Step_06_Admin_Search_Course(TC02_Instructor_Adds_Offline_Activity.java:77)
+
+Step_03_verify_Spalsh_Page_Dispalys_Automatically(com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity)  Time elapsed: 87.436 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.qait.mindtap.keywords.NG_30181_LoginPageActions.signout(NG_30181_LoginPageActions.java:66)
+	at com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity.Step_03_verify_Spalsh_Page_Dispalys_Automatically(TC03_Instructor_Cancel_Offline_Activity.java:66)
+

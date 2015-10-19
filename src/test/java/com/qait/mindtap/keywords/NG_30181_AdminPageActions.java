@@ -42,15 +42,12 @@ public class NG_30181_AdminPageActions extends GetPage {
 
     public void open_Course_In_Edit_Mode(String replacement) {
         wait.waitForElementToDisappear(element("nextPageArrow"));
-        isElementDisplayed("Btn_show_copy");
-        element("Btn_show_copy").click();
-        hover(element("courseCopy"));
+        hover(element("courseClass"));
         isElementDisplayed("icon_course_edit");
         element("icon_course_edit").click();
     }
 
     public void course_Andesite_Mode_Is_Checked(String replacement) {
-        this.isElementDisplayed("Edit_Working_copy", replacement);
         this.isElementDisplayed("checkbox_Andesite_mode");
         element("btn_save_Edit_Working_copy").click();
     }
@@ -60,16 +57,14 @@ public class NG_30181_AdminPageActions extends GetPage {
         element("inputOrganizationSearch").sendKeys(data.readProperty("courseKey"));
         isElementDisplayed("courseOrganization");
         element("courseOrganization").click();
+        waitTOSync();
         isElementDisplayed("courseProvisioned");
         element("courseProvisioned").click();
         isElementDisplayed("courseCollege", yml.getYamlValue("course1.courseName"));
     }
 
     public void clickOnProvisionApps() {
-//        hover(element("courseCollege",yml.getYamlValue("course1.courseName")));
         clickOnCourseProvisionAppIcon(yml.getYamlValue("course1.courseName"));
-//        waitTOSync();
-//        element("provisionAppsIcon").click();
     }
 
     public void selectCengageNoMT_Activity() {
