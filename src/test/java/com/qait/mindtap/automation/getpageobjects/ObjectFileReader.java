@@ -72,7 +72,7 @@ public class ObjectFileReader {
 
         ArrayList<String> elementLines = getSpecSection(specFile);
         for (String elementLine : elementLines) {
-            if (elementLine.equals(elementName)) {
+            if (elementLine.startsWith(elementName)) {
                 return elementLine.split(" ", 3);
             }
         }

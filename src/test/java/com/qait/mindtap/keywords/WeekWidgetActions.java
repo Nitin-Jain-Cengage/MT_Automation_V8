@@ -135,9 +135,9 @@ public class WeekWidgetActions extends GetPage{
     }
 
     public void verifyDescription() {
-        Assert.assertTrue(checkIfElementIsNotThere("offline_assignmentDescription",data.readProperty("offline_assignmentDescription")),Reporter.failForAssert("Assignment is not added or displayed"));
+        Assert.assertTrue(checkIfElementIsNotThere("assignmentDescription",data.readProperty("offline_assignmentDescription")),Reporter.failForAssert("Assignment is not added or displayed"));
         Reporter.pass("Assignment is displayed");
-        System.out.println(element("offline_assignmentDescription",data.readProperty("offline_assignmentDescription")).getText()) ;
+      
        
 
     }
