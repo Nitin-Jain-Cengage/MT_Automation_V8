@@ -135,15 +135,10 @@ public class WeekWidgetActions extends GetPage{
     }
 
     public void verifyDescription() {
-        Assert.assertTrue(isElementDisplayed("offline_assignmentDescription"),Reporter.failForAssert("Assignment is not added or displayed"));
+        Assert.assertTrue(isElementDisplayed("offline_assignmentDescription",data.readProperty("offline_assignmentDescription")),Reporter.failForAssert("Assignment is not added or displayed"));
         Reporter.pass("Assignment is displayed");
-        System.out.println(element("offline_assignmentDescription").getText()+"and "+data.readProperty("offline_assignmentDescription")) ;
-        if(element("offline_assignmentDescription").getText().equalsIgnoreCase(data.readProperty("offline_assignmentDescription"))){
-            Reporter.pass("Correct Description is displayed");
-        }
-         else{
-             Reporter.fail("Correct Description is not displayed");
-         }
+        System.out.println(element("offline_assignmentDescription",data.readProperty("offline_assignmentDescription")).getText()) ;
+       
 
     }
     public void verifyAssignmentNotAdded() {

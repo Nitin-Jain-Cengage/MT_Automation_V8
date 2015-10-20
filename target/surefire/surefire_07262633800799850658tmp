@@ -1,9 +1,0 @@
-#surefire_0
-#Tue Oct 20 14:44:03 IST 2015
-tier=QAD
-browser=firefox
-user.dir=C\:\\Users\\ayushgaur\\Desktop\\New folder (2)\\MT_Automation_V8
-localRepository=C\:\\Users\\ayushgaur\\.m2\\repository
-server=local
-basedir=C\:\\Users\\ayushgaur\\Desktop\\New folder (2)\\MT_Automation_V8
-test=TC02_Instructor_Adds_Offline_Activity

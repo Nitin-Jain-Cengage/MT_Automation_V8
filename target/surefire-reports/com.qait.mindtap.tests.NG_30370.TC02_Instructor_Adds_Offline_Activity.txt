@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 189.198 sec <<< FAILURE! - in com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity
+Step_06_Verify_Activity_Gets_Added(com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity)  Time elapsed: 10.369 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Returned value cannot be converted to WebElement: Are you sure you want to delete this activity?
+Build info: version: '2.46.0', revision: '61506a4624b13675f24581e453592342b7485d71', time: '2015-06-04 10:22:50'
+System info: host: 'LNDA0021', ip: '10.161.233.242', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_51'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.element(GetPage.java:137)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.isElementDisplayed(GetPage.java:196)
+	at com.qait.mindtap.keywords.WeekWidgetActions.verifyDescription(WeekWidgetActions.java:138)
+	at com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity.Step_06_Verify_Activity_Gets_Added(TC02_Instructor_Adds_Offline_Activity.java:84)
+
