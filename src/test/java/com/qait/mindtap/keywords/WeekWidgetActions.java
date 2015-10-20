@@ -136,11 +136,7 @@ public class WeekWidgetActions extends GetPage{
 
     public void verifyDescription() {
         Assert.assertTrue(checkIfElementIsNotThere("assignmentDescription",data.readProperty("offline_assignmentDescription")),Reporter.failForAssert("Assignment is not added or displayed"));
-        Reporter.pass("Assignment is displayed");
-      
-       
-
-    }
+       }
     public void verifyAssignmentNotAdded() {
         Assert.assertFalse(isElementDisplayed("offlineAssignment"),Reporter.failForAssert("Assignment is not added or displayed"));
         Reporter.fail("Assignment is displayed");
@@ -171,15 +167,9 @@ public class WeekWidgetActions extends GetPage{
     }
 
     public void verifyDescriptionNotShown() {
-        Assert.assertFalse(isElementDisplayed("offline_assignmentDescription"),Reporter.failForAssert("Assignment is displayed"));
-        Reporter.pass("Assignment is not displayed");
-        System.out.println(element("offline_assignmentDescription").getText()+"and "+data.readProperty("offline_assignmentDescription")) ;
-        if(element("offline_assignmentDescription").getText().contains(data.readProperty("offline_assignmentDescription"))){
-            Reporter.fail("Correct Description is displayed");
-        }
-         else{
-             Reporter.pass("Correct Description is not displayed");
-         }
+         if(!checkIfElementIsNotThere("assignmentDescription",data.readProperty("offline_assignmentDescription"))){
+             Reporter.pass("Assignment is not added or displayed");
+                 }
 
     }
 
