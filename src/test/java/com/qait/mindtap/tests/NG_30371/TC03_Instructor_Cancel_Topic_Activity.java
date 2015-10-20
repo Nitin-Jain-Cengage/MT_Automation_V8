@@ -22,7 +22,7 @@ import com.qait.mindtap.automation.TestSessionInitiator;
  *
  * @author ayushgaur
  */
-public class TC03_Instructor_Cancel_Offline_Activity {
+public class TC03_Instructor_Cancel_Topic_Activity {
 
     /*
      * To change this license header, choose License Headers in Project Properties.
@@ -64,36 +64,36 @@ public class TC03_Instructor_Cancel_Offline_Activity {
         test.la.verifyCourseName();
         test.la.clickEnterOnSplashPage();
         test.weekwidget.verifyCurrentWeekIcon();
-        test.loginpage.signout();
+  //      test.loginpage.signout();
     }
+
+//    @Test(dependsOnMethods = {"Step_03_verify_Spalsh_Page_Dispalys_Automatically"})
+//    void Step_04_start_admin_test_session() {
+//        test.launchApplication(getData("base_url"));
+//    }
+//
+//    @Test(dependsOnMethods = {"Step_04_start_admin_test_session"})
+//    public void Step_05_Admin_Logs_in_to_the_Application() {
+//        test.loginpage.login_to_the_application_as_admin(getData(("users.admin.username")), getData(("users.admin.password")));
+//        test.adminpage.verifyuserIsOnAdminPage();
+//        test.adminpage.openOrganizationPage();
+//
+//    }
+//
+//    @Test(dependsOnMethods = {"Step_05_Admin_Logs_in_to_the_Application"})
+//    public void Step_06_Admin_Search_Course() {
+//        test.adminpage.verify_User_LoggedIn_As_Admin("Admin Dashboard");
+//        test.adminpage.search_Course_Using_CourseKey();
+//        test.adminpage.clickOnProvisionApps();
+//        test.adminpage.selectCengageNoMT_Activity();
+//    }
+//
+//    @Test(dependsOnMethods = {"Step_06_Admin_Search_Course"})
+//    public void Step_07_start_Instructor_test_session() {
+//        test.launchApplication(getData("sso_url"));
+//    }
 
     @Test(dependsOnMethods = {"Step_03_verify_Spalsh_Page_Dispalys_Automatically"})
-    void Step_04_start_admin_test_session() {
-        test.launchApplication(getData("base_url"));
-    }
-
-    @Test(dependsOnMethods = {"Step_04_start_admin_test_session"})
-    public void Step_05_Admin_Logs_in_to_the_Application() {
-        test.loginpage.login_to_the_application_as_admin(getData(("users.admin.username")), getData(("users.admin.password")));
-        test.adminpage.verifyuserIsOnAdminPage();
-        test.adminpage.openOrganizationPage();
-
-    }
-
-    @Test(dependsOnMethods = {"Step_05_Admin_Logs_in_to_the_Application"})
-    public void Step_06_Admin_Search_Course() {
-        test.adminpage.verify_User_LoggedIn_As_Admin("Admin Dashboard");
-        test.adminpage.search_Course_Using_CourseKey();
-        test.adminpage.clickOnProvisionApps();
-        test.adminpage.selectCengageNoMT_Activity();
-    }
-
-    @Test(dependsOnMethods = {"Step_06_Admin_Search_Course"})
-    public void Step_07_start_Instructor_test_session() {
-        test.launchApplication(getData("sso_url"));
-    }
-
-    @Test(dependsOnMethods = {"Step_07_Instructor_Logs_Again"})
     public void Step_08_Instructor_Logs_in_to_the_Application() {
         test.loginpage.verify_User_Is_On_Login_Page();
         test.loginpage.login_to_the_application_sso(getData(("users.instructor.username")), getData(("users.instructor.password")));
@@ -121,7 +121,7 @@ public class TC03_Instructor_Cancel_Offline_Activity {
     public void Step_11_Instructor_Enters_Detail_In_OfflineActivity() {
         test.offline_activity.instructorEnterScore();
         test.offline_activity.instructorEntersTitle();
-        test.offline_activity.instructorEntersDescription();
+        test.offline_activity.instructorEntersDescription("cancel");
         test.offline_activity.instructorClickOnCancel();
     }
 

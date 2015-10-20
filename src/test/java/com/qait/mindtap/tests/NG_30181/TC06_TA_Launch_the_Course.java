@@ -47,7 +47,7 @@ public class TC06_TA_Launch_the_Course {
 
     }
 
-    @Test(dependsOnMethods = {"Step_03_Student_Launch_Course"})
+    @Test(dependsOnMethods = {"Step_03_TA_Launch_Course"})
     public void Step_04_verify_Spalsh_Page_Dispalys_Automatically() {
         test.la.verifyCourseName();
         test.la.clickEnterOnSplashPage();

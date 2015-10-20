@@ -35,8 +35,14 @@ public class NG_30181_InstructorEditCourseActions extends GetPage {
         }
 
 	
-	public void instructor_Open_Course() {
-		isElementDisplayed("courseLink", data.readProperty("courseName"));
+	public void instructor_Open_Course(String courseName) {
+		isElementDisplayed("courseLink", courseName);
+		launchCourse(configReader.getProperty("./Config.properties" , "tier") , element("courseLink",courseName).getAttribute("href"));
+
+	}
+        
+        public void instructor_Open_Course() {
+		isElementDisplayed("courseLink",data.readProperty("courseName"));
 		launchCourse(configReader.getProperty("./Config.properties" , "tier") , element("courseLink",data.readProperty("courseName")).getAttribute("href"));
 
 	}

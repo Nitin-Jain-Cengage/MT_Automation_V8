@@ -34,12 +34,13 @@ public class OfflineActivityAction extends GetPage{
         element("offline_assignmentTitle").sendKeys(title);
       }
 
-    public void instructorEntersDescription() {
+    public void instructorEntersDescription(String operation) {
         isElementDisplayed("offline_assignmentDescription");
-        String description = "It is an offline assignment";
-        data.writeProperty("offline_assignmentDescription", description);
+        String description = "It is an offline assignment for "+operation+date.getCurrentDateTime();
+        data.writeProperty("offline_assignmentDescription",description);
         element("offline_assignmentDescription").click();
         element("offline_assignmentDescription").sendKeys(description);
+        waitTOSync();
       }
 
     public void instructorClickOnAdd() {
@@ -48,7 +49,8 @@ public class OfflineActivityAction extends GetPage{
     }
     
      public void instructorClickOnCancel() {
-        element("addOfflineAssignment_Cancel").click();
+         isElementDisplayed(("addOfflineAssignment_Cancel"));
+         element("addOfflineAssignment_Cancel").click();
     }
     
 }

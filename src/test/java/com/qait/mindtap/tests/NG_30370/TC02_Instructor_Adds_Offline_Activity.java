@@ -46,60 +46,13 @@ public class TC02_Instructor_Adds_Offline_Activity {
     void Step_02_Instructor_Manages_Course_From_SSO() {
         test.instructor.verify_User_LoggedIn_As_Instructor("Instructor Resource Center");
         test.instructor.instructor_Course_Option("Manage Course");
-        test.courseEdit.instructor_Open_Course();
+        test.courseEdit.instructor_Open_Course(getData("coretext.NAME"));
 
     }
 
+                   
     @Test(dependsOnMethods = {"Step_02_Instructor_Manages_Course_From_SSO"})
-    void Step_03_verify_Spalsh_Page_Dispalys_Automatically() {
-        test.la.verifyCourseName();
-        test.la.clickEnterOnSplashPage();
-        test.weekwidget.verifyCurrentWeekIcon();
-        test.loginpage.logOut(test.header.accessor("helloUser"));
-    }
-
-    @Test(dependsOnMethods = {"Step_03_verify_Spalsh_Page_Dispalys_Automatically"})
-    void Step_04_start_admin_test_session() {
-        test.loginpage.openUrl(getData("base_url"));
-    }
-
-    @Test(dependsOnMethods = {"Step_04_start_admin_test_session"})
-    public void Step_05_Admin_Logs_in_to_the_Application() {
-        test.loginpage.login_to_the_application_as_admin(getData(("users.admin.username")), getData(("users.admin.password")));
-        test.adminpage.verifyuserIsOnAdminPage();
-        test.adminpage.openOrganizationPage();
-
-    }
-
-    @Test(dependsOnMethods = {"Step_05_Admin_Logs_in_to_the_Application"})
-    public void Step_06_Admin_Search_Course() {
-        test.adminpage.verify_User_LoggedIn_As_Admin("Admin Dashboard");
-        test.adminpage.search_Course_Using_CourseKey();
-        test.adminpage.clickOnProvisionApps();
-        test.adminpage.selectCengageNoMT_Activity();
-    }
-
-    @Test(dependsOnMethods = {"Step_06_Admin_Search_Course"})
-    public void Step_07_start_Instructor_test_session() {
-        test.launchApplication(getData("sso_url"));
-    }
-
-    @Test(dependsOnMethods = {"Step_07_start_Instructor_test_session"})
-    public void Step_08_Instructor_Logs_in_to_the_Application() {
-        test.loginpage.verify_User_Is_On_Login_Page();
-        test.loginpage.login_to_the_application_sso(getData(("users.instructor.username")), getData(("users.instructor.password")));
-        test.instructor.verify_User_Is_On_InstructorPage();
-    }
-
-    @Test(dependsOnMethods = {"Step_08_Instructor_Logs_in_to_the_Application"})
-    public void Step_09_Instructor_Manages_Course_From_SSO() {
-        test.instructor.verify_User_LoggedIn_As_Instructor("Instructor Resource Center");
-        test.instructor.instructor_Course_Option("Manage Course");
-        test.courseEdit.instructor_Open_Course();
-    }
-
-    @Test(dependsOnMethods = {"Step_09_Instructor_Manages_Course_From_SSO"})
-    public void Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity() {
+    public void Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity() {
         test.weekwidget.verifyCurrentWeekIcon();
         test.weekwidget.verifyInstructorExpandsWeek();
         test.weekwidget.instructorClickOnAddToWeek();
@@ -108,23 +61,23 @@ public class TC02_Instructor_Adds_Offline_Activity {
 
     }
 
-    @Test(dependsOnMethods = {"Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity"})
-    public void Step_11_Instructor_Enters_Detail_In_OfflineActivity() {
+    @Test(dependsOnMethods = {"Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity"})
+    public void Step_04_Instructor_Enters_Detail_In_OfflineActivity() {
         test.offline_activity.instructorEnterScore();
         test.offline_activity.instructorEntersTitle();
-        test.offline_activity.instructorEntersDescription();
+        test.offline_activity.instructorEntersDescription("add");
         test.offline_activity.instructorClickOnAdd();
     }
 
-    @Test(dependsOnMethods = {"Step_11_Instructor_Enters_Detail_In_OfflineActivity"})
-    public void Step_12_Verify_Rolling_Week_UI() {
+    @Test(dependsOnMethods = {"Step_04_Instructor_Enters_Detail_In_OfflineActivity"})
+    public void Step_05_Verify_Rolling_Week_UI() {
         test.weekwidget.verifyCurrentWeekIcon();
         test.weekwidget.verifyWeeks();
         test.weekwidget.verifyMonthDate();
     }
 
-    @Test(dependsOnMethods = {"Step_12_Verify_Rolling_Week_UI"})
-    public void Step_13_Verify_Activity_Gets_Added() {
+    @Test(dependsOnMethods = {"Step_05_Verify_Rolling_Week_UI"})
+    public void Step_06_Verify_Activity_Gets_Added() {
         test.weekwidget.verifyAssignment();
         test.weekwidget.verifyScore();
         test.weekwidget.verifyTitle();

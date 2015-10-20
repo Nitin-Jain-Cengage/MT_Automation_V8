@@ -55,6 +55,7 @@ public class NG_30181_AdminPageActions extends GetPage {
     public void search_Course_Using_CourseKey() {
         isElementDisplayed("inputOrganizationSearch");
         element("inputOrganizationSearch").click();
+        System.out.println(data.readProperty("courseKey"));
         element("inputOrganizationSearch").sendKeys(data.readProperty("courseKey"));
         waitTOSync();
         isElementDisplayed("courseOrganization");
@@ -85,6 +86,7 @@ public class NG_30181_AdminPageActions extends GetPage {
         int limit = 0;
         for (WebElement appProvision : appsProvisionList) {
              String str = appProvision.getText();
+             System.out.println("activity"+str);
             if (str.contains(appRegistryOption)) {
                 String classname = appProvision.getAttribute("class").toString();
                 executeJavascript("document.getElementsByClassName('" + classname + "')[0].getElementsByTagName('a')[0].click();");

@@ -1,4 +1,4 @@
-ProjectName: HMMv12
+ProjectName: MIndtapQA
 base_url: http://qad-ng.cengage.com/static/nb/login.html
 sso_url: http://s-login.cengage.com/
 
@@ -24,8 +24,9 @@ course1:
   courseName: "Stewart_Precalculus: Mathematics for Calculus_7e_MTQ"   
 
 coretext:
-  ISBN: 9781133314677
-  NAME: Mayank Test Book-Automated Mindtap
+  ISBN: 9781305876651
+  NAME: Mayank Test Book-Automated Mindtap MTQ
+  CourseKey: MTPN-CCSP-P5KT 
 
 email:
     send: no
