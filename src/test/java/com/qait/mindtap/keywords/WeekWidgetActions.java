@@ -167,7 +167,7 @@ public class WeekWidgetActions extends GetPage{
     }
 
     public void verifyDescriptionNotShown() {
-         if(checkIfElementIsNotThere("assignmentDescription",data.readProperty("offline_assignmentDescription"))){
+         if(checkIfElementIsNotThere("assignmentDescription","It is an offline assignment for cancel"+date.getCurrentDateTime())){
              Reporter.pass("Assignment is not added or displayed");
                  }
 
