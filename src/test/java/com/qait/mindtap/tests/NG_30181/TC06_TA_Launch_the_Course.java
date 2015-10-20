@@ -32,14 +32,14 @@ public class TC06_TA_Launch_the_Course {
         test.sso.verify_User_Is_On_SSO_dashboard();
     }
 
-    @Test(dependsOnMethods = {"Step_01_Student_Logs_in_to_the_Application"})
+    @Test(dependsOnMethods = {"Step_01_TA_Logs_in_to_the_Application"})
     public void Step_02_TA_Registers_Course() {
         test.sso.student_Registers_Course_With_CourseKey();
         test.confirmCourseInfo.verify_User_Is_On_CourseConfirmInfoPage();
         test.confirmCourseInfo.student_Click_Continue_Button();
     }
 
-    @Test(dependsOnMethods = {"Step_02_Student_Registers_Course"})
+    @Test(dependsOnMethods = {"Step_02_TA_Registers_Course"})
     public void Step_03_TA_Launch_Course() {
         test.sso.student_Open_Course();
         test.coursePayment.verify_User_Is_On_CoursePayment_Page();
