@@ -167,9 +167,9 @@
                                     <environment>${tier}</environment>
                                     <run>${server}</run>
                                     <machine>${vm.IP}</machine>
-<!--                                     <suiteXmlFiles>
+                                     <suiteXmlFiles>
                                      <suiteXmlFile>./src/test/resources/testxml/${testNGxml}</suiteXmlFile>
-                                     </suiteXmlFiles>-->
+                                     </suiteXmlFiles>
                             </systemPropertyVariables>
                             <encoding>UTF-8</encoding>
                         </configuration>
