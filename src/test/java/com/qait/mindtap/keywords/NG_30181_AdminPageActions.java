@@ -42,6 +42,7 @@ public class NG_30181_AdminPageActions extends GetPage {
 
     public void open_Course_In_Edit_Mode(String replacement) {
         wait.waitForElementToDisappear(element("nextPageArrow"));
+        element("Btn_show_copy").click();
         hover(element("courseClass"));
         waitTOSync();
         isElementDisplayed("icon_course_edit");

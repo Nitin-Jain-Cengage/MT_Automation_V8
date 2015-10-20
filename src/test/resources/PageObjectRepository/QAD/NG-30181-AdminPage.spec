@@ -9,7 +9,7 @@ courseCount									css								.endcount
 searchIcon									xpath							//img[contains(@src,'admin_search_icon')]
 nextPageArrow                                                xpath                                                    //div[@class='pagearrow pageright']
 input_search_ISBN           				xpath							//input[@id='searchField']
-courseName									xpath							//a[@ class="title" and contains(text(),'${courseBook}')]
+courseName									xpath							//a[@ class="title" and contains(text(),'COPY: ${courseBook}')]
 Btn_show_copy								css								a[title='Show Working Copy'] 
 cousrse_list_controls						xpath							(//div[@ class="listControls"])[2]
 courseCopy                                                      xpath                                   //div[contains(@class , 'working_copy')]

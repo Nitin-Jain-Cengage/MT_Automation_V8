@@ -106,7 +106,7 @@
 //    
 //    @AfterMethod
 //    public void captureScreenShotOnFailure(ITestResult result) {
-//              test.takescreenshot.takeScreenShotOnException(result);
+//       test.takescreenshot.takeScreenShotOnException(result);
 //
 //     }
 //}

@@ -78,7 +78,7 @@ public class TC03_Instructor_Cancel_Offline_Activity {
 
     @Test(dependsOnMethods = {"Step_05_Verify_Rolling_Week_UI"})
     public void Step_06_Verify_Activity_Gets_Added() {
-        test.weekwidget.verifyDescription();
+        test.weekwidget.verifyDescriptionNotShown();
     }
 
     @AfterClass(alwaysRun = true)
