@@ -54,7 +54,9 @@ public class NG_30181_AdminPageActions extends GetPage {
 
     public void search_Course_Using_CourseKey() {
         isElementDisplayed("inputOrganizationSearch");
+        element("inputOrganizationSearch").click();
         element("inputOrganizationSearch").sendKeys(data.readProperty("courseKey"));
+        waitTOSync();
         isElementDisplayed("courseOrganization");
         element("courseOrganization").click();
         waitTOSync();
@@ -71,7 +73,6 @@ public class NG_30181_AdminPageActions extends GetPage {
         wait.waitForElementToBeVisible(element("appRegistryHeading"));
         isElementDisplayed(("appRegistryHeading"));
         addRegistry("Cengage.non-mt-activity");
-       // executeJavascript("document.getElementsByClassName('item  app_library admin_models_app_library_76')[0].getElementsByTagName('a')[0].click();");
         }
 
     public void openOrganizationPage() {
@@ -80,13 +81,6 @@ public class NG_30181_AdminPageActions extends GetPage {
     }
 
     public void addRegistry(String appRegistryOption) {
-//        WebElement appProvision = element("ProvisionApp", appRegistryOption);
-//        //wait.waitForElementToBeVisible(appProvision);
-//        String classname = appProvision.getAttribute("class").toString();
-//        executeJavascript("document.getElementsByClassName('" + classname + "')[0].getElementsByTagName('a')[0].style.display = 'block';");
-//        waitTOSync();
-//       //String limitValue = new Integer(limit).toString();
-//        fireOnClickJsEvent("delitem ui-button clui-edit");
         List<WebElement> appsProvisionList = elements("ProvisionList");
         int limit = 0;
         for (WebElement appProvision : appsProvisionList) {

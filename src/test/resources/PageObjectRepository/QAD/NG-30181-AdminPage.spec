@@ -27,7 +27,7 @@ provisionAppsIcon               css                 .delitem>img[alt="Provision 
 appRegistryHeading              xpath               //h3[contains(text(),'App Registry')]
 cengageNoMT_Activity            xpath               //div[contains(text(),'${provisionApp}')]
 add_Activity                    xpath               //div[contains(text(),'${provisionApp}')]/../../a/img[@alt='Provision']
-ProvisionList                   xpath               #app_registry>ul>li
+ProvisionList                   css               #app_registry>ul>li
 snapshotList                    css             .item.snap
 
 ====================================================================================
