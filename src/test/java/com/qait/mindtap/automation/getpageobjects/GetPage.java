@@ -209,7 +209,8 @@ public class GetPage extends BaseUi {
     
     protected boolean checkIfElementIsNotThere(String elementToken){
 		boolean flag = false;
-		try{wait.hardWait(2);
+		try{wait.hardWait(10);
+                
 			if(webdriver.findElement(getLocator(elementToken)).isDisplayed()){
 				flag = false;
 			}else{
@@ -224,7 +225,7 @@ public class GetPage extends BaseUi {
     
     protected boolean checkIfElementIsNotThere(String elementToken, String replacement){
 		boolean flag = false;
-		try{
+		try{wait.hardWait(10);
 			if(webdriver.findElement(getLocator(elementToken, replacement)).isDisplayed()){
 				flag = false;
 			}else{

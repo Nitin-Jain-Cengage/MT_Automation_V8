@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity]">
+  <test name="Command line test 2e162d37-bf5b-4c7f-be9c-4f35cfe5c800(failed)">
+    <classes>
+      <class name="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+        <methods>
+          <include name="start_test_session"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity"/>
+          <include name="Step_11_Instructor_Enters_Detail_In_OfflineActivity"/>
+          <include name="Step_08_Instructor_Logs_in_to_the_Application"/>
+          <include name="Step_12_Verify_Rolling_Week_UI"/>
+          <include name="Step_13_Verify_Activity_Gets_Added"/>
+          <include name="Step_09_Instructor_Manages_Course_From_SSO"/>
+          <include name="stop_test_session"/>
+        </methods>
+      </class> <!-- com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+    </classes>
+  </test> <!-- Command line test 2e162d37-bf5b-4c7f-be9c-4f35cfe5c800(failed) -->
+</suite> <!-- Failed suite [com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity] -->

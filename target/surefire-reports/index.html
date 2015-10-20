@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+              <span class="suite-name border-failed">com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 1 failed,  3 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="hide-methods failed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity"> (hide)</a> <!-- hide-methods failed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+                      <a href="#" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="show-methods failed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity"> (show)</a> <!-- show-methods failed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+                    </span>
+                    <div class="method-list-content failed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" title="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" hash-for-method="Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity">Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="hide-methods skipped suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity"> (hide)</a> <!-- hide-methods skipped suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+                      <a href="#" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="show-methods skipped suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity"> (show)</a> <!-- show-methods skipped suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+                    </span>
+                    <div class="method-list-content skipped suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" title="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" hash-for-method="Step_11_Instructor_Enters_Detail_In_OfflineActivity">Step_11_Instructor_Enters_Detail_In_OfflineActivity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" title="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" hash-for-method="Step_12_Verify_Rolling_Week_UI">Step_12_Verify_Rolling_Week_UI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" title="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" hash-for-method="Step_13_Verify_Activity_Gets_Added">Step_13_Verify_Activity_Gets_Added</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="hide-methods passed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity"> (hide)</a> <!-- hide-methods passed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+                      <a href="#" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="show-methods passed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity"> (show)</a> <!-- show-methods passed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+                    </span>
+                    <div class="method-list-content passed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" title="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" hash-for-method="Step_08_Instructor_Logs_in_to_the_Application">Step_08_Instructor_Logs_in_to_the_Application</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" title="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" hash-for-method="Step_09_Instructor_Manages_Course_From_SSO">Step_09_Instructor_Manages_Course_From_SSO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="panel com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+          <div class="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity">
+                  </a> <!-- Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity -->
+                  <span class="method-name">Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.46.0&apos;, revision: &apos;61506a4624b13675f24581e453592342b7485d71&apos;, time: &apos;2015-06-04 10:22:50&apos;
+System info: host: &apos;LNDA0021&apos;, ip: &apos;10.161.233.159&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_51&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:447)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.qait.mindtap.automation.getpageobjects.GetPage.checkIfElementIsNotThere(GetPage.java:213)
+	at com.qait.mindtap.keywords.WeekWidgetActions.verifyCurrentWeekIcon(WeekWidgetActions.java:73)
+	at com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity.Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity(TC02_Instructor_Adds_Offline_Activity.java:104)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7057 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:134)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:168)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:392)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:578)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 50 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity-class-failed -->
+          <div class="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Step_11_Instructor_Enters_Detail_In_OfflineActivity">
+                  </a> <!-- Step_11_Instructor_Enters_Detail_In_OfflineActivity -->
+                  <span class="method-name">Step_11_Instructor_Enters_Detail_In_OfflineActivity</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC02_Instructor_Adds_Offline_Activity.Step_11_Instructor_Enters_Detail_In_OfflineActivity()[pri:0, instance:com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity@1a6e353] depends on not successfully finished methods
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Step_12_Verify_Rolling_Week_UI">
+                  </a> <!-- Step_12_Verify_Rolling_Week_UI -->
+                  <span class="method-name">Step_12_Verify_Rolling_Week_UI</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC02_Instructor_Adds_Offline_Activity.Step_12_Verify_Rolling_Week_UI()[pri:0, instance:com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity@1a6e353] depends on not successfully finished methods
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Step_13_Verify_Activity_Gets_Added">
+                  </a> <!-- Step_13_Verify_Activity_Gets_Added -->
+                  <span class="method-name">Step_13_Verify_Activity_Gets_Added</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC02_Instructor_Adds_Offline_Activity.Step_13_Verify_Activity_Gets_Added()[pri:0, instance:com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity@1a6e353] depends on not successfully finished methods
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity-class-skipped -->
+          <div class="suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Step_08_Instructor_Logs_in_to_the_Application">
+                  </a> <!-- Step_08_Instructor_Logs_in_to_the_Application -->
+                  <span class="method-name">Step_08_Instructor_Logs_in_to_the_Application</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Step_09_Instructor_Manages_Course_From_SSO">
+                  </a> <!-- Step_09_Instructor_Manages_Course_From_SSO -->
+                  <span class="method-name">Step_09_Instructor_Manages_Course_From_SSO</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity-class-passed -->
+        </div> <!-- panel com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+        <div panel-name="test-xml-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity&quot;&gt;
+  &lt;test name=&quot;Command line test 2e162d37-bf5b-4c7f-be9c-4f35cfe5c800&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test 2e162d37-bf5b-4c7f-be9c-4f35cfe5c800 --&gt;
+&lt;/suite&gt; &lt;!-- com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test 2e162d37-bf5b-4c7f-be9c-4f35cfe5c800 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity');
+function tableData_com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity')
+data.setCell(0, 2, 'com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity')
+data.setCell(0, 3, 391783);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Step_08_Instructor_Logs_in_to_the_Application')
+data.setCell(1, 2, 'com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity')
+data.setCell(1, 3, 31319);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Step_09_Instructor_Manages_Course_From_SSO')
+data.setCell(2, 2, 'com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity')
+data.setCell(2, 3, 12494);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Step_11_Instructor_Enters_Detail_In_OfflineActivity')
+data.setCell(3, 2, 'com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Step_12_Verify_Rolling_Week_UI')
+data.setCell(4, 2, 'com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Step_13_Verify_Activity_Gets_Added')
+data.setCell(5, 2, 'com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity')
+data.setCell(5, 3, 0);
+window.suiteTableData['com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity']= { tableData: data, tableDiv: 'times-div-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity">
+              </div> <!-- times-div-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Step_08_Instructor_Logs_in_to_the_Application</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.</span>
+                <span class="reporter-method-output">[INFO]: log into the application using credentials 'kajal.inst@qaittest.com / A111111'</span>
+                <span class="reporter-method-output">[ASSERT PASS]: PageTitle for NG-30181-InstructorPage contains: 'Instructor SSO - Instructor Resource Center'.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Step_09_Instructor_Manages_Course_From_SSO</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.</span>
+                <span class="reporter-method-output">[ASSERT PASS]: element courseOperation with text Manage Course is displayed.</span>
+                <span class="reporter-method-output">[ASSERT PASS]: element courseLink with text Mayank Test Book-Automated Mindtap19Oct_18:39:4 is displayed.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qait.mindtap.tests.NG_30370.TC02_Instructor_Adds_Offline_Activity</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">start_test_session</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Step_08_Instructor_Logs_in_to_the_Application</span>
+                <span class="method-start">6345 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonFailure([TestResult name=Step_08_Instructor_Logs_in_to_the_Application status=SUCCESS method=TC02_Instructor...)</span>
+                <span class="method-start">37665 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Step_09_Instructor_Manages_Course_From_SSO</span>
+                <span class="method-start">37667 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonFailure([TestResult name=Step_09_Instructor_Manages_Course_From_SSO status=SUCCESS method=TC02_Instructor_Ad...)</span>
+                <span class="method-start">50162 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity</span>
+                <span class="method-start">50163 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenshotonFailure([TestResult name=Step_10_Verify_RollingWeekUI_And_Select_OfflineActivity status=FAILURE method=TC02_...)</span>
+                <span class="method-start">441974 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">stop_test_session</span>
+                <span class="method-start">442993 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
