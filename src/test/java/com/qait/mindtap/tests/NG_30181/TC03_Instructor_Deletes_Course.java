@@ -47,7 +47,7 @@ public class TC03_Instructor_Deletes_Course {
     }    
      
     @Test(dependsOnMethods = {"Step_03_Instructor_Drops_Student"})
-    void Step_04_user_LogOut() {
+    void Step_04_Instructor_LogOut() {
         test.loginpage.logOut(test.header.accessor("helloUser"));
     }
     

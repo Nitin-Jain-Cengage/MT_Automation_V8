@@ -84,7 +84,7 @@ public class TC05_Student_Launch_the_Course {
     }
 
     @Test(dependsOnMethods = {"Step_08_Verify_Rolling_Week_UI"})
-    void Step_07_user_LogOut() {
+    void Step_07_student_LogOut() {
         test.loginpage.logOut(test.header.accessor("helloUser"));// for accessing locators of different actions class
     }
 

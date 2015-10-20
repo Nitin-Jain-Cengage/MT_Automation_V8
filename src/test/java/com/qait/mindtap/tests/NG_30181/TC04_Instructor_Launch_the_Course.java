@@ -83,7 +83,7 @@ public class TC04_Instructor_Launch_the_Course {
     }
 
     @Test(dependsOnMethods = {"Step_08_Verify_Rolling_Week_UI"})
-    void Step_07_user_LogOut() {
+    void Step_07_Instructor_LogOut() {
         test.loginpage.logOut(test.header.accessor("helloUser"));
     }
 

@@ -155,7 +155,7 @@ public class ResultsIT {
 
 		}
 		message.addRecipient(Message.RecipientType.BCC, new InternetAddress(
-				"vivekdua@qainfotech.net"));
+				"ayushgaur@qainfotech.net"));
 
 	}
 

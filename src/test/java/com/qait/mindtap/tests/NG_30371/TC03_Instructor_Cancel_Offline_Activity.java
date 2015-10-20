@@ -89,11 +89,11 @@ public class TC03_Instructor_Cancel_Offline_Activity {
     }
 
     @Test(dependsOnMethods = {"Step_06_Admin_Search_Course"})
-    public void step_07_Instructor_Logs_Again(@Optional String browser) {
+    public void Step_07_start_Instructor_test_session() {
         test.launchApplication(getData("sso_url"));
     }
 
-    @Test(dependsOnMethods = {"step_07_Instructor_Logs_Again"})
+    @Test(dependsOnMethods = {"Step_07_Instructor_Logs_Again"})
     public void Step_08_Instructor_Logs_in_to_the_Application() {
         test.loginpage.verify_User_Is_On_Login_Page();
         test.loginpage.login_to_the_application_sso(getData(("users.instructor.username")), getData(("users.instructor.password")));
