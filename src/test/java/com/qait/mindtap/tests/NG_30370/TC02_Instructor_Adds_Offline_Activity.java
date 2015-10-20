@@ -84,7 +84,7 @@ public class TC02_Instructor_Adds_Offline_Activity {
         test.launchApplication(getData("sso_url"));
     }
 
-    @Test(dependsOnMethods = {"Step_07_Instructor_Logs_Again"})
+    @Test(dependsOnMethods = {"Step_07_start_Instructor_test_session"})
     public void Step_08_Instructor_Logs_in_to_the_Application() {
         test.loginpage.verify_User_Is_On_Login_Page();
         test.loginpage.login_to_the_application_sso(getData(("users.instructor.username")), getData(("users.instructor.password")));
