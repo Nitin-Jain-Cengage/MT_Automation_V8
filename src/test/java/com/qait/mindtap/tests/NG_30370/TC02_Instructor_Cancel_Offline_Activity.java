@@ -21,7 +21,7 @@ import com.qait.mindtap.automation.TestSessionInitiator;
  *
  * @author ayushgaur
  */
-public class TC02_Instructor_Adds_Offline_Activity {
+public class TC02_Instructor_Cancel_Offline_Activity {
 
     TestSessionInitiator test;
     String[] browserSizes = {"720x360"};
@@ -30,7 +30,7 @@ public class TC02_Instructor_Adds_Offline_Activity {
     @BeforeClass
 
     public void start_test_session() {
-        test = new TestSessionInitiator("TC01_Instructor_Adds_Offline_Activity");
+        test = new TestSessionInitiator("TC03_Instructor_Cancel_Offline_Activity");
         test.launchApplication(getData("sso_url"));
 
     }
@@ -65,8 +65,8 @@ public class TC02_Instructor_Adds_Offline_Activity {
     public void Step_04_Instructor_Enters_Detail_In_OfflineActivity() {
         test.offline_activity.instructorEnterScore();
         test.offline_activity.instructorEntersTitle();
-        test.offline_activity.instructorEntersDescription("add");
-        test.offline_activity.instructorClickOnAdd();
+        test.offline_activity.instructorEntersDescription("Cancel");
+        test.offline_activity.instructorClickOnCancel();
     }
 
     @Test(dependsOnMethods = {"Step_04_Instructor_Enters_Detail_In_OfflineActivity"})
@@ -78,10 +78,7 @@ public class TC02_Instructor_Adds_Offline_Activity {
 
     @Test(dependsOnMethods = {"Step_05_Verify_Rolling_Week_UI"})
     public void Step_06_Verify_Activity_Gets_Added() {
-        test.weekwidget.verifyAssignment();
-        test.weekwidget.verifyScore();
-        test.weekwidget.verifyTitle();
-        test.weekwidget.verifyDescription();
+        test.weekwidget.verifyDescriptionNotShown();
     }
 
     @AfterClass(alwaysRun = true)

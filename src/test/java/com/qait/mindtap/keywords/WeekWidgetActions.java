@@ -135,17 +135,12 @@ public class WeekWidgetActions extends GetPage{
     }
 
     public void verifyDescription() {
-        List<WebElement> description = elements("allDescription");
-        int flag=1;
-        for(WebElement cancelDescription:description){
-        flag=1;
-        if(cancelDescription.getText().equals(data.readProperty("offline_assignmentDescription"))){
-        flag=0;
-          }
-        }
-        if(flag==0){
-            Reporter.pass("Assignment is added displayed");
-        }       }
+        WebElement description = element("assignmentDescription",data.readProperty("offline_assignmentDescription"));
+        if(description.getText().equals(data.readProperty("offline_assignmentDescription"))){
+           Reporter.pass("Assignment description is added ");
+        } 
+    }
+    
     public void verifyAssignmentNotAdded() {
         Assert.assertFalse(isElementDisplayed("offlineAssignment"),Reporter.failForAssert("Assignment is not added or displayed"));
         Reporter.fail("Assignment is displayed");
@@ -185,7 +180,7 @@ public class WeekWidgetActions extends GetPage{
           }
         }
         if(flag==0){
-            Reporter.pass("Assignment is not added or displayed");
+            Reporter.pass("Assignment description is not added or displayed");
         }
     }
 
