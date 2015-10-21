@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 200.598 sec - in com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 110.146 sec - in com.qait.mindtap.tests.NG_30370.TC03_Instructor_Cancel_Offline_Activity

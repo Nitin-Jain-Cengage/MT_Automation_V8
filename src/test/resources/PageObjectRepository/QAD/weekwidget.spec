@@ -17,6 +17,6 @@ offline_assignmentTitle                                 xpath                   
 offlineAssignment                                       xpath                                                            //div[contains(@class,'day-bar')]
 offline_assignmentScore                                 xpath                                                            (//span[@id='totalDisplay'])[1]
 offlineActivity                                         xpath                                                             //*[@id='offline']/b
-
+allDescription                                          xpath                                                             //div[contains(@class,'description')]
 
 ====================================================================================

@@ -167,10 +167,17 @@ public class WeekWidgetActions extends GetPage{
     }
 
     public void verifyDescriptionNotShown() {
-         if(checkIfElementIsNotThere("assignmentDescription","It is an offline assignment for cancel"+date.getCurrentDateTime())){
-             Reporter.pass("Assignment is not added or displayed");
-                 }
-
+        List<WebElement> description = elements("allDescription");
+        int flag=0;
+        for(WebElement cancelDescription:description){
+        flag=0;
+        if(cancelDescription.getText().equals("It is an offline assignment for cancel")){
+        flag=1;
+          }
+        }
+        if(flag==0){
+            Reporter.pass("Assignment is not added or displayed");
+        }
     }
 
     public void instructorSelectsTopic(String InstructorTopic) {
