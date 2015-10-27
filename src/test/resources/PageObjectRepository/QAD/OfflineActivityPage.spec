@@ -7,7 +7,7 @@ offline_assignmentTitle                                 xpath                   
 offline_assignmentDescription                           xpath                                                            (//iron-autogrow-textarea)[2]//textarea 
 addOfflineAssignment_Btn                                xpath                                                            (//*[@id='addButton']/button)[1]
 addOfflineAssignment_Cancel                             xpath                                                            (//*[@id='cancelButton']/button)[1] 
-
+practiceBtn                                             xpath                                                             //button[contains(text(),'Practice')]
 
 
 ==================================================================================================

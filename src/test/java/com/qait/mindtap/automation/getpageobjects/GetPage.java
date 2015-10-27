@@ -130,6 +130,18 @@ public class GetPage extends BaseUi {
         return element(elementToken, "");
     }
 
+    protected WebElement elementWithoutWait(String elementToken, String replacement){
+        WebElement elem = null;
+        try {
+            elem = webdriver.findElement(getLocator(elementToken, replacement));
+        } catch (NoSuchElementException excp) {
+            ReportMsg.fail("Element " + elementToken + " not found on the " + this.pageName + " !!!");
+        } catch (NullPointerException npe) {
+            ReportMsg.scripterror(npe.getLocalizedMessage());
+        }
+        return elem;
+    }
+    
     protected WebElement element(String elementToken, String replacement) {
         WebElement elem = null;
         try {

@@ -42,6 +42,7 @@ import com.qait.mindtap.keywords.ProgressWidgetActions;
 import com.qait.mindtap.keywords.UserPageActions;
 import com.qait.mindtap.keywords.WeekWidgetActions;
 import com.qait.mindtap.keywords.OfflineActivityAction;
+import com.qait.mindtap.keywords.TopicView;
 public class TestSessionInitiator {
 
     protected WebDriver driver;
@@ -70,6 +71,7 @@ public class TestSessionInitiator {
     public NG_30181_StudentLaunchCourseActions sso;
     public NG_30181_CoursePaymentActionPageActions coursePayment;
     public NG_30181_ConfirmCourseInformationActions confirmCourseInfo;
+    public TopicView topicView;
     public UserPageActions userpage;
   //  public AdminPerformActions adminDashboard;
     public OrganizationActions org;
@@ -116,6 +118,7 @@ public class TestSessionInitiator {
     //    search = new SearchAppPageActions(driver);
         org = new OrganizationActions(driver);
         offline_activity = new OfflineActivityAction(driver);
+        topicView = new TopicView(driver);
     }
 
     /**

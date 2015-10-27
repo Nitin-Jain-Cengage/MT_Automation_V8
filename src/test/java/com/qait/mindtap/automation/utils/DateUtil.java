@@ -25,7 +25,7 @@ public class DateUtil {
 		String month = Integer.toString(cal.get(Calendar.MONTH)+1);
 		String date = Integer.toString(cal.get(Calendar.DATE));
 		try{
-			ranNum = dformatter.format(dateParse.parse(date))+formatter.format(monthParse.parse(month))+"_"+Integer.toString(cal.get(Calendar.HOUR_OF_DAY))+":"+Integer.toString(cal.get(Calendar.MINUTE))+":"+Integer.toString(cal.get(Calendar.SECOND));
+		ranNum = dformatter.format(dateParse.parse(date))+formatter.format(monthParse.parse(month))+"_"+Integer.toString(cal.get(Calendar.HOUR_OF_DAY))+":"+Integer.toString(cal.get(Calendar.MINUTE))+":"+Integer.toString(cal.get(Calendar.SECOND));
 		}catch(Exception e){}
 		return ranNum;
 	}
@@ -177,7 +177,13 @@ public class DateUtil {
 		formatter.setTimeZone(tz);
 		return formatter.format(cal.getTime());
 	}
+        
+    public String getCurrentDateInitial(int count){
+       Calendar cal = Calendar.getInstance(); 
+        return Integer.toString((cal.get(Calendar.DATE)+count));
+    }
 
+       
 	public String getDateTwoDaysBefore()
     {
     	String _2daysDate;
@@ -425,7 +431,7 @@ public class DateUtil {
        return getDayOfWeek(cal.get(Calendar.DAY_OF_WEEK));
    }
    
-    public String getDayCurentDay(){
+    public String getDayOfCurentDay(){
        Calendar cal = Calendar.getInstance();
        return getDayOfWeek(cal.get(Calendar.DAY_OF_WEEK)+1);
 

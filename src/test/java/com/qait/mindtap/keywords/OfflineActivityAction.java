@@ -52,5 +52,10 @@ public class OfflineActivityAction extends GetPage{
          isElementDisplayed(("addOfflineAssignment_Cancel"));
          element("addOfflineAssignment_Cancel").click();
     }
+
+    public void instrutorselectsPracticeOption() {
+        isElementDisplayed("practiceBtn");
+        element("practiceBtn").click();
+    }
     
 }
