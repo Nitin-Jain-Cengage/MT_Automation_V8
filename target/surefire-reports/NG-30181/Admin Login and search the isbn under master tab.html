@@ -1,0 +1,231 @@
+<html>
+<head>
+<title>TestNG:  Admin Login and search the isbn under master tab</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin Login and search the isbn under master tab</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 28 17:19:00 IST 2015</td>
+</tr>
+<tr><td>Total time:</td><td>646 seconds (646678 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_01_Instructor_Logs_in_to_the_Application()'><b>Step_01_Instructor_Logs_in_to_the_Application</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-213521" onClick='toggleBox("Output-213521", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-213521" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-213521">
+[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.<br/>
+[INFO]: log into the application using credentials 'kajal.inst@qaittest.com / A111111'<br/>
+[ASSERT PASS]: PageTitle for NG-30181-InstructorPage contains: 'Instructor SSO - Instructor Resource Center'.<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_02_Instructor_Manages_Course_From_SSO()'><b>Step_02_Instructor_Manages_Course_From_SSO</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-31243104" onClick='toggleBox("Output-31243104", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31243104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31243104">
+[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.<br/>
+[ASSERT PASS]: element courseOperation with text Manage Course is displayed.<br/>
+[ASSERT PASS]: element courseLink with text Mayank Test Book-Automated Mindtap MTQ is displayed.<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_03_Verify_RollingWeekUI_And_Select_TopicView()'><b>Step_03_Verify_RollingWeekUI_And_Select_TopicView</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-19105736" onClick='toggleBox("Output-19105736", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19105736" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19105736">
+[ASSERT PASS]: element currentWeekIcon is displayed.<br/>
+[ASSERT PASS]: Current Week icon is displayed<br/>
+[ASSERT PASS]: element expand_collapse is displayed.<br/>
+[ASSERT PASS]: element addToWeek is displayed.<br/>
+[ASSERT PASS]: Instructor is able to expand week<br/>
+[ASSERT PASS]: element topicActivity is displayed.<br/>
+</div>
+</td>
+<td></td>
+<td>226</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_04_Instructor_Edit_Course_Details_To_Add()'><b>Step_04_Instructor_Edit_Course_Details_To_Add</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-3500557" onClick='toggleBox("Output-3500557", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3500557" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3500557">
+[ASSERT PASS]: element subTopic with text Reading: Binomial Probability is displayed.<br/>
+[ASSERT PASS]: element topicEditBtn with text Reading: Binomial Probability is displayed.<br/>
+[ASSERT PASS]: element title is displayed.<br/>
+[ASSERT PASS]: element descriptionTopic is displayed.<br/>
+[ASSERT PASS]: element doneBtn is displayed.<br/>
+[ASSERT PASS]: element btnRollingWeekView is displayed.<br/>
+</div>
+</td>
+<td></td>
+<td>108</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_05_Verify_Rolling_Week_UI()'><b>Step_05_Verify_Rolling_Week_UI</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-29693827" onClick='toggleBox("Output-29693827", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-29693827" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-29693827">
+[ASSERT PASS]: element currentWeekIcon is displayed.<br/>
+[ASSERT PASS]: Current Week icon is displayed<br/>
+[ASSERT PASS]: element textWeek is displayed.<br/>
+[ASSERT PASS]: Week is Displayed along with countWEEK 2<br/>
+[ASSERT PASS]: element monthDate is displayed.<br/>
+[ASSERT PASS]: Oct Month is displayed<br/>
+[ASSERT PASS]: along with date 26<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_06_Verify_Activity_Gets_Added()'><b>Step_06_Verify_Activity_Gets_Added</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-25255551" onClick='toggleBox("Output-25255551", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25255551" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25255551">
+[ASSERT PASS]: element currentDescription is displayed.<br/>
+[ASSERT PASS]: Description is added<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_07_Verify_RollingWeekUI_And_Select_TopicView()'><b>Step_07_Verify_RollingWeekUI_And_Select_TopicView</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-4955930" onClick='toggleBox("Output-4955930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-4955930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-4955930">
+[ASSERT PASS]: element topicActivity is displayed.<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_08_Instructor_Edit_Course_Details_To_Cancel()'><b>Step_08_Instructor_Edit_Course_Details_To_Cancel</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-8279105" onClick='toggleBox("Output-8279105", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8279105" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8279105">
+[ASSERT PASS]: element subTopic with text Reading: Binomial Probability is displayed.<br/>
+[ASSERT PASS]: element topicEditBtn with text Reading: Binomial Probability is displayed.<br/>
+[ASSERT PASS]: element title is displayed.<br/>
+[ASSERT PASS]: element descriptionTopic is displayed.<br/>
+[ASSERT PASS]: element doneBtn is displayed.<br/>
+[ASSERT PASS]: element btnRollingWeekView is displayed.<br/>
+</div>
+</td>
+<td></td>
+<td>108</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_09_Verify_Rolling_Week_UI()'><b>Step_09_Verify_Rolling_Week_UI</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-18149900" onClick='toggleBox("Output-18149900", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18149900" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18149900">
+[ASSERT PASS]: element currentWeekIcon is displayed.<br/>
+[ASSERT PASS]: Current Week icon is displayed<br/>
+[ASSERT PASS]: element textWeek is displayed.<br/>
+[ASSERT PASS]: Week is Displayed along with countWEEK 2<br/>
+[ASSERT PASS]: element monthDate is displayed.<br/>
+[ASSERT PASS]: Oct Month is displayed<br/>
+[ASSERT PASS]: along with date 26<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+<tr>
+<td title='com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity.Step_10_Verify_Activity_Gets_Canceled()'><b>Step_10_Verify_Activity_Gets_Canceled</b><br>Test class: com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity<br/>
+<a href="#Output-3235618" onClick='toggleBox("Output-3235618", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3235618" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3235618">
+[ASSERT PASS]: Assignment description is not added or displayed<br/>
+</div>
+</td>
+<td></td>
+<td>106</td>
+<td>com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity@16e8792</td></tr>
+</table><p>
+</body>
+</html>

@@ -55,7 +55,7 @@ public class TopicView extends GetPage {
         waitTOSync();
         element("startDateInput").click();
         element("calendarDate", date.getCurrentDateInitial(1)).click();
-       // waitTOSync();}
+        waitTOSync();
         element("doneBtn").click();
     }
 
@@ -71,6 +71,7 @@ public class TopicView extends GetPage {
             element("calendarDate", date.getCurrentDateInitial(2)).click();
         }
   //     }
+        waitTOSync();
         isElementDisplayed("doneBtn");
         element("doneBtn").click();
         
@@ -92,8 +93,8 @@ public class TopicView extends GetPage {
 
     public int nextMonthCalendar(int flag){
         for (WebElement dates : elements("calendarDates")) {
-            if (dates.getText().equals(date.getCurrentDateInitial(31))) {
-                element("calendarDate", date.getCurrentDateInitial(31)).click();
+            if (dates.getText().equals(date.getCurrentDateInitial(2))) {
+                element("calendarDate", date.getCurrentDateInitial(2)).click();
                 flag = 1;
                 break;
             } else {
