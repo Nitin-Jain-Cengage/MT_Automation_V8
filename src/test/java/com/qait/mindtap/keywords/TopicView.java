@@ -50,26 +50,33 @@ public class TopicView extends GetPage {
 
     public void instructorEntersStartDate() {
         element("startDateInput").click();
+     //   if(!(element("calendarDate", date.getCurrentDateInitial(0)).getAttribute("class").contains("ui-state-active"))){
         element("clearBtn").click();
         waitTOSync();
         element("startDateInput").click();
-        element("calendarDate", date.getCurrentDateInitial(0)).click();
-        isElementDisplayed("doneBtn");
+        element("calendarDate", date.getCurrentDateInitial(1)).click();
+       // waitTOSync();}
         element("doneBtn").click();
     }
 
     public void instructorEntersEndDate() {
         element("endDateInput").click();
+   //     if(!element("calendarDate", date.getCurrentDateInitial(1)).getAttribute("class").contains("ui-state-active")){
         element("clearBtn").click();
         waitTOSync();
         element("endDateInput").click();
-        element("calendarDate", date.getCurrentDateInitial(5)).click();
+        int flag=0;
+        flag = nextMonthCalendar(flag);
+        if(flag==0){
+            element("calendarDate", date.getCurrentDateInitial(2)).click();
+        }
+  //     }
         isElementDisplayed("doneBtn");
         element("doneBtn").click();
+        
     }
 
     public void instructorClickOnSave() {
-        isElementDisplayed("saveScheduleBtn");
         element("saveScheduleBtn").click();
     }
 
@@ -79,8 +86,25 @@ public class TopicView extends GetPage {
     }
 
     public void instructorClickOnCancel() {
-        isElementDisplayed("cancelScheduleBtn");
+       
         element("cancelScheduleBtn").click();
     }
 
+    public int nextMonthCalendar(int flag){
+        for (WebElement dates : elements("calendarDates")) {
+            if (dates.getText().equals(date.getCurrentDateInitial(31))) {
+                element("calendarDate", date.getCurrentDateInitial(31)).click();
+                flag = 1;
+                break;
+            } else {
+                flag = 0;
+            }
+        }
+        if (flag == 0) {
+            element("endDateInput").click();
+            element("calendarMonthNext").click();
+        }
+    return flag;
+    }
+    
 }

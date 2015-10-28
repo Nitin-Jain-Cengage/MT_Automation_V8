@@ -7,12 +7,12 @@
             <class name="com.qait.mindtap.tests.NG_30371.TC01_Instructor_Adds_OR_Cancel_Topic_Activity"></class>
         </classes>
     </test>
-    <test name="Instructor Creates Courses" preserve-order="true"
+<!--    <test name="Instructor Creates Courses" preserve-order="true"
           enabled="true">
         <classes>
             <class name="com.qait.mindtap.tests.NG_30371.TC02_TA_Adds_OR_Cancel_Topic_Activity"></class>
         </classes>
-    </test>
+    </test>-->
     </suite>
  
 

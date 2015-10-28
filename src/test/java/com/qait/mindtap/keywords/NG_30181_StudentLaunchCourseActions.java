@@ -26,4 +26,16 @@ public class NG_30181_StudentLaunchCourseActions extends GetPage{
 		element("btnOpenCourse" , data.readProperty("courseKey").replaceAll("-","")).click();
 				
 	}
+        
+        public void student_Click_Open(String courseKey) {
+		String[] value = element("openbtn" , courseKey).getAttribute("onclick").split("\'");
+                for(String url:value){
+                    if(url.startsWith("http")){
+                        url=url.replaceFirst("'","");
+                        launchCourse(configReader.getProperty("./Config.properties" , "tier"), url);
+                    }
+                }
+                
+				
+	}
 }

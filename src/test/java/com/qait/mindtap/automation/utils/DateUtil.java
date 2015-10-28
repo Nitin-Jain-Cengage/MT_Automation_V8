@@ -180,7 +180,8 @@ public class DateUtil {
         
     public String getCurrentDateInitial(int count){
        Calendar cal = Calendar.getInstance(); 
-        return Integer.toString((cal.get(Calendar.DATE)+count));
+       cal.add(Calendar.DATE,count);
+        return Integer.toString(cal.get(Calendar.DATE));
     }
 
        

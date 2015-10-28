@@ -1,10 +1,10 @@
 #surefire
-#Tue Oct 27 08:14:25 IST 2015
+#Wed Oct 28 15:47:49 IST 2015
 tc.0=com.qait.mindtap.automation.TestSessionInitiator
 testng.configurator=org.apache.maven.surefire.testng.conf.TestNG652Configurator
-testng.test.classpath=C\:\\Users\\ayushgaur\\Desktop\\New folder (2)\\MT_Automation_V8\\target\\test-classes
-classPathUrl.0=C\:\\Users\\ayushgaur\\Desktop\\New folder (2)\\MT_Automation_V8\\target\\test-classes
-classPathUrl.1=C\:\\Users\\ayushgaur\\Desktop\\New folder (2)\\MT_Automation_V8\\target\\classes
+testng.test.classpath=C\:\\Users\\ayushgaur\\Desktop\\Mindtap_MTQ\\MT_Automation_V8\\target\\test-classes
+classPathUrl.0=C\:\\Users\\ayushgaur\\Desktop\\Mindtap_MTQ\\MT_Automation_V8\\target\\test-classes
+classPathUrl.1=C\:\\Users\\ayushgaur\\Desktop\\Mindtap_MTQ\\MT_Automation_V8\\target\\classes
 classPathUrl.2=C\:\\Users\\ayushgaur\\.m2\\repository\\org\\testng\\testng\\6.9.4\\testng-6.9.4.jar
 classPathUrl.3=C\:\\Users\\ayushgaur\\.m2\\repository\\org\\beanshell\\bsh\\2.0b4\\bsh-2.0b4.jar
 classPathUrl.4=C\:\\Users\\ayushgaur\\.m2\\repository\\com\\beust\\jcommander\\1.48\\jcommander-1.48.jar
@@ -76,12 +76,12 @@ enableAssertions=true
 childDelegation=false
 testFwJarVersion=6.9.4
 preferTestsFromInStream=false
-testSuiteDefinitionTestSourceDirectory=C\:\\Users\\ayushgaur\\Desktop\\New folder (2)\\MT_Automation_V8\\src\\test\\java
-testSuiteXmlFiles0=C\:\\Users\\ayushgaur\\Desktop\\New folder (2)\\MT_Automation_V8\\src\\test\\resources\\testxml\\TestNGtopicView.xml
+testSuiteDefinitionTestSourceDirectory=C\:\\Users\\ayushgaur\\Desktop\\Mindtap_MTQ\\MT_Automation_V8\\src\\test\\java
+testSuiteXmlFiles0=C\:\\Users\\ayushgaur\\Desktop\\Mindtap_MTQ\\MT_Automation_V8\\src\\test\\resources\\testxml\\TestNGtopicView.xml
 runOrder=filesystem
-runStatisticsFile=C\:\\Users\\ayushgaur\\Desktop\\New folder (2)\\MT_Automation_V8\\.surefire-516C7E0000DF795940E54D02C5C02BA1C0A7C120
+runStatisticsFile=C\:\\Users\\ayushgaur\\Desktop\\Mindtap_MTQ\\MT_Automation_V8\\.surefire-14A9269C492E05E4C0540511BEB1F2B36E619481
 isTrimStackTrace=true
-reportsDirectory=C\:\\Users\\ayushgaur\\Desktop\\New folder (2)\\MT_Automation_V8\\target\\surefire-reports
+reportsDirectory=C\:\\Users\\ayushgaur\\Desktop\\Mindtap_MTQ\\MT_Automation_V8\\target\\surefire-reports
 useSystemClassLoader=true
 useManifestOnlyJar=true
 failIfNoTests=false

@@ -93,8 +93,8 @@ public class WeekWidgetActions extends GetPage {
 
     public void verifyCurrentWeekIcon() {
         waitTOSync();
-        int i=0;
-        while (checkIfElementIsNotThere("currentWeekIcon")&&i<5) {
+        int i = 0;
+        while (checkIfElementIsNotThere("currentWeekIcon") && i < 5) {
             refreshPage();
             i++;
         }
@@ -158,14 +158,46 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void verifyDescription() {
-        WebElement description = element("assignmentDescription", data.readProperty("description"));
-        if (description.getText().equals(data.readProperty("description"))) {
-            Reporter.pass("Assignment description is added ");
-        }
-        else{
-            System.out.println(data.readProperty("description"));
-            Reporter.fail("Assignment description is not added ");
-        }
+        Assert.assertTrue(isElementDisplayed("currentDescription"),Reporter.failForAssert("Description not added"));
+        Reporter.pass("Description is added");
+//        List<WebElement> description = elements("allDescription");
+//        List<WebElement> expandIcon = elements("allExpand");
+//        List<WebElement> area = elements("areaExpanded");
+//        int count = 0;
+//        for (WebElement areaExpanded : area) {
+//        if (areaExpanded.getAttribute("aria-expanded").equals("false")) {
+//                expandIcon.get(count).click();
+//            }
+//        count++;
+//        }
+//        for(WebElement descrip  : description){
+//                if(descrip.getText().equals(data.readProperty("description"))){
+//                    Reporter.pass("Assignment description is added ");
+//                    break;
+//                }
+//            }
+//        for (WebElement areaExpanded : area) {
+//        if (areaExpanded.getAttribute("aria-expanded").equals("true")) {
+//                expandIcon.get(count).click();
+//            }
+//        count++;
+//        }
+//        
+//        
+//        for (WebElement areaExpanded : area) {
+//            scrollDown(areaExpanded);
+//            if (areaExpanded.getAttribute("aria-expanded").equals("false")) {
+//                expandIcon.get(count).click();
+//            }
+//            count++;
+//            if (description.get(count).getText().equals(data.readProperty("description"))) {
+//                Reporter.pass("Assignment description is added ");
+//                break;
+//            }
+//            expandIcon.get(count).click();
+//        }
+        
+        
     }
 
     public void verifyAssignmentNotAdded() {
@@ -210,14 +242,14 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void instructorSelectsTopicView() {
-        int i=0;
-       while(checkIfElementIsNotThere("topicActivity")&&i<5){
-           refreshPage();
-           verifyCurrentWeekIcon();
-           instructorClickOnAddToWeek();
-           instructorSelectsDay();
-           i++;
-       }
+        int i = 0;
+        while (checkIfElementIsNotThere("topicActivity") && i < 5) {
+            refreshPage();
+            verifyCurrentWeekIcon();
+            instructorClickOnAddToWeek();
+            instructorSelectsDay();
+            i++;
+        }
         isElementDisplayed("topicActivity");
         element("topicActivity").click();
     }

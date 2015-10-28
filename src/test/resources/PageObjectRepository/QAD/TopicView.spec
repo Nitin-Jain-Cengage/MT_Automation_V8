@@ -13,4 +13,6 @@ editBtn                             xpath          //span[contains(text(),'${sub
 descriptionTopic                    xpath          (//iron-autogrow-textarea)[1]//textarea 
 title                               xpath          (//label[contains(text(),'Title')]/../input)[1]
 clearBtn                            css             .date-clear
+calendarMonthNext                   css             .ui-datepicker-next>span
+calendarDates                       css           .ui-datepicker-calendar td>a
 ================================================================================
