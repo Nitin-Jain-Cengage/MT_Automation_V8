@@ -3,21 +3,21 @@
 
 <suite verbose="0" name="NG-30456" parallel="false"
        thread-count="3">
-    <test name="Instructor adds course" preserve-order="true"
+    <test name="Instructor adds or cancel offline activity" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="com.qait.mindtap.tests.NG_30456.TC01_Instructor_Add_OR_Cancel_Offline_Ungraded_Activity"></class>
         </classes>
     </test>
-    <test name="Instructor cancels course" preserve-order="true"
+    <test name="TA adds or cancel offline activity" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="chrome"/>
         <classes>
            <class name="com.qait.mindtap.tests.NG_30456.TC02_TA_Add_OR_Cancel_Offline_Ungraded_Activity"></class>
         </classes>
     </test>
-    <test name="Instructor cancels course" preserve-order="true"
+    <test name="Student View Added Activity" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="chrome"/>
         <classes>
