@@ -73,9 +73,6 @@ public class TC01_Instructor_Add_OR_Cancel_Offline_Ungraded_Activity {
 
     @Test(dependsOnMethods = {"Step_05_Verify_Rolling_Week_UI"})
     public void Step_06_Verify_Activity_Gets_Added() {
-        test.weekwidget.verifyAssignment();
-        test.weekwidget.verifyScore();
-        test.weekwidget.verifyTitle();
         test.weekwidget.verifyDescription();
     }
 
