@@ -102,7 +102,7 @@ public class TC01_Instructor_Add_OR_Cancel_Offline_Ungraded_Activity {
 
     @AfterClass(alwaysRun = true)
     public void stop_test_session() {
-        test.closeTestSession();
+      //  test.closeTestSession();
     }
 
     @AfterMethod
