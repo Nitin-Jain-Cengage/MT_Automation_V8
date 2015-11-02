@@ -27,6 +27,11 @@ public class NG_30181_StudentLaunchCourseActions extends GetPage{
 				
 	}
         
+        public void student_Open_Selected_Course(String courseKey) {
+		element("btnOpenCourse" , courseKey).click();
+				
+	}
+        
         public void student_Click_Open(String courseKey) {
 		String[] value = element("openbtn" , courseKey).getAttribute("onclick").split("\'");
                 for(String url:value){

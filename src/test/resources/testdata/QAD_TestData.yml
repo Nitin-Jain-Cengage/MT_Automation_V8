@@ -26,7 +26,7 @@ course1:
 coretext:
   ISBN: 9781305876651
   NAME: Mayank Test Book-Automated Mindtap MTQ
-  CourseKey: MTPN-CCSP-P5KT 
+  CourseKey: MTPNCCSPP5KT 
 
 email:
     send: no

@@ -76,30 +76,30 @@ public class TC01_Instructor_Add_OR_Cancel_Offline_Ungraded_Activity {
         test.weekwidget.verifyDescription();
     }
 
-    @Test(dependsOnMethods = {"Step_07_Instructor_Enters_Detail_In_OfflineActivity"})
-    public void Step_08_Verify_Rolling_Week_UI() {
+    @Test(dependsOnMethods = {"Step_06_Verify_Activity_Gets_Added"})
+    public void Step_07_Verify_Rolling_Week_UI() {
         test.weekwidget.verifyCurrentWeekIcon();
         test.weekwidget.instructorClickOnAddToWeek();
         test.weekwidget.instructorSelectsDay();
         test.weekwidget.instructorSelectsOfflineActivity();
     }
 
-    @Test(dependsOnMethods = {"Step_06_Verify_Activity_Gets_Added"})
-    public void Step_07_Instructor_Enters_Detail_In_OfflineActivity() {
+    @Test(dependsOnMethods = {"Step_07_Verify_Rolling_Week_UI"})
+    public void Step_08_Instructor_Enters_Detail_In_OfflineActivity() {
         test.offline_activity.instrutorselectsPracticeOption();
         test.offline_activity.instructorEntersTitle();
         test.offline_activity.instructorEntersDescription("Cancel");
         test.offline_activity.instructorClickOnCancel();
     }
 
-    @Test(dependsOnMethods = {"Step_08_Verify_Rolling_Week_UI"})
-    public void Step_09_Verify_Activity_Gets_Added() {
+    @Test(dependsOnMethods = {"Step_08_Instructor_Enters_Detail_In_OfflineActivity"})
+    public void Step_09_Verify_Activity_Gets_Added_OR_Not() {
         test.weekwidget.verifyDescriptionNotShown();
     }
 
     @AfterClass(alwaysRun = true)
     public void stop_test_session() {
-      //  test.closeTestSession();
+      test.closeTestSession();
     }
 
     @AfterMethod

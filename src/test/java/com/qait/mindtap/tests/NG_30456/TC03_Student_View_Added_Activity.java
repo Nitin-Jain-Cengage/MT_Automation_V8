@@ -39,7 +39,7 @@ public class TC03_Student_View_Added_Activity {
 
     @Test(dependsOnMethods = {"Step_01_Student_Logs_in_to_the_Application"})
     public void Step_02_Student_Launch_Course() {
-        test.sso.student_Open_Course();
+        test.sso.student_Open_Selected_Course(getData("coretext.CourseKey"));
         test.coursePayment.verify_User_Is_On_CoursePayment_Page();
         test.coursePayment.take_Me_To_Course();
 
@@ -55,15 +55,7 @@ public class TC03_Student_View_Added_Activity {
 
     @Test(dependsOnMethods = {"Step_03_Verify_Weeks_CurrentWeekIcon_Displays_Along_Month_and_Date"})
     public void Step_04_Verify_Activity_Gets_Added() {
-        test.weekwidget.verifyAssignment();
-        test.weekwidget.verifyScore();
-        test.weekwidget.verifyTitle();
         test.weekwidget.verifyDescription();
-    }
-
-    @Test(dependsOnMethods = {"Step_04_Verify_Activity_Gets_Added"})
-    void Step_07_student_LogOut() {
-        test.loginpage.logOut(test.header.accessor("helloUser"));// for accessing locators of different actions class
     }
 
     @AfterClass(alwaysRun = true)
