@@ -67,6 +67,7 @@ public class TopicView extends GetPage {
         waitTOSync();
         element("endDateInput").click();
    //     if(!element("calendarDate", date.getCurrentDateInitial(1)).getAttribute("class").contains("ui-state-active")){
+        waitTOSync();
         element("clearBtn").click();
         waitTOSync();
         element("endDateInput").click();
