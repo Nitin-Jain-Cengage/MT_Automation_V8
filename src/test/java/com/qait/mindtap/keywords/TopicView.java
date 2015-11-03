@@ -52,10 +52,14 @@ public class TopicView extends GetPage {
         element("startDateInput").click();
      //   if(!(element("calendarDate", date.getCurrentDateInitial(0)).getAttribute("class").contains("ui-state-active"))){
         element("clearBtn").click();
-        waitTOSync();
-        element("startDateInput").click();
+         element("startDateInput").click();
+        int flag=0;
+        flag = nextMonthCalendar(flag);
+        if(flag==0){
+                     
         element("calendarDate", date.getCurrentDateInitial(1)).click();
-        waitTOSync();
+        waitTOSync();}
+        isElementDisplayed("doneBtn");
         element("doneBtn").click();
     }
 

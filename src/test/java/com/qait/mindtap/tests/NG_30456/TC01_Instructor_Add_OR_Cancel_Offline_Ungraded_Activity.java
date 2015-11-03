@@ -26,7 +26,7 @@ public class TC01_Instructor_Add_OR_Cancel_Offline_Ungraded_Activity {
     @BeforeClass
 
     public void start_test_session() {
-        test = new TestSessionInitiator("TC02_TA_Add_OR_Cancel_Offline_Ungraded_Activity");
+        test = new TestSessionInitiator("TC01_Instructor_Add_OR_Cancel_Offline_Ungraded_Activity");
         test.launchApplication(getData("sso_url"));
 
     }
