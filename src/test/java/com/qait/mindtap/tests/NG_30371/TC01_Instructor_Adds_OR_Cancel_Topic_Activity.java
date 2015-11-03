@@ -122,11 +122,11 @@ public class TC01_Instructor_Adds_OR_Cancel_Topic_Activity {
     
     @AfterClass(alwaysRun = true)
     public void stop_test_session() {
-     //   test.closeTestSession();
+        test.closeTestSession();
     }
 
     @AfterMethod
     public void takeScreenshotonFailure(ITestResult result) {
-     //   test.takescreenshot.takeScreenShotOnException(result);
+        test.takescreenshot.takeScreenShotOnException(result);
     }
 }
