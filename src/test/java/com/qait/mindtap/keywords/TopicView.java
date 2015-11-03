@@ -54,7 +54,7 @@ public class TopicView extends GetPage {
         element("clearBtn").click();
          element("startDateInput").click();
         int flag=0;
-        flag = nextMonthCalendar(flag);
+        flag = nextMonthCalendar(flag,1);
         if(flag==0){
                      
         element("calendarDate", date.getCurrentDateInitial(1)).click();
@@ -64,13 +64,14 @@ public class TopicView extends GetPage {
     }
 
     public void instructorEntersEndDate() {
+        waitTOSync();
         element("endDateInput").click();
    //     if(!element("calendarDate", date.getCurrentDateInitial(1)).getAttribute("class").contains("ui-state-active")){
         element("clearBtn").click();
         waitTOSync();
         element("endDateInput").click();
         int flag=0;
-        flag = nextMonthCalendar(flag);
+        flag = nextMonthCalendar(flag,2);
         if(flag==0){
             element("calendarDate", date.getCurrentDateInitial(2)).click();
         }
@@ -95,10 +96,10 @@ public class TopicView extends GetPage {
         element("cancelScheduleBtn").click();
     }
 
-    public int nextMonthCalendar(int flag){
+    public int nextMonthCalendar(int flag, int increment){
         for (WebElement dates : elements("calendarDates")) {
-            if (dates.getText().equals(date.getCurrentDateInitial(2))) {
-                element("calendarDate", date.getCurrentDateInitial(2)).click();
+            if (dates.getText().equals(date.getCurrentDateInitial(increment))) {
+                element("calendarDate", date.getCurrentDateInitial(increment)).click();
                 flag = 1;
                 break;
             } else {
