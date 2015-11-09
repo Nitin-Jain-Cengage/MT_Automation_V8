@@ -70,7 +70,7 @@ public class TC01_Instructor_Adds_OR_Cancel_Topic_Activity {
         test.topicView.instructorEntersStartDate();
         test.topicView.instructorEntersEndDate();
         test.topicView.instructorClickOnSave();
-        test.weekwidget.instructorClickRWV();
+        test.weekwidget.clickRWV();
     }
     
 
@@ -103,7 +103,7 @@ public class TC01_Instructor_Adds_OR_Cancel_Topic_Activity {
         test.topicView.instructorEntersStartDate();
         test.topicView.instructorEntersEndDate();
         test.topicView.instructorClickOnCancel();
-        test.weekwidget.instructorClickRWV();
+        test.weekwidget.clickRWV();
     }
     
 

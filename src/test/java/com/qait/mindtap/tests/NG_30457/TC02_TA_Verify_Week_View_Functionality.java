@@ -66,9 +66,9 @@ public class TC02_TA_Verify_Week_View_Functionality {
     
     @Test(dependsOnMethods = {"Step_06_verify_Flag_And_Points"})
     public void Step_07_verify_Hide_Edit_And_Delete(){
-            test.weekwidget.verifyHideDisplayed();
-            test.weekwidget.verifyEditDisplayed();
-            test.weekwidget.verifyDeleteDisplayed();
+            test.weekwidget.verifyHideDisplayedRWV();
+            test.weekwidget.verifyEditDisplayedRWV();
+            test.weekwidget.verifyDeleteDisplayedRWV();
     }
     
     @Test(dependsOnMethods = {"Step_07_verify_Hide_Edit_And_Delete"})
@@ -76,9 +76,7 @@ public class TC02_TA_Verify_Week_View_Functionality {
         test.weekwidget.instructorClickOnAddToWeek();
         test.weekwidget.instructorSelectsDay();
         test.weekwidget.instructorSelectsTopicView();
-        test.topicView.verifyHide();
-        test.topicView.verifyDelete();  
-        test.weekwidget.clickRwv();
+       test.weekwidget.clickRwv();
     }
     
     @Test(dependsOnMethods = {"Step_08_verify_Hide_Edit_In_TopicVIew"})

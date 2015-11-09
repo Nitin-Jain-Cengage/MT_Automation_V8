@@ -28,4 +28,6 @@ points                                          xpath                           
 hideButton                          xpath                                       (//span[@id='current-week-heading']/../..//andesite-button[@ id="hideButton"])[1]
 editButton                          xpath                           (//span[@id='current-week-heading']/../..//andesite-button[@ id="editButton"])[1]
 deleteButton                        xpath                           (//span[@id='current-week-heading']/../..//andesite-button[@ id="deleteButton"])[1]
+stateToogle                         id                           uncheckedLabel
+Toogle                              id                          checkedLabel
 ====================================================================================

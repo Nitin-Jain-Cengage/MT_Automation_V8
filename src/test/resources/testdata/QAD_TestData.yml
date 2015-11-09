@@ -27,6 +27,11 @@ course1:
   ISBN: 9781305876651
   courseName: "Stewart_Precalculus: Mathematics for Calculus_7e_MTQ"   
 
+course2:
+  ISBN: 9781305876651
+  NAME: Mindtap Test Book-Automated MTQ RWV
+  CourseKey: MTPP7C6PQZZG 
+  
 coretext:
   ISBN: 9781305876651
   NAME: Mayank Test Book-Automated Mindtap MTQ

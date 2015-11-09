@@ -3,6 +3,7 @@
 topicList                           xpath         //*[@id='cl-topicview']//div[contains(@class,'topic-name')]
 subTopic                            xpath          //*[@id='cl-topicview']//span[contains(text(),'${subtopic}')]
 topicEditBtn                        xpath          //*[@id='cl-topicview']//span[contains(text(),'${subtopic}')]/../..//*[@id='editButton']
+topicHideBtn                        xpath          //*[@id='cl-topicview']//span[contains(text(),'${subtopic}')]/../..//*[@id='hideButton']
 startDateInput                      css            #start-date-control>.datepicker>input
 endDateInput                        css            #end-date-control>.datepicker>input
 calendarDate                        xpath          //a[contains(text(),'${date}')]

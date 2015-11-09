@@ -114,12 +114,17 @@ public class TopicView extends GetPage {
     return flag;
     }
 
-    public void verifyHide() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void verifyHideDisplayedTopicView(String topic, String subTopic) {
+        isElementDisplayed("subTopic", subTopic);
+        hover(element("subTopic", subTopic));
+        isElementDisplayed("topicEditBtn", subTopic);
+       
+       }
 
-    public void verifyDelete() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void verifyEditDisplayedTopicView(String topic, String subTopic) {
+        isElementDisplayed("subTopic", subTopic);
+        hover(element("subTopic", subTopic));
+        isElementDisplayed("topicHideBtn", subTopic);
+           }
     
 }
