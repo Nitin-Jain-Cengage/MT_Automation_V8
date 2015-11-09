@@ -34,18 +34,16 @@ public class TC02_TA_Add_OR_Cancel_Offline_Ungraded_Activity {
 
     }
 
-    @Test
-    public void Step_01_Instructor_Logs_in_to_the_Application() {
+   @Test
+    public void Step_01_TA_Logs_in_to_the_Application() {
         test.loginpage.verify_User_Is_On_Login_Page();
-        test.loginpage.login_to_the_application_sso(getData(("users.instructor.username")), getData(("users.instructor.password")));
-        test.instructor.verify_User_Is_On_InstructorPage();
-    }
+        test.loginpage.login_to_the_application_sso(getData(("users.studentTA.username")), getData(("users.studentTA.password")));
+        }
 
-    @Test(dependsOnMethods = {"Step_01_Instructor_Logs_in_to_the_Application"})
-    void Step_02_Instructor_Manages_Course_From_SSO() {
-        test.instructor.verify_User_LoggedIn_As_Instructor("Instructor Resource Center");
-        test.instructor.instructor_Course_Option("Manage Course");
-        test.courseEdit.instructor_Open_Course(getData("coretext.NAME"));
+    @Test(dependsOnMethods = {"Step_01_TA_Logs_in_to_the_Application"})
+    public void Step_02_TA_Launch_Course() {
+        test.sso.student_Click_Open(getData("coretext.ISBN"));
+       
 
     }
 

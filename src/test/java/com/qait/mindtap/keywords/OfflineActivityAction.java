@@ -36,7 +36,7 @@ public class OfflineActivityAction extends GetPage{
 
     public void instructorEntersDescription(String operation) {
         isElementDisplayed("offline_assignmentDescription");
-        String description = "It is an offline assignment for "+operation+date.getCurrentDateTime();
+        String description = yml.getData(operation)+operation+date.getCurrentDateTime();
         data.writeProperty("offline_assignmentDescription",description);
         element("offline_assignmentDescription").click();
         element("offline_assignmentDescription").sendKeys(description);
@@ -56,6 +56,13 @@ public class OfflineActivityAction extends GetPage{
     public void instrutorselectsPracticeOption() {
         isElementDisplayed("practiceBtn");
         element("practiceBtn").click();
+    }
+
+    public void instructorEntersAssociatedTopic(String string) {
+        isElementDisplayed("AssociatedTopic");
+        element("AssociatedTopic").click();
+        isElementDisplayed("topic",string);
+        element("topic",string);
     }
     
 }

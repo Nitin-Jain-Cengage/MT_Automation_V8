@@ -258,4 +258,69 @@ public class WeekWidgetActions extends GetPage {
         isElementDisplayed("btnRollingWeekView");
         element("btnRollingWeekView").click();
     }
+
+    public void verifyShowMoreOrLessDisplayed() {
+        hover(element("currentDescription",yml.getData("addLong")));
+        isElementDisplayed("ShowOrLessButton");
+    }
+
+    public void verifyShowMoreOrLessWorksProperly() {
+        verifyShowMoreOrLessDisplayed();
+        element("ShowOrLessButton").click();
+        if(checkIfElementIsNotThere("currentDescription",yml.getData("addLong"))){
+            Reporter.pass("Show more or less works properly");
+        }
+    }
+
+    public void verifyFlagDisplayed() {
+        isElementDisplayed("flag");
+    }
+
+    public void verifyPointsDisplayed() {
+        isElementDisplayed("points");
+    }
+
+    public void verifyHideDisplayed() {
+        hover(element("currentDescription"));
+        isElementDisplayed("hideButton");
+
+    }
+
+    public void verifyEditDisplayed() {
+        hover(element("currentDescription"));
+        isElementDisplayed("editButton");
+
+    }
+
+    public void verifyDeleteDisplayed() {
+        hover(element("currentDescription"));
+        isElementDisplayed("deleteButton");
+
+    }
+
+    public void clickRwv() {
+    element("btnRollingWeekView").click();
+    }
+
+    public void clickOnHideButton() {
+        verifyHideDisplayed();
+        element("hideButton").click();
+        
+    }
+
+    public void verifyToogleButtonDefaultState() {
+      Assert.assertTrue(element("ToogleState").getAttribute("").equalsIgnoreCase("unchecked"),Reporter.fail("Default state is not off"));
+      Reporter.pass("Default state is ON");
+      
+    }
+
+    public void verifyToogleFunctionality() {
+        element("Toogle").click();
+        
+    }
+
+    public void verifyHideFunctionality() {
+            verifyDescriptionNotShown();
+            Reporter.pass("Hide Functionality works fine");
+    }
 }

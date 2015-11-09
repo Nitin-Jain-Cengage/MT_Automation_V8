@@ -113,5 +113,13 @@ public class TopicView extends GetPage {
         }
     return flag;
     }
+
+    public void verifyHide() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void verifyDelete() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
