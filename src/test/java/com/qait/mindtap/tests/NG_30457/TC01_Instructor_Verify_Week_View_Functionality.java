@@ -75,8 +75,8 @@ public class TC01_Instructor_Verify_Week_View_Functionality {
     
      @Test(dependsOnMethods = {"Step_05_Verify_RollingWeekUI_And_Select_TopicView"})
     public void Step_06_verify_Hide_Edit_And_Delete(){
-            test.topicView.verifyHideDisplayedTopicView("14.3 Binomial Probability","Reading: Binomial Probability");
-            test.topicView.verifyEditDisplayedTopicView("14.3 Binomial Probability","Reading: Binomial Probability");
+            test.topicView.verifyHideDisplayedTopicView("14.3 Binomial Probability","Binomial Probability");
+            test.topicView.verifyEditDisplayedTopicView("14.3 Binomial Probability","Binomial Probability");
             test.weekwidget.clickRWV();
     }
     
