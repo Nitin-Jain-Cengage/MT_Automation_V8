@@ -63,7 +63,7 @@ public class OfflineActivityAction extends GetPage {
         element("AssociatedTopic").click();
 //        isElementDisplayed("topic",string);
 //        element("topic",string);
-        selectProvidedTextFromDropDown(element("AssociatedTopic"), string);
+        selectProvidedValue(element("AssociatedTopic"), string);
     }
 
 }

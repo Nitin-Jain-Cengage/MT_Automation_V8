@@ -60,7 +60,7 @@ public class TC01_Instructor_Verify_Week_View_Functionality {
         test.offline_activity.instrutorselectsPracticeOption();
         test.offline_activity.instructorEntersTitle();
         test.offline_activity.instructorEntersDescription("addLong");
-        test.offline_activity.instructorEntersAssociatedTopic("- 1.1 Real Numbers");
+        test.offline_activity.instructorEntersAssociatedTopic("3007230");
         test.offline_activity.instructorClickOnAdd();        
     }
 

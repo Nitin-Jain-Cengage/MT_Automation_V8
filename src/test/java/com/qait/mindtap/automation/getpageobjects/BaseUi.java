@@ -285,6 +285,12 @@ public class BaseUi {
 		Select sel = new Select(el);
 		sel.selectByVisibleText(text);
 	}
+        
+        protected void selectProvidedValue(WebElement el, String value) {
+		wait.waitForElementToBeVisible(el);
+		Select sel = new Select(el);
+		sel.selectByValue(value);
+	}
 
 	protected void scrollDown(WebElement element) {
 		((JavascriptExecutor) driver).executeScript(
