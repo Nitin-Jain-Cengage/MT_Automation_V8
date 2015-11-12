@@ -12,10 +12,10 @@ import org.openqa.selenium.WebDriver;
  *
  * @author ayushgaur
  */
-public class OfflineActivityAction extends GetPage{
+public class OfflineActivityAction extends GetPage {
 
     public OfflineActivityAction(WebDriver driver) {
-       super(driver,"OfflineActivityPage");
+        super(driver, "OfflineActivityPage");
     }
 
     public void instructorEnterScore() {
@@ -32,25 +32,25 @@ public class OfflineActivityAction extends GetPage{
         data.writeProperty("offline_assignmentTitle", title);
         element("offline_assignmentTitle").click();
         element("offline_assignmentTitle").sendKeys(title);
-      }
+    }
 
     public void instructorEntersDescription(String operation) {
         isElementDisplayed("offline_assignmentDescription");
-        String description = yml.getData(operation)+operation+date.getCurrentDateTime();
-        data.writeProperty("offline_assignmentDescription",description);
+        String description = yml.getData(operation) + operation + date.getCurrentDateTime();
+        data.writeProperty("offline_assignmentDescription", description);
         element("offline_assignmentDescription").click();
         element("offline_assignmentDescription").sendKeys(description);
         waitTOSync();
-      }
+    }
 
     public void instructorClickOnAdd() {
         isElementDisplayed(("addOfflineAssignment_Btn"));
         element("addOfflineAssignment_Btn").click();
     }
-    
-     public void instructorClickOnCancel() {
-         isElementDisplayed(("addOfflineAssignment_Cancel"));
-         element("addOfflineAssignment_Cancel").click();
+
+    public void instructorClickOnCancel() {
+        isElementDisplayed(("addOfflineAssignment_Cancel"));
+        element("addOfflineAssignment_Cancel").click();
     }
 
     public void instrutorselectsPracticeOption() {
@@ -61,8 +61,9 @@ public class OfflineActivityAction extends GetPage{
     public void instructorEntersAssociatedTopic(String string) {
         isElementDisplayed("AssociatedTopic");
         element("AssociatedTopic").click();
-        isElementDisplayed("topic",string);
-        element("topic",string);
+//        isElementDisplayed("topic",string);
+//        element("topic",string);
+        selectProvidedTextFromDropDown(element("topic"), string);
     }
-    
+
 }

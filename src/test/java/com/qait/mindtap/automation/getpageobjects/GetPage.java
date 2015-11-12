@@ -29,55 +29,52 @@ public class GetPage extends BaseUi {
     LayoutValidation layouttest;
     SeleniumWait sel_wait;
 
-      void selectChapter(String name){
-        int index=0;
+    void selectChapter(String name) {
+        int index = 0;
         List<WebElement> unitLinks = driver.findElements(By.xpath("//div[@class='list-area']/ul[contains(@class,'nb_stacklist slate list nb_nothumb clui_list')]/li[contains(@class,'item switchPath nb_unit nb_unit')]"));
-        for(WebElement link : unitLinks){
+        for (WebElement link : unitLinks) {
             index++;
-            if(link.getText().contains(name)){
+            if (link.getText().contains(name)) {
                 String i = Integer.toString(index);
                 fireOnClickJsEvent("nb_thumbTitle", i);
-            }                
-        }     
+            }
+        }
     }
 
-    
-        
-     /**
+    /**
      * Perform click on more link.
      */
-    public void performClickOnMoreLink(WebElement more_link){
-        try{
+    public void performClickOnMoreLink(WebElement more_link) {
+        try {
             wait.hardWait(2);
             wait.resetImplicitTimeout(10);
             //To avoid stale element exception
-            wait.waitForElementToBeVisible(driver.findElement(By.cssSelector("img[alt='Expand Dock']")));  
+            wait.waitForElementToBeVisible(driver.findElement(By.cssSelector("img[alt='Expand Dock']")));
             wait.hardWait(2);
             more_link.click();
             wait.hardWait(2);
-        } catch(NullPointerException | NoSuchElementException | StaleElementReferenceException e){
+        } catch (NullPointerException | NoSuchElementException | StaleElementReferenceException e) {
             e.printStackTrace();
         }
         wait.resetImplicitTimeout(AJAX_WAIT);
     }
 
-    
-    protected void waitForSpinnerToDisappear(){
+    protected void waitForSpinnerToDisappear() {
         int i = 0;
         wait.resetImplicitTimeout(2);
-        try{
-            List <WebElement> spinnerGifs = driver.findElements(By.xpath("//img[contains(@src, '/nb/ui/images/savingAnimation_')]"));
-            if (spinnerGifs.size()>0){
-                for (WebElement spinnerGif : spinnerGifs){
-                    while (spinnerGif.isDisplayed() && i <= AJAX_WAIT){
+        try {
+            List<WebElement> spinnerGifs = driver.findElements(By.xpath("//img[contains(@src, '/nb/ui/images/savingAnimation_')]"));
+            if (spinnerGifs.size() > 0) {
+                for (WebElement spinnerGif : spinnerGifs) {
+                    while (spinnerGif.isDisplayed() && i <= AJAX_WAIT) {
                         wait.hardWait(2);
                         i++;
                     }
                 }
             }
+        } catch (Exception e) {
         }
-        catch(Exception e){}
-        wait.resetImplicitTimeout(AJAX_WAIT);        
+        wait.resetImplicitTimeout(AJAX_WAIT);
     }
 
     public GetPage(WebDriver driver, String pageName) {
@@ -110,11 +107,10 @@ public class GetPage extends BaseUi {
                 "browser")));
     }
 
-    public WebElement accessor(String element){
-        return	element(element);
-   	}
-    
-    
+    public WebElement accessor(String element) {
+        return element(element);
+    }
+
     // TODO: put this in right place, create dedicated class for frame and
     // window handlers
     protected void switchToNestedFrames(String frameNames) {
@@ -130,7 +126,7 @@ public class GetPage extends BaseUi {
         return element(elementToken, "");
     }
 
-    protected WebElement elementWithoutWait(String elementToken, String replacement){
+    protected WebElement elementWithoutWait(String elementToken, String replacement) {
         WebElement elem = null;
         try {
             elem = webdriver.findElement(getLocator(elementToken, replacement));
@@ -141,7 +137,7 @@ public class GetPage extends BaseUi {
         }
         return elem;
     }
-    
+
     protected WebElement element(String elementToken, String replacement) {
         WebElement elem = null;
         try {
@@ -155,7 +151,7 @@ public class GetPage extends BaseUi {
         return elem;
     }
 
-    protected WebElement element(String elementToken, String replacement1,String replacement2) {
+    protected WebElement element(String elementToken, String replacement1, String replacement2) {
         WebElement elem = null;
         try {
             elem = wait.waitForElementToBeVisible(webdriver
@@ -167,7 +163,7 @@ public class GetPage extends BaseUi {
         }
         return elem;
     }
-    
+
     protected WebElement childOfElement(WebElement el, String elementToken, String replacement) {
         WebElement elem = null;
         try {
@@ -186,7 +182,7 @@ public class GetPage extends BaseUi {
     }
 
     protected List<WebElement> elements(String elementToken, String replacement) {
-       // return wait.waitForElementsToBeVisible(webdriver.findElements(getLocator(elementToken, replacement)));
+        // return wait.waitForElementsToBeVisible(webdriver.findElements(getLocator(elementToken, replacement)));
         return webdriver.findElements(getLocator(elementToken, replacement));
     }
 
@@ -218,52 +214,52 @@ public class GetPage extends BaseUi {
         }
         return result;
     }
-    
-    protected boolean checkIfElementIsNotThere(String elementToken){
-		boolean flag = false;
-		try{wait.hardWait(10);
-                
-			if(webdriver.findElement(getLocator(elementToken)).isDisplayed()){
-				flag = false;
-			}else{
-				flag = true;
-			}
-		}catch(NoSuchElementException ex){
-			flag =  true;
-		}
-		return flag;
-	}
 
-    
-    protected boolean checkIfElementIsNotThere(String elementToken, String replacement){
-		boolean flag = false;
-		try{wait.hardWait(10);
-			if(webdriver.findElement(getLocator(elementToken, replacement)).isDisplayed()){
-				flag = false;
-			}else{
-				flag = true;
-			}
-		}catch(NoSuchElementException ex){
-			flag =  true;
-		}
-		return flag;
-	}
+    protected boolean checkIfElementIsNotThere(String elementToken) {
+        boolean flag = false;
+        try {
+            wait.hardWait(10);
 
-    protected boolean checkIfElementIsNotThere(String elementToken, String replacement1,String replacement2){
-		boolean flag = false;
-		try{
-			if(webdriver.findElement(getLocator(elementToken, replacement1,replacement2)).isDisplayed()){
-				flag = false;
-			}else{
-				flag = true;
-			}
-		}catch(NoSuchElementException ex){
-			flag =  true;
-		}
-		return flag;
-	}
+            if (webdriver.findElement(getLocator(elementToken)).isDisplayed()) {
+                flag = false;
+            } else {
+                flag = true;
+            }
+        } catch (NoSuchElementException ex) {
+            flag = true;
+        }
+        return flag;
+    }
 
-    
+    protected boolean checkIfElementIsNotThere(String elementToken, String replacement) {
+        boolean flag = false;
+        try {
+            wait.hardWait(10);
+            if (webdriver.findElement(getLocator(elementToken, replacement)).isDisplayed()) {
+                flag = false;
+            } else {
+                flag = true;
+            }
+        } catch (NoSuchElementException ex) {
+            flag = true;
+        }
+        return flag;
+    }
+
+    protected boolean checkIfElementIsNotThere(String elementToken, String replacement1, String replacement2) {
+        boolean flag = false;
+        try {
+            if (webdriver.findElement(getLocator(elementToken, replacement1, replacement2)).isDisplayed()) {
+                flag = false;
+            } else {
+                flag = true;
+            }
+        } catch (NoSuchElementException ex) {
+            flag = true;
+        }
+        return flag;
+    }
+
     protected void verifyElementText(String elementName, String expectedText) {
         wait.waitForElementToBeVisible(element(elementName));
         assertEquals(element(elementName).getText().trim(), expectedText,
@@ -286,14 +282,14 @@ public class GetPage extends BaseUi {
     protected boolean isElementDisplayed(String elementName) {
         wait.waitForElementToBeVisible(element(elementName));
         boolean result = element(elementName).isDisplayed();
-        
+
         assertTrue(result, ReportMsg.failForAssert(" element '" + elementName
-               + "' is not displayed."));
+                + "' is not displayed."));
         ReportMsg.pass("element " + elementName + " is displayed.");
         return result;
     }
-    
-       protected boolean isElementEnabled(String elementName, boolean expected) {
+
+    protected boolean isElementEnabled(String elementName, boolean expected) {
         wait.waitForElementToBeVisible(element(elementName));
         boolean result = expected && element(elementName).isEnabled();
         assertTrue(result, ReportMsg.failForAssert(" element '" + elementName
@@ -310,7 +306,7 @@ public class GetPage extends BaseUi {
     protected String getJsLocator(String elementToken) {
         return getJsLocator(elementToken, "");
     }
-    
+
     protected By getLocator(String elementToken, String replacement) {
         String[] locator = getELementFromFile(this.pageName, elementToken);
         locator[2] = locator[2].replaceAll("\\$\\{.+\\}", replacement);
@@ -323,7 +319,6 @@ public class GetPage extends BaseUi {
         return locator[2].trim();
     }
 
-    
     protected By getLocator(String elementToken, String replacement1,
             String replacement2) {
         String[] locator = getELementFromFile(this.pageName, elementToken);
@@ -331,31 +326,29 @@ public class GetPage extends BaseUi {
         locator[2] = locator[2].replaceAll("\\%\\{.+\\}", replacement2);
         return getBy(locator[1].trim(), locator[2].trim());
     }
-    
-    protected void  clickOnElementUsingActionBuilder(WebElement element){
+
+    protected void clickOnElementUsingActionBuilder(WebElement element) {
         Actions builder = new Actions(driver);
         Actions MenuItems = builder.moveToElement(element);
-       waitTOSync();
-       MenuItems.click().build().perform();
-       waitTOSync();
+        waitTOSync();
+        MenuItems.click().build().perform();
+        waitTOSync();
     }
 
-    protected void waitTOSync()
-    {
-    	try{
-     Thread.sleep(2000);
-    	}
-    	catch(Exception e)
-    	{e.printStackTrace();
-    	
-    	}
+    protected void waitTOSync() {
+        try {
+            Thread.sleep(2000);
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
     }
-    
-    protected String elementByJscript(String element){
-    	return getJsLocator(element);
-    	    	 
+
+    protected String elementByJscript(String element) {
+        return getJsLocator(element);
+
     }
-    
+
     private By getBy(String locatorType, String locatorValue) {
         switch (Locators.valueOf(locatorType)) {
             case id:
@@ -374,27 +367,28 @@ public class GetPage extends BaseUi {
                 return By.id(locatorValue);
         }
     }
-    
-    protected void  waitForElementPresent(String ele){
+
+    protected void waitForElementPresent(String ele) {
         for (int second = 0;; second++) {
-            if (second >= AJAX_WAIT){
+            if (second >= AJAX_WAIT) {
                 Reporter.fail("element not present");
-            } else{
+            } else {
                 wait.resetImplicitTimeout(3);
-                try{
+                try {
                     element(ele);
-                    wait.resetImplicitTimeout(AJAX_WAIT);  
-                    Reporter.pass(ele+"is present");
-                }catch(Exception ee){
-                   wait.hardWait(2);
+                    wait.resetImplicitTimeout(AJAX_WAIT);
+                    Reporter.pass(ele + "is present");
+                } catch (Exception ee) {
+                    wait.hardWait(2);
                 }
             }
         }
-    }	
-    
-          public void clickOnHideApp(){  
-           switchToDefaultContent();
-            if(isElementDisplayed("hideFrame"))
-                element("hideFrame").click();
+    }
+
+    public void clickOnHideApp() {
+        switchToDefaultContent();
+        if (isElementDisplayed("hideFrame")) {
+            element("hideFrame").click();
+        }
     }
 }
