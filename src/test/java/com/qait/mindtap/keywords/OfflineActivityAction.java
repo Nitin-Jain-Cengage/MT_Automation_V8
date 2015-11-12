@@ -60,10 +60,10 @@ public class OfflineActivityAction extends GetPage {
 
     public void instructorEntersAssociatedTopic(String string) {
         isElementDisplayed("AssociatedTopic");
-        element("AssociatedTopic").click();
+//        element("AssociatedTopic").click();
 //        isElementDisplayed("topic",string);
 //        element("topic",string);
-        selectProvidedTextFromDropDown(element("topic"), string);
+        selectProvidedTextFromDropDown(element("AssociatedTopic"), string);
     }
 
 }
