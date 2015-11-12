@@ -46,7 +46,9 @@ public class OfflineActivityAction extends GetPage {
     public void instructorClickOnAdd() {
         isElementDisplayed(("addOfflineAssignment_Btn"));
         //element("addOfflineAssignment_Btn").click();
-        hoverClick(element("addOfflineAssignment_Btn"));
+        String addBtnClass = element("addOfflineAssignment_Btn").getAttribute("class");
+        fireOnClickJsEvent(addBtnClass,"1");
+        //hoverClick(element("addOfflineAssignment_Btn"));
     }
 
     public void instructorClickOnCancel() {
