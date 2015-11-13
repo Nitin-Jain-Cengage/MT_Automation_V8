@@ -257,11 +257,13 @@ public class WeekWidgetActions extends GetPage {
     public void clickRWV() {
         isElementDisplayed("btnRollingWeekView");
         element("btnRollingWeekView").click();
+        waitTOSync();
     }
     
     public void clickTopicView() {
         isElementDisplayed("btnTopicView");
         element("btnTopicView").click();
+        waitTOSync();
     }
 
     public void verifyShowMoreOrLessDisplayed() {
