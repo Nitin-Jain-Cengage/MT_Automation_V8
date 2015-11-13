@@ -258,6 +258,11 @@ public class WeekWidgetActions extends GetPage {
         isElementDisplayed("btnRollingWeekView");
         element("btnRollingWeekView").click();
     }
+    
+    public void clickTopicView() {
+        isElementDisplayed("btnTopicView");
+        element("btnTopicView").click();
+    }
 
     public void verifyShowMoreOrLessDisplayed() {
         hover(element("currentDescription",yml.getData("addLong")));
