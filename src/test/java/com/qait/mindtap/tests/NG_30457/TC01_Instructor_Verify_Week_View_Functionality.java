@@ -99,6 +99,8 @@ public class TC01_Instructor_Verify_Week_View_Functionality {
     @Test(dependsOnMethods = {"Step_08_verify_Flag_And_Points"})
     public void Step_09_verify_Hide_Edit_And_Delete() {
         test.weekwidget.clickRWV();
+        test.weekwidget.refreshPage();
+        test.weekwidget.verifyCurrentWeekIcon();
         test.weekwidget.verifyHideDisplayedRWV();
         test.weekwidget.verifyEditDisplayedRWV();
         test.weekwidget.verifyDeleteDisplayedRWV();

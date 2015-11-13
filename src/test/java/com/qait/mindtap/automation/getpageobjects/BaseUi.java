@@ -333,7 +333,7 @@ public class BaseUi {
 			return element.getText().split("/");
 	}
 	
-	 protected void refreshPage(){
+	 public void refreshPage(){
 	        driver.navigate().refresh();
 	    } 
          
