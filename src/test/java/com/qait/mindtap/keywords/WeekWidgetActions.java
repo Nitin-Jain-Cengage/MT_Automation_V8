@@ -288,26 +288,29 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void verifyHideDisplayedRWV() {
+        scrollDown(element("currentDescription"));
         hover(element("currentDescription"));
         isElementDisplayed("hideButton");
 
     }
 
     public void verifyEditDisplayedRWV() {
+        scrollDown(element("currentDescription"));
         hover(element("currentDescription"));
         isElementDisplayed("editButton");
 
     }
 
     public void verifyDeleteDisplayedRWV() {
+        scrollDown(element("currentDescription"));
         hover(element("currentDescription"));
         isElementDisplayed("deleteButton");
 
     }
 
-    public void clickRwv() {
-    element("btnRollingWeekView").click();
-    }
+//    public void clickRwv() {
+//    element("btnRollingWeekView").click();
+//    }
 
     public void clickOnHideButton() {
         verifyHideDisplayedRWV();

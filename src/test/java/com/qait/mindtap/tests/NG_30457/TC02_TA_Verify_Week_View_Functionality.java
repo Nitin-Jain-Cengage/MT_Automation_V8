@@ -76,7 +76,7 @@ public class TC02_TA_Verify_Week_View_Functionality {
         test.weekwidget.instructorClickOnAddToWeek();
         test.weekwidget.instructorSelectsDay();
         test.weekwidget.instructorSelectsTopicView();
-       test.weekwidget.clickRwv();
+       test.weekwidget.clickRWV();
     }
     
     @Test(dependsOnMethods = {"Step_08_verify_Hide_Edit_In_TopicVIew"})
