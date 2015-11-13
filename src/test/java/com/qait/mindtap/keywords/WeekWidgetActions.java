@@ -319,7 +319,7 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void verifyToogleButtonDefaultState() {
-      Assert.assertTrue(element("ToogleStte").getAttribute("class").equalsIgnoreCase("unchecked"),Reporter.fail("Default state is not ON"));
+      Assert.assertTrue(element("stateToogle").getAttribute("class").equalsIgnoreCase("unchecked"),Reporter.fail("Default state is not ON"));
       Reporter.pass("Default state is off");
       
     }
