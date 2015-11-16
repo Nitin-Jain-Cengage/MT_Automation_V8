@@ -52,7 +52,7 @@ public class TC02_TA_Verify_Week_View_Functionality {
         test.offline_activity.instrutorselectsPracticeOption();
         test.offline_activity.instructorEntersTitle();
         test.offline_activity.instructorEntersDescription("addLong");
-        test.offline_activity.instructorEntersAssociatedTopic("3007230");
+        test.offline_activity.instructorEntersAssociatedTopic("2900960");
         test.offline_activity.instructorClickOnAdd();
     }
 
