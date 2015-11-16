@@ -39,7 +39,7 @@ public class TC02_TA_Verify_Week_View_Functionality {
        
 
     }
-    @Test(dependsOnMethods = {"Step_02_Instructor_Manages_Course_From_SSO"})
+    @Test(dependsOnMethods = {"Step_02_TA_Launch_Course"})
     public void Step_03_Verify_RollingWeekUI() {
         test.weekwidget.verifyCurrentWeekIcon();
     }
