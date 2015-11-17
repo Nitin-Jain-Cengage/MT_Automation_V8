@@ -153,6 +153,7 @@ public class ObjectFileReader {
             case STG:
             case Stg:
             case stg:
+            case Staging:    
                 tier = "STG/";
                 break;
         }
