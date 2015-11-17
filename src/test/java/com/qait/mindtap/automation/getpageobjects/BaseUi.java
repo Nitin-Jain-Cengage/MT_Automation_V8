@@ -358,6 +358,11 @@ public class BaseUi {
                     System.out.println("navigated to prod..");
                     driver.navigate().to("http://ng.cengage.com" + url[1]);
                 }
+                if (env.equalsIgnoreCase("staging")) {
+                    System.out.println("navigated to Staging..");
+                    System.out.println("http://mindtap-staging.cengage.com" + url[1]);
+                    driver.navigate().to("http://mindtap-staging.cengage.com" + url[1]);
+                }
                 break;
             }
         }
@@ -380,6 +385,11 @@ public class BaseUi {
         if (environment.toLowerCase().endsWith("mtprod")) {
             url = url.replaceAll("cloud-qap-ng", "mtprod");
         }
+        
+        if (environment.toLowerCase().endsWith("staging")) {
+            url = url;
+        }
+        
         System.out.println("[Navigated to url]: " + url);
         driver.get(url);
     }
