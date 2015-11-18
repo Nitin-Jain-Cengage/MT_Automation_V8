@@ -19,7 +19,7 @@ offline_assignmentScore                                 xpath                   
 offlineActivity                                         xpath                                                             //*[@id='rollingWeeksContainer']//*[@id='offline']
 currentDescription                                      xpath                           //*[@id='cl-rolling-weekview']//div[contains(text(),'${description}')]
 allDescription                                          css                             #activity .description                                                            
-topicActivity                                           xpath                           //b[contains(text(),'Topic')]
+topicActivity                                           xpath                           //*[@id='rollingWeeksContainer']//*[@id='topic']
 allExpand                                               css                             .toggle iron-icon
 areaExpanded                                            css                             #collapseWeek
 ShowOrLessButton                                        xpath                           //div[contains(text(),'${description}')]/../div[contains(@class,'show-more-less')]
