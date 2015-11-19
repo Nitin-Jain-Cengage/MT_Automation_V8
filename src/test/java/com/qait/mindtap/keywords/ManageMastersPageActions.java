@@ -8,6 +8,7 @@ package com.qait.mindtap.keywords;
 import org.openqa.selenium.WebDriver;
 
 import com.qait.mindtap.automation.getpageobjects.GetPage;
+import org.openqa.selenium.WebElement;
 
 /**
  *
@@ -17,6 +18,7 @@ public class ManageMastersPageActions extends GetPage{
 
     public ManageMastersPageActions(WebDriver driver, String pageName) {
         super(driver, pageName + "ManageMasters");
+        
     }
 
     public void createMasterNeXtBookInCourseMode() {
@@ -25,6 +27,8 @@ public class ManageMastersPageActions extends GetPage{
 
     public void verifyMasterNeXtBookIsCreated() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+       
     }
     
     

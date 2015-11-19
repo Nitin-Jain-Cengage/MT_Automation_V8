@@ -62,7 +62,7 @@ public class OfflineActivityAction extends GetPage{
         isElementDisplayed("AssociatedTopic");
         element("AssociatedTopic").click();
         isElementDisplayed("topic",string);
-        element("topic",string);
+        element("topic",string).click();
     }
     
 }
