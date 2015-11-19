@@ -3,12 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-<<<<<<< HEAD:src/test/java/com/qait/mindtap/tests/NG_30457_Week_View_functionality/TC01_Instructor_Verify_Week_View_Functionality.java
-package com.qait.mindtap.tests.NG_30457_Week_View_functionality;
-=======
-package com.qait.mindtap.tests.NG_30457;
 
->>>>>>> 53fe5f415bd8ce5624925c3809ddaea9ea03abc1:src/test/java/com/qait/mindtap/tests/NG_30457/TC01_Instructor_Verify_Week_View_Functionality.java
+package com.qait.mindtap.tests.NG_30457_Week_View_functionality;
 import com.qait.mindtap.automation.TestSessionInitiator;
 import static com.qait.mindtap.automation.utils.YamlReader.getData;
 

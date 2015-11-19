@@ -65,14 +65,13 @@ public class OfflineActivityAction extends GetPage {
     public void instructorEntersAssociatedTopic(String string) {
         isElementDisplayed("AssociatedTopic");
         element("AssociatedTopic").click();
-<<<<<<< HEAD
         isElementDisplayed("topic",string);
         element("topic",string).click();
-=======
+
 //        isElementDisplayed("topic",string);
 //        element("topic",string);
         selectProvidedValue(element("AssociatedTopic"), string);
->>>>>>> 53fe5f415bd8ce5624925c3809ddaea9ea03abc1
+
     }
 
 }
