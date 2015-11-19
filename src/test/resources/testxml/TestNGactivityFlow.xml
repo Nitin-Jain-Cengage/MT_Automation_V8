@@ -7,14 +7,14 @@
           enabled="true">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.qait.mindtap.tests.NG_30370.TC01_Instructor_Adds_Offline_Activity"></class>
+            <class name="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity"></class>
         </classes>
     </test>
     <test name="Instructor cancels course" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="chrome"/>
         <classes>
-           <class name="com.qait.mindtap.tests.NG_30370.TC02_Instructor_Cancel_Offline_Activity"></class>
+           <class name="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity"></class>
         </classes>
     </test>
 </suite>

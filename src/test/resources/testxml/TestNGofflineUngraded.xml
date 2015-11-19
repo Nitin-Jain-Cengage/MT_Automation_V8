@@ -7,21 +7,21 @@
           enabled="true">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.qait.mindtap.tests.NG_30456.TC01_Instructor_Add_OR_Cancel_Offline_Ungraded_Activity"></class>
+            <class name="com.qait.mindtap.tests.NG_30456_Offline_Ungraded_Activity.TC01_Instructor_Add_OR_Cancel_Offline_Ungraded_Activity"></class>
         </classes>
     </test>
     <test name="TA adds or cancel offline activity" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="chrome"/>
         <classes>
-           <class name="com.qait.mindtap.tests.NG_30456.TC02_TA_Add_OR_Cancel_Offline_Ungraded_Activity"></class>
+           <class name="com.qait.mindtap.tests.NG_30456_Offline_Ungraded_Activity.TC02_TA_Add_OR_Cancel_Offline_Ungraded_Activity"></class>
         </classes>
     </test>
     <test name="Student View Added Activity" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="chrome"/>
         <classes>
-           <class name="com.qait.mindtap.tests.NG_30456.TC03_Student_View_Added_Activity"></class>
+           <class name="com.qait.mindtap.tests.NG_30456_Offline_Ungraded_Activity.TC03_Student_View_Added_Activity"></class>
         </classes>
     </test>
 </suite>
