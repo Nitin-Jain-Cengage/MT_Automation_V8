@@ -16,18 +16,18 @@ assignmentDescription                           xpath                           
 offline_assignmentTitle                                 xpath                                                           (//span[contains(text(),'Non MindTap: ${title}')])[1]
 offlineAssignment                                       xpath                                                            //div[contains(@class,'day-bar')]
 offline_assignmentScore                                 xpath                                                            (//span[@id='totalDisplay'])[1]
-offlineActivity                                         xpath                                                             //*[@id='rollingWeeksContainer']//*[@id='offline']/b
-currentDescription                                      xpath                           //div[contains(text(),'${description}')]
+offlineActivity                                         xpath                                                             //*[@id='rollingWeeksContainer']//*[@id='offline']
+currentDescription                                      xpath                           //*[@id='cl-rolling-weekview']//div[contains(text(),'${description}')]
 allDescription                                          css                             #activity .description                                                            
-topicActivity                                           xpath                           //b[contains(text(),'Topic')]
+topicActivity                                           xpath                           //*[@id='rollingWeeksContainer']//*[@id='topic']
 allExpand                                               css                             .toggle iron-icon
 areaExpanded                                            css                             #collapseWeek
 ShowOrLessButton                                        xpath                           //div[contains(text(),'${description}')]/../div[contains(@class,'show-more-less')]
-flag                                            xpath                                  (//span[@id='current-week-heading']/../..//iron-icon[ @icon="icons:flag"])[1]
-points                                          xpath                           (//span[@id='current-week-heading']/../..//span [@id="totalDisplay"])[1]
-hideButton                          xpath                                       (//span[@id='current-week-heading']/../..//andesite-button[@ id="hideButton"])[1]
-editButton                          xpath                           (//span[@id='current-week-heading']/../..//andesite-button[@ id="editButton"])[1]
-deleteButton                        xpath                           (//span[@id='current-week-heading']/../..//andesite-button[@ id="deleteButton"])[1]
-stateToogle                         id                           uncheckedLabel
-Toogle                              id                          checkedLabel
+flag                                            xpath                                  (//span[@id='current-week-heading']/../../../../..//*[@icon="icons:flag"])[1]
+points                                          xpath                           (//span[@id='current-week-heading']/../../../../..//span [@id="totalDisplay"])[1]
+hideButton                          xpath                                       (//span[@id='current-week-heading']/../../../../..//andesite-button[@ id="hideButton"])[1]
+editButton                          xpath                           (//span[@id='current-week-heading']/../../../../..//andesite-button[@ id="editButton"])[1]
+deleteButton                        xpath                           (//span[@id='current-week-heading']/../../../../..//andesite-button[@ id="deleteButton"])[1]
+stateToogle                         xpath                           //div[@id='position_1a']//*[@id='uncheckedLabel']
+Toogle                              xpath                          //div[@id='position_1a']//*[@id='checkedLabel']
 ====================================================================================

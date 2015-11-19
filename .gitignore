@@ -1,0 +1,10 @@
+target
+.project
+.classpath
+.settings
+.idea
+.log
+newftest.iml
+.DS_Store
+completeresponse.xml
+SoapRequestXml.xml

@@ -257,6 +257,13 @@ public class WeekWidgetActions extends GetPage {
     public void clickRWV() {
         isElementDisplayed("btnRollingWeekView");
         element("btnRollingWeekView").click();
+        waitTOSync();
+    }
+    
+    public void clickTopicView() {
+        isElementDisplayed("btnTopicView");
+        element("btnTopicView").click();
+        waitTOSync();
     }
 
     public void verifyShowMoreOrLessDisplayed() {
@@ -281,26 +288,29 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void verifyHideDisplayedRWV() {
-        hover(element("currentDescription"));
+        scrollDown(element("currentDescription"));
+        hoverUsingJS(element("currentDescription"));
         isElementDisplayed("hideButton");
 
     }
 
     public void verifyEditDisplayedRWV() {
-        hover(element("currentDescription"));
+        scrollDown(element("currentDescription"));
+        hoverUsingJS(element("currentDescription"));
         isElementDisplayed("editButton");
 
     }
 
     public void verifyDeleteDisplayedRWV() {
-        hover(element("currentDescription"));
+        scrollDown(element("currentDescription"));
+        hoverUsingJS(element("currentDescription"));
         isElementDisplayed("deleteButton");
 
     }
 
-    public void clickRwv() {
-    element("btnRollingWeekView").click();
-    }
+//    public void clickRwv() {
+//    element("btnRollingWeekView").click();
+//    }
 
     public void clickOnHideButton() {
         verifyHideDisplayedRWV();
@@ -309,7 +319,7 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void verifyToogleButtonDefaultState() {
-      Assert.assertTrue(element("ToogleStte").getAttribute("class").equalsIgnoreCase("unchecked"),Reporter.fail("Default state is not ON"));
+      Assert.assertTrue(element("stateToogle").getAttribute("class").contains("unchecked"),Reporter.failForAssert("Default state is not ON"));
       Reporter.pass("Default state is off");
       
     }
