@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" verbose="0" name="Failed suite [NG-30456]">
-  <parameter name="browser" value="chrome"/>
-  <test name="Instructor_Verify_Week_View_Functionality(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite thread-count="1" verbose="0" name="Failed suite [com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity]">
+  <test name="Command line test 0292dcb5-213f-4b27-ba41-f2239873e404(failed)">
     <classes>
-      <class name="com.qait.mindtap.tests.NG_30457.TC01_Instructor_Verify_Week_View_Functionality">
+      <class name="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity">
         <methods>
-          <include name="Step_09_verify_Hide_Edit_And_Delete"/>
-          <include name="Step_05_Verify_RollingWeekUI_And_Select_TopicView"/>
-          <include name="Step_02_Instructor_Manages_Course_From_SSO"/>
-          <include name="Step_07_Verify_ShowMore_OR_Less"/>
-          <include name="Step_08_verify_Flag_And_Points"/>
-          <include name="Step_03_Verify_RollingWeekUI"/>
-          <include name="Step_04_Verify_OfflineGraded_Activities_Displays"/>
-          <include name="Step_06_verify_Hide_Edit_And_Delete"/>
           <include name="start_test_session"/>
+          <include name="takeScreenshotonFailure"/>
+          <include name="Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity"/>
+          <include name="Step_06_Verify_Activity_Gets_Added"/>
+          <include name="stop_test_session"/>
+          <include name="Step_05_Verify_Rolling_Week_UI"/>
+          <include name="Step_04_Instructor_Enters_Detail_In_OfflineActivity"/>
+          <include name="Step_02_Instructor_Manages_Course_From_SSO"/>
           <include name="Step_01_Instructor_Logs_in_to_the_Application"/>
-          <include name="Step_11_verify_Hide_Action"/>
-          <include name="Step_12_verify_Toogle_Button_state_Action"/>
         </methods>
-      </class> <!-- com.qait.mindtap.tests.NG_30457.TC01_Instructor_Verify_Week_View_Functionality -->
+      </class> <!-- com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity -->
     </classes>
-  </test> <!-- Instructor_Verify_Week_View_Functionality(failed) -->
-</suite> <!-- Failed suite [NG-30456] -->
+  </test> <!-- Command line test 0292dcb5-213f-4b27-ba41-f2239873e404(failed) -->
+</suite> <!-- Failed suite [com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity] -->

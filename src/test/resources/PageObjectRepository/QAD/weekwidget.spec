@@ -16,7 +16,7 @@ assignmentDescription                           xpath                           
 offline_assignmentTitle                                 xpath                                                           (//span[contains(text(),'Non MindTap: ${title}')])[1]
 offlineAssignment                                       xpath                                                            //div[contains(@class,'day-bar')]
 offline_assignmentScore                                 xpath                                                            (//span[@id='totalDisplay'])[1]
-offlineActivity                                         xpath                                                             //*[@id='rollingWeeksContainer']//*[@id='offline']
+NonMindTapActivity                                         xpath                                                             //*[@id='rollingWeeksContainer']//*[@id='offline']
 currentDescription                                      xpath                           //*[@id='cl-rolling-weekview']//div[contains(text(),'${description}')]
 allDescription                                          css                             #activity .description                                                            
 topicActivity                                           xpath                           //*[@id='rollingWeeksContainer']//*[@id='topic']

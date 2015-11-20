@@ -126,8 +126,8 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void instructorSelectsOfflineActivity() {
-        isElementDisplayed("offlineActivity");
-        element("offlineActivity").click();
+        isElementDisplayed("NonMindTapActivity");
+        element("NonMindTapActivity").click();
     }
 
     public void verifyAssignment() {

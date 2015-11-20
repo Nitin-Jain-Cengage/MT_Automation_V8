@@ -46,7 +46,7 @@ public class TC01_Instructor_Adds_Offline_Activity {
     void Step_02_Instructor_Manages_Course_From_SSO() {
         test.instructor.verify_User_LoggedIn_As_Instructor("Instructor Resource Center");
         test.instructor.instructor_Course_Option("Manage Course");
-        test.courseEdit.instructor_Open_Course(getData("coretext.NAME"));
+        test.courseEdit.instructor_Open_Course(getData("course2.NAME"));
 
     }
 
@@ -80,7 +80,7 @@ public class TC01_Instructor_Adds_Offline_Activity {
     public void Step_06_Verify_Activity_Gets_Added() {
         test.weekwidget.verifyAssignment();
         test.weekwidget.verifyScore();
-        test.weekwidget.verifyTitle();
+        //test.weekwidget.verifyTitle();
         test.weekwidget.verifyDescription();
     }
 

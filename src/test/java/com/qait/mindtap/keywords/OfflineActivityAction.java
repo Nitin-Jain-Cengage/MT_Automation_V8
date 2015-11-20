@@ -28,7 +28,7 @@ public class OfflineActivityAction extends GetPage {
 
     public void instructorEntersTitle() {
         isElementDisplayed("offline_assignmentTitle");
-        String title = "Assignment_Offline_1";
+        String title = "Assignment_Offline_1" + date.getCurrentDateTime();
         data.writeProperty("offline_assignmentTitle", title);
         element("offline_assignmentTitle").click();
         element("offline_assignmentTitle").sendKeys(title);
@@ -45,7 +45,7 @@ public class OfflineActivityAction extends GetPage {
 
     public void instructorClickOnAdd() {
         isElementDisplayed(("addOfflineAssignment_Btn"));
-        element("addOfflineAssignment_Btn").click();
+        //element("addOfflineAssignment_Btn").click();
         String addBtnClass = element("addOfflineAssignment_Btn").getAttribute("class");
         System.out.println("Add Button Class:"+ addBtnClass);
         fireOnClickJsEvent(addBtnClass,"1");

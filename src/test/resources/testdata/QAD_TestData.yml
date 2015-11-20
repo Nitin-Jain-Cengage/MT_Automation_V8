@@ -40,7 +40,7 @@ coretext:
 email:
     send: no
     recepients:
-     recepient1: ayushgaur@qainfotech.net
+     recepient1: priyamdixit@qainfotech.net
      
 neXtBooks:
 # reader mode book used for the Admin and vendor test cases
