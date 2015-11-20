@@ -1,10 +1,12 @@
 target
+test-output
+Screenshots
+GenieLogs
+src/test/resources/drivers
 .project
 .classpath
 .settings
 .idea
 .log
-newftest.iml
 .DS_Store
-completeresponse.xml
-SoapRequestXml.xml
+.gitignore
