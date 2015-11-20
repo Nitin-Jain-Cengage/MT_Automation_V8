@@ -47,7 +47,7 @@ public class TC02_TA_Add_OR_Cancel_Offline_Ungraded_Activity {
     }
 
                    
-    @Test(dependsOnMethods = {"Step_02_Instructor_Manages_Course_From_SSO"})
+    @Test(dependsOnMethods = {"Step_02_TA_Launch_Course"})
     public void Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity() {
         test.weekwidget.verifyCurrentWeekIcon();
         test.weekwidget.verifyInstructorExpandsWeek();
