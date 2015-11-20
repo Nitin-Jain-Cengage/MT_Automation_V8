@@ -67,8 +67,8 @@ public class TC02_TA_Adds_OR_Cancel_Topic_Activity {
 
      @Test(dependsOnMethods = {"Step_03_Verify_RollingWeekUI_And_Select_TopicView"})
     public void Step_04_TA_Edit_Course_Details_To_Add() {
-        test.topicView.instructorSelectsTopic("14.3 Binomial Probability","Reading: Binomial Probability");
-        test.topicView.instructorOpenTopicInEditMode("14.3 Binomial Probability","Reading: Binomial Probability");
+        test.topicView.instructorSelectsTopic("14.3 Binomial Probability","Lecture Video: Binomial Probability");
+        test.topicView.instructorOpenTopicInEditMode("14.3 Binomial Probability","Lecture Video: Binomial Probability");
         test.topicView.instructorEntersTitle();
         test.topicView.instructorEntersDescription("add");
         test.topicView.instructorEntersStartDate();
@@ -100,8 +100,8 @@ public class TC02_TA_Adds_OR_Cancel_Topic_Activity {
 
      @Test(dependsOnMethods = {"Step_07_Verify_RollingWeekUI_And_Select_TopicView"})
     public void Step_08_TA_Edit_Course_Details_To_Cancel() {
-        test.topicView.instructorSelectsTopic("14.3 Binomial Probability","Reading: Binomial Probability");
-        test.topicView.instructorOpenTopicInEditMode("14.3 Binomial Probability","Reading: Binomial Probability");
+        test.topicView.instructorSelectsTopic("14.3 Binomial Probability","Lecture Video: Binomial Probability");
+        test.topicView.instructorOpenTopicInEditMode("14.3 Binomial Probability","Lecture Video: Binomial Probability");
         test.topicView.instructorEntersTitle();
         test.topicView.instructorEntersDescription("cancel");
         test.topicView.instructorEntersStartDate();
