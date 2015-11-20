@@ -53,7 +53,7 @@
       <![CDATA[[ASSERT PASS]: element offline_assignmentDescription is displayed.]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: element addOfflineAssignment_Btn is displayed.]]>
+      <![CDATA[[ASSERT PASS]: element addOfflineAssignment_Cancel is displayed.]]>
     </line>
     <line>
       <![CDATA[[ASSERT PASS]: element currentWeekIcon is displayed.]]>
@@ -77,37 +77,19 @@
       <![CDATA[[ASSERT PASS]: along with date 16]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: element offlineAssignment is displayed.]]>
+      <![CDATA[[ASSERT PASS]: Assignment description is not added or displayed]]>
     </line>
     <line>
-      <![CDATA[[ASSERT PASS]: Assignment is displayed]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element offline_assignmentScore is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: Assignment Score is displayed]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: Correct Score is displayed50]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: element currentDescription is displayed.]]>
-    </line>
-    <line>
-      <![CDATA[[ASSERT PASS]: Description is added]]>
-    </line>
-    <line>
-      <![CDATA[[INFO]: The Test: TC01_INSTRUCTOR_ADDS_OFFLINE_ACTIVITY COMPLETED!
+      <![CDATA[[INFO]: The Test: TC03_INSTRUCTOR_CANCEL_OFFLINE_ACTIVITY COMPLETED!
 ]]>
     </line>
   </reporter-output>
-  <suite name="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity" duration-ms="152772" started-at="2015-11-20T04:23:21Z" finished-at="2015-11-20T04:25:54Z">
+  <suite name="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity" duration-ms="111231" started-at="2015-11-20T05:50:19Z" finished-at="2015-11-20T05:52:11Z">
     <groups>
     </groups>
-    <test name="Command line test 548c6add-2f7b-4033-b6b8-4e32501ac6b6" duration-ms="152772" started-at="2015-11-20T04:23:21Z" finished-at="2015-11-20T04:25:54Z">
-      <class name="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity">
-        <test-method status="PASS" signature="start_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="start_test_session" is-config="true" duration-ms="9282" started-at="2015-11-20T09:53:21Z" finished-at="2015-11-20T09:53:31Z">
+    <test name="Command line test bc5d2a9f-e0ce-4fb7-84e9-d72ac43b9660" duration-ms="111231" started-at="2015-11-20T05:50:19Z" finished-at="2015-11-20T05:52:11Z">
+      <class name="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity">
+        <test-method status="PASS" signature="start_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="start_test_session" is-config="true" duration-ms="5253" started-at="2015-11-20T11:20:19Z" finished-at="2015-11-20T11:20:25Z">
           <reporter-output>
             <line>
               <![CDATA[[INFO]: The test Browser is FIREFOX !!!]]>
@@ -117,7 +99,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- start_test_session -->
-        <test-method status="PASS" signature="Step_01_Instructor_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="Step_01_Instructor_Logs_in_to_the_Application" duration-ms="25749" started-at="2015-11-20T09:53:31Z" finished-at="2015-11-20T09:53:56Z">
+        <test-method status="PASS" signature="Step_01_Instructor_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="Step_01_Instructor_Logs_in_to_the_Application" duration-ms="26402" started-at="2015-11-20T11:20:25Z" finished-at="2015-11-20T11:20:51Z">
           <reporter-output>
             <line>
               <![CDATA[[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]>
@@ -130,18 +112,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- Step_01_Instructor_Logs_in_to_the_Application -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="takeScreenshotonFailure" is-config="true" duration-ms="2" started-at="2015-11-20T09:53:56Z" finished-at="2015-11-20T09:53:56Z">
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="takeScreenshotonFailure" is-config="true" duration-ms="16" started-at="2015-11-20T11:20:51Z" finished-at="2015-11-20T11:20:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_01_Instructor_Logs_in_to_the_Application status=SUCCESS method=TC01_Instructor_Adds_Offline_Activity.Step_01_Instructor_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427] output=[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]]>
+                <![CDATA[[TestResult name=Step_01_Instructor_Logs_in_to_the_Application status=SUCCESS method=TC02_Instructor_Cancel_Offline_Activity.Step_01_Instructor_Logs_in_to_the_Application()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987] output=[ASSERT PASS]: PageTitle for NG-30181-LoginPage contains: 'Cengage Learning - Login'.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_02_Instructor_Manages_Course_From_SSO()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="Step_02_Instructor_Manages_Course_From_SSO" duration-ms="26609" started-at="2015-11-20T09:53:56Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity.Step_01_Instructor_Logs_in_to_the_Application" finished-at="2015-11-20T09:54:23Z">
+        <test-method status="PASS" signature="Step_02_Instructor_Manages_Course_From_SSO()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="Step_02_Instructor_Manages_Course_From_SSO" duration-ms="20377" started-at="2015-11-20T11:20:51Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity.Step_01_Instructor_Logs_in_to_the_Application" finished-at="2015-11-20T11:21:11Z">
           <reporter-output>
             <line>
               <![CDATA[[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.]]>
@@ -154,18 +136,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- Step_02_Instructor_Manages_Course_From_SSO -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="takeScreenshotonFailure" is-config="true" duration-ms="2" started-at="2015-11-20T09:54:23Z" finished-at="2015-11-20T09:54:23Z">
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="takeScreenshotonFailure" is-config="true" duration-ms="2" started-at="2015-11-20T11:21:11Z" finished-at="2015-11-20T11:21:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_02_Instructor_Manages_Course_From_SSO status=SUCCESS method=TC01_Instructor_Adds_Offline_Activity.Step_02_Instructor_Manages_Course_From_SSO()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427] output=[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.]]]>
+                <![CDATA[[TestResult name=Step_02_Instructor_Manages_Course_From_SSO status=SUCCESS method=TC02_Instructor_Cancel_Offline_Activity.Step_02_Instructor_Manages_Course_From_SSO()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987] output=[ASSERT PASS]: element pageTitle with text Instructor Resource Center is displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity" duration-ms="72211" started-at="2015-11-20T09:54:23Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity.Step_02_Instructor_Manages_Course_From_SSO" finished-at="2015-11-20T09:55:35Z">
+        <test-method status="PASS" signature="Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity" duration-ms="38633" started-at="2015-11-20T11:21:11Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity.Step_02_Instructor_Manages_Course_From_SSO" finished-at="2015-11-20T11:21:50Z">
           <reporter-output>
             <line>
               <![CDATA[[ASSERT PASS]: element currentWeekIcon is displayed.]]>
@@ -187,18 +169,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="takeScreenshotonFailure" is-config="true" duration-ms="1" started-at="2015-11-20T09:55:35Z" finished-at="2015-11-20T09:55:35Z">
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="takeScreenshotonFailure" is-config="true" duration-ms="1" started-at="2015-11-20T11:21:50Z" finished-at="2015-11-20T11:21:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity status=SUCCESS method=TC01_Instructor_Adds_Offline_Activity.Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427] output=[ASSERT PASS]: element currentWeekIcon is displayed.]]]>
+                <![CDATA[[TestResult name=Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity status=SUCCESS method=TC02_Instructor_Cancel_Offline_Activity.Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987] output=[ASSERT PASS]: element currentWeekIcon is displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_04_Instructor_Enters_Detail_In_OfflineActivity()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="Step_04_Instructor_Enters_Detail_In_OfflineActivity" duration-ms="5700" started-at="2015-11-20T09:55:35Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity.Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity" finished-at="2015-11-20T09:55:41Z">
+        <test-method status="PASS" signature="Step_04_Instructor_Enters_Detail_In_OfflineActivity()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="Step_04_Instructor_Enters_Detail_In_OfflineActivity" duration-ms="4898" started-at="2015-11-20T11:21:50Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity.Step_03_Verify_RollingWeekUI_And_Select_OfflineActivity" finished-at="2015-11-20T11:21:55Z">
           <reporter-output>
             <line>
               <![CDATA[[ASSERT PASS]: element offline_assignmentScore is displayed.]]>
@@ -210,22 +192,22 @@
               <![CDATA[[ASSERT PASS]: element offline_assignmentDescription is displayed.]]>
             </line>
             <line>
-              <![CDATA[[ASSERT PASS]: element addOfflineAssignment_Btn is displayed.]]>
+              <![CDATA[[ASSERT PASS]: element addOfflineAssignment_Cancel is displayed.]]>
             </line>
           </reporter-output>
         </test-method> <!-- Step_04_Instructor_Enters_Detail_In_OfflineActivity -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="takeScreenshotonFailure" is-config="true" duration-ms="1" started-at="2015-11-20T09:55:41Z" finished-at="2015-11-20T09:55:41Z">
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="takeScreenshotonFailure" is-config="true" duration-ms="1" started-at="2015-11-20T11:21:55Z" finished-at="2015-11-20T11:21:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_04_Instructor_Enters_Detail_In_OfflineActivity status=SUCCESS method=TC01_Instructor_Adds_Offline_Activity.Step_04_Instructor_Enters_Detail_In_OfflineActivity()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427] output=[ASSERT PASS]: element offline_assignmentScore is displayed.]]]>
+                <![CDATA[[TestResult name=Step_04_Instructor_Enters_Detail_In_OfflineActivity status=SUCCESS method=TC02_Instructor_Cancel_Offline_Activity.Step_04_Instructor_Enters_Detail_In_OfflineActivity()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987] output=[ASSERT PASS]: element offline_assignmentScore is displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_05_Verify_Rolling_Week_UI()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="Step_05_Verify_Rolling_Week_UI" duration-ms="12598" started-at="2015-11-20T09:55:41Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity.Step_04_Instructor_Enters_Detail_In_OfflineActivity" finished-at="2015-11-20T09:55:54Z">
+        <test-method status="PASS" signature="Step_05_Verify_Rolling_Week_UI()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="Step_05_Verify_Rolling_Week_UI" duration-ms="12574" started-at="2015-11-20T11:21:55Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity.Step_04_Instructor_Enters_Detail_In_OfflineActivity" finished-at="2015-11-20T11:22:08Z">
           <reporter-output>
             <line>
               <![CDATA[[ASSERT PASS]: element currentWeekIcon is displayed.]]>
@@ -250,62 +232,44 @@
             </line>
           </reporter-output>
         </test-method> <!-- Step_05_Verify_Rolling_Week_UI -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="takeScreenshotonFailure" is-config="true" duration-ms="0" started-at="2015-11-20T09:55:54Z" finished-at="2015-11-20T09:55:54Z">
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="takeScreenshotonFailure" is-config="true" duration-ms="2" started-at="2015-11-20T11:22:08Z" finished-at="2015-11-20T11:22:08Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_05_Verify_Rolling_Week_UI status=SUCCESS method=TC01_Instructor_Adds_Offline_Activity.Step_05_Verify_Rolling_Week_UI()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427] output=[ASSERT PASS]: element currentWeekIcon is displayed.]]]>
+                <![CDATA[[TestResult name=Step_05_Verify_Rolling_Week_UI status=SUCCESS method=TC02_Instructor_Cancel_Offline_Activity.Step_05_Verify_Rolling_Week_UI()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987] output=[ASSERT PASS]: element currentWeekIcon is displayed.]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="Step_06_Verify_Activity_Gets_Added()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="Step_06_Verify_Activity_Gets_Added" duration-ms="499" started-at="2015-11-20T09:55:54Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity.Step_05_Verify_Rolling_Week_UI" finished-at="2015-11-20T09:55:54Z">
+        <test-method status="PASS" signature="Step_06_Verify_Activity_Gets_Added()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="Step_06_Verify_Activity_Gets_Added" duration-ms="2972" started-at="2015-11-20T11:22:08Z" depends-on-methods="com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity.Step_05_Verify_Rolling_Week_UI" finished-at="2015-11-20T11:22:11Z">
           <reporter-output>
             <line>
-              <![CDATA[[ASSERT PASS]: element offlineAssignment is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Assignment is displayed]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: element offline_assignmentScore is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Assignment Score is displayed]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Correct Score is displayed50]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: element currentDescription is displayed.]]>
-            </line>
-            <line>
-              <![CDATA[[ASSERT PASS]: Description is added]]>
+              <![CDATA[[ASSERT PASS]: Assignment description is not added or displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- Step_06_Verify_Activity_Gets_Added -->
-        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="takeScreenshotonFailure" is-config="true" duration-ms="1" started-at="2015-11-20T09:55:54Z" finished-at="2015-11-20T09:55:54Z">
+        <test-method status="PASS" signature="takeScreenshotonFailure(org.testng.ITestResult)[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="takeScreenshotonFailure" is-config="true" duration-ms="1" started-at="2015-11-20T11:22:11Z" finished-at="2015-11-20T11:22:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Step_06_Verify_Activity_Gets_Added status=SUCCESS method=TC01_Instructor_Adds_Offline_Activity.Step_06_Verify_Activity_Gets_Added()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427] output=[ASSERT PASS]: element offlineAssignment is displayed.]]]>
+                <![CDATA[[TestResult name=Step_06_Verify_Activity_Gets_Added status=SUCCESS method=TC02_Instructor_Cancel_Offline_Activity.Step_06_Verify_Activity_Gets_Added()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987] output=[ASSERT PASS]: Assignment description is not added or displayed]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshotonFailure -->
-        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity@46c1a427]" name="stop_test_session" is-config="true" duration-ms="101" started-at="2015-11-20T09:55:54Z" finished-at="2015-11-20T09:55:54Z">
+        <test-method status="PASS" signature="stop_test_session()[pri:0, instance:com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity@4c66f987]" name="stop_test_session" is-config="true" duration-ms="91" started-at="2015-11-20T11:22:11Z" finished-at="2015-11-20T11:22:11Z">
           <reporter-output>
             <line>
-              <![CDATA[[INFO]: The Test: TC01_INSTRUCTOR_ADDS_OFFLINE_ACTIVITY COMPLETED!
+              <![CDATA[[INFO]: The Test: TC03_INSTRUCTOR_CANCEL_OFFLINE_ACTIVITY COMPLETED!
 ]]>
             </line>
           </reporter-output>
         </test-method> <!-- stop_test_session -->
-      </class> <!-- com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity -->
-    </test> <!-- Command line test 548c6add-2f7b-4033-b6b8-4e32501ac6b6 -->
-  </suite> <!-- com.qait.mindtap.tests.NG_30370_Offline_Activity.TC01_Instructor_Adds_Offline_Activity -->
+      </class> <!-- com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity -->
+    </test> <!-- Command line test bc5d2a9f-e0ce-4fb7-84e9-d72ac43b9660 -->
+  </suite> <!-- com.qait.mindtap.tests.NG_30370_Offline_Activity.TC02_Instructor_Cancel_Offline_Activity -->
 </testng-results>

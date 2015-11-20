@@ -36,7 +36,7 @@ public class OfflineActivityAction extends GetPage {
 
     public void instructorEntersDescription(String operation) {
         isElementDisplayed("offline_assignmentDescription");
-        String description = yml.getData(operation) + operation + date.getCurrentDateTime();
+        String description = operation + date.getCurrentDateTime();
         data.writeProperty("offline_assignmentDescription", description);
         element("offline_assignmentDescription").click();
         element("offline_assignmentDescription").sendKeys(description);
