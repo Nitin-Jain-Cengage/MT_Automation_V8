@@ -65,7 +65,7 @@ public class OfflineActivityAction extends GetPage {
     public void instructorEntersAssociatedTopic(String string) {
         isElementDisplayed("AssociatedTopic");
         element("AssociatedTopic").click();
-        isElementDisplayed("topic",string);
+        //isElementDisplayed("topic",string);
 //        element("topic",string).click();
 //
 //        isElementDisplayed("topic",string);
