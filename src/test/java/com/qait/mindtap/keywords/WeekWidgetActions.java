@@ -288,22 +288,22 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void verifyHideDisplayedRWV() {
-        scrollDown(element("currentDescription"));
-        hoverUsingJS(element("currentDescription"));
+        scrollDown(element("currentDescription",yml.getData("addLong")));
+        hoverUsingJS(element("currentDescription",yml.getData("addLong")));
         isElementDisplayed("hideButton");
 
     }
 
     public void verifyEditDisplayedRWV() {
-        scrollDown(element("currentDescription"));
-        hoverUsingJS(element("currentDescription"));
+        scrollDown(element("currentDescription",yml.getData("addLong")));
+        hoverUsingJS(element("currentDescription",yml.getData("addLong")));
         isElementDisplayed("editButton");
 
     }
 
     public void verifyDeleteDisplayedRWV() {
-        scrollDown(element("currentDescription"));
-        hoverUsingJS(element("currentDescription"));
+        scrollDown(element("currentDescription",yml.getData("addLong")));
+        hoverUsingJS(element("currentDescription",yml.getData("addLong")));
         isElementDisplayed("deleteButton");
 
     }
