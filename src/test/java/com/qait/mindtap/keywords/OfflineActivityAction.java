@@ -66,8 +66,8 @@ public class OfflineActivityAction extends GetPage {
         isElementDisplayed("AssociatedTopic");
         element("AssociatedTopic").click();
         isElementDisplayed("topic",string);
-        element("topic",string).click();
-
+//        element("topic",string).click();
+//
 //        isElementDisplayed("topic",string);
 //        element("topic",string);
         selectProvidedValue(element("AssociatedTopic"), string);
