@@ -70,7 +70,7 @@ public class TC01_Instructor_Verify_Week_View_Functionality {
         Reporter.log("Completed Instructor Adds Offline Activity");
     }
 
-    @Test(dependsOnMethods = {"Step_04_Verify_OfflineGraded_Activities_Displays"})
+    @Test(dependsOnMethods = {"Step_04_Verify_Add_OfflineGraded_Activities_Displays"})
     public void Step_05_Verify_RollingWeekUI_And_Select_TopicView() {
         test.weekwidget.verifyCurrentWeekIcon();
         test.weekwidget.instructorClickOnAddToWeek();
@@ -88,7 +88,7 @@ public class TC01_Instructor_Verify_Week_View_Functionality {
         Reporter.log("Completed Instructor Verify Hide Edit and Delete Options in SubTopics");
     }
 
-    @Test(dependsOnMethods = {"Step_06_verify_Hide_Edit_And_Delete"})
+    @Test(dependsOnMethods = {"Step_06_verify_Hide_Edit_And_DeleteOptionsInSubTopics"})
     public void Step_07_Verify_ShowMore_OR_LessButtonInAddedOfflineActivity() {
         test.weekwidget.verifyShowMoreOrLessDisplayed();
         test.weekwidget.verifyShowMoreOrLessWorksProperly();
@@ -96,7 +96,7 @@ public class TC01_Instructor_Verify_Week_View_Functionality {
 
     }
 
-    @Test(dependsOnMethods = {"Step_07_Verify_ShowMore_OR_Less"})
+    @Test(dependsOnMethods = {"Step_07_Verify_ShowMore_OR_LessButtonInAddedOfflineActivity"})
     public void Step_08_verify_Flag_And_PointsBesidesOfflineGradedActivity() {
         test.weekwidget.clickTopicView();
         test.weekwidget.verifyFlagDisplayed();
@@ -104,7 +104,7 @@ public class TC01_Instructor_Verify_Week_View_Functionality {
         Reporter.log("Completed Instructor Verify Flag and Points Besides Offline Graded Activity");
     }
 
-    @Test(dependsOnMethods = {"Step_08_verify_Flag_And_Points"})
+    @Test(dependsOnMethods = {"Step_08_verify_Flag_And_PointsBesidesOfflineGradedActivity"})
     public void Step_09_verify_Hide_Edit_And_DeleteOptionsInAddedOfflineActivity() {
         test.weekwidget.clickRWV();
         test.weekwidget.refreshPage();
@@ -115,7 +115,7 @@ public class TC01_Instructor_Verify_Week_View_Functionality {
         Reporter.log("Completed Instructor Verify Hide Edit and Delete Options in added Offline Activity");
     }
 
-    @Test(dependsOnMethods = {"Step_09_verify_Hide_Edit_And_Delete"})
+    @Test(dependsOnMethods = {"Step_09_verify_Hide_Edit_And_DeleteOptionsInAddedOfflineActivity"})
     public void Step_11_verify_Hide_Action() {
         test.weekwidget.clickOnHideButton();
         test.weekwidget.verifyHideFunctionality();
