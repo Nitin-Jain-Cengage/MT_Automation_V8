@@ -267,14 +267,14 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void verifyShowMoreOrLessDisplayed() {
-        hover(element("currentDescription",yml.getData("addLong")));
+        hover(element("currentDescription",data.readProperty("offline_assignmentDescription")));
         isElementDisplayed("ShowOrLessButton");
     }
 
     public void verifyShowMoreOrLessWorksProperly() {
         verifyShowMoreOrLessDisplayed();
         element("ShowOrLessButton").click();
-        if(checkIfElementIsNotThere("currentDescription",yml.getData("addLong"))){
+        if(checkIfElementIsNotThere("currentDescription",data.readProperty("offline_assignmentDescription"))){
             Reporter.pass("Show more or less works properly");
         }
     }
@@ -288,22 +288,22 @@ public class WeekWidgetActions extends GetPage {
     }
 
     public void verifyHideDisplayedRWV() {
-        scrollDown(element("currentDescription",yml.getData("addLong")));
-        hoverUsingJS(element("currentDescription",yml.getData("addLong")));
+        scrollDown(element("currentDescription",data.readProperty("offline_assignmentDescription")));
+        hoverUsingJS(element("currentDescription",data.readProperty("offline_assignmentDescription")));
         isElementDisplayed("hideButton");
 
     }
 
     public void verifyEditDisplayedRWV() {
-        scrollDown(element("currentDescription",yml.getData("addLong")));
-        hoverUsingJS(element("currentDescription",yml.getData("addLong")));
+        scrollDown(element("currentDescription",data.readProperty("offline_assignmentDescription")));
+        hoverUsingJS(element("currentDescription",data.readProperty("offline_assignmentDescription")));
         isElementDisplayed("editButton");
 
     }
 
     public void verifyDeleteDisplayedRWV() {
-        scrollDown(element("currentDescription",yml.getData("addLong")));
-        hoverUsingJS(element("currentDescription",yml.getData("addLong")));
+        scrollDown(element("currentDescription",data.readProperty("offline_assignmentDescription")));
+        hoverUsingJS(element("currentDescription",data.readProperty("offline_assignmentDescription")));
         isElementDisplayed("deleteButton");
 
     }
