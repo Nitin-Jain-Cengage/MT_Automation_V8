@@ -29,6 +29,7 @@ public class TC02_TA_Verify_Week_View_Functionality {
     public void start_test_session() {
         test = new TestSessionInitiator("TC02_TA_Add_OR_Cancel_Offline_Ungraded_Activity");
         test.launchApplication(getData("sso_url"));
+        test.courseCreateEdit.clean_Data_File();
 
     }
 
