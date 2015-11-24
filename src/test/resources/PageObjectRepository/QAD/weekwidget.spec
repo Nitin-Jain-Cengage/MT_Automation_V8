@@ -25,9 +25,9 @@ areaExpanded                                            css                     
 ShowOrLessButton                                        xpath                           //div[contains(text(),'${description}')]/../div[contains(@class,'show-more-less')]
 flag                                            xpath                                  (//span[@id='current-week-heading']/../../../../../*[@id='cl-topicview']//*[@icon="icons:flag"])[1]
 points                                          xpath                           (//span[@id='current-week-heading']/../../../../../*[@id='cl-topicview']//span [@id="totalDisplay"])[1]
-hideButton                          xpath                                       (//span[@id='current-week-heading']/../../../../..//andesite-button[@ id="hideButton"])[1]
-editButton                          xpath                           (//span[@id='current-week-heading']/../../../../..//andesite-button[@ id="editButton"])[1]
-deleteButton                        xpath                           (//span[@id='current-week-heading']/../../../../..//andesite-button[@ id="deleteButton"])[1]
+hideButton                          xpath                                       (//div[contains(text(),'${description}')]/../..//andesite-button[@ id="hideButton"])[1]
+editButton                          xpath                           (//div[contains(text(),'${description}')]/../..//andesite-button[@ id="editButton"])[1]
+deleteButton                        xpath                           (//div[contains(text(),'${description}')]/../..//andesite-button[@ id="deleteButton"])[1]
 stateToogle                         xpath                           //div[@id='position_1a']//*[@id='uncheckedLabel']
 Toogle                              xpath                          //div[@id='position_1a']//*[@id='checkedLabel']
 ====================================================================================
