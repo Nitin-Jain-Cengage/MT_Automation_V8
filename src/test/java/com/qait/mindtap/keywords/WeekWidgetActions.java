@@ -268,12 +268,12 @@ public class WeekWidgetActions extends GetPage {
 
     public void verifyShowMoreOrLessDisplayed() {
         hover(element("currentDescription",data.readProperty("offline_assignmentDescription")));
-        isElementDisplayed("ShowOrLessButton");
+        isElementDisplayed("ShowOrLessButton",data.readProperty("offline_assignmentDescription"));
     }
 
     public void verifyShowMoreOrLessWorksProperly() {
         verifyShowMoreOrLessDisplayed();
-        element("ShowOrLessButton").click();
+        element("ShowOrLessButton",data.readProperty("offline_assignmentDescription")).click();
         if(checkIfElementIsNotThere("currentDescription",data.readProperty("offline_assignmentDescription"))){
             Reporter.pass("Show more or less works properly");
         }
