@@ -289,21 +289,24 @@ public class WeekWidgetActions extends GetPage {
 
     public void verifyHideDisplayedRWV() {
         //scrollDown(element("currentDescription",data.readProperty("offline_assignmentDescription")));
-        hoverUsingJS(element("currentDescription",data.readProperty("offline_assignmentDescription")));
+        //hoverUsingJS(element("currentDescription",data.readProperty("offline_assignmentDescription")));
+        hover(element("currentDescription",data.readProperty("offline_assignmentDescription")));
         isElementDisplayed("hideButton");
 
     }
 
     public void verifyEditDisplayedRWV() {
         //scrollDown(element("currentDescription",data.readProperty("offline_assignmentDescription")));
-        hoverUsingJS(element("currentDescription",data.readProperty("offline_assignmentDescription")));
+        //hoverUsingJS(element("currentDescription",data.readProperty("offline_assignmentDescription")));
+        hover(element("currentDescription",data.readProperty("offline_assignmentDescription")));
         isElementDisplayed("editButton");
 
     }
 
     public void verifyDeleteDisplayedRWV() {
         //scrollDown(element("currentDescription",data.readProperty("offline_assignmentDescription")));
-        hoverUsingJS(element("currentDescription",data.readProperty("offline_assignmentDescription")));
+        //hoverUsingJS(element("currentDescription",data.readProperty("offline_assignmentDescription")));
+        hover(element("currentDescription",data.readProperty("offline_assignmentDescription")));
         isElementDisplayed("deleteButton");
 
     }
