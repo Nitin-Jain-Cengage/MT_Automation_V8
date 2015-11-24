@@ -3,13 +3,13 @@
 
 <suite verbose="0" name="NG-30457" parallel="false"
        thread-count="3">
-<!--    <test name="Instructor_Verify_Week_View_Functionality" preserve-order="true"
+    <test name="Instructor_Verify_Week_View_Functionality" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="com.qait.mindtap.tests.NG_30457_Week_View_functionality.TC01_Instructor_Verify_Week_View_Functionality"></class>
         </classes>
-    </test>-->
+    </test>
     <test name="TA adds or cancel offline activity" preserve-order="true"
           enabled="true">
         <parameter name="browser" value="chrome"/>
