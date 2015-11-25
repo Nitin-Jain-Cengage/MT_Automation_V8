@@ -44,7 +44,7 @@ public class ResultsIT {
 	String resultOfRun = null;
 	String host = "smtp.gmail.com";
 	String from = "automation.resultsqait@gmail.com";
-	private static final String replyto = "prashantshukla@qainfotedch.com";
+	//private static final String replyto = "prashantshukla@qainfotedch.com";
 	String password = "QaitAutomation";
 	int port = 25;
 	String failureResults = "";
@@ -128,6 +128,7 @@ public class ResultsIT {
 				+ "<hr>"
 				+ "<i>Note: This is a system generated mail. Please do not reply."
 				+ " ";
+            String replyto = null;
 		mailtext = mailtext + "If you have any queries mail to <a href=mailto:"
 				+ replyto + "?subject=Reply-of-Automation-Status"
 				+ today.replaceAll(" ", "_") + ">" + projectName
@@ -155,7 +156,7 @@ public class ResultsIT {
 
 		}
 		message.addRecipient(Message.RecipientType.BCC, new InternetAddress(
-				"vivekdua@qainfotech.net"));
+				"manmohansingh@qainfotech.net"));
 
 	}
 

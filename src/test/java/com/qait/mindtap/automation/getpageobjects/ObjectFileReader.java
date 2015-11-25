@@ -1,13 +1,14 @@
 package com.qait.mindtap.automation.getpageobjects;
 
 import static com.qait.mindtap.automation.utils.ConfigPropertyReader.getProperty;
-import com.qait.mindtap.automation.utils.ReportMsg;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import com.qait.mindtap.automation.utils.ReportMsg;
 
 /**
  * This class reads the PageObjectRepository text files. Uses buffer reader.
@@ -118,7 +119,10 @@ public class ObjectFileReader {
 
     //TODO move this to tiers enum
     private static void setTier() {
-        switch (Tiers.valueOf(getProperty("Config.properties", "tier"))) {
+        tier=System.getProperty("tier");
+        if(tier==null){
+        tier=getProperty("Config.properties", "tier");}
+        switch (Tiers.valueOf(tier)) {
             case production:
             case PROD:
             case PRODUCTION:
@@ -145,6 +149,11 @@ public class ObjectFileReader {
             case Qad:
             case qad:
                 tier = "QAD/";
+                break;
+            case STG:
+            case Stg:
+            case stg:
+                tier = "STG/";
                 break;
         }
     }

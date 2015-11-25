@@ -122,4 +122,6 @@ public class SeleniumWait{
             ex.printStackTrace();
         }
     }
+    
+    
 }

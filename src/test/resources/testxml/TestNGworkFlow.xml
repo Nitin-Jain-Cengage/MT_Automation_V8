@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="NG-30181" parallel="false" thread-count="3">
+    <test name="Admin Login and search the isbn under master tab" preserve-order="true"
+          enabled="true">
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30181_MTQ_Workflow.TC01_Admin_login_and_search_the_isbn_under_master_Tab"></class>
+        </classes>
+    </test>
+    <test name="Instructor Creates Courses" preserve-order="true"
+          enabled="true">
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30181_MTQ_Workflow.TC02_Instructor_Creates_Course"></class>
+        </classes>
+    </test>
+    <test name="Instructor Launch the course" preserve-order="true"
+          enabled="true">
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30181_MTQ_Workflow.TC04_Instructor_Launch_the_Course"></class>
+        </classes>
+    </test>
+    <test name="Student launches the course" preserve-order="true"
+          enabled="true">
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30181_MTQ_Workflow.TC05_Student_Launch_the_Course"></class>
+        </classes>
+    </test>
+    <test name="TA Launches the course" preserve-order="true"
+          enabled="true">
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30181_MTQ_Workflow.TC06_TA_Launch_the_Course"></class>
+        </classes>
+    </test>
+ </suite>
+ 
+
+  

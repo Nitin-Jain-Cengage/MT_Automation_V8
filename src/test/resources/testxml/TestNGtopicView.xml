@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="NG-30181" parallel="false" thread-count="3">
+    <test name="Admin Login and search the isbn under master tab" preserve-order="true"
+          enabled="true">
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30371_Topic_View.TC01_Instructor_Adds_OR_Cancel_Topic_Activity"></class>
+        </classes>
+    </test>
+<!--    <test name="Instructor Creates Courses" preserve-order="true"
+          enabled="true">
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30371_Topic_View.TC02_TA_Adds_OR_Cancel_Topic_Activity"></class>
+        </classes>
+    </test>-->
+    </suite>
+ 
+
+  

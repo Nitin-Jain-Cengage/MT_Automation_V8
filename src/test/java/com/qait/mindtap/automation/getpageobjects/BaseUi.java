@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
@@ -22,10 +23,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.Reporter;
 
-import com.qait.mindtap.automation.utils.SeleniumWait;
+import com.qait.mindtap.automation.utils.ConfigPropertyReader;
+import com.qait.mindtap.automation.utils.DateUtil;
+import com.qait.mindtap.automation.utils.PropFileHandler;
 import com.qait.mindtap.automation.utils.ReportMsg;
+import com.qait.mindtap.automation.utils.SeleniumWait;
+import com.qait.mindtap.automation.utils.YamlReader;
 
 /**
  *
@@ -36,6 +40,11 @@ public class BaseUi {
     WebDriver driver;
     protected SeleniumWait wait;
     private final String pageName;
+    protected DateUtil date;
+    protected PropFileHandler data;
+    protected ConfigPropertyReader configReader;
+    protected ReportMsg Reporter;
+    protected YamlReader yml;
 
     protected BaseUi(WebDriver driver, String pageName) {
         PageFactory.initElements(driver, this);
@@ -43,6 +52,11 @@ public class BaseUi {
         this.pageName = pageName;
         this.wait = new SeleniumWait(driver, Integer.parseInt(getProperty(
                 "Config.properties", "timeout")));
+        this.date = new DateUtil();
+        this.data = new PropFileHandler();
+        this.configReader = new ConfigPropertyReader();
+        this.Reporter = new ReportMsg();
+        this.yml = new YamlReader();
     }
 
     protected String getPageTitle() {
@@ -66,17 +80,18 @@ public class BaseUi {
         }
         try {
             wait.waitForPageTitleToBeExact(expectedPagetitle.toString());
-            ReportMsg.pass("PageTitle for " + pageName
-                    + " is exactly: '" + expectedPagetitle + "'");
+            ReportMsg.pass("PageTitle for " + pageName + " is exactly: '"
+                    + expectedPagetitle + "'");
         } catch (TimeoutException ex) {
-            ReportMsg.fail("PageTitle for " + pageName
-                    + " is not exactly: '" + expectedPagetitle
-                    + "'!!!\n instead it is :- " + driver.getTitle());
+            ReportMsg.fail("PageTitle for " + pageName + " is not exactly: '"
+                    + expectedPagetitle + "'!!!\n instead it is :- "
+                    + driver.getTitle());
         }
     }
 
     /**
-     * Verification of the page title with the title text provided in the page object repository
+     * Verification of the page title with the title text provided in the page
+     * object repository
      */
     protected void verifyPageTitleContains() {
         String expectedPagetitle = getPageTitleFromFile(pageName).trim();
@@ -84,7 +99,8 @@ public class BaseUi {
     }
 
     /**
-     * this method will get page title of current window and match it partially with the param provided
+     * this method will get page title of current window and match it partially
+     * with the param provided
      *
      * @param expectedPagetitle partial page title text
      */
@@ -96,8 +112,8 @@ public class BaseUi {
         }
         try {
             wait.waitForPageTitleToContain(expectedPagetitle.toString());
-            ReportMsg.pass("PageTitle for " + pageName
-                    + " contains: '" + expectedPagetitle + "'.");
+            ReportMsg.pass("PageTitle for " + pageName + " contains: '"
+                    + expectedPagetitle + "'.");
         } catch (TimeoutException exp) {
             ReportMsg.fail("As actual Page Title for '" + pageName
                     + "' does not contain expected Page Title : '"
@@ -107,7 +123,8 @@ public class BaseUi {
     }
 
     /**
-     * this method will get page url of current window and match it partially with the param provided
+     * this method will get page url of current window and match it partially
+     * with the param provided
      *
      * @param expectedPagetitle partial page title text
      */
@@ -115,17 +132,14 @@ public class BaseUi {
 
         wait.waitForPageToLoadCompletely();
         String currenturl = getCurrentURL();
-        Assert.assertTrue(currenturl
-                .toLowerCase()
-                .trim()
-                .contains(
-                        expectedPageUrl.toLowerCase()),
+        Assert.assertTrue(
+                currenturl.toLowerCase().trim()
+                .contains(expectedPageUrl.toLowerCase()),
                 ReportMsg.info("verifying: URL - " + currenturl
-                        + " of the page '" + pageName
-                        + "' contains: "
+                        + " of the page '" + pageName + "' contains: "
                         + expectedPageUrl));
-        ReportMsg.pass("URL of the page " + pageName
-                + " contains:- " + expectedPageUrl);
+        ReportMsg.pass("URL of the page " + pageName + " contains:- "
+                + expectedPageUrl);
 
     }
 
@@ -186,16 +200,40 @@ public class BaseUi {
     }
 
     protected Object executeJavascriptWithReturn(String script) {
-        return ((JavascriptExecutor) driver).executeScript(script);
+        return ((JavascriptExecutor) driver).executeScript("return " + script);
     }
 
     protected void executeJavascript(String script, WebElement e) {
         ((JavascriptExecutor) driver).executeScript(script, e);
     }
 
+    protected void fireOnClickJsEvent(String elementRef) {
+        fireOnClickJsEvent(elementRef, "0");
+    }
+
+    protected void fireOnClickJsEvent(String elementRef, String index) {
+        ((JavascriptExecutor) driver).executeScript(""
+                + "var elem = document.getElementsByClassName('" + elementRef + "')[" + index + "];"
+                + "if( document.createEvent ) { "
+                + "   var evObj = document.createEvent('MouseEvents');"
+                + "    evObj.initEvent( 'click', true, false );"
+                + "   elem.dispatchEvent(evObj);"
+                + "} else if( document.createEventObject ) {"
+                + "    elem.fireEvent('onclick');"
+                + "}"
+                + "");
+    }
+
     protected void hover(WebElement element) {
         Actions hoverOver = new Actions(driver);
         hoverOver.moveToElement(element).build().perform();
+    }
+
+    protected void hoverUsingJS(WebElement element) {
+        String javaScript = "var evObj = document.createEvent('MouseEvents');"
+                + "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);"
+                + "arguments[0].dispatchEvent(evObj);";
+        ((JavascriptExecutor) driver).executeScript(javaScript, element);
     }
 
     protected void handleAlert() {
@@ -244,6 +282,18 @@ public class BaseUi {
         sel.selectByVisibleText(text);
     }
 
+    protected void selectProvidedText(WebElement el, String text) {
+        wait.waitForElementToBeVisible(el);
+        Select sel = new Select(el);
+        sel.selectByVisibleText(text);
+    }
+
+    protected void selectProvidedValue(WebElement el, String value) {
+        wait.waitForElementToBeVisible(el);
+        Select sel = new Select(el);
+        sel.selectByValue(value);
+    }
+
     protected void scrollDown(WebElement element) {
         ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].scrollIntoView(true);", element);
@@ -271,7 +321,67 @@ public class BaseUi {
         }
     }
 
-    public void launchSpecificUrl(String url) {
+    protected void getURL(String Url) {
+        driver.get(Url);
+    }
+
+    public String pageTitle() {
+        return driver.getTitle();
+    }
+
+    protected String[] parseUrl(WebElement element) {
+        wait.waitForPageToLoadCompletely();
+        wait.waitForElementToBeVisible(element);
+        return element.getText().split("/");
+    }
+
+    public void refreshPage() {
+        driver.navigate().refresh();
+    }
+
+    protected void clickOnCourseName(String CourseName, String env, List<WebElement> lnk_course) {
+        for (WebElement ele : lnk_course) {
+            if (ele.getText().equalsIgnoreCase(CourseName)) {
+                String attribute = ele.getAttribute("href");
+                String[] url = attribute.split("http.*.ng.cengage.com");
+                System.out.println(url[1]);
+                if (env.equalsIgnoreCase("qad")) {
+                    System.out.println("Navigated To QAD Env.");
+                    System.out.println("http://qad-ng.cengage.com" + url[1]);
+                    driver.navigate().to("http://qad-ng.cengage.com" + url[1]);
+                }
+                if (env.equalsIgnoreCase("qaf")) {
+                    System.out.println("Navigated To QAF Env.");
+                    driver.navigate().to("http://qaf.ng.cengage.com" + url[1]);
+                }
+                if (env.equalsIgnoreCase("prod")) {
+                    System.out.println("navigated to prod..");
+                    driver.navigate().to("http://ng.cengage.com" + url[1]);
+                }
+                break;
+            }
+        }
+    }
+
+    protected void launchCourse(String environment, String url) {
+        if (environment.toLowerCase().endsWith("qad")) {
+            url = url.replaceAll("qaf.", "qad-");
+        }
+        if (environment.toLowerCase().endsWith("prod")) {
+            url = url.replaceAll("qaf.", "");
+        }
+        if (environment.toLowerCase().endsWith("qaf")) {
+            url = url;
+        }
+        if (environment.toLowerCase().endsWith("qap")) {
+            url = url.replaceAll("qaf.", "qap.");
+        }
+
+        if (environment.toLowerCase().endsWith("mtprod")) {
+            url = url.replaceAll("cloud-qap-ng", "mtprod");
+        }
+        System.out.println("[Navigated to url]: " + url);
         driver.get(url);
     }
+
 }

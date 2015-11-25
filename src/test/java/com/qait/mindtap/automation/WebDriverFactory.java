@@ -25,6 +25,7 @@ public class WebDriverFactory {
 	private String browser = "";
 
 	public WebDriverFactory() {
+           
 	}
 
 	public WebDriverFactory(String browserName) {
@@ -34,14 +35,17 @@ public class WebDriverFactory {
 	private static final DesiredCapabilities capabilities = new DesiredCapabilities();
 
 	public WebDriver getDriver(Map<String, String> seleniumconfig) {
-
-		if (browser == null || browser.isEmpty()) {
+                browser = System.getProperty("browser");
+  		if (browser == null || browser.isEmpty()) {
 			browser = seleniumconfig.get("browser");
 		}
 		Reporter.log("[INFO]: The test Browser is " + browser.toUpperCase()
 				+ " !!!", true);
-
-		if (seleniumconfig.get("seleniumserver").equalsIgnoreCase("local")) {
+                String server = System.getProperty("server");
+                if(server==null){
+                    server = seleniumconfig.get("seleniumserver");
+                }
+		if (server.equalsIgnoreCase("local")) {
 			if (browser.equalsIgnoreCase("firefox")) {
 				return getFirefoxDriver();
 			} else if (browser.equalsIgnoreCase("chrome")) {
@@ -59,7 +63,7 @@ public class WebDriverFactory {
 				return setMobileDriver(seleniumconfig);
 			}
 		}
-		if (seleniumconfig.get("seleniumserver").equalsIgnoreCase("remote")) {
+		if (server.equalsIgnoreCase("remote")) {
 			return setRemoteDriver(seleniumconfig);
 		}
 		return new FirefoxDriver();
@@ -78,7 +82,11 @@ public class WebDriverFactory {
 				|| (browser.equalsIgnoreCase("internet explorer"))) {
 			cap = DesiredCapabilities.internetExplorer();
 		}
-		String seleniuhubaddress = selConfig.get("seleniumserverhost");
+		String seleniuhubaddress = System.getProperty("vm.IP");
+               if(seleniuhubaddress == null ||seleniuhubaddress.isEmpty()){
+                    seleniuhubaddress = selConfig.get("seleniumserverhost");
+                }
+		            
 		URL selserverhost = null;
 		try {
 			selserverhost = new URL(seleniuhubaddress);

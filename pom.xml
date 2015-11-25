@@ -144,7 +144,7 @@
                     <skip>false</skip>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFile>./src/test/resources/testxml/TestNG.xml</suiteXmlFile>
+                        <suiteXmlFile>./src/test/resources/testxml/${testNGxml}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -162,6 +162,15 @@
                             <goal>verify</goal>
                         </goals>
                         <configuration>
+                            <systemPropertyVariables>
+                                    <browser>${browser}</browser>
+                                    <environment>${tier}</environment>
+                                    <run>${server}</run>
+                                    <machine>${vm.IP}</machine>
+                                     <suiteXmlFiles>
+                                     <suiteXmlFile>./src/test/resources/testxml/${testNGxml}</suiteXmlFile>
+                                     </suiteXmlFiles>
+                            </systemPropertyVariables>
                             <encoding>UTF-8</encoding>
                         </configuration>
                     </execution>

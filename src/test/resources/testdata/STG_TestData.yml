@@ -1,0 +1,648 @@
+testserver: remote
+selenium_remote_server: http://localhost:3012/wd/hub
+browser: firefox
+environment:  http://qad-ng.cengage.com
+page_timeout: 90
+ajax_timeout: 90 
+launchUrlPath: /static/nb/login.html
+covalentURLPath: /nb/service/activityOutcome
+openEulaPath: /static/eula.html
+ssoPath: http://s-ws-i.cengage.com:80/ssows/SSOws
+stagingSsoUrl: https://s-login.cengage.com
+  
+neXtBooks:
+# reader mode book used for the Admin and vendor test cases
+    neXtBook1:
+        name: Mayank Test Book-Automated
+        name2: Test_9781133314677
+        description: Book created by automation test suite  
+        mode: Reader
+        mode2: Course
+        isbn: 9781133314677
+        coreisbn: 9780495916239
+        ssoisbn: 9781133353720
+        master: Mayank Test Book-Automated
+        BookName: Test Book-Automated
+        ProvisionAppsRegistry:
+            assignmentAppProvision: Assignment
+            rssFeedAppProvision: Rssfeed
+            blogAppProvision: Blog
+            evernoteAppProvision: Evernote
+            flashCardAppProvision: FlashCard
+            glossaryAppProvision: Glossary
+            docAppProvision: Doc
+            kalturaAppProvision: Kaltura
+            dictionaryAppProvision: Merriam-Webster Dictionary Lookup
+            readSpeaker: ReadSpeaker
+            lamsAppProvision: lams_v2
+            googleDocAppProvision: Google
+            evernoteAppProvision: Evernote
+            webVideoAppProvison: WebVideo
+            myContentApp: My Content
+        pageTitle: Masters
+        orgPageTitle: Organizations
+        appLibraryPageTitle: App Library
+        settingsPageTitle: Settings
+        learningPaths:
+            learningPath1:
+                name: Mayank Learning Path
+                learningUnits:
+                    learningUnit1:
+                       foldername: New Nation
+                       foldername2: Management
+                       foldername3: La Dernière Partie
+                       newUnit: Three Old
+                       name: Effective 
+                       name2: Part Summary
+                       footnoteText: Fortune
+                       footnoteText1: psychology
+                       audioText: Albinism
+                       folderTitle: Automation test folder
+        organizationList: Cengage Admin   
+        transformList:
+            snapshotName: Uberdoc Automation Test book
+            unitName: Special Industries
+            unit2Name: Introduction to Management
+            unit4Name: Molecules of Life
+            unit5Name: The Facts of Life
+            unit12Name: Math Examples
+            nonBookUnit: Appendix A
+            textPage: 5
+            wideTableType: narrowtable widetable
+            wideLongTableType: widetable longtable
+            longTableType: narrowtable longtable
+            readSpeakerText: introspection
+            glossarySearchTerm: scarcity
+            searchTerm: test
+            splashPage:
+                  bookCoverText:  A. Conger Goodyear
+                  aboutAuthorText: About the Author
+                  aboutCoverArt: About the Cover Art
+                  cengageLearningText: About Us
+                  mindTapText: About MindTap
+                  copyrightText: Copyright
+                  credits: Credits
+                  mindTapAgreementText: MINDTAP SERVICE AGREEMENT
+                  splashCount: 8
+            linkFig1: Figure2.1
+            sectionLink: Writing Skills Are More Important Than Ever
+            linkFig2: Figure 2
+            chapterLink: Chapter 1
+            learningObj: Critical Thinking
+            flashKeyId: lipoma
+            flashKeyValue: deposit under the skin
+            aboutCendoc: Cendoc UberDoc
+            aHeadContent: Communication Skills and You
+            
+# neXtBook2 is used for the instructor and student test cases
+    neXtBook2:
+        mode: Course
+        mode2: Reader
+        ReaderIsbn: 9781133213062
+        isbn: 9781133353720       
+        CourseKey: MTPQ912PN7GX
+        CourseKey2: MTPPQ7PPQLSL
+        CourseKeyDeepLink: MTPQN58PPMD9
+        CourseName: MindTap Platform Automation Course
+        logOutText: You have logged out
+        integrationType_Standard: standard
+        integrationType_Partner: partner
+        deploymentIdStandard: "2016038132112926978847448737"
+        deploymentIdPartner: "201607310577092854593250101659"
+        publishedBook: Norton Vol II - OFFICIAL (Platform Automated Tests Title)
+        progressAppDeeplinks:
+          appKey: Cengage.Progress
+          appAction: viewProgress 
+          reviewmode: review
+          sourceId: 70346a98d5ed8e75:6ef6d4de:138e4591e36:-654d 
+          distinctAA: Assignable Activity for Progress App
+          inlineAA: Inline Assignable Activity Deeplink
+        newSnapShots:
+          organizationName: Cengage Learning - Shared
+          courseName: Cengage Learning - Shared - Book Mode
+          courseName2: MY Course
+          courseKey: Cengage Learning - Shared - Book Mode 
+          snapshot: OLR - A people and a Nation
+        ISBNs:
+          NewSnapshotReaderIsbn: 9781133215059
+          lmsIsbn: 9781133353706
+          NonEntitledSnapshotIsbn: 9780538475006
+          lmsStandardIsbn: 9781133353706
+        CourseKeys:
+          NewSnapshotCourseKey: MTPN-HGWP-P5SX 
+          InvalidCourseKey: InvalidCourseKey
+          lmsCourseKeyStandard: 2016038132112926978847448737-_4_1
+          lmsCourseKeyPartner:  201607310577092854593250101659-A882C575B87919315D22F771E5C0018131D1674A510FA3EEBF07CE4224BD0D61
+          SpecialCharacterCourseKey: cour$e**y@!!
+        CourseNames:
+          newCourseName: Automation Course Norton
+          lmsCourseName: MINDTAP_PLATFORM_AUTOMATION_COURSE 
+          lmsCourseNamePartner: MINDTAP_PLATFORM_AUTOMATION_PARTNER_COURSE
+        splashPage:
+          bookCoverText: Young Man in Blue Suit
+          aboutAuthorText: About the Authors
+          cengageLearningText: About Us
+          mindTapText: About MindTap
+          copyrightText: Copyright
+          mindTapAgreementText: MINDTAP SERVICE AGREEMENT
+          supportInf: Support Information
+          splashCount: 7
+        lmsCourseDate:
+          startDate: 08/10/2012
+          endDate: 10/01/2014
+        OrganizationSearch:
+          fullOrganizationName: NEW ENGLAND CONSERVATORY OF MUSIC
+          courseNameMatchTerm: Search on Course Name
+          instNameMatchTerm: Search on Instructor Name
+          partialCourseName: MindTap Platform
+          instname: AutomationInstructor Mindtap
+          partialInstname: AutomationInstructor
+          partialInstEmail: mindtapinst001@ng
+          lowercaseKey: mtpn304pnfrw
+          keyWithDashes: MTPN-BGFP-QXPM
+          partialKey: NFRW
+        learningPaths:
+            learningPath1:
+                name: Default
+                learningUnits:
+                    learningUnit1:
+                        name: Reconstruction
+                        unit17:  The Development of the West
+                        unit18: Machine Age
+                        unit19: Vitality and Turmoil
+                        unit20: Gilded Age Politics
+                        unit21: "The Progressive Era, 1895–1920" 
+                        unit22: Introduction to Medical Terminology
+                        customUnit: Automation Test Unit
+                        customUnitDescription: Unit Created By Automation Script
+                        editedNameCustomUnit: Automation Test Unit Edited Name
+                        editedDescriptionCustomUnit: Unit Created By Automation Script Edited Description
+                        folderName: Automation Deep Link Courses
+                        folderActivity: Distinct Folder Unit
+                        editedFolderName: Edited Folder Unit
+                        chapterLink: Reconstruction Acts
+                        chapterLink2: Foreign Expansion
+                        chapterLink3: Wartime Reconstruction
+                        lpnHeader: Norton
+                        learningActivities:
+                            learningActivity1:
+                                name: Reconstruction
+                                description:
+                                type: Reading
+                                highlights:
+                                    highlight1:
+                                        chapterLink1: Lincoln
+                                        page: 4
+                                        newpage: 3
+                                        hightext: Communication skills played an important part
+                                        text: Abraham Lincoln had never been
+                                        text2: How to best reconstruct
+                                        text3: in the course of human events
+                                        BheadText: Abraham Lincoln had never been anti-southern
+                                        color: YELLOW
+                                        changecolor: BLUE
+                                    highlight2:
+                                        chapterLink1: Suggestions for Further Reading  
+                                        chapterLink2: Thirteenth Amendment
+                                        text: David W. Blight
+                                        linkText: Thirteenth Amendment
+                                quicknotes:
+                                    quicknote1:
+                                        page: 5
+                                        chapterLink1: Congress and the Wade-Davis Bill
+                                        text: moves to readmit southern states
+                                        quicktext: Surveys of employers
+                                        text1: Race and Reunion
+                                        note: total income and total expenditure
+                                        note1: The Civil War in American Memory
+                                        changenote: 1. Total Income 2. Total Expenditur 
+                                dictionary:
+                                    searchTerm: month
+                                bookmark:
+                                    bookmarkTitle: Chapter Introduction
+                            learningActivity2:
+                                name: Assignable
+                                description: 
+                                type: Assignment
+                                titleName: ABHI
+                                organisationName: NEW ENGLAND                          
+                                snapshotName: Norton Vol II - OFFICIAL                               
+                                num: "1"
+                                chapterReviewLinkName: Review
+                                summaryLinkName: Summary
+                                chapterReviewBackLinkName: Review
+                                suggestionsLinkName: Suggestions
+                            learningActivity3:
+                                name: Distinct Assignable Activity 1
+                                name1: Limited Activity
+                                description: Automated Distinct Assignable Activity
+                                AssignableChapterName : Chapter 1
+                                AssignmentType : Homework
+                                assignmentSubmissions : "Unlimited"
+                                scoringStrategy1 : Last Score
+                                itemScoringStrategy: Best Score  
+    
+    neXtBook3:
+        mode: Course
+        mode2: Reader
+        isbn: 9781285605098
+        coreisbn: 9781133311317
+        ssoisbn: 9781285605098
+        CourseKey: MTPNQPKPNHHX
+        snapshotName: "Yagelski_Writing: Ten Core Concepts_1e_CM"
+        publishedBook: Ten Core Concepts_1e_CM
+        activity: InSite 
+        paperTitle: Distinct Insite Paper Assignment Activity
+        paperTitle1: Distinct Paper(Do Not Delete)
+        paperSubmittedTitle: Distinct Paper Assignment Submitted Activity(Do Not Delete)
+        peerTitle: Distinct Insite PeerMark Assignment Activity
+        peerTitle1: Distinct PeerMark(Do Not Delete)
+        description: Created By Automation Script
+        instPaperSubmissionTitle: Paper Submitted By Automation Instructor
+        uploadFileName: paper.rtf
+        publishedBook: Mayank Test Book-Automated
+        
+    nextBook4:
+        isbn: 9781285853482       
+        CourseKey: MTPPSQ3PPZ51
+        CourseName: Aplia
+        snapshotName: Aplia_Mankiw_Master
+        description: Created by Automation Script
+
+    nextBook5:
+        isbn: 9781285000848
+        CourseKey: MTPPSV7PQ8GT
+        CourseName: Automation_CNow
+        snapshotName: QAD_Accounting 1_Published Master
+        description: Created by Automation Script 
+        title: Distinct CNOW Homework Activity
+        inline: Inline CNOW Activity
+        
+    nextBook6:
+        name: The Beginning of the End
+        isbn: 9781133314653
+        CourseKey: MTPN087PQ3RH
+        description: Created by automation script
+        snapshotName:  Kendall Uberdoc Quizzes  
+        type: Reading
+        highlights:
+            highlight1:
+                chapterLink1: Review
+                text: but the concept was not new
+                color: Orange                      
+
+    nextBook7:
+        isbn: 9781133354215
+        CourseKey: MTPQ9J9PNT5L
+        description: Created by automation script
+        
+    nextBook8:
+        isbn: 9781133311317
+        CourseKey: MTPPGWBPNJK
+        description: Created by automation script
+    
+    neXtBook9:
+        courseName: ehrlich 24 june
+        isbn: 9781133354215 
+        CourseKey: MTPN1P9PPSHD 
+        description: Created by automation script
+        snapshotName: Ehrlich - Official CM Master (A-head level)
+    nextBook10:
+        name: automation course 29 july
+        isbn: 9781133354215
+        CourseKey: MTPPQ6DPPLJS
+        description: Created by automation script
+        
+    nextBook11:
+        name: Learning Lab Course
+        isbn: 9781305115613
+        CourseKey: MTPPFD4PPB7R
+        description: Created by automation script
+        
+    learningActivities:
+        AssignableActivity:
+            title: Assignment
+            name: Distinct Assignable Activity
+            nameNew: Distinct Assignable Activity Edited
+            manualGradedActivityName: Manual Graded Type Activity
+            autoPracticeActivityName: Auto Practice Type Activity
+            autoGradedActivityName: Auto Graded Type Activity
+            description: Automated distinct assignable activity
+            inlineActivityName: Inline Assignable Activity 2
+            inline: Inline Assignable Activity
+            dueDate: 01/01/2016
+            autoGrading: Auto
+            manualGrading: Manual
+            gradedType: graded
+            practiceType: practice
+            NotStartedAssignment: Not Started Assignment
+            FirstTakeInProgress: First Take In Progress
+            SecondTakeInProgress: Second Take In Progress
+            FirstTakeInProgressDueDatePassed: First Take In progress Due Date passed
+            TwoAttemptsSubmittedDueDateNotPassed: Two attempts Submitted Due Date not passed
+            FiveAttemptsSubmittedDueDateNotPassed: Five Attempts submitted Due date not passed
+            AssignmentBeforeDueAndAvailableDate: Assignment Before_Due_Date Before_Available_Date
+            AssignmentBeforeDueAndAfterAvailableDate: Assignment Before_Due_Date After_Available_Date
+            AssignmentInProgressBeforeDueAndAvailableDate: Assignment InProgress Before_Due_Date Before_Available_Date
+            AssignmentInProgressAfterDueAndAvailableDate: Assignment InProgress After_Due_Date After_Available_Date
+            CompletedAssignmentWithRemainingTakesBeforeDueAndAfterAvailableDate: Assignment Completed Remaining_Takes Before_Due_Date After_Available_Date
+            CompletedAssignmentWithRemainingTakesAfterDueAndAvailableDate: Assignment Completed Remaining_Takes After_Due_Date After_Available_Date
+            InlineAfterDueAndBeforeAvailableDate: Inline After_Due_Date Before_Available_Date
+            InlineAfterDueAndAvailableDate: Inline After_Due_Date After_Available_Date
+            InlineInProgressBeforeDueAndAfterAvailableDate: Inline InProgress Before_Due_Date After_Available_Date
+            InlineInProgressAfterDueAndAvailableDate: Inline InProgress After_Due_Date After_Available_Date
+            InlineCompletedWithRemainingTakesBeforeDueAndAfterAvailableDate: Inline Completed Remaining_Takes Before_Due_Date After_Available_Date
+            InlineCompletedWithRemainingTakesAfterDueAndAvailableDate: Inline Completed Remaining_Takes After_Due_Date After_Available_Date            
+        MediaActivity:
+            title: Media
+            name: Distinct Media Activity
+            description: Automated distinct media activity
+        ReadingActivity:
+            title: Reading
+            name: Distinct Reading Activity
+            activityForSearch: Reading Activity for Search
+            description: Automated distinct reading activity
+            readingChapterName: Chapter 1
+            pageNo: 4
+            nextPageNo: 5
+        AssignmentActivity:
+            title: Assignment
+            name1: Assignment 5.2
+        TextBoxActivity:
+            title: Text
+            name: Inline Text Box Activity
+            newName: Inline Text Box Activity Edited
+            description: Automated distinct text box activity
+        BlogActivity:
+            name1: Blog Activity
+            name: Inline Blog Activity
+            fromDate: 05/01/2006
+            toDate: 05/01/2013
+            keyword: Math
+        RSSFeed:
+            name1: RSS Feed
+            rssFeedURL: http://rss.cnn.com/rss/edition_americas.rss
+            title: Automated RSS Feed App
+            name: Distinct RSS Feed Activity
+            description: Created by Automation Script
+            rssFeedSmoke: RSS Feed For Smoke
+        NonMindTap:
+            name1: Non MindTap Activity
+            name: Distinct Non MindTap Activity
+            description: Created by Automation Script  
+        VideoActivity:
+            title: Video
+            name: Distinct Video Activity
+            description: Automated Working Copy video activity.
+            webVideoKey: WebVideo App
+        FlashCardActivity:
+            name: Distinct Flash Card Activity
+            description: Automated distinct flash activity
+            flashKeyId: Impeachment
+            flashKeyValue: attempted but failed
+            flashCardKey: Automation
+            flashCardValue: The state of being operated automatically
+            flashSmoke: FlashCard Activity For Smoke
+            csvFileName: testFlash.csv
+        lamsActivity:
+            subject: Test Automation
+            body: Created By Automation Script
+        NonMindTap:
+            name1: Non MindTap Activity
+            name: Distinct Non MindTap Activity
+            description: Created by Automation Script    
+        GoogleDoc:
+            gmailID: testautomationqai
+            paswrd: automation@123
+            distinctTitle: Distinct Google Doc Activity
+            inlineTitle: Inline Google Doc Activity
+            googleSmoke: GoogleDoc Activity For Smoke 
+        Evernote:
+            title: Automation Evernote
+            description: Evernote created by Automation script
+        ProgressApp:
+            comment: Score commented by Automation script
+        Kaltura:
+            title: Distinct Kaltura Activity
+            kalturaSmoke: Kaltura Activity For Smoke
+            description: Automated distinct kaltura activity
+        WebLink:
+            name: Web Link Activity
+            url: http://www.cnn.com
+            text: Created by Automation Script
+            title: Distinct Web Link Activity
+            anotherURL: http://www.google.com
+            weblinkSmoke: WebLink Activity For Smoke
+        WebVideo:
+            name1: WebVideo Search
+            title: Distinct Web Video Activity
+            description: Video Activity Selected through Automation
+            keyWord: Automation Testing
+            beforeText: Before Activity Text
+            afterText: After Activity Text
+            webvideoSmoke: WebVideo Activity For Smoke
+        LamsActivity:
+            name1: LAMS Lesson
+            title: New1_ Assignment5.1
+            smokeTitle: New3_Assignment 5.1
+            description: LAMS Activity Selected through Automation
+            newDescription: Edited through Automated Script
+        GradeBookApp:
+            inlineActivityTitle: Inline Assignable Activity        
+            distintActivityTitle: Distinct Assignable Activity
+        Cerego:
+            title: Distinct Cerego Activity
+            title2: Distinct Cerego Activity2
+            newTitle: New Distinct Cerego Activity
+            description: Created by automation script
+            description2: Created by automation script2
+            activityLabel: Cerego
+            activityLabel2: Cerego
+            activityReferenceID: set_731035
+            activityReferenceID2: set_731036  
+            key: set_id
+            key2: set_id2
+            value: "731035"
+            value2: "7310356" 
+            newDescription : Edited by automation script
+        QuestiaApp:
+            name: Questia
+            title: Distinct Questia Activity
+            newTitle: Edited Distinct Questia Activity
+            inlineActivityTitle: Inline Questia Activity
+            description: Created by automation script          
+            newDescription: Edited by automation script
+            searchTerm: Open Road
+        SVR:
+            name: Speech Video Library
+            title: Distinct SVR activity
+            description: Created By Automation Script
+            searchKey1: water
+            newTitle: Edited SVR Activity
+            searchKey2: focus on presentation
+        SOT:
+            name: Outline Builder
+            title: Distinct SOT Activity
+            title2: Another Distinct SOT Activity
+            description: Created By Automation Script
+            question: Question Automated!
+            style: mla
+            template: Invitational Speech
+            
+        SearchTerms:
+          media: Distinct_Media_For_Search
+          assignment: Distinct_Assignment_For_Search
+          googledoc: Distinct_GoogleDoc_For_Search
+          kaltura: Distinct_Kaltura_For_Search
+          rss: Distinct_RSS_For_Search
+          weblink: Distinct_WebLink_For_Search
+          webvideo: Distinct_WebVideo_For_Search
+          inlineAssignment: Inline_Assignment_For_Search
+          inlineTextbox: Inline_TextBox_For_Search
+          inlineBlog: Inline_Blog_For_Search
+          inlineGoogleDoc: Inline_GoogleDoc_For_Search
+          inlineKaltura: Inline_Kaltura_For_Search
+          inlineRss: Inline_RSS_For_Search
+          inlineWeblink: Inline_WebLink_For_Search
+          inlineWebvideo: Inline_WebVideo_For_Search
+          searchresult: Your search did not return any results
+          inlineWCTextbox: Inline_TextBox_For_Search_In_WorkingCopy
+          inlineWCTextboxEdited: Inline_TextBox_For_Search_In_WorkingCopy_Edited
+          reading:
+            bodytext: Childbearing age
+            aheadtext: "The Road Less Traveled Peck, 2000"
+            bheadtext: Learning Exercises
+            chapterTitle: "Chapter 2: Special Industries"
+            glossary: lipoma
+            glossaryDefn: Term used for idealistic
+            footnote: The National Commission on Writing
+            table: "Table 3.1"
+            learningObj: "obj 6"
+            chapterReview: Chapter Review
+            sidebar: Enhance your competitive edge by developing professionalism and business etiquette skills
+            embedImg: "PepsiCo's Undaunted Leader"
+            figure: Figure 2
+            chapIntro: Chapter Introduction
+            splashPage: About Cengage Learning
+            appendix: "Appendix 9.2"
+            map: "Map 16.1 The Reconstruction"
+            mapSection: "16-4e"
+        ProtectedLink:
+            url: http://s-college.cengage.com/psychology/martin/child_dev/2e/assets/students/protected/redeem.html
+            title: Inline Text Box Activity with Protected Link
+        YouSeeU:
+            activity: YouSeeU
+            name: Distinct YouSeeU Activity
+            type: Document Submission
+            instruction: Created by Automation Script
+            gradingType: Pass/Fail
+            gradingType1: Grade Entry
+            rubrics: Distinct rubrics Activity
+            
+users:
+  student:
+      mtxstudentname: student9_mtx_031915@qaittest.com
+      mtxstudentpassword: A111111
+      ssousername: autouser2@qai.com
+      studentname: auto user2
+      ssopassword: A111111
+      eulapresent: false
+      acceptEula: false
+      username: user2
+  studentAutomation:
+      ssousername: student_automation@qaittest.com
+      studentname: student automation
+      ssopassword: A111111
+      eulapresent: false
+      acceptEula: false
+      username: student automation      
+  student2:
+      ssousername: kj.stud123@qaittest.com
+      studentname: student123 mindtap
+      ssopassword: A111111
+      eulapresent: false
+      acceptEula: false
+      username: student123 mindtap      
+  vendor:
+      emailid: mt_automation1@swlearning.com
+      password: A111111
+      eulapresent: false
+  student3:
+      ssousername: mt_automation2@swlearning.com  
+      studentname: mt
+      ssopassword: A111111
+      eulapresent: false
+      acceptEula: false
+      username: mt     
+  instructor3:
+      emailid: kj.inst123@qaittest.com
+      instnewuser: inst_auto_qa@test.cengage.com
+      name: Instructor1 Mt1234
+      password: A111111
+      eulapresent: false
+      acceptEula: false
+  instructor1:
+      emailid: yminst@test.cengage.com
+      instnewuser: inst_auto_qa@test.cengage.com
+      password: password
+      eulapresent: false
+      acceptEula: false    
+  instructor:
+      emailid: mindtapinst001@ng.com
+      instnewuser: inst_auto_qa@test.cengage.com
+      password: password
+      eulapresent: false
+      acceptEula: false
+  instructor2:
+      emailid: mt_inst24june@qaittest.com
+      instnewuser: inst_auto_qa@test.cengage.com
+      password: A111111
+      eulapresent: false
+      acceptEula: false   
+  mtxinstructor:
+      emailid: instructor9_mtx_031915@qaittest.com 
+      password: A111111
+  editUser:
+      organisationName: Cengage Admin
+      ssoUser: inst_ng@qai.com
+      ssoUserName: Automation Account 
+      role: EDITOR
+      changeRole: COURSECARE
+      prodRole: VENDOR
+  superadmin:
+      username: automationadmin@qait.com
+      password: A111111     
+  productionUser:
+      username: productionmindtap@gmail.com    
+      password: tester
+  reviewer:
+      username: autoreviewer@test.cengage.com
+      password: password
+      organisationName: Cengage Admin
+      role: REVIEWER
+      ssoUserName: Automation Reviewer
+  editor:
+      username: mt_automation@swlearning.com
+      password: A111111
+      role: EDITOR
+  courseCare:
+      username: kz.inst@swlearning.com
+      password: A111111
+      role: COURSECARE
+  reviewer1:
+      username: mt_inst_automation3@swlearning.com
+      password: A111111
+      role: REVIEWER
+  teachingAssistant:
+      username: kj.stud@qaittest.com
+      name: kajal R
+      password: A111111
+      label: kajal R
+  teachingAssistant2:
+      username:stud25_mtx_250615@qaittest.com 
+      password:A111111
+results:
+  sendEmail: yes
+  recipients:
+    recipient1: manmohansingh@qainfotech.net
+    recipient2: rohitsingh@qainfotech.com

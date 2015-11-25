@@ -4,8 +4,6 @@
  */
 package com.qait.mindtap.automation.utils;
 
-import com.qait.mindtap.automation.getpageobjects.ObjectFileReader;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.Reader;
@@ -13,13 +11,17 @@ import java.util.Map;
 
 import org.yaml.snakeyaml.Yaml;
 
+import com.qait.mindtap.automation.getpageobjects.ObjectFileReader;
+import java.io.File;
+
 @SuppressWarnings("unchecked")
 public class YamlReader {
 
-    public static String yamlFilePath = "src/test/resources/testdata/XXX_TestData.yml";
+    public static String yamlFilePath = System.getProperty("user.dir")+File.separator+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"testdata"+File.separator+System.getProperty("tier")+"_TestData.yml";
 
     public static String setYamlFilePath() {
-        yamlFilePath = yamlFilePath.replaceAll("XXX", ObjectFileReader.getTier().replace("/", ""));
+         if(yamlFilePath.isEmpty()){
+        yamlFilePath = yamlFilePath.replaceAll("XXX", ObjectFileReader.getTier().replace("/", ""));}
         return yamlFilePath;
     }
 

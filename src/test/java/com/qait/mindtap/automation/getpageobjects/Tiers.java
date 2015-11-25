@@ -14,4 +14,5 @@ public enum Tiers {
     QAF, Qaf, qaf,
     QAD, Qad, qad,
     QAP, Qap, qap,
+    STG, Stg, stg,
 }

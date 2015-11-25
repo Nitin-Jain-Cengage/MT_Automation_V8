@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite verbose="0" name="NG-30456" parallel="false"
+       thread-count="3">
+    <test name="Instructor adds or cancel offline activity" preserve-order="true"
+          enabled="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qait.mindtap.tests.NG_30456_Offline_Ungraded_Activity.TC01_Instructor_Add_OR_Cancel_Offline_Ungraded_Activity"></class>
+        </classes>
+    </test>
+    <test name="TA adds or cancel offline activity" preserve-order="true"
+          enabled="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+           <class name="com.qait.mindtap.tests.NG_30456_Offline_Ungraded_Activity.TC02_TA_Add_OR_Cancel_Offline_Ungraded_Activity"></class>
+        </classes>
+    </test>
+    <test name="Student View Added Activity" preserve-order="true"
+          enabled="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+           <class name="com.qait.mindtap.tests.NG_30456_Offline_Ungraded_Activity.TC03_Student_View_Added_Activity"></class>
+        </classes>
+    </test>
+</suite>
